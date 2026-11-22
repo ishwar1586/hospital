@@ -1,0 +1,181 @@
+
+/* =====================================================
+   BILLING PAYMENT HEADER
+   File: BillingPaymentHeader.css
+   ===================================================== */
+
+.ipd-payment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 22px 24px;
+  background: #ffffff;
+  border: 1px solid #e0e8f1;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgb(25 55 90 / 4%);
+}
+
+.ipd-payment-header__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+
+.ipd-payment-header__back.MuiIconButton-root {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  color: #1769aa;
+  background: #edf5ff;
+  border: 1px solid #d9eaff;
+  border-radius: 10px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ipd-payment-header__back.MuiIconButton-root:hover {
+  background: #dcecff;
+  border-color: #b7d7fb;
+}
+
+.ipd-payment-header__back.MuiIconButton-root:active {
+  transform: scale(0.97);
+}
+
+.ipd-payment-header__content {
+  min-width: 0;
+}
+
+.ipd-payment-header__eyebrow.MuiTypography-root {
+  display: block;
+  margin-bottom: 5px;
+  color: #1769aa;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+}
+
+.ipd-payment-header__title.MuiTypography-root {
+  margin: 0;
+  color: #172b4d;
+  font-size: 25px;
+  font-weight: 750;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.ipd-payment-header__subtitle.MuiTypography-root {
+  margin: 6px 0 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.ipd-payment-header__cancel.MuiButton-root {
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 8px 15px;
+  color: #475569;
+  background: #ffffff;
+  border-color: #d5dfeb;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: none;
+  white-space: nowrap;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ipd-payment-header__cancel.MuiButton-root:hover {
+  color: #b42318;
+  background: #fff5f4;
+  border-color: #f1b8b2;
+}
+
+/* Keyboard accessibility */
+
+.ipd-payment-header__back.Mui-focusVisible,
+.ipd-payment-header__cancel.Mui-focusVisible {
+  outline: 2px solid #1769aa;
+  outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .ipd-payment-header {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .ipd-payment-header__left {
+    gap: 12px;
+  }
+
+  .ipd-payment-header__title.MuiTypography-root {
+    font-size: 22px;
+  }
+
+  .ipd-payment-header__subtitle.MuiTypography-root {
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 520px) {
+  .ipd-payment-header {
+    align-items: flex-start;
+    padding: 14px;
+    border-radius: 11px;
+  }
+
+  .ipd-payment-header__left {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ipd-payment-header__back.MuiIconButton-root {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ipd-payment-header__title.MuiTypography-root {
+    font-size: 19px;
+  }
+
+  .ipd-payment-header__eyebrow.MuiTypography-root {
+    font-size: 9px;
+  }
+
+  .ipd-payment-header__subtitle.MuiTypography-root {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .ipd-payment-header__cancel.MuiButton-root {
+    min-width: 36px;
+    min-height: 36px;
+    padding: 6px 9px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .ipd-payment-header {
+    flex-wrap: wrap;
+  }
+
+  .ipd-payment-header__cancel.MuiButton-root {
+    margin-left: auto;
+  }
+}

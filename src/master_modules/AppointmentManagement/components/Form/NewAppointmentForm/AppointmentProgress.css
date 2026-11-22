@@ -1,0 +1,103 @@
+.appointment-progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.appointment-progress__step {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+}
+
+.appointment-progress__number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #d0d5dd;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+.appointment-progress__label {
+    color: #667085;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.appointment-progress__step--active
+    .appointment-progress__number {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.appointment-progress__step--active
+    .appointment-progress__label {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+.appointment-progress__step--completed
+    .appointment-progress__number {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.appointment-progress__step--completed
+    .appointment-progress__label {
+    color: #344054;
+    font-weight: 600;
+}
+
+.appointment-progress__line {
+    width: 34px;
+    height: 1px;
+    margin: 0 10px;
+    background: #d0d5dd;
+    flex-shrink: 0;
+}
+
+.appointment-progress__line--completed {
+    background: #2563eb;
+}
+
+@media (max-width: 1050px) {
+    .appointment-progress__label {
+        display: none;
+    }
+
+    .appointment-progress__line {
+        width: 25px;
+        margin: 0 7px;
+    }
+}
+
+@media (max-width: 600px) {
+    .appointment-progress {
+        justify-content: flex-start;
+    }
+
+    .appointment-progress__line {
+        width: 18px;
+        margin: 0 5px;
+    }
+
+    .appointment-progress__number {
+        width: 24px;
+        height: 24px;
+    }
+}

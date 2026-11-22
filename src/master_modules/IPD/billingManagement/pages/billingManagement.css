@@ -1,0 +1,86 @@
+.billing-management-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+
+    padding: 24px;
+    background: #ffffff;
+}
+
+.billing-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.billing-header h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #0f172a;
+}
+
+.billing-header p {
+
+    margin-top: 6px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.generate-bill-btn {
+
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.generate-bill-btn:hover {
+
+    background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+
+    .billing-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 16px;
+    }
+
+    .generate-bill-btn {
+
+        width: 100%;
+    }
+
+}

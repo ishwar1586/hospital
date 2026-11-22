@@ -1,0 +1,68 @@
+.delete-modal{
+    padding:28px;
+    text-align:center;
+}
+
+.delete-icon{
+    width:70px;
+    height:70px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#fef2f2;
+
+    color:#dc2626;
+}
+
+.delete-icon svg{
+    font-size:36px;
+}
+
+.delete-modal h2{
+    margin-bottom:10px;
+}
+
+.delete-modal p{
+    color:#64748b;
+    line-height:1.6;
+}
+
+.delete-actions{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+
+    margin-top:24px;
+}
+
+.cancel-btn{
+    border:1px solid #cbd5e1;
+
+    background:#fff;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.delete-btn{
+    border:none;
+
+    background:#dc2626;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}

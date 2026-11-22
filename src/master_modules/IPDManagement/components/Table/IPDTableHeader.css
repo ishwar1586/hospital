@@ -1,0 +1,63 @@
+/* =========================================================
+   IPD TABLE HEADER
+   ========================================================= */
+
+.ipd-table__thead {
+  width: 100%;
+  background: #f8faff;
+}
+
+.ipd-table__th {
+  height: 30px;
+
+  padding: 0 10px;
+
+  border-bottom: 1px solid #e5eaf3;
+
+  color: #122f73;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 14px;
+
+  text-align: left;
+
+  white-space: nowrap;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+}
+
+.ipd-table__th:first-child {
+  padding-left: 12px;
+}
+
+.ipd-table__th:last-child {
+  padding-right: 12px;
+}
+
+/* =========================================================
+   COLUMN ALIGNMENT
+   ========================================================= */
+
+.ipd-table__th--actions {
+  text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .ipd-table__th {
+    padding: 0 8px;
+
+    font-size: 9px;
+  }
+
+  .ipd-table__th:first-child {
+    padding-left: 10px;
+  }
+}

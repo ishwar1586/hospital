@@ -1,0 +1,189 @@
+/* ====================================================== */
+
+.pos-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:18px 22px;
+
+    background:#FFFFFF;
+
+}
+
+/* ====================================================== */
+
+.pos-header-left{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+/* ====================================================== */
+
+.header-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    min-width:170px;
+
+    padding:12px 16px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:12px;
+
+    background:#F8FAFC;
+
+}
+
+.header-card svg{
+
+    font-size:22px;
+
+    color:#2563EB;
+
+}
+
+.header-card span{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+.header-card strong{
+
+    display:block;
+
+    margin-top:3px;
+
+    font-size:14px;
+
+    color:#0F172A;
+
+}
+
+/* ====================================================== */
+
+.pos-header-right{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+/* ====================================================== */
+
+.pos-header-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    height:44px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+/* ====================================================== */
+
+.pos-header-btn.primary{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.pos-header-btn.primary:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ====================================================== */
+
+.pos-header-btn.secondary{
+
+    background:#F1F5F9;
+
+    color:#334155;
+
+}
+
+.pos-header-btn.secondary:hover{
+
+    background:#E2E8F0;
+
+}
+
+/* ====================================================== */
+
+.pos-header-btn.warning{
+
+    background:#FEF3C7;
+
+    color:#92400E;
+
+}
+
+.pos-header-btn.warning:hover{
+
+    background:#FDE68A;
+
+}
+
+/* ====================================================== */
+
+@media(max-width:1200px){
+
+    .pos-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .pos-header-right{
+
+        width:100%;
+
+        flex-wrap:wrap;
+
+    }
+
+}

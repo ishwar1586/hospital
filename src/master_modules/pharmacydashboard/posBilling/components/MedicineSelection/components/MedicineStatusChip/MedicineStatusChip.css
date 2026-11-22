@@ -1,0 +1,103 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.medicine-status-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:7px 14px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    transition:.25s;
+
+    border:1px solid transparent;
+
+}
+
+/* ===========================================================
+ICON
+=========================================================== */
+
+.medicine-status-chip svg{
+
+    font-size:16px;
+
+}
+
+/* ===========================================================
+AVAILABLE
+=========================================================== */
+
+.medicine-status-chip.available{
+
+    background:#ECFDF3;
+
+    color:#15803D;
+
+    border-color:#BBF7D0;
+
+}
+
+/* ===========================================================
+LOW STOCK
+=========================================================== */
+
+.medicine-status-chip.low-stock{
+
+    background:#FFF7ED;
+
+    color:#C2410C;
+
+    border-color:#FED7AA;
+
+}
+
+/* ===========================================================
+OUT OF STOCK
+=========================================================== */
+
+.medicine-status-chip.out-of-stock{
+
+    background:#FEF2F2;
+
+    color:#DC2626;
+
+    border-color:#FECACA;
+
+}
+
+/* ===========================================================
+NEAR EXPIRY
+=========================================================== */
+
+.medicine-status-chip.near-expiry{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    border-color:#BFDBFE;
+
+}
+
+/* ===========================================================
+HOVER
+=========================================================== */
+
+.medicine-status-chip:hover{
+
+    transform:translateY(-1px);
+
+}

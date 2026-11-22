@@ -1,0 +1,403 @@
+/* =========================================
+   BACKDROP
+========================================= */
+
+.edit-collection-modal__backdrop {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1300;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.edit-collection-modal {
+    width: 100%;
+
+    max-width: 700px;
+
+    max-height: calc(100vh - 40px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 50px
+        rgba(15, 23, 42, 0.18);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.edit-collection-modal__header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 16px 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.edit-collection-modal__header h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.edit-collection-modal__header p {
+    margin: 3px 0 0;
+
+    color: #2563eb;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.edit-collection-modal__close {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    cursor: pointer;
+}
+
+
+.edit-collection-modal__close:hover {
+    background: #f3f4f6;
+
+    color: #111827;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.edit-collection-modal__form {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+
+.edit-collection-modal__section {
+    padding: 16px 18px;
+
+    overflow-y: auto;
+}
+
+
+.edit-collection-modal__section
++ .edit-collection-modal__section {
+    border-top: 1px solid #f0f1f3;
+}
+
+
+.edit-collection-modal__section h3 {
+    margin: 0 0 14px;
+
+    color: #374151;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.edit-collection-modal__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px 18px;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.edit-collection-field {
+    min-width: 0;
+}
+
+
+.edit-collection-field label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #374151;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.edit-collection-field input,
+.edit-collection-field select {
+    width: 100%;
+
+    height: 38px;
+
+    padding: 0 11px;
+
+    border: 1px solid #d7dce3;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.edit-collection-field input:focus,
+.edit-collection-field select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+.edit-collection-field input:disabled {
+    background: #f8fafc;
+
+    color: #6b7280;
+
+    cursor: not-allowed;
+}
+
+
+.edit-collection-field select {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.edit-collection-modal__footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.edit-collection-modal__cancel,
+.edit-collection-modal__save {
+    height: 35px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 14px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.edit-collection-modal__cancel {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #374151;
+}
+
+
+.edit-collection-modal__cancel:hover {
+    background: #f9fafb;
+
+    border-color: #9ca3af;
+}
+
+
+/* =========================================
+   SAVE
+========================================= */
+
+.edit-collection-modal__save {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.edit-collection-modal__save:hover {
+    background: #1d4ed8;
+
+    border-color: #1d4ed8;
+}
+
+
+.edit-collection-modal__save:disabled,
+.edit-collection-modal__cancel:disabled,
+.edit-collection-modal__close:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+.edit-collection-modal__save svg {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .edit-collection-modal__backdrop {
+        padding: 12px;
+    }
+
+
+    .edit-collection-modal {
+        max-height:
+            calc(100vh - 24px);
+    }
+
+
+    .edit-collection-modal__grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .edit-collection-modal__header,
+    .edit-collection-modal__section {
+        padding-left: 14px;
+
+        padding-right: 14px;
+    }
+
+
+    .edit-collection-modal__footer {
+        padding-left: 14px;
+
+        padding-right: 14px;
+    }
+
+}

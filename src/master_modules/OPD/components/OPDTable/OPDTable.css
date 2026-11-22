@@ -1,0 +1,153 @@
+
+.opd-table-section {
+  width: 100%;
+  min-width: 0;
+  margin-top: 22px;
+  overflow: hidden;
+  color: #172554;
+  background: #ffffff;
+  border: 1px solid #e7edf5;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.035);
+}
+
+.opd-table-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 22px;
+  border-bottom: 1px solid #e9eef5;
+}
+
+.opd-table-section__heading {
+  min-width: 0;
+}
+
+.opd-table-section__title {
+  margin: 0;
+  color: #172554;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.opd-table-section__subtitle {
+  margin: 5px 0 0;
+  color: #8290a5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.opd-table-section__count {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  color: #315cba;
+  background: #eff5ff;
+  border: 1px solid #dce8ff;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.opd-table__scroll-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: 560px;
+  overflow: auto;
+  /* overscroll-behavior: contain; */
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f8fafc;
+}
+
+.opd-table__scroll-container::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.opd-table__scroll-container::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.opd-table__scroll-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 2px solid #f8fafc;
+  border-radius: 20px;
+}
+
+.opd-table {
+  width: 100%;
+  min-width: 1450px;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+  font-size: 12px;
+}
+
+.opd-table__body {
+  background: #ffffff;
+}
+
+.opd-table__empty-cell {
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.opd-table__empty-state {
+  padding: 48px 20px;
+  text-align: center;
+  white-space: normal;
+}
+
+.opd-table__empty-state h3 {
+  margin: 0;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.opd-table__empty-state p {
+  margin: 8px 0 0;
+  color: #8491a5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.opd-table__pagination {
+  border-top: 1px solid #e9eef5;
+  background: #ffffff;
+}
+
+.opd-table__pagination .MuiTablePagination-root {
+  color: #64748b;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .opd-table-section {
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  .opd-table-section__header {
+    padding: 16px;
+  }
+
+  .opd-table-section__title {
+    font-size: 15px;
+  }
+
+  .opd-table-section__subtitle {
+    font-size: 11px;
+  }
+
+  .opd-table {
+    min-width: 1350px;
+  }
+
+  .opd-table__pagination .MuiTablePagination-toolbar {
+    padding: 0 6px;
+  }
+}

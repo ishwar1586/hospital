@@ -1,0 +1,136 @@
+/* ================================================= */
+
+.activity-actions{
+
+    margin-top:24px;
+    margin-bottom: 5px;
+
+    padding-top:18px;
+
+    border-top:1px solid #E2E8F0;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+/* ================================================= */
+
+.activity-action-btn{
+
+    height:40px;
+
+    padding:0 16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.activity-action-btn svg{
+
+    font-size:18px;
+
+}
+
+/* ================================================= */
+
+.activity-action-btn.primary{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.activity-action-btn.primary:hover{
+
+    background:#BFDBFE;
+
+}
+
+/* ================================================= */
+
+.activity-action-btn.secondary{
+
+    background:#F3E8FF;
+
+    color:#7C3AED;
+
+}
+
+.activity-action-btn.secondary:hover{
+
+    background:#E9D5FF;
+
+}
+
+/* ================================================= */
+
+.activity-action-btn.warning{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+.activity-action-btn.warning:hover{
+
+    background:#FDE68A;
+
+}
+
+/* ================================================= */
+
+.activity-action-btn.success{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+.activity-action-btn.success:hover{
+
+    background:#BBF7D0;
+
+}
+
+/* ================================================= */
+
+@media(max-width:768px){
+
+    .activity-actions{
+
+        flex-direction:column;
+
+    }
+
+    .activity-action-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}

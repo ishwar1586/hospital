@@ -1,0 +1,88 @@
+
+/* src/master_modules/RadiologyManagement/styles/RadiologyManagement.css */
+
+.radiology-management {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  padding: 20px;
+  background: #f3f6fb;
+  color: #172641;
+  font-family: inherit;
+}
+
+.radiology-management *,
+.radiology-management *::before,
+.radiology-management *::after {
+  box-sizing: border-box;
+}
+
+.radiology-management__container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  width: 100%;
+  max-width: 1600px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+/* Prevent dashboard sections from shrinking unexpectedly. */
+.radiology-management__container > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Consistent focus visibility for interactive dashboard controls. */
+.radiology-management button:focus-visible,
+.radiology-management input:focus-visible,
+.radiology-management select:focus-visible,
+.radiology-management textarea:focus-visible {
+  outline: 2px solid #75a5ff;
+  outline-offset: 2px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .radiology-management {
+    padding: 16px;
+  }
+
+  .radiology-management__container {
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .radiology-management {
+    padding: 12px;
+  }
+
+  .radiology-management__container {
+    gap: 14px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .radiology-management {
+    padding: 9px;
+  }
+
+  .radiology-management__container {
+    gap: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radiology-management *,
+  .radiology-management *::before,
+  .radiology-management *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

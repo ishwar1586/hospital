@@ -1,0 +1,176 @@
+/* =========================================================
+   APPOINTMENT DETAILS ACTIONS
+   ========================================================= */
+
+.appointment-details-actions {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 14px 0;
+
+    border-top: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ACTION GROUPS
+   ========================================================= */
+
+.appointment-details-actions__left,
+.appointment-details-actions__right {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   BASE BUTTON
+   ========================================================= */
+
+.appointment-details-actions__button {
+    min-height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 12px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.appointment-details-actions__button svg {
+    width: 15px;
+    height: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.appointment-details-actions__button--secondary {
+    border: 1px solid #d9dee8;
+
+    background: #ffffff;
+    color: #344054;
+}
+
+
+.appointment-details-actions__button--secondary:hover {
+    border-color: #c5cad5;
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.appointment-details-actions__button--primary {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+.appointment-details-actions__button--primary:hover {
+    border-color: #1d4ed8;
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   DANGER BUTTON
+   ========================================================= */
+
+.appointment-details-actions__button--danger {
+    border: 1px solid #f04438;
+
+    background: #ffffff;
+    color: #d92d20;
+}
+
+
+.appointment-details-actions__button--danger:hover {
+    border-color: #d92d20;
+    background: #fef3f2;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.appointment-details-actions__button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .appointment-details-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+
+    .appointment-details-actions__left,
+    .appointment-details-actions__right {
+        width: 100%;
+    }
+
+
+    .appointment-details-actions__button {
+        flex: 1;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .appointment-details-actions__left,
+    .appointment-details-actions__right {
+        flex-direction: column;
+    }
+
+
+    .appointment-details-actions__button {
+        width: 100%;
+    }
+
+}

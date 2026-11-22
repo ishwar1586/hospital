@@ -1,0 +1,167 @@
+.ledger-filters{
+    display:flex;
+
+    /* align-items:flex-start; */
+    border: 1px solid #dbe2ea;
+    gap:1px;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom:24px;
+
+    /* flex-wrap:wrap; */
+}
+
+.filter-group{
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+}
+
+.filter-group label{
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#475569;
+}
+
+.filter-group input,
+.filter-group select{
+    width:160px;
+
+    height:44px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 14px;
+
+    background:#ffffff;
+
+    outline:none;
+
+    font-size:12px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus{
+    border-color:#2563eb;
+}
+
+.date-input-wrapper{
+    position:relative;
+}
+
+.date-input-wrapper input{
+    width:70%;
+    font-size: 12px !important;
+
+    padding-right:10px;
+}
+
+.date-input-wrapper svg{
+    position:absolute;
+
+    right:12px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#94a3b8;
+
+    pointer-events:none;
+}
+
+.filter-actions{
+    display:flex;
+
+    gap:12px;
+
+    margin-left:auto;
+}
+
+.apply-btn{
+    height:34px;
+    padding:0 35px;
+    /* min-width:60px; */
+     display:flex;
+
+    align-items:center;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-weight:600;
+    font-size: 10px;
+    cursor:pointer;
+}
+
+.apply-btn:hover{
+    background:#1d4ed8;
+}
+
+.export-btn{
+    height:34px !important;
+
+    padding:0 10px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    background:#ffffff;
+
+    color:#16a34a;
+
+    font-weight:600;
+    font-size: 10px !important;
+
+    cursor:pointer;
+}
+
+.export-btn:hover{
+    background:#f8fafc;
+}
+
+@media(max-width:992px){
+
+    .filter-actions{
+        width:100%;
+
+        margin-left:0;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .ledger-filters{
+        flex-direction:column;
+
+        align-items:stretch;
+    }
+
+    .filter-group input,
+    .filter-group select{
+        width:100%;
+    }
+
+    .filter-actions{
+        flex-direction:column;
+    }
+
+}

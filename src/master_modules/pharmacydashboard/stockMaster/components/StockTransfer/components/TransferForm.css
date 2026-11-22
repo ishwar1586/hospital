@@ -1,0 +1,164 @@
+/* ========================================= */
+
+.transfer-form{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    /* overflow:hidden; */
+
+}
+
+
+/* .transfer-form{
+
+    height:auto !important;
+
+    min-height:600px !important;
+
+} */
+/* ========================================= */
+
+.transfer-form-header{
+
+    padding:18px 22px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.transfer-form-header h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ========================================= */
+
+.transfer-form-body{
+
+    padding:22px;
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+/* ========================================= */
+
+.transfer-form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.transfer-form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.transfer-form-group label span{
+
+    color:#DC2626;
+
+    margin-left:4px;
+
+}
+
+.transfer-form-group input,
+
+.transfer-form-group select,
+
+.transfer-form-group textarea{
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:14px;
+
+    background:#FFFFFF;
+
+    transition:.25s;
+
+}
+
+.transfer-form-group textarea{
+
+    resize:vertical;
+
+    min-height:110px;
+
+}
+
+.transfer-form-group input:focus,
+
+.transfer-form-group select:focus,
+
+.transfer-form-group textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:
+
+        0 0 0 3px rgba(37,99,235,.10);
+
+}
+
+.transfer-form-group input[readonly]{
+
+    background:#F8FAFC;
+
+    color:#475569;
+
+    cursor:not-allowed;
+
+}
+
+
+.required{
+
+    color:#DC2626;
+
+    margin-left:4px;
+
+}
+
+.transfer-error{
+
+    margin-top:6px;
+
+    color:#DC2626;
+
+    font-size:12px;
+
+    font-weight:500;
+
+}

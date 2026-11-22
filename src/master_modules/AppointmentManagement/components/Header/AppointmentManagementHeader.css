@@ -1,0 +1,250 @@
+/* =========================================================
+   Appointment Management Header
+   ========================================================= */
+
+.appointment-management-header {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   Header Content
+   ========================================================= */
+
+.appointment-management-header__content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.appointment-management-header__title {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.2px;
+}
+
+
+.appointment-management-header__subtitle {
+    margin: 4px 0 0;
+
+    color: #667085;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   Header Actions
+   ========================================================= */
+
+.appointment-management-header__actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   Common Action Button
+   ========================================================= */
+
+.appointment-management-header__action {
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 14px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease,
+        box-shadow 0.18s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   Action Icon
+   ========================================================= */
+
+.appointment-management-header__action-icon {
+    width: 16px !important;
+    height: 16px !important;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   Secondary Action
+   ========================================================= */
+
+.appointment-management-header__action--secondary {
+    border: 1px solid #d9e0eb;
+
+    background: #ffffff;
+
+    color: #172554;
+}
+
+
+.appointment-management-header__action--secondary:hover {
+    background: #f8fafc;
+
+    border-color: #c7d0df;
+}
+
+
+.appointment-management-header__action--secondary:active {
+    background: #f1f5f9;
+}
+
+
+/* =========================================================
+   Primary Action
+   ========================================================= */
+
+.appointment-management-header__action--primary {
+    min-width: 146px;
+
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.appointment-management-header__action--primary:hover {
+    background: #1d4ed8;
+
+    border-color: #1d4ed8;
+
+    box-shadow:
+        0 2px 5px rgba(37, 99, 235, 0.18);
+}
+
+
+.appointment-management-header__action--primary:active {
+    background: #1e40af;
+
+    border-color: #1e40af;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   Focus
+   ========================================================= */
+
+.appointment-management-header__action:focus-visible {
+    outline: 2px solid rgba(37, 99, 235, 0.25);
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .appointment-management-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 14px 16px;
+    }
+
+
+    .appointment-management-header__actions {
+        width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+
+    .appointment-management-header__action {
+        flex: 0 0 auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .appointment-management-header__actions {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        gap: 8px;
+    }
+
+
+    .appointment-management-header__action {
+        width: 100%;
+    }
+
+
+    .appointment-management-header__action--primary {
+        min-width: 0;
+    }
+}

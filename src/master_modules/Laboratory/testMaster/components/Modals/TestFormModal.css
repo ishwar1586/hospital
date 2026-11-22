@@ -1,0 +1,196 @@
+/* =========================================
+   FORM
+========================================= */
+
+.test-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.test-form__section {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.test-form__section-header {
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.test-form__section-header h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.test-form__section-header p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.test-form__grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.test-form__field {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+.test-form__field label {
+    margin-bottom: 7px;
+
+    color: #374151;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.test-form__field label span {
+    margin-left: 3px;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   INPUT / SELECT
+========================================= */
+
+.test-form__field input,
+.test-form__field select {
+    width: 100%;
+
+    height: 40px;
+
+    padding: 0 11px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #111827;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.test-form__field input::placeholder {
+    color: #9ca3af;
+}
+
+.test-form__field input:focus,
+.test-form__field select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.test-form__field input:disabled {
+    background: #f8fafc;
+
+    color: #6b7280;
+
+    cursor: not-allowed;
+}
+
+.test-form__field small {
+    margin-top: 5px;
+
+    color: #9ca3af;
+
+    font-size: 9px;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.test-form__price-wrapper {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+}
+
+.test-form__price-wrapper > span {
+    position: absolute;
+
+    left: 11px;
+
+    color: #6b7280;
+
+    font-size: 12px;
+
+    pointer-events: none;
+}
+
+.test-form__price-wrapper input {
+    padding-left: 25px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .test-form__grid {
+        grid-template-columns: 1fr;
+    }
+
+}

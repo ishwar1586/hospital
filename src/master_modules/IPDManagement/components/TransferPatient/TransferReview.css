@@ -1,0 +1,255 @@
+/* ============================================================
+   TRANSFER REVIEW
+   ============================================================ */
+
+.ipd-transfer-review {
+  width: 100%;
+
+  padding: 24px 28px;
+
+  background: #ffffff;
+
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-transfer-review__header {
+  margin-bottom: 22px;
+}
+
+
+.ipd-transfer-review__title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+.ipd-transfer-review__subtitle {
+  margin: 5px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   SECTION
+   ============================================================ */
+
+.ipd-transfer-review__section {
+  width: 100%;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+.ipd-transfer-review__section:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ============================================================
+   SECTION HEADER
+   ============================================================ */
+
+.ipd-transfer-review__section-header {
+  padding: 13px 16px;
+
+  background: #f9fafb;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.ipd-transfer-review__section-title {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   GRID
+   ============================================================ */
+
+.ipd-transfer-review__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+}
+
+
+/* ============================================================
+   ITEM
+   ============================================================ */
+
+.ipd-transfer-review__item {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 13px 16px;
+
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.ipd-transfer-review__item:nth-child(4n) {
+  border-right: none;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-transfer-review__label {
+  color: #6b7280;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   VALUE
+   ============================================================ */
+
+.ipd-transfer-review__value {
+  min-width: 0;
+
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   TRANSPORT
+   ============================================================ */
+
+.ipd-transfer-review__transport {
+  padding: 15px 16px;
+}
+
+
+.ipd-transfer-review__transport-value {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 34px;
+
+  padding: 0 12px;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 6px;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1000px) {
+
+  .ipd-transfer-review__grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .ipd-transfer-review__item:nth-child(4n) {
+    border-right: 1px solid #e5e7eb;
+  }
+
+  .ipd-transfer-review__item:nth-child(3n) {
+    border-right: none;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .ipd-transfer-review {
+    padding: 20px;
+  }
+
+  .ipd-transfer-review__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .ipd-transfer-review__item:nth-child(3n) {
+    border-right: 1px solid #e5e7eb;
+  }
+
+  .ipd-transfer-review__item:nth-child(2n) {
+    border-right: none;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .ipd-transfer-review {
+    padding: 16px;
+  }
+
+  .ipd-transfer-review__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-transfer-review__item {
+    border-right: none;
+  }
+
+}

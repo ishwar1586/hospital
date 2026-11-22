@@ -1,0 +1,152 @@
+.nursing-notes-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  padding: 10px;
+
+  height: 100%;
+}
+
+.nursing-notes-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+.notes-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.notes-title svg {
+  color: #3b82f6;
+
+  font-size: 14px;
+}
+
+.notes-title h3 {
+  margin: 0;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.nursing-notes-header button {
+  border: none;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  padding: 6px 10px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+.notes-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.note-row {
+  display: grid;
+  padding: 5px;
+  grid-template-columns:
+    140px 1fr 90px;
+  gap: 16px;
+  border-bottom: 1px solid rgb(234, 226, 226);
+
+  align-items: center;
+}
+
+.note-avatar {
+  width: 34px;
+
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #f1f5f9;
+
+  color: #64748b;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.note-left {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.note-left h4 {
+  margin: 0;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.note-left p {
+  margin-top: 3px;
+
+  font-size: 12px;
+
+  color: #64748b;
+}
+
+.note-center {
+  font-size: 13px;
+
+  color: #475569;
+}
+
+.note-right {
+  text-align: right;
+}
+
+.note-right span {
+  display: block;
+
+  font-size: 11px;
+
+  color: #94a3b8;
+}
+
+.note-right p {
+  margin-top: 4px;
+
+  font-size: 12px;
+
+  color: #64748b;
+}

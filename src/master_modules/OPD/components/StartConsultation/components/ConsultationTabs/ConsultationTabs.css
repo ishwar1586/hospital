@@ -1,0 +1,84 @@
+
+.consultation-tabs {
+  width: 100%;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e0e8f3;
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+.consultation-tabs__list {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  width: 100%;
+  min-width: 0;
+  padding: 7px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd8ea transparent;
+}
+
+.consultation-tabs__tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex: 1 0 auto;
+  min-height: 43px;
+  padding: 10px 15px;
+  color: #64748b;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.consultation-tabs__tab:hover {
+  color: #1d55b5;
+  background: #f3f7ff;
+}
+
+.consultation-tabs__tab--active {
+  color: #1558d6;
+  background: #edf4ff;
+  border-color: #d8e6ff;
+}
+
+.consultation-tabs__tab:focus-visible {
+  outline: 2px solid #3978ed;
+  outline-offset: 2px;
+}
+
+.consultation-tabs__icon {
+  flex: 0 0 auto;
+  font-size: 18px !important;
+}
+
+@media (max-width: 700px) {
+  .consultation-tabs__list {
+    justify-content: flex-start;
+  }
+
+  .consultation-tabs__tab {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 9px 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .consultation-tabs__tab {
+    transition: none;
+  }
+}

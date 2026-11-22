@@ -1,0 +1,64 @@
+/* =========================================
+   TEST QUEUE PAGE
+========================================= */
+
+.test-queue-page {
+   display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 14px;
+    padding: 20px;
+}
+
+
+/* =========================================
+   PAGE CONTENT
+========================================= */
+
+.test-queue-page > * {
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER SPACING
+========================================= */
+
+.test-queue-page
+.test-queue-header {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   STATS SPACING
+========================================= */
+
+.test-queue-page
+.test-queue-stats {
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .test-queue-page {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .test-queue-page {
+        padding: 0;
+    }
+
+}

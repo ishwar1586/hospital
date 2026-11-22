@@ -1,0 +1,51 @@
+.department-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.department-actions__trigger {
+  width: 32px !important;
+  height: 32px !important;
+  color: #64748b !important;
+  border-radius: 7px !important;
+}
+
+.department-actions__trigger:hover {
+  color: #2563eb !important;
+  background: #eff6ff !important;
+}
+
+.department-actions__menu {
+  min-width: 190px !important;
+  padding: 5px !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1) !important;
+}
+
+.department-actions__menu-item {
+  min-height: 38px !important;
+  gap: 8px;
+  border-radius: 6px !important;
+  color: #334155 !important;
+  font-size: 12px !important;
+}
+
+.department-actions__menu-icon {
+  min-width: 28px !important;
+  color: #64748b !important;
+}
+
+.department-actions__menu-icon svg {
+  font-size: 17px;
+}
+
+.department-actions__menu-item--danger,
+.department-actions__menu-item--danger .department-actions__menu-icon {
+  color: #dc2626 !important;
+}
+
+.department-actions__menu-item--danger:hover {
+  background: #fef2f2 !important;
+}

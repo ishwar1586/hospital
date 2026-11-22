@@ -1,0 +1,55 @@
+.amount-summary-card{
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    height:100%;
+}
+
+.amount-summary-card h3{
+    margin:0 0 20px;
+    font-size: 14px;
+    color:#0f172a;
+}
+
+.summary-row{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:4px;
+    
+
+    color:#475569;
+}
+
+.summary-row ,span ,strong{
+font-size: 12px !important;
+}
+
+.grand-total{
+    margin-top:10px;
+
+    padding-top:10px;
+    font-size: 13px;
+
+    border-top:1px solid #e2e8f0;
+}
+
+.grand-total span{
+    color:#2563eb;
+
+    font-weight:600;
+}
+
+.grand-total h2{
+    margin:8px 0 0;
+
+    color:#2563eb;
+}

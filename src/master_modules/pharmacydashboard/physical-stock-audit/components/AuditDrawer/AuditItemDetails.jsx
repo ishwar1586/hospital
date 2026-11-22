@@ -1,0 +1,2 @@
+import React from "react";
+export default function AuditItemDetails({item={}}){return <section className="audit-item-details"><h4>{item.name||item.itemName||"Item details"}</h4><dl><dt>SKU</dt><dd>{item.sku||item.itemCode||"—"}</dd><dt>System quantity</dt><dd>{item.systemQty??item.systemQuantity??"—"}</dd><dt>Counted quantity</dt><dd>{item.countedQty??item.physicalQuantity??"—"}</dd><dt>Variance</dt><dd>{item.variance??"—"}</dd></dl></section>}

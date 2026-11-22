@@ -1,0 +1,672 @@
+.billing-table {
+  width: 100%;
+  margin-top: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Only table area scrolls */
+.billing-table__scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.billing-table__scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.billing-table__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.billing-table__scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.billing-table__table {
+  width: 100%;
+  min-width: 1150px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: #ffffff;
+}
+
+/* Header */
+
+.billing-table__head {
+  background: #f8fafc;
+}
+
+.billing-table__th {
+  height: 42px;
+  padding: 0 12px;
+  border-bottom: 1px solid #e2e8f0;
+
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #475569;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+/* Body */
+
+.billing-table__body {
+  background: #ffffff;
+}
+
+.billing-table__row {
+  height: 54px;
+  transition: background-color 0.15s ease;
+}
+
+.billing-table__row:hover {
+  background: #f8fbff;
+}
+
+.billing-table__td {
+  height: 54px;
+  padding: 0 12px;
+  border-bottom: 1px solid #edf1f6;
+
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #334155;
+
+  white-space: nowrap;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.billing-table__row:last-child
+  .billing-table__td {
+  border-bottom: none;
+}
+
+/* Bill number */
+
+.billing-table__td:first-child {
+  color: #155eef;
+  font-weight: 600;
+}
+
+/* Empty */
+
+.billing-table__empty {
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .billing-table {
+    margin-top: 9px;
+  }
+
+  .billing-table__th {
+    height: 40px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .billing-table__td {
+    height: 52px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+/* ================================
+   Patient Cell
+================================ */
+
+.billing-patient-cell {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1px;
+}
+
+.billing-patient-cell__name {
+  max-width: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #172554;
+}
+
+.billing-patient-cell__uhid {
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 500;
+  color: #155eef;
+}
+
+.billing-patient-cell__meta {
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 400;
+  color: #94a3b8;
+}
+
+/* ================================
+   Action Placeholder
+================================ */
+
+.billing-table__action-placeholder {
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  background: transparent;
+  color: #64748b;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.billing-table__action-placeholder:hover {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #155eef;
+}
+
+.billing-table__action-placeholder:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(21, 94, 239, 0.12);
+}
+
+
+
+/* ================================
+   Department Cell
+================================ */
+
+.billing-department-cell {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.billing-department-cell__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 23px;
+  padding: 0 8px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+/* OPD */
+
+.billing-department-cell__badge--opd {
+  color: #155eef;
+  background: #eff6ff;
+  border-color: #dbeafe;
+}
+
+/* IPD */
+
+.billing-department-cell__badge--ipd {
+  color: #7c3aed;
+  background: #f5f3ff;
+  border-color: #e9d5ff;
+}
+
+/* Pharmacy */
+
+.billing-department-cell__badge--pharmacy {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: #d1fae5;
+}
+
+/* Laboratory */
+
+.billing-department-cell__badge--laboratory {
+  color: #0369a1;
+  background: #f0f9ff;
+  border-color: #bae6fd;
+}
+
+/* Radiology */
+
+.billing-department-cell__badge--radiology {
+  color: #c2410c;
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+/* Operation Theatre */
+
+.billing-department-cell__badge--operation-theatre {
+  color: #be123c;
+  background: #fff1f2;
+  border-color: #fecdd3;
+}
+
+/* Other / fallback */
+
+.billing-department-cell__badge--other {
+  color: #475569;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+
+/* ================================
+   Amount Cell
+================================ */
+
+.billing-amount-cell {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+/* Total Amount */
+
+.billing-amount-cell--total {
+  color: #172554;
+  font-weight: 600;
+}
+
+/* Paid Amount */
+
+.billing-amount-cell--paid {
+  color: #047857;
+  font-weight: 600;
+}
+
+/* Remaining Amount */
+
+.billing-amount-cell--remaining {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Remaining = Zero */
+
+.billing-amount-cell--zero {
+  color: #64748b;
+  font-weight: 500;
+}
+
+
+/* =================================
+   Remaining Amount Cell
+================================= */
+
+.billing-remaining-cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1px;
+  min-width: 0;
+}
+
+.billing-remaining-cell__amount {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.billing-remaining-cell__label {
+  font-size: 8px;
+  line-height: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Outstanding */
+
+.billing-remaining-cell--outstanding
+  .billing-remaining-cell__amount {
+  color: #dc2626;
+}
+
+.billing-remaining-cell--outstanding
+  .billing-remaining-cell__label {
+  color: #ef4444;
+}
+
+/* Cleared */
+
+.billing-remaining-cell--cleared
+  .billing-remaining-cell__amount {
+  color: #64748b;
+}
+
+.billing-remaining-cell--cleared
+  .billing-remaining-cell__label {
+  color: #0b9b6e;
+}
+
+
+/* =================================
+   Payment Status
+================================= */
+
+.billing-payment-status {
+  min-height: 23px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 0 8px;
+
+  border: 1px solid transparent;
+  border-radius: 20px;
+
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.billing-payment-status__dot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+
+  border-radius: 50%;
+}
+
+.billing-payment-status__label {
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 600;
+}
+
+/* Paid */
+
+.billing-payment-status--paid {
+  color: #047857;
+  background: #ecfdf5;
+  border-color: #d1fae5;
+}
+
+.billing-payment-status--paid
+  .billing-payment-status__dot {
+  background: #10b981;
+}
+
+/* Partial */
+
+.billing-payment-status--partial {
+  color: #b45309;
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+
+.billing-payment-status--partial
+  .billing-payment-status__dot {
+  background: #f59e0b;
+}
+
+/* Pending */
+
+.billing-payment-status--pending {
+  color: #dc2626;
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.billing-payment-status--pending
+  .billing-payment-status__dot {
+  background: #ef4444;
+}
+
+/* Cancelled */
+
+.billing-payment-status--cancelled {
+  color: #64748b;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.billing-payment-status--cancelled
+  .billing-payment-status__dot {
+  background: #94a3b8;
+}
+
+/* Refunded */
+
+.billing-payment-status--refunded {
+  color: #7c3aed;
+  background: #f5f3ff;
+  border-color: #e9d5ff;
+}
+
+.billing-payment-status--refunded
+  .billing-payment-status__dot {
+  background: #8b5cf6;
+}
+
+/* Default */
+
+.billing-payment-status--default {
+  color: #475569;
+  background: #f8fafc;
+  border-color: #e2e8f0;
+}
+
+.billing-payment-status--default
+  .billing-payment-status__dot {
+  background: #94a3b8;
+}
+
+
+/* =================================
+   Billing Action Menu
+================================= */
+
+.billing-action-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Trigger */
+
+.billing-action-menu__trigger {
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  background: transparent;
+  color: #64748b;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.billing-action-menu__trigger svg {
+  width: 19px;
+  height: 19px;
+}
+
+.billing-action-menu__trigger:hover {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #155eef;
+}
+
+.billing-action-menu__trigger:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px rgba(21, 94, 239, 0.12);
+}
+
+/* Invisible backdrop */
+
+.billing-action-menu__backdrop {
+  position: fixed;
+  inset: 0;
+
+  z-index: 999;
+
+  padding: 0;
+  border: none;
+
+  background: transparent;
+
+  cursor: default;
+}
+
+/* Dropdown */
+
+.billing-action-menu__dropdown {
+  position: absolute;
+  top: calc(100% + 5px);
+  right: 0;
+
+  z-index: 1000;
+
+  width: 175px;
+  padding: 5px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.12),
+    0 2px 6px rgba(15, 23, 42, 0.05);
+
+  box-sizing: border-box;
+}
+
+/* Menu item */
+
+.billing-action-menu__item {
+  width: 100%;
+  min-height: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0 9px;
+
+  border: none;
+  border-radius: 4px;
+
+  background: transparent;
+  color: #334155;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.billing-action-menu__item:hover {
+  background: #f5f8ff;
+  color: #155eef;
+}
+
+.billing-action-menu__item:focus-visible {
+  outline: none;
+  background: #f5f8ff;
+  color: #155eef;
+}
+
+.billing-action-menu__item-icon {
+  width: 16px !important;
+  height: 16px !important;
+
+  flex: 0 0 16px;
+
+  color: #64748b;
+}
+
+.billing-action-menu__item:hover
+  .billing-action-menu__item-icon {
+  color: #155eef;
+}
+
+.billing-action-menu__item-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+

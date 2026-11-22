@@ -1,0 +1,159 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.prescription-table-wrapper {
+
+    width: 100%;
+    padding: 20px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E2E8F0;
+
+    /* border-radius: 16px; */
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+/* ===========================================================
+HEADER
+=========================================================== */
+
+.prescription-table-header {
+
+    display: grid;
+
+    grid-template-columns:
+        3.5fr
+        0.8fr
+        0.9fr
+        0.8fr
+        0.7fr
+        0.8fr
+        0.8fr
+        1fr
+        1.2fr;
+
+    gap: 16px;
+
+    align-items: center;
+
+    padding: 18px 24px;
+
+    background: #F8FAFC;
+
+    border-bottom: 1px solid #E2E8F0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 5;
+
+}
+
+.prescription-table-header div {
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #475569;
+
+}
+
+.col-medicine {
+
+    padding-left: 4px;
+
+}
+
+.col-action {
+
+    text-align: center;
+
+}
+
+/* ===========================================================
+BODY
+=========================================================== */
+
+.prescription-table-body {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.prescription-table-body>.prescription-row:nth-child(even) {
+
+    background: #FCFCFD;
+
+}
+
+/* ===========================================================
+NO DATA
+=========================================================== */
+
+.prescription-no-data {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    color: #64748B;
+
+    font-size: 12px !important;
+
+}
+
+/* ===========================================================
+PAGINATION
+=========================================================== */
+
+.prescription-pagination {
+
+    border-top: 1px solid #E2E8F0;
+
+    background: #FFFFFF;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media (max-width:1400px) {
+
+    .prescription-table-wrapper {
+
+        overflow-x: auto;
+
+    }
+
+    .prescription-table-header,
+
+    .prescription-row {
+
+        min-width: 1250px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .prescription-table-header {
+
+        padding: 16px;
+
+    }
+
+}

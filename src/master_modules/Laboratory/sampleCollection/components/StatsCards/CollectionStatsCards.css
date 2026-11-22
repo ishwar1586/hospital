@@ -1,0 +1,275 @@
+/* =========================================
+   STATS SECTION
+========================================= */
+
+.collection-stats {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.collection-stats__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 14px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.collection-stat-card {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    min-height: 84px;
+
+    padding: 13px 14px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.collection-stat-card__icon {
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+}
+
+
+.collection-stat-card__icon svg {
+    width: 23px;
+
+    height: 23px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.collection-stat-card__content {
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.collection-stat-card__content h3 {
+    margin: 0 0 3px;
+
+    color: #111827;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+.collection-stat-card__value {
+    margin-bottom: 3px;
+
+    color: #111827;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+
+.collection-stat-card__footer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    min-width: 0;
+}
+
+
+.collection-stat-card__subtitle {
+    overflow: hidden;
+
+    color: #6b7280;
+
+    font-size: 8px;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TREND
+========================================= */
+
+.collection-stat-card__trend {
+    flex-shrink: 0;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+.collection-stat-card__trend--up {
+    color: #16a34a;
+}
+
+
+.collection-stat-card__trend--down {
+    color: #dc2626;
+}
+
+
+/* =========================================
+   BLUE
+========================================= */
+
+.collection-stat-card--blue {
+    border-color: #dbeafe;
+}
+
+
+.collection-stat-card--blue
+.collection-stat-card__icon {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   GREEN
+========================================= */
+
+.collection-stat-card--green {
+    border-color: #d1fae5;
+}
+
+
+.collection-stat-card--green
+.collection-stat-card__icon {
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+/* =========================================
+   ORANGE
+========================================= */
+
+.collection-stat-card--orange {
+    border-color: #fed7aa;
+}
+
+
+.collection-stat-card--orange
+.collection-stat-card__icon {
+    background: #fff7ed;
+
+    color: #f97316;
+}
+
+
+/* =========================================
+   PURPLE
+========================================= */
+
+.collection-stat-card--purple {
+    border-color: #e9d5ff;
+}
+
+
+.collection-stat-card--purple
+.collection-stat-card__icon {
+    background: #faf5ff;
+
+    color: #9333ea;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .collection-stats__grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .collection-stats__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .collection-stats__grid {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,174 @@
+.bill-drawer {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-drawer-header {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-drawer-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.bill-drawer-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.bill-drawer-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.drawer-section {
+  margin-bottom: 28px;
+}
+
+.drawer-section h3 {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-grid label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.info-grid span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.billing-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.summary-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.summary-card label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.summary-card h4 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.charges-table {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.charge-row {
+  padding: 14px 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.charge-row:last-child {
+  border-bottom: none;
+}
+
+.drawer-status {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.drawer-status.paid {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.drawer-status.partial {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.drawer-status.pending {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.bill-drawer-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.drawer-btn {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  height: 46px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.drawer-btn.print {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.drawer-btn.payment {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.drawer-btn.generate {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+
+  .bill-drawer {
+    width: 100vw;
+  }
+
+  .info-grid,
+  .billing-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bill-drawer-footer {
+    flex-direction: column;
+  }
+
+}

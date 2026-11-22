@@ -1,0 +1,131 @@
+/* =========================================================
+   DOCTOR DETAILS TABS
+   Namespace: doctor-details-tabs
+========================================================= */
+
+.doctor-details-tabs {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5eaf0;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TAB LIST
+========================================================= */
+
+.doctor-details-tabs__list {
+    width: 100%;
+
+    display: flex;
+    align-items: stretch;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TAB
+========================================================= */
+
+.doctor-details-tabs__tab {
+    position: relative;
+
+    flex: 1 1 0;
+
+    min-width: 0;
+    height: 31px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 7px;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #475569;
+
+    font-family: inherit;
+    font-size: 8px;
+    line-height: 12px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.doctor-details-tabs__tab:hover {
+    color: #2563eb;
+
+    background: #f8fbff;
+}
+
+/* =========================================================
+   ACTIVE TAB
+========================================================= */
+
+.doctor-details-tabs__tab--active {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+.doctor-details-tabs__tab--active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    right: 8px;
+    bottom: -1px;
+
+    height: 2px;
+
+    background: #2563eb;
+
+    border-radius: 2px 2px 0 0;
+}
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.doctor-details-tabs__tab:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: -2px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 480px) {
+    .doctor-details-tabs__tab {
+        padding-left: 5px;
+        padding-right: 5px;
+
+        font-size: 7.5px;
+    }
+
+    .doctor-details-tabs__tab--active::after {
+        left: 6px;
+        right: 6px;
+    }
+}

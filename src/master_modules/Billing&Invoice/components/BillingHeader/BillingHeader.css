@@ -1,0 +1,267 @@
+/* =========================================================
+   BILLING HEADER
+   ========================================================= */
+
+.billing-header {
+  width: 100%;
+  min-height: 52px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.billing-header__content {
+  min-width: 0;
+  flex: 1;
+}
+
+.billing-header__title {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+
+  color: #172554;
+
+  letter-spacing: -0.35px;
+}
+
+.billing-header__description {
+  margin: 1px 0 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: #64748b;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   ACTION AREA
+   ========================================================= */
+
+.billing-header__actions {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* =========================================================
+   COMMON ACTION BUTTON
+   ========================================================= */
+
+.billing-header__action {
+  height: 34px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 11px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.12s ease;
+
+  box-sizing: border-box;
+}
+
+.billing-header__action:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   ACTION ICON
+   ========================================================= */
+
+.billing-header__action-icon {
+  width: 16px !important;
+  height: 16px !important;
+
+  flex-shrink: 0;
+}
+
+.billing-header__action-end-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 1px;
+}
+
+.billing-header__action-end-icon
+.billing-header__action-icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.billing-header__action--secondary {
+  color: #155eef;
+
+  background: #ffffff;
+
+  border-color: #d7e2f2;
+}
+
+.billing-header__action--secondary:hover {
+  background: #f5f8ff;
+
+  border-color: #b8caf0;
+
+  color: #0f4dcc;
+}
+
+.billing-header__action--secondary:focus-visible {
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.billing-header__action--primary {
+  color: #ffffff;
+
+  background: #155eef;
+
+  border-color: #155eef;
+}
+
+.billing-header__action--primary:hover {
+  background: #0f4dcc;
+
+  border-color: #0f4dcc;
+
+  box-shadow:
+    0 3px 8px rgba(21, 94, 239, 0.18);
+}
+
+.billing-header__action--primary:focus-visible {
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(21, 94, 239, 0.18),
+    0 3px 8px rgba(21, 94, 239, 0.14);
+}
+
+
+/* =========================================================
+   DROPDOWN BUTTON
+   ========================================================= */
+
+.billing-header__action--dropdown {
+  padding-left: 10px;
+  padding-right: 8px;
+
+  gap: 7px;
+}
+
+.billing-header__action--dropdown
+.billing-header__action-icon {
+  width: 17px !important;
+  height: 17px !important;
+}
+
+.billing-header__action--dropdown
+.billing-header__action-end-icon {
+  margin-left: 2px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .billing-header {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .billing-header__actions {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .billing-header__title {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .billing-header__description {
+    white-space: normal;
+
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .billing-header__actions {
+    width: 100%;
+  }
+
+  .billing-header__action {
+    flex: 1;
+
+    min-width: 110px;
+  }
+
+  .billing-header__action--dropdown {
+    flex: 1.4;
+  }
+}

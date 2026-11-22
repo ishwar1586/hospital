@@ -1,0 +1,139 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.cash-payment{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 16px rgba(15,23,42,.05);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.cash-payment-header{
+
+    padding:18px 20px;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.cash-payment-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   Body
+========================================================== */
+
+.cash-payment-body{
+
+    padding:20px;
+
+}
+
+.cash-label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.cash-input{
+
+    width:100%;
+
+    height:50px;
+
+    padding:0 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+.cash-input:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+/* ==========================================================
+   Quick Amount
+========================================================== */
+
+.quick-amounts{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+
+    margin-top:18px;
+
+}
+
+.quick-amount-btn{
+
+    height:46px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.quick-amount-btn:hover{
+
+    background:#DBEAFE;
+
+}

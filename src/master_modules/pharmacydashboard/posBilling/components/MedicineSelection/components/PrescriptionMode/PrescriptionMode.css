@@ -1,0 +1,171 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.prescription-mode{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    width:100%;
+
+    min-width:0;
+
+}
+
+/* ===========================================================
+CHILD COMPONENTS
+=========================================================== */
+
+.prescription-mode > *{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+PRESCRIPTION BANNER
+=========================================================== */
+
+.prescription-mode .prescription-banner{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+PRESCRIPTION PROGRESS
+=========================================================== */
+
+.prescription-mode .prescription-progress{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+MEDICINE TOOLBAR
+=========================================================== */
+
+.prescription-mode .medicine-toolbar{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+MEDICINE CATALOG
+=========================================================== */
+
+.prescription-mode .medicine-catalog{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+EMPTY STATE
+=========================================================== */
+
+.medicine-selection-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    min-height:420px;
+
+    padding:48px;
+
+    border:1px dashed #CBD5E1;
+
+    border-radius:20px;
+
+    background:#FFFFFF;
+
+}
+
+.medicine-selection-empty h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.medicine-selection-empty p{
+
+    max-width:520px;
+
+    margin:0;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .prescription-mode{
+
+        gap:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .prescription-mode{
+
+        gap:18px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .prescription-mode{
+
+        gap:16px;
+
+    }
+
+    .medicine-selection-empty{
+
+        min-height:320px;
+
+        padding:28px;
+
+    }
+
+    .medicine-selection-empty h2{
+
+        font-size:24px;
+
+    }
+
+}

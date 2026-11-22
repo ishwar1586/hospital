@@ -1,0 +1,8 @@
+.hospital-footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 20px;color:#64748b;font-size:13px;border-top:1px solid #e2e8f0;background:#fff}
+.hospital-loader{display:flex;align-items:center;justify-content:center;gap:12px;min-height:120px;color:#475569;font-weight:600}
+.hospital-loader--fullscreen{min-height:60vh}
+.hospital-loader__spinner{width:22px;height:22px;border:3px solid #dbeafe;border-top-color:#2563eb;border-radius:50%;animation:hospital-spin .8s linear infinite}
+@keyframes hospital-spin{to{transform:rotate(360deg)}}
+.table-loading-state,.table-empty-state,.table-error-state{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:130px;padding:24px;text-align:center;color:#64748b}
+.table-empty-state strong,.table-error-state strong{color:#334155}
+.table-error-state button{border:0;border-radius:8px;padding:8px 14px;background:#2563eb;color:#fff;cursor:pointer}

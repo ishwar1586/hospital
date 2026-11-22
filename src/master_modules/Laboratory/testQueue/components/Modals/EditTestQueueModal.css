@@ -1,0 +1,642 @@
+/* =========================================
+   EDIT TEST QUEUE MODAL
+========================================= */
+
+.edit-test-queue-dialog
+    .MuiDialog-paper {
+
+    width: 100%;
+
+    max-width: 680px;
+
+    margin: 16px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 45px
+        rgba(15, 23, 42, 0.14);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MODAL CONTENT
+========================================= */
+
+.edit-test-queue-modal {
+    padding: 0 !important;
+
+    color: #334155;
+
+    font-family: inherit;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.edit-test-queue-modal__header {
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.edit-test-queue-modal__header-left {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.edit-test-queue-modal__icon {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.edit-test-queue-modal__icon svg {
+    width: 20px;
+
+    height: 20px;
+}
+
+
+.edit-test-queue-modal__header-left h2 {
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.edit-test-queue-modal__header-left p {
+    margin: 3px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.edit-test-queue-modal__close {
+    width: 32px !important;
+
+    height: 32px !important;
+
+    flex-shrink: 0;
+
+    color: #64748b !important;
+
+    border-radius: 6px !important;
+}
+
+
+.edit-test-queue-modal__close:hover {
+    background: #f8fafc !important;
+
+    color: #334155 !important;
+}
+
+
+.edit-test-queue-modal__close svg {
+    width: 18px;
+
+    height: 18px;
+}
+
+
+/* =========================================
+   PATIENT SUMMARY
+========================================= */
+
+.edit-test-queue-modal__patient {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 10px;
+
+    margin: 14px 18px 0;
+
+    padding: 11px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.edit-test-queue-modal__patient > div {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.edit-test-queue-modal__patient span {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-transform: uppercase;
+}
+
+
+.edit-test-queue-modal__patient strong {
+    max-width: 100%;
+
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.edit-test-queue-modal__body {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 13px 16px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.edit-test-queue-modal__field {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.edit-test-queue-modal__field label {
+    color: #475569;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   INPUT / SELECT
+========================================= */
+
+.edit-test-queue-modal__field input,
+.edit-test-queue-modal__field select {
+
+    width: 100%;
+
+    height: 34px;
+
+    padding: 0 10px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        background-color 0.18s ease;
+}
+
+
+.edit-test-queue-modal__field input::placeholder {
+    color: #b0bac7;
+}
+
+
+.edit-test-queue-modal__field input:hover,
+.edit-test-queue-modal__field select:hover {
+    border-color: #cbd5e1;
+}
+
+
+.edit-test-queue-modal__field input:focus,
+.edit-test-queue-modal__field select:focus {
+
+    border-color: #60a5fa;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.edit-test-queue-modal__field select {
+
+    appearance: none;
+
+    padding-right: 30px;
+
+    background-image:
+        linear-gradient(
+            45deg,
+            transparent 50%,
+            #64748b 50%
+        ),
+        linear-gradient(
+            135deg,
+            #64748b 50%,
+            transparent 50%
+        );
+
+    background-position:
+        calc(100% - 12px) 14px,
+        calc(100% - 8px) 14px;
+
+    background-size:
+        4px 4px,
+        4px 4px;
+
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   DISABLED INPUTS
+========================================= */
+
+.edit-test-queue-modal__field input:disabled,
+.edit-test-queue-modal__field select:disabled {
+
+    background: #f8fafc;
+
+    color: #94a3b8;
+
+    cursor: not-allowed;
+
+    opacity: 0.8;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.edit-test-queue-modal__footer {
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border-top: 1px solid #eef2f7;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.edit-test-queue-modal__cancel {
+    min-width: 72px;
+
+    height: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 12px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+.edit-test-queue-modal__cancel:hover:not(:disabled) {
+
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.edit-test-queue-modal__save {
+    min-width: 105px;
+
+    height: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 12px;
+
+    border: 1px solid #2563eb;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        opacity 0.18s ease;
+}
+
+
+.edit-test-queue-modal__save:hover:not(:disabled) {
+
+    border-color: #1d4ed8;
+
+    background: #1d4ed8;
+}
+
+
+.edit-test-queue-modal__save svg {
+
+    width: 15px;
+
+    height: 15px;
+}
+
+
+/* =========================================
+   DISABLED BUTTONS
+========================================= */
+
+.edit-test-queue-modal__cancel:disabled,
+.edit-test-queue-modal__save:disabled {
+
+    opacity: 0.55;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.edit-test-queue-modal__cancel:focus-visible,
+.edit-test-queue-modal__save:focus-visible {
+
+    outline: 2px solid #bfdbfe;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .edit-test-queue-dialog
+        .MuiDialog-paper {
+
+        max-width:
+            calc(100% - 20px);
+
+        margin: 10px;
+
+        border-radius: 8px;
+    }
+
+
+    .edit-test-queue-modal__body {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .edit-test-queue-modal__patient {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .edit-test-queue-modal__header {
+
+        padding: 12px;
+
+    }
+
+
+    .edit-test-queue-modal__header-left h2 {
+
+        font-size: 13px;
+
+    }
+
+
+    .edit-test-queue-modal__header-left p {
+
+        font-size: 8px;
+
+    }
+
+
+    .edit-test-queue-modal__patient {
+
+        grid-template-columns: 1fr;
+
+        margin:
+            12px 12px 0;
+
+        padding: 10px;
+
+    }
+
+
+    .edit-test-queue-modal__body {
+
+        padding:
+            14px 12px;
+
+    }
+
+
+    .edit-test-queue-modal__footer {
+
+        padding:
+            10px 12px;
+
+    }
+
+}

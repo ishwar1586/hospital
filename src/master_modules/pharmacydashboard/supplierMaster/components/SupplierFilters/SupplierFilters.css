@@ -1,0 +1,53 @@
+.supplier-filters{
+    display:flex;
+    /* flex-wrap:wrap; */
+    gap:12px;
+
+    padding:16px;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:12px;
+}
+
+.supplier-filters input,
+.supplier-filters select{
+    height:42px;
+
+    min-width:220px;
+
+    padding:0 12px;
+
+    border:1px solid #cbd5e1;
+
+    border-radius:8px;
+
+    outline:none;
+
+    transition:.2s ease;
+}
+
+.supplier-filters input:focus,
+.supplier-filters select:focus{
+    border-color:#4f46e5;
+}
+
+.reset-btn{
+    height:42px;
+
+    padding:0 20px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#ef4444;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    cursor:pointer;
+}

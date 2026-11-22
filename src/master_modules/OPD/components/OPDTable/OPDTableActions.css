@@ -1,0 +1,32 @@
+
+.opd-table-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opd-table-actions__trigger {
+  color: #64748b !important;
+  border-radius: 7px !important;
+}
+
+.opd-table-actions__trigger:hover {
+  color: #1d4ed8 !important;
+  background: #eff6ff !important;
+}
+
+.opd-table-actions__menu {
+  min-width: 190px;
+  border: 1px solid #e8edf4;
+  border-radius: 9px !important;
+}
+
+.opd-table-actions__item {
+  min-height: 38px !important;
+  color: #334155 !important;
+  font-size: 12px !important;
+}
+
+.opd-table-actions__item--cancel {
+  color: #b91c1c !important;
+}

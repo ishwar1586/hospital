@@ -1,0 +1,304 @@
+/* ============================================================
+   BED CARD
+   ============================================================ */
+
+.bed-view-bed-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 112px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 12px;
+
+  background: #ffffff;
+  border: 1px solid #dbe5f0;
+  border-radius: 7px;
+
+  box-sizing: border-box;
+
+  color: #0f172a;
+  font-family: inherit;
+
+  text-align: left;
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* ============================================================
+   HOVER / FOCUS
+   ============================================================ */
+
+.bed-view-bed-card:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.07);
+  transform: translateY(-1px);
+}
+
+
+.bed-view-bed-card:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   OCCUPIED CARD
+   ============================================================ */
+
+.bed-view-bed-card--occupied {
+  background: #fffafa;
+  border-color: #fecaca;
+}
+
+
+.bed-view-bed-card--occupied:hover {
+  border-color: #fca5a5;
+}
+
+
+/* ============================================================
+   TOP ROW
+   ============================================================ */
+
+.bed-view-bed-card__top {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 8px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   BED IDENTITY
+   ============================================================ */
+
+.bed-view-bed-card__identity {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* ============================================================
+   BED ICON
+   ============================================================ */
+
+.bed-view-bed-card__icon {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+}
+
+
+.bed-view-bed-card__icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+
+/* ============================================================
+   BED NUMBER
+   ============================================================ */
+
+.bed-view-bed-card__number {
+  min-width: 0;
+
+  color: #0f172a;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ============================================================
+   PATIENT INFORMATION
+   ============================================================ */
+
+.bed-view-bed-card__patient {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin-top: 10px;
+  padding-top: 9px;
+
+  border-top: 1px solid #f1f5f9;
+
+  box-sizing: border-box;
+}
+
+
+.bed-view-bed-card__patient-row {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #64748b;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+
+.bed-view-bed-card__patient-row svg {
+  width: 15px;
+  height: 15px;
+
+  flex: 0 0 15px;
+
+  color: #94a3b8;
+}
+
+
+.bed-view-bed-card__patient-row span {
+  min-width: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.bed-view-bed-card__patient-name {
+  color: #334155 !important;
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   NON-OCCUPIED STATE
+   ============================================================ */
+
+.bed-view-bed-card__state {
+  margin-top: auto;
+  padding-top: 12px;
+
+  color: #64748b;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+
+.bed-view-bed-card__state span {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+/* ============================================================
+   STATUS BADGE ALIGNMENT
+   ============================================================ */
+
+.bed-view-bed-card__top
+  .bed-view-bed-status-badge {
+  flex: 0 0 auto;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .bed-view-bed-card {
+    min-height: 108px;
+    padding: 11px;
+  }
+
+  .bed-view-bed-card__number {
+    font-size: 12px;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .bed-view-bed-card {
+    min-height: 104px;
+    padding: 10px;
+  }
+
+  .bed-view-bed-card__icon {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+
+  .bed-view-bed-card__icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .bed-view-bed-card__patient-row {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 420px) {
+  .bed-view-bed-card {
+    min-height: 100px;
+  }
+
+  .bed-view-bed-card__top {
+    gap: 5px;
+  }
+
+  .bed-view-bed-card__identity {
+    gap: 6px;
+  }
+
+  .bed-view-bed-card__number {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,353 @@
+/* =========================================
+   REPORT DISPATCH STATS
+========================================= */
+
+.report-dispatch-stats {
+    width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   STATS GRID
+========================================= */
+
+.report-dispatch-stats__grid {
+    width: 100%;
+
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            6,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.report-dispatch-stat-card {
+    min-width: 0;
+
+    min-height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+.report-dispatch-stat-card:hover {
+    border-color: #cbd5e1;
+
+    box-shadow:
+        0 3px 10px
+        rgba(
+            15,
+            23,
+            42,
+            0.05
+        );
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.report-dispatch-stat-card__icon {
+    width: 34px;
+
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    box-sizing: border-box;
+}
+
+
+.report-dispatch-stat-card__icon svg {
+    width: 18px;
+
+    height: 18px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.report-dispatch-stat-card__content {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.report-dispatch-stat-card__title {
+    width: 100%;
+
+    overflow: hidden;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.report-dispatch-stat-card__value {
+    max-width: 100%;
+
+    overflow: hidden;
+
+    color: #0f172a;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.02em;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.report-dispatch-stat-card__subtitle {
+    width: 100%;
+
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 6.5px;
+
+    font-weight: 500;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   PENDING
+========================================= */
+
+.report-dispatch-stat-card--pending
+.report-dispatch-stat-card__icon {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* =========================================
+   DISPATCHED
+========================================= */
+
+.report-dispatch-stat-card--dispatched
+.report-dispatch-stat-card__icon {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   DELIVERED
+========================================= */
+
+.report-dispatch-stat-card--delivered
+.report-dispatch-stat-card__icon {
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+/* =========================================
+   FAILED
+========================================= */
+
+.report-dispatch-stat-card--failed
+.report-dispatch-stat-card__icon {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.report-dispatch-stat-card--total
+.report-dispatch-stat-card__icon {
+    background: #f5f3ff;
+
+    color: #7c3aed;
+}
+
+
+/* =========================================
+   TAT
+========================================= */
+
+.report-dispatch-stat-card--tat
+.report-dispatch-stat-card__icon {
+    background: #f0fdfa;
+
+    color: #0f766e;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .report-dispatch-stats__grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .report-dispatch-stats__grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+        gap: 8px;
+    }
+
+
+    .report-dispatch-stat-card {
+        min-height: 76px;
+
+        padding: 9px 10px;
+
+        gap: 8px;
+    }
+
+
+    .report-dispatch-stat-card__icon {
+        width: 31px;
+
+        height: 31px;
+    }
+
+
+    .report-dispatch-stat-card__icon svg {
+        width: 16px;
+
+        height: 16px;
+    }
+
+
+    .report-dispatch-stat-card__value {
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .report-dispatch-stats__grid {
+        grid-template-columns:
+            1fr;
+    }
+
+}

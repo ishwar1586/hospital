@@ -1,0 +1,143 @@
+/* =========================================
+   GRID
+========================================= */
+
+.stats-overview-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(150px, 1fr));
+
+  gap: 22px;
+
+  margin-top: 24px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.stats-card {
+  background: #ffffff !important;
+
+  border-radius: 18px;
+
+  padding: 24px 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  transition: all 0.25s ease-in-out;
+
+  box-shadow:
+    0 2px 10px rgba(0,0,0,0.04);
+}
+
+.stats-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.08);
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.stats-icon-box {
+  width: 38px;
+  height: 38px;
+  transition: all 0.25s ease-in-out;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 14px;
+
+  /* font-size: 26px; */
+}
+
+
+.stats-icon-box:hover {
+  transform: translateY(-2px);
+}
+/* =========================================
+   TITLE
+========================================= */
+
+.stats-title {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #94a3b8;
+}
+
+/* =========================================
+   VALUE
+========================================= */
+
+.stats-value {
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #111827;
+
+  line-height: 1;
+}
+
+/* =========================================
+   COLORS
+========================================= */
+
+/* BLUE */
+
+.stats-card.blue .stats-icon-box {
+  background: #e3f2fd;
+  color: #1e88e5;
+}
+
+/* INDIGO */
+
+.stats-card.indigo .stats-icon-box {
+  background: #e8eaf6;
+  color: #5c6bc0;
+}
+
+/* PURPLE */
+
+.stats-card.purple .stats-icon-box {
+  background: #f3e5f5;
+  color: #8e24aa;
+}
+
+/* PINK */
+
+.stats-card.pink .stats-icon-box {
+  background: #fce4ec;
+  color: #e91e63;
+}
+
+/* ORANGE */
+
+.stats-card.orange .stats-icon-box {
+  background: #fff3e0;
+  color: #fb8c00;
+}
+
+/* TEAL */
+
+.stats-card.teal .stats-icon-box {
+  background: #e0f2f1;
+  color: #009688;
+}

@@ -1,0 +1,171 @@
+.bed-drawer {
+  width: 420px;
+
+  height: 100%;
+
+  background: #f8fafc;
+
+  padding: 20px;
+
+  overflow-y: auto;
+}
+
+.bed-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.bed-drawer-title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.bed-drawer-title h2 {
+  margin: 0;
+
+  font-size: 22px;
+
+  color: #0f172a;
+}
+
+.bed-status-card {
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.bed-status-card h3 {
+  margin: 0 0 10px;
+
+  font-size: 24px;
+}
+
+.status-badge {
+  display: inline-block;
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.available {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.occupied {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge.reserved {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.maintenance {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.drawer-section {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+  margin-bottom: 20px;
+}
+
+.drawer-section h4 {
+  margin: 0 0 16px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.info-grid label {
+  display: block;
+
+  font-size: 12px;
+
+  color: #64748b;
+
+  margin-bottom: 5px;
+}
+
+.info-grid span {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.empty-bed-card {
+  background: #ffffff;
+
+  border: 1px dashed #cbd5e1;
+
+  border-radius: 16px;
+
+  padding: 40px 20px;
+
+  text-align: center;
+}
+
+.empty-bed-card svg {
+  font-size: 50px;
+
+  color: #94a3b8;
+}
+
+.empty-bed-card h3 {
+  margin-top: 12px;
+
+  color: #0f172a;
+}
+
+.empty-bed-card p {
+  color: #64748b;
+}
+
+@media (max-width: 768px) {
+
+  .bed-drawer {
+    width: 100vw;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

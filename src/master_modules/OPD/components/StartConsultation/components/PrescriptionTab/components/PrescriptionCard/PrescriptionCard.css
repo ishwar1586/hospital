@@ -1,0 +1,442 @@
+
+.prescription-card-section {
+  width: 100%;
+  margin-top: 18px;
+}
+
+/* Section Header */
+
+.prescription-card-section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.prescription-card-section__title {
+  margin: 0;
+  color: #172b4d;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.prescription-card-section__subtitle {
+  margin: 4px 0 0;
+  color: #8795a9;
+  font-size: 11px;
+}
+
+/* Actions */
+
+.prescription-card-section__actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.prescription-card-section__action {
+  min-height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 11px;
+  border: 1px solid #d5dfec;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #304563;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.prescription-card-section__action svg {
+  font-size: 17px;
+}
+
+.prescription-card-section__action:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.prescription-card-section__print:hover:not(:disabled),
+.prescription-card-section__download:hover:not(:disabled) {
+  background: #eff6ff;
+  border-color: #93b4f8;
+  color: #1d4ed8;
+}
+
+.prescription-card-section__send {
+  border-color: #15803d;
+  background: #15803d;
+  color: #ffffff;
+}
+
+.prescription-card-section__send:hover:not(:disabled) {
+  background: #166534;
+  border-color: #166534;
+}
+
+/* Prescription Document */
+
+.prescription-card {
+  width: 100%;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #dce5f0;
+  border-radius: 9px;
+  color: #253650;
+}
+
+/* Hospital Header */
+
+.prescription-card__hospital-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.prescription-card__hospital-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prescription-card__hospital-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #eaf2ff;
+  color: #2563eb;
+}
+
+.prescription-card__hospital-icon svg {
+  font-size: 27px;
+}
+
+.prescription-card__hospital-brand h2 {
+  margin: 0;
+  color: #172b4d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.prescription-card__hospital-brand p {
+  margin: 3px 0 0;
+  color: #77869b;
+  font-size: 10px;
+}
+
+.prescription-card__document-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.prescription-card__document-label span {
+  padding: 3px 9px;
+  border-radius: 4px;
+  background: #eaf2ff;
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.prescription-card__document-label strong {
+  color: #304563;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* Divider */
+
+.prescription-card__divider {
+  height: 1px;
+  margin: 18px 0;
+  background: #dce5f0;
+}
+
+/* Patient and Doctor Details */
+
+.prescription-card__patient-details,
+.prescription-card__doctor-details {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.prescription-card__doctor-details {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 16px;
+}
+
+.prescription-card__patient-details div,
+.prescription-card__doctor-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.prescription-card__patient-details span,
+.prescription-card__doctor-details span {
+  color: #8795a9;
+  font-size: 10px;
+}
+
+.prescription-card__patient-details strong,
+.prescription-card__doctor-details strong {
+  color: #253650;
+  font-size: 11px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+/* Allergy */
+
+.prescription-card__allergy {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin-top: 17px;
+  padding: 10px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  background: #fff7f7;
+  color: #b42318;
+  font-size: 11px;
+}
+
+/* Medicine Heading */
+
+.prescription-card__rx-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 22px 0 12px;
+  color: #172b4d;
+}
+
+.prescription-card__rx-heading span {
+  color: #2563eb;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.prescription-card__rx-heading strong {
+  font-size: 13px;
+  font-weight: 650;
+}
+
+/* Medicine Table */
+
+.prescription-card__table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.prescription-card__table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.prescription-card__table thead {
+  background: #f0f5fc;
+}
+
+.prescription-card__table th {
+  padding: 10px 9px;
+  border-bottom: 1px solid #dce5f0;
+  color: #304563;
+  font-size: 10px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.prescription-card__table td {
+  padding: 11px 9px;
+  border-bottom: 1px solid #edf1f6;
+  color: #53657d;
+  font-size: 10px;
+  vertical-align: top;
+}
+
+.prescription-card__table td strong {
+  display: block;
+  color: #172b4d;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.prescription-card__table td small {
+  display: block;
+  margin-top: 3px;
+  color: #8795a9;
+  font-size: 9px;
+}
+
+/* Additional Instructions */
+
+.prescription-card__instructions,
+.prescription-card__follow-up {
+  margin-top: 17px;
+  padding: 12px;
+  border: 1px solid #e3eaf3;
+  border-radius: 7px;
+  background: #f8faff;
+}
+
+.prescription-card__instructions h4,
+.prescription-card__follow-up h4 {
+  margin: 0 0 6px;
+  color: #304563;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.prescription-card__instructions p,
+.prescription-card__follow-up p {
+  margin: 0;
+  color: #53657d;
+  font-size: 11px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Signature */
+
+.prescription-card__signature {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 28px;
+}
+
+.prescription-card__signature div {
+  min-width: 155px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding-top: 25px;
+  border-top: 1px solid #aab7c8;
+}
+
+.prescription-card__signature strong {
+  color: #253650;
+  font-size: 11px;
+}
+
+.prescription-card__signature span {
+  color: #8795a9;
+  font-size: 10px;
+}
+
+/* Document Footer */
+
+.prescription-card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #e8edf4;
+  color: #94a1b2;
+  font-size: 9px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .prescription-card-section__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .prescription-card {
+    padding: 16px;
+  }
+
+  .prescription-card__patient-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .prescription-card__doctor-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .prescription-card-section__actions {
+    width: 100%;
+  }
+
+  .prescription-card-section__action {
+    flex: 1;
+    padding: 0 8px;
+  }
+
+  .prescription-card {
+    padding: 12px;
+  }
+
+  .prescription-card__hospital-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .prescription-card__document-label {
+    align-items: flex-start;
+  }
+
+  .prescription-card__patient-details,
+  .prescription-card__doctor-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Print */
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .prescription-card,
+  .prescription-card * {
+    visibility: visible;
+  }
+
+  .prescription-card {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
+  }
+
+  .prescription-card-section__header {
+    display: none;
+  }
+
+  .prescription-card__table-wrapper {
+    overflow: visible;
+  }
+
+  .prescription-card__table {
+    min-width: 0;
+  }
+}

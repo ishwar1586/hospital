@@ -1,0 +1,558 @@
+/* =========================================
+   REPORT DISPATCH TABLE
+========================================= */
+
+.report-dispatch-table {
+    width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.report-dispatch-table__container {
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HORIZONTAL SCROLL
+========================================= */
+
+.report-dispatch-table__scroll {
+    width: 100%;
+
+    max-width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: visible;
+
+    box-sizing: border-box;
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        #cbd5e1
+        transparent;
+}
+
+
+/* =========================================
+   WEBKIT SCROLLBAR
+========================================= */
+
+.report-dispatch-table__scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+
+.report-dispatch-table__scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.report-dispatch-table__scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+
+    background: #cbd5e1;
+}
+
+
+.report-dispatch-table__scroll::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.report-dispatch-table__table {
+    width: 100%;
+
+    min-width: 1080px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    table-layout: auto;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.report-dispatch-table__head {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   HEADER CELL
+========================================= */
+
+.report-dispatch-table__header-cell {
+    height: 38px;
+
+    padding:
+        0 10px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FIRST HEADER CELL
+========================================= */
+
+.report-dispatch-table__header-cell:first-child {
+    padding-left: 14px;
+}
+
+
+/* =========================================
+   LAST HEADER CELL
+========================================= */
+
+.report-dispatch-table__header-cell:last-child {
+    padding-right: 14px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   COLUMN WIDTHS
+========================================= */
+
+.report-dispatch-table__column--report-id {
+    min-width: 105px;
+}
+
+
+.report-dispatch-table__column--uhid {
+    min-width: 105px;
+}
+
+
+.report-dispatch-table__column--patient {
+    min-width: 155px;
+}
+
+
+.report-dispatch-table__column--age-gender {
+    min-width: 90px;
+}
+
+
+.report-dispatch-table__column--report-type {
+    min-width: 135px;
+}
+
+
+.report-dispatch-table__column--department {
+    min-width: 125px;
+}
+
+
+.report-dispatch-table__column--dispatch-mode {
+    min-width: 120px;
+}
+
+
+.report-dispatch-table__column--recipient {
+    min-width: 160px;
+}
+
+
+.report-dispatch-table__column--status {
+    min-width: 110px;
+}
+
+
+.report-dispatch-table__column--verified-on {
+    min-width: 145px;
+}
+
+
+.report-dispatch-table__column--actions {
+    min-width: 70px;
+
+    width: 70px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.report-dispatch-table__body {
+    background: #ffffff;
+}
+
+
+/* =========================================
+   ROW
+========================================= */
+
+.report-dispatch-table-row {
+    background: #ffffff;
+
+    transition:
+        background-color 0.15s ease;
+}
+
+
+/* =========================================
+   ROW HOVER
+========================================= */
+
+.report-dispatch-table-row:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   CELL
+========================================= */
+
+.report-dispatch-table-row__cell {
+    height: 48px;
+
+    padding:
+        0 10px;
+
+    border-bottom:
+        1px solid #eef2f7;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FIRST CELL
+========================================= */
+
+.report-dispatch-table-row__cell:first-child {
+    padding-left: 14px;
+
+    color: #334155;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   LAST CELL
+========================================= */
+
+.report-dispatch-table-row__cell:last-child {
+    padding-right: 14px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CELL CONTENT
+========================================= */
+
+.report-dispatch-table-row__cell-content {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   PATIENT COLUMN
+========================================= */
+
+.report-dispatch-table__column--patient
+.report-dispatch-table-row__cell-content {
+    max-width: 180px;
+
+    color: #1e293b;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   REPORT TYPE
+========================================= */
+
+.report-dispatch-table__column--report-type
+.report-dispatch-table-row__cell-content {
+    max-width: 150px;
+}
+
+
+/* =========================================
+   DEPARTMENT
+========================================= */
+
+.report-dispatch-table__column--department
+.report-dispatch-table-row__cell-content {
+    max-width: 140px;
+}
+
+
+/* =========================================
+   RECIPIENT
+========================================= */
+
+.report-dispatch-table__column--recipient
+.report-dispatch-table-row__cell-content {
+    max-width: 180px;
+}
+
+
+/* =========================================
+   VERIFIED ON
+========================================= */
+
+.report-dispatch-table__column--verified-on
+.report-dispatch-table-row__cell-content {
+    max-width: 150px;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   ACTIONS CELL
+========================================= */
+
+.report-dispatch-table__column--actions {
+    text-align: center;
+}
+
+
+.report-dispatch-table__column--actions
+.report-dispatch-table-row__cell-content {
+    justify-content: center;
+
+    overflow: visible;
+}
+
+
+/* =========================================
+   LAST ROW
+========================================= */
+
+.report-dispatch-table-row:last-child
+.report-dispatch-table-row__cell {
+    border-bottom: 0;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.report-dispatch-table__empty {
+    min-height: 210px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 30px;
+
+    color: #64748b;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.report-dispatch-table__empty-icon {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 4px;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    font-size: 16px;
+}
+
+
+.report-dispatch-table__empty strong {
+    color: #334155;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.report-dispatch-table__empty span {
+    max-width: 300px;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .report-dispatch-table__table {
+        min-width: 1050px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL SCREEN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .report-dispatch-table__container {
+        border-radius: 7px;
+    }
+
+
+    .report-dispatch-table__table {
+        min-width: 1000px;
+    }
+
+
+    .report-dispatch-table__header-cell {
+        height: 36px;
+
+        padding:
+            0 8px;
+
+        font-size: 6px;
+    }
+
+
+    .report-dispatch-table-row__cell {
+        height: 44px;
+
+        padding:
+            0 8px;
+
+        font-size: 7px;
+    }
+
+
+    .report-dispatch-table__header-cell:first-child,
+    .report-dispatch-table-row__cell:first-child {
+        padding-left: 10px;
+    }
+
+
+    .report-dispatch-table__header-cell:last-child,
+    .report-dispatch-table-row__cell:last-child {
+        padding-right: 10px;
+    }
+
+}

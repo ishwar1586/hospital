@@ -1,0 +1,204 @@
+.doctor-schedule-tab {
+    width: 100%;
+    min-width: 0;
+
+    padding: 12px 14px;
+
+    box-sizing: border-box;
+}
+
+
+.doctor-schedule-tab__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.doctor-schedule-tab__title {
+    margin: 0;
+
+    color: #172b4d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.doctor-schedule-tab__subtitle {
+    margin: 3px 0 0;
+
+    color: #8a94a6;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+.doctor-schedule-tab__list {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #edf0f4;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+.doctor-schedule-tab__row {
+    min-height: 32px;
+
+    display: grid;
+    grid-template-columns:
+        72px
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+
+    column-gap: 8px;
+
+    padding: 6px 8px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #f0f2f5;
+}
+
+
+.doctor-schedule-tab__row:last-child {
+    border-bottom: none;
+}
+
+
+.doctor-schedule-tab__row--unavailable {
+    background: #fafbfc;
+}
+
+
+.doctor-schedule-tab__day {
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+.doctor-schedule-tab__timing {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+}
+
+
+.doctor-schedule-tab__time {
+    color: #475467;
+
+    font-size: 7px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+.doctor-schedule-tab__separator {
+    color: #98a2b3;
+
+    font-size: 7px;
+}
+
+
+.doctor-schedule-tab__closed {
+    color: #98a2b3;
+
+    font-size: 7px;
+    font-weight: 500;
+}
+
+
+.doctor-schedule-tab__status {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.doctor-schedule-tab__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+
+    padding: 3px 6px;
+
+    border-radius: 10px;
+
+    font-size: 6px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    box-sizing: border-box;
+}
+
+
+.doctor-schedule-tab__badge--available {
+    background: #eaf8f0;
+    color: #218653;
+}
+
+
+.doctor-schedule-tab__badge--closed {
+    background: #f1f3f5;
+    color: #7d8795;
+}
+
+
+.doctor-schedule-tab__state {
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #8a94a6;
+
+    font-size: 8px;
+    text-align: center;
+}
+
+
+@media (max-width: 500px) {
+
+    .doctor-schedule-tab__row {
+        grid-template-columns:
+            65px
+            minmax(0, 1fr)
+            auto;
+
+        column-gap: 5px;
+
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .doctor-schedule-tab__badge {
+        min-width: 38px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}

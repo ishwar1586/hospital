@@ -1,0 +1,104 @@
+.quick-actions-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  padding: 10px;
+   width:100%;
+  height: 40vh;
+}
+
+.quick-actions-header {
+  margin-bottom: 8px;
+}
+
+.quick-actions-header h3 {
+  margin: 0;
+
+  font-size: 14px;
+
+  color: #0f172a;
+}
+
+.quick-actions-list {
+  display: flex;
+ 
+  flex-direction: column;
+ height: 30vh;
+  overflow-x: auto;
+  gap: 12px;
+}
+
+.quick-action-btn {
+  border: none;
+
+  width: 100%;
+
+  padding: 10px 10px;
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.quick-action-btn:hover {
+  transform: translateY(-2px);
+}
+
+.quick-action-btn svg {
+  font-size: 14px;
+}
+
+/* Nursing Note */
+
+.action-note {
+  background: #eef4ff;
+
+  color: #2563eb;
+}
+
+/* Vitals */
+
+.action-vitals {
+  background: #ecfdf5;
+
+  color: #16a34a;
+}
+
+/* Medication */
+
+.action-medication {
+  background: #f3e8ff;
+
+  color: #9333ea;
+}
+
+/* Patient Care */
+
+.action-care {
+  background: #fff7ed;
+
+  color: #ea580c;
+}
+
+/* Incident */
+
+.action-incident {
+  background: #fef2f2;
+
+  color: #dc2626;
+}

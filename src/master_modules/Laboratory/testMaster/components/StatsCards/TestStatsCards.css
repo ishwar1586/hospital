@@ -1,0 +1,259 @@
+/* =========================================
+   STATS CARDS CONTAINER
+========================================= */
+
+.test-stats-cards {
+    display: grid;
+
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.test-stat-card {
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    min-height: 126px;
+
+    padding: 18px 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.test-stat-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.test-stat-card__content {
+    min-width: 0;
+}
+
+.test-stat-card__title {
+    margin: 0 0 8px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+.test-stat-card__value {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.4px;
+}
+
+.test-stat-card__description {
+    margin: 7px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.test-stat-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    margin-left: 10px;
+
+    border-radius: 9px;
+}
+
+.test-stat-card__icon svg {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   BLUE
+========================================= */
+
+.test-stat-card--blue {
+    border-color: #dbe5ff;
+}
+
+.test-stat-card--blue .test-stat-card__title {
+    color: #2563eb;
+}
+
+.test-stat-card--blue .test-stat-card__icon {
+    color: #2563eb;
+
+    background: #eef4ff;
+}
+
+
+/* =========================================
+   GREEN
+========================================= */
+
+.test-stat-card--green {
+    border-color: #d9eee4;
+}
+
+.test-stat-card--green .test-stat-card__title {
+    color: #16805a;
+}
+
+.test-stat-card--green .test-stat-card__icon {
+    color: #16a36f;
+
+    background: #eaf8f1;
+}
+
+
+/* =========================================
+   ORANGE
+========================================= */
+
+.test-stat-card--orange {
+    border-color: #f3e5d2;
+}
+
+.test-stat-card--orange .test-stat-card__title {
+    color: #c96b0b;
+}
+
+.test-stat-card--orange .test-stat-card__icon {
+    color: #f08a16;
+
+    background: #fff4e5;
+}
+
+
+/* =========================================
+   PURPLE
+========================================= */
+
+.test-stat-card--purple {
+    border-color: #e9ddf6;
+}
+
+.test-stat-card--purple .test-stat-card__title {
+    color: #7c3aed;
+}
+
+.test-stat-card--purple .test-stat-card__icon {
+    color: #8b5cf6;
+
+    background: #f4edff;
+}
+
+
+/* =========================================
+   RED
+========================================= */
+
+.test-stat-card--red {
+    border-color: #f4dddd;
+}
+
+.test-stat-card--red .test-stat-card__title {
+    color: #dc2626;
+}
+
+.test-stat-card--red .test-stat-card__icon {
+    color: #ef4444;
+
+    background: #fff0f0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .test-stats-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .test-stats-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px !important;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .test-stats-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .test-stat-card {
+        min-height: 118px;
+    }
+
+}

@@ -1,0 +1,384 @@
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.processing-table-card {
+    width: 100%;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.processing-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    scrollbar-width: thin;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.processing-table {
+    width: 100%;
+
+    min-width: 1250px;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.processing-table thead {
+    background: #f8fafc;
+}
+
+
+.processing-table th {
+    height: 42px;
+
+    padding: 0 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    color: #64748b;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    white-space: nowrap;
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.processing-table td {
+    height: 50px;
+
+    padding: 0 12px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    color: #374151;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+.processing-table__row {
+    background: #ffffff;
+
+    transition:
+        background-color 0.15s ease;
+}
+
+
+.processing-table__row:hover {
+    background: #f8fafc;
+}
+
+
+.processing-table__row:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.processing-table__empty {
+    height: 180px !important;
+
+    color: #9ca3af !important;
+
+    font-size: 10px !important;
+
+    font-weight: 500 !important;
+
+    text-align: center !important;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================
+   STATUS CHIP
+========================================= */
+
+.processing-status-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    min-height: 23px;
+
+    padding: 0 8px;
+
+    border: 1px solid transparent;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+.processing-status-chip__dot {
+    width: 5px;
+
+    height: 5px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+.processing-status-chip--received {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.processing-status-chip--in-processing {
+    border-color: #c7d2fe;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+}
+
+
+.processing-status-chip--processed {
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+.processing-status-chip--on-hold {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #d97706;
+}
+
+
+.processing-status-chip--rejected {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.processing-status-chip--unknown {
+    border-color: #e5e7eb;
+
+    background: #f9fafb;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   PRIORITY CHIP
+========================================= */
+
+.processing-priority-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 55px;
+
+    min-height: 23px;
+
+    padding: 0 8px;
+
+    border-radius: 5px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+.processing-priority-chip--low {
+    background: #f1f5f9;
+
+    color: #64748b;
+}
+
+
+.processing-priority-chip--normal {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.processing-priority-chip--medium {
+    background: #fffbeb;
+
+    color: #d97706;
+}
+
+
+.processing-priority-chip--high {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+.processing-priority-chip--urgent {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TAT CHIP
+========================================= */
+
+.processing-tat-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 23px;
+
+    padding: 0 8px;
+
+    border-radius: 5px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+.processing-tat-chip--normal {
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+.processing-tat-chip--warning {
+    background: #fffbeb;
+
+    color: #d97706;
+}
+
+
+.processing-tat-chip--critical {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.processing-tat-chip--completed {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.processing-table-wrapper::-webkit-scrollbar {
+    height: 7px;
+}
+
+
+.processing-table-wrapper::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+
+.processing-table-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+
+    background: #cbd5e1;
+}
+
+
+.processing-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

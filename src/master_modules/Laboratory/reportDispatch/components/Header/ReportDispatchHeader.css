@@ -1,0 +1,395 @@
+/* =========================================
+   REPORT DISPATCH HEADER
+========================================= */
+
+.report-dispatch-header {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.report-dispatch-header__content {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.report-dispatch-header__title-group {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.report-dispatch-header__title {
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #0f172a;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.02em;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.report-dispatch-header__subtitle {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.report-dispatch-header__actions {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+}
+
+
+/* =========================================
+   NORMAL ACTION
+========================================= */
+
+.report-dispatch-header__action {
+    min-height: 32px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 10px;
+
+    border: 1px solid #dbe3ec;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.report-dispatch-header__action:hover:not(:disabled) {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+
+    box-shadow:
+        0 1px 3px
+        rgba(
+            15,
+            23,
+            42,
+            0.05
+        );
+}
+
+
+.report-dispatch-header__action:focus-visible {
+    outline: 2px solid #93c5fd;
+
+    outline-offset: 2px;
+}
+
+
+.report-dispatch-header__action > svg {
+    width: 15px;
+
+    height: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   REFRESH BUTTON
+========================================= */
+
+.report-dispatch-header__refresh {
+    min-width: 72px;
+
+    min-height: 32px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 10px;
+
+    border: 1px solid #2563eb;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        opacity 0.15s ease;
+}
+
+
+.report-dispatch-header__refresh:hover:not(:disabled) {
+    border-color: #1d4ed8;
+
+    background: #1d4ed8;
+}
+
+
+.report-dispatch-header__refresh:active:not(:disabled) {
+    border-color: #1e40af;
+
+    background: #1e40af;
+}
+
+
+.report-dispatch-header__refresh:focus-visible {
+    outline: 2px solid #93c5fd;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   REFRESH SPINNER
+========================================= */
+
+.report-dispatch-header__spinner {
+    width: 14px;
+
+    height: 14px;
+
+    flex-shrink: 0;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    border:
+        2px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.35
+        );
+
+    border-top-color:
+        #ffffff;
+
+    border-radius: 50%;
+
+    animation:
+        report-dispatch-header-spinner
+        0.7s linear infinite;
+}
+
+
+/* =========================================
+   SPINNER ANIMATION
+========================================= */
+
+@keyframes report-dispatch-header-spinner {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.report-dispatch-header__action:disabled,
+.report-dispatch-header__refresh:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .report-dispatch-header {
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .report-dispatch-header__subtitle {
+        max-width: 500px;
+
+        white-space: normal;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .report-dispatch-header {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .report-dispatch-header__actions {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .report-dispatch-header__action,
+    .report-dispatch-header__refresh {
+        min-height: 30px;
+
+        padding: 0 8px;
+    }
+
+
+    .report-dispatch-header__action span,
+    .report-dispatch-header__refresh span {
+        font-size: 7px;
+    }
+
+
+    .report-dispatch-header__spinner {
+        width: 13px;
+
+        height: 13px;
+
+        border-width: 2px;
+    }
+
+}

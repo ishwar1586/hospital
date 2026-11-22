@@ -1,0 +1,15 @@
+/* .unit-master{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+} */
+
+.unit-master{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    padding:24px;
+    background:#ffff;
+    width: 100%;
+    height: auto;
+}

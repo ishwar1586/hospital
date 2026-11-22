@@ -1,0 +1,101 @@
+
+/* =========================================
+   ADD DEPARTMENT - MAIN LAYOUT
+========================================= */
+
+.add-department {
+  width: 100%;
+  min-height: 100%;
+  padding: 24px 28px 32px;
+  box-sizing: border-box;
+  background: #f7f9fc;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* =========================================
+   HEADER SECTION
+========================================= */
+
+.add-department__header {
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CONTENT SECTION
+========================================= */
+
+.add-department__content {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* =========================================
+   DEPARTMENT DETAILS CARD
+========================================= */
+
+.add-department__content .department-details {
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.035);
+}
+
+/* =========================================
+   ADD DEPARTMENT FOOTER
+========================================= */
+
+.add-department__footer {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin-top: 2px;
+}
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1024px) {
+  .add-department {
+    padding: 22px 20px 28px;
+    gap: 20px;
+  }
+
+  .add-department__content .department-details {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-department {
+    padding: 18px 16px 24px;
+    gap: 18px;
+  }
+
+  .add-department__content .department-details {
+    padding: 18px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-department {
+    padding: 14px 12px 20px;
+    gap: 16px;
+  }
+
+  .add-department__content .department-details {
+    padding: 15px;
+  }
+}

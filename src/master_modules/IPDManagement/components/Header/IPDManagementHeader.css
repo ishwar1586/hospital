@@ -1,0 +1,336 @@
+/* ============================================================
+   IPD MANAGEMENT HEADER
+   ============================================================ */
+
+.ipd-management-header {
+   width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 10px 10px;
+
+    /* border: 1px solid #e2e8f0; */
+    border-radius: 9px;
+
+    /* background: #ffffff; */
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+}
+
+
+/* ============================================================
+   HEADER CONTENT
+   ============================================================ */
+
+.ipd-management-header__content {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 14px;
+
+    padding: 14px 16px;
+
+    border: 2px solid #e2e8f0;
+    border-radius: 9px;
+
+    /* background: #ffffff; */
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   HEADER INFO
+   ============================================================ */
+
+.ipd-management-header__info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 4px;
+}
+
+
+/* ============================================================
+   TITLE
+   ============================================================ */
+
+.ipd-management-header__title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 22px;
+  line-height: 28px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* ============================================================
+   SUBTITLE
+   ============================================================ */
+
+.ipd-management-header__subtitle {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 18px;
+
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   HEADER ACTIONS
+   ============================================================ */
+
+.ipd-management-header__actions {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   COMMON BUTTON
+   ============================================================ */
+
+.ipd-management-header__action {
+  height: 38px;
+  min-height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  line-height: 18px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.12s ease;
+}
+
+
+/* ============================================================
+   ICON
+   ============================================================ */
+
+.ipd-management-header__action-icon {
+  width: 17px !important;
+  height: 17px !important;
+
+  flex-shrink: 0;
+}
+
+
+/* ============================================================
+   OUTLINED BUTTON
+   ============================================================ */
+
+.ipd-management-header__action--outlined {
+  background: #ffffff;
+
+  border: 1px solid #93c5fd;
+
+  color: #155eef;
+}
+
+
+/* ============================================================
+   OUTLINED HOVER
+   ============================================================ */
+
+.ipd-management-header__action--outlined:hover {
+  background: #eff6ff;
+
+  border-color: #60a5fa;
+
+  color: #155eef;
+}
+
+
+/* ============================================================
+   OUTLINED ACTIVE
+   ============================================================ */
+
+.ipd-management-header__action--outlined:active {
+  background: #dbeafe;
+
+  transform: translateY(1px);
+}
+
+
+/* ============================================================
+   CONTAINED BUTTON
+   ============================================================ */
+
+.ipd-management-header__action--contained {
+  background: #155eef;
+
+  border: 1px solid #155eef;
+
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   CONTAINED HOVER
+   ============================================================ */
+
+.ipd-management-header__action--contained:hover {
+  background: #0d5bdd;
+
+  border-color: #0d5bdd;
+
+  box-shadow:
+    0 3px 7px rgba(21, 94, 239, 0.20);
+}
+
+
+/* ============================================================
+   CONTAINED ACTIVE
+   ============================================================ */
+
+.ipd-management-header__action--contained:active {
+  background: #084fc7;
+
+  border-color: #084fc7;
+
+  transform: translateY(1px);
+}
+
+
+/* ============================================================
+   DISABLED
+   ============================================================ */
+
+.ipd-management-header__action:disabled {
+  opacity: 0.55;
+
+  cursor: not-allowed;
+
+  pointer-events: none;
+
+  box-shadow: none;
+}
+
+
+/* ============================================================
+   FOCUS
+   ============================================================ */
+
+.ipd-management-header__action:focus-visible {
+  outline: 2px solid #93c5fd;
+
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1000px) {
+  .ipd-management-header__content {
+    padding: 14px 16px;
+
+    gap: 18px;
+  }
+
+  .ipd-management-header__action {
+    padding: 0 12px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .ipd-management-header__content {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    padding: 16px;
+  }
+
+  .ipd-management-header__actions {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .ipd-management-header__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .ipd-management-header__subtitle {
+    font-size: 12px;
+  }
+
+  .ipd-management-header__action {
+    height: 36px;
+    min-height: 36px;
+
+    padding: 0 11px;
+
+    font-size: 12px;
+  }
+
+  .ipd-management-header__action-icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}

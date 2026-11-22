@@ -1,0 +1,119 @@
+/* ========================================= */
+
+.adjustment-preview{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+}
+
+/* ========================================= */
+
+.adjustment-preview-header{
+
+    padding:18px 22px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.adjustment-preview-header h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ========================================= */
+
+.adjustment-preview-body{
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ========================================= */
+
+.preview-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:14px;
+
+    border-bottom:1px dashed #E2E8F0;
+
+}
+
+.preview-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.preview-item span{
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+.preview-item strong{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ========================================= */
+
+.stock-in{
+
+    color:#16A34A !important;
+
+}
+
+.stock-out{
+
+    color:#DC2626 !important;
+
+}
+
+.no-change{
+
+    color:#64748B !important;
+
+}

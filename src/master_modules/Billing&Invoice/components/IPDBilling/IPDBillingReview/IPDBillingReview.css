@@ -1,0 +1,497 @@
+
+/* =========================================================
+   IPD BILLING REVIEW — MAIN PAGE
+   ========================================================= */
+
+.ipd-billing-review {
+  --ipd-review-primary: #2563eb;
+  --ipd-review-primary-dark: #1d4ed8;
+  --ipd-review-text: #172033;
+  --ipd-review-muted: #64748b;
+  --ipd-review-border: #e2e8f0;
+  --ipd-review-surface: #ffffff;
+  --ipd-review-background: #f5f7fb;
+  --ipd-review-success: #15803d;
+
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  padding: 24px;
+  background: var(--ipd-review-background);
+  color: var(--ipd-review-text);
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.ipd-billing-review *,
+.ipd-billing-review *::before,
+.ipd-billing-review *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.ipd-billing-review__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.ipd-billing-review__header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.ipd-billing-review__back-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--ipd-review-border);
+  border-radius: 12px;
+  background: var(--ipd-review-surface);
+  color: #334155;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ipd-billing-review__back-icon:hover:not(:disabled) {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: var(--ipd-review-primary);
+  transform: translateX(-2px);
+}
+
+.ipd-billing-review__back-icon:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.ipd-billing-review__back-icon svg {
+  font-size: 21px;
+}
+
+.ipd-billing-review__title {
+  margin: 0 !important;
+  color: var(--ipd-review-text);
+  font-size: 24px !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.45px !important;
+}
+
+.ipd-billing-review__subtitle {
+  margin-top: 5px !important;
+  color: var(--ipd-review-muted);
+  font-size: 13px !important;
+  line-height: 1.6 !important;
+}
+
+.ipd-billing-review__invoice-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 12px 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  background: #eff6ff;
+}
+
+.ipd-billing-review__invoice-badge > svg {
+  color: var(--ipd-review-primary);
+  font-size: 25px;
+}
+
+.ipd-billing-review__badge-label {
+  color: #64748b;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+}
+
+.ipd-billing-review__badge-value {
+  margin-top: 3px !important;
+  color: #1e40af;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   SHARED STEPPER
+   ========================================================= */
+
+.ipd-billing-review__stepper {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 22px;
+  padding: 18px 20px;
+  overflow: hidden;
+  border: 1px solid var(--ipd-review-border);
+  border-radius: 14px;
+  background: var(--ipd-review-surface);
+}
+
+/* =========================================================
+   PATIENT INFORMATION CARD
+   ========================================================= */
+
+.ipd-billing-review__patient-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 22px;
+  padding: 20px;
+  border: 1px solid var(--ipd-review-border);
+  border-radius: 14px;
+  background: var(--ipd-review-surface);
+  box-shadow: 0 2px 8px rgb(15 23 42 / 2%);
+}
+
+.ipd-billing-review__patient-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #eff6ff;
+  color: var(--ipd-review-primary);
+}
+
+.ipd-billing-review__patient-icon svg {
+  font-size: 28px;
+}
+
+.ipd-billing-review__patient-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ipd-billing-review__patient-name {
+  margin-bottom: 9px !important;
+  color: var(--ipd-review-text);
+  font-size: 16px !important;
+  font-weight: 750 !important;
+  overflow-wrap: anywhere;
+}
+
+.ipd-billing-review__patient-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  color: var(--ipd-review-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ipd-billing-review__patient-meta span {
+  overflow-wrap: anywhere;
+}
+
+.ipd-billing-review__room-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding-left: 20px;
+  border-left: 1px solid var(--ipd-review-border);
+}
+
+.ipd-billing-review__room-info > svg {
+  color: var(--ipd-review-primary);
+  font-size: 24px;
+}
+
+.ipd-billing-review__room-label {
+  color: var(--ipd-review-muted);
+  font-size: 11px !important;
+}
+
+.ipd-billing-review__room-value {
+  margin-top: 4px !important;
+  color: var(--ipd-review-text);
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   MAIN REVIEW CONTENT
+   ========================================================= */
+
+.ipd-billing-review__content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid var(--ipd-review-border);
+  border-radius: 16px;
+  background: var(--ipd-review-surface);
+  box-shadow: 0 4px 16px rgb(15 23 42 / 3%);
+}
+
+.ipd-billing-review__section {
+  width: 100%;
+  min-width: 0;
+}
+
+.ipd-billing-review__divider {
+  border-color: #edf0f5 !important;
+}
+
+.ipd-billing-review__content .MuiDivider-root {
+  border-color: var(--ipd-review-border);
+}
+
+/* =========================================================
+   BILL TOTALS
+   ========================================================= */
+
+.ipd-billing-review__totals {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: 520px;
+  align-self: flex-end;
+  padding: 18px 20px;
+  border: 1px solid var(--ipd-review-border);
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.ipd-billing-review__total-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 0;
+}
+
+.ipd-billing-review__total-row > :first-child {
+  color: #64748b;
+  font-size: 13px !important;
+}
+
+.ipd-billing-review__total-row > :last-child {
+  color: #334155;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.ipd-billing-review__totals > .MuiDivider-root {
+  margin: 6px 0;
+}
+
+.ipd-billing-review__total-row--outstanding > :first-child {
+  color: var(--ipd-review-text);
+  font-weight: 750 !important;
+}
+
+.ipd-billing-review__total-row--outstanding > :last-child {
+  color: var(--ipd-review-primary-dark);
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+
+/* =========================================================
+   IMPORTANT REVIEW NOTICE
+   ========================================================= */
+
+.ipd-billing-review__notice {
+  align-items: flex-start;
+  border-radius: 10px !important;
+  font-size: 12px !important;
+  line-height: 1.7 !important;
+}
+
+.ipd-billing-review__notice .MuiAlert-icon {
+  padding-top: 3px;
+}
+
+/* =========================================================
+   FOOTER COMPONENT CONTAINER
+   ========================================================= */
+
+.ipd-billing-review > .ipd-billing-review-footer {
+  margin-top: 22px;
+}
+
+/* =========================================================
+   LOADING OVERLAY
+   ========================================================= */
+
+.ipd-billing-review__loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: rgb(248 250 252 / 82%);
+  backdrop-filter: blur(3px);
+}
+
+.ipd-billing-review__loading-overlay .MuiTypography-root {
+  color: var(--ipd-review-text);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+/* =========================================================
+   RESPONSIVE: TABLET
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .ipd-billing-review {
+    padding: 20px;
+  }
+
+  .ipd-billing-review__patient-card {
+    flex-wrap: wrap;
+  }
+
+  .ipd-billing-review__room-info {
+    width: 100%;
+    padding-top: 14px;
+    padding-left: 0;
+    border-top: 1px solid var(--ipd-review-border);
+    border-left: 0;
+  }
+
+  .ipd-billing-review__content {
+    padding: 20px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE: MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+  .ipd-billing-review {
+    padding: 14px;
+  }
+
+  .ipd-billing-review__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .ipd-billing-review__header-left {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ipd-billing-review__back-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .ipd-billing-review__title {
+    font-size: 20px !important;
+  }
+
+  .ipd-billing-review__subtitle {
+    font-size: 12px !important;
+  }
+
+  .ipd-billing-review__invoice-badge {
+    width: 100%;
+    padding: 11px 13px;
+  }
+
+  .ipd-billing-review__stepper {
+    margin-bottom: 16px;
+    padding: 14px 10px;
+    overflow-x: auto;
+  }
+
+  .ipd-billing-review__patient-card {
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding: 15px;
+  }
+
+  .ipd-billing-review__patient-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+  }
+
+  .ipd-billing-review__patient-icon svg {
+    font-size: 24px;
+  }
+
+  .ipd-billing-review__patient-name {
+    font-size: 14px !important;
+  }
+
+  .ipd-billing-review__patient-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .ipd-billing-review__room-info {
+    padding-top: 12px;
+  }
+
+  .ipd-billing-review__content {
+    gap: 18px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .ipd-billing-review__totals {
+    padding: 14px;
+  }
+
+  .ipd-billing-review__total-row {
+    gap: 12px;
+  }
+
+  .ipd-billing-review__total-row > :first-child,
+  .ipd-billing-review__total-row > :last-child {
+    font-size: 12px !important;
+  }
+
+  .ipd-billing-review__total-row--outstanding > :last-child {
+    font-size: 16px !important;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.ipd-billing-review__back-icon:focus-visible {
+  outline: 3px solid rgb(37 99 235 / 30%);
+  outline-offset: 3px;
+}

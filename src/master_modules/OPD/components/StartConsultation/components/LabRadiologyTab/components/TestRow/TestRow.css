@@ -1,0 +1,125 @@
+
+.lab-test-row {
+  display: grid;
+  grid-template-columns: 10% 55% 35%;
+  align-items: center;
+  width: 100%;
+  min-height: 40px;
+  padding: 7px 10px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf5;
+  cursor: pointer;
+  transition: background 0.18s ease;
+}
+
+.lab-test-row:nth-child(even) {
+  background: #f7f9fc;
+}
+
+.lab-test-row:hover:not(.lab-test-row--disabled) {
+  background: #eff5ff;
+}
+
+.lab-test-row--selected {
+  background: #f2f7ff !important;
+}
+
+.lab-test-row--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lab-test-row__selection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 8px;
+}
+
+.lab-test-row__checkbox {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #1769ed;
+  cursor: pointer;
+}
+
+.lab-test-row__checkbox:disabled {
+  cursor: not-allowed;
+}
+
+.lab-test-row__name {
+  min-width: 0;
+  padding-right: 12px;
+  color: #25344d;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.lab-test-row__category {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.lab-test-row__badge {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lab-test-row__badge--blue {
+  color: #1769d2;
+  background: #e0edff;
+}
+
+.lab-test-row__badge--green {
+  color: #16834a;
+  background: #dcf7e8;
+}
+
+.lab-test-row__badge--purple {
+  color: #7138c9;
+  background: #eee3ff;
+}
+
+.lab-test-row__badge--orange {
+  color: #b96a13;
+  background: #fff0d9;
+}
+
+.lab-test-row__badge--default {
+  color: #5c687a;
+  background: #edf0f4;
+}
+
+@media (max-width: 576px) {
+  .lab-test-row {
+    grid-template-columns: 12% 53% 35%;
+    padding: 8px 5px;
+  }
+
+  .lab-test-row__selection {
+    padding-left: 3px;
+  }
+
+  .lab-test-row__name {
+    font-size: 11px;
+  }
+
+  .lab-test-row__badge {
+    padding: 4px 7px;
+    font-size: 10px;
+  }
+}

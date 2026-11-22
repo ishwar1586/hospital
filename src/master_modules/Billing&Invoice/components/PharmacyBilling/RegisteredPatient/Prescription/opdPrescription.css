@@ -1,0 +1,714 @@
+/* =========================================================
+   OPD PRESCRIPTION
+========================================================= */
+
+.opd-prescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PRESCRIPTION META
+========================================================= */
+
+.opd-prescription__meta {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__meta-item {
+  min-width: 0;
+
+  min-height: 64px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.opd-prescription__meta-item:hover {
+  border-color: #cbd5e1;
+
+  box-shadow:
+    0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.opd-prescription__meta-icon {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__meta-icon svg {
+  font-size: 18px;
+}
+
+.opd-prescription__meta-content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.opd-prescription__meta-label {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.opd-prescription__meta-value {
+  display: block;
+
+  min-width: 0;
+
+  color: #1e293b;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  font-weight: 600;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   DOCTOR INFORMATION
+========================================================= */
+
+.opd-prescription__doctor {
+  width: 100%;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__doctor-heading {
+  min-height: 42px;
+
+  padding: 0 14px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  background: #ffffff;
+
+  color: #334155;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  font-weight: 700;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__doctor-body {
+  min-height: 70px;
+
+  padding: 12px 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__doctor-avatar {
+  width: 40px;
+  height: 40px;
+
+  flex: 0 0 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__doctor-avatar svg {
+  font-size: 21px;
+}
+
+.opd-prescription__doctor-info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.opd-prescription__doctor-name {
+  display: block;
+
+  color: #1e293b;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  font-weight: 700;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.opd-prescription__doctor-speciality {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.opd-prescription__doctor-registration {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   COMMON SECTION TITLE
+========================================================= */
+
+.opd-prescription__section-title {
+  margin: 0;
+
+  color: #334155;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   DIAGNOSIS
+========================================================= */
+
+.opd-prescription__diagnosis {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__diagnosis-box {
+  width: 100%;
+
+  min-height: 44px;
+
+  padding: 11px 12px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+
+  background: #f8fafc;
+
+  color: #475569;
+
+  font-size: 11px;
+  line-height: 17px;
+
+  font-weight: 500;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PRESCRIBED MEDICINES
+========================================================= */
+
+.opd-prescription__medicines {
+  width: 100%;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MEDICINE SECTION HEADER
+========================================================= */
+
+.opd-prescription__section-header {
+  min-height: 58px;
+
+  padding: 10px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__section-subtitle {
+  margin: 2px 0 0;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 400;
+}
+
+.opd-prescription__medicine-count {
+  flex: 0 0 auto;
+
+  min-height: 24px;
+
+  padding: 4px 9px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MEDICINE LIST
+========================================================= */
+
+.opd-prescription__medicine-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MEDICINE ROW
+========================================================= */
+
+.opd-prescription__medicine-row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(170px, 2fr)
+    minmax(80px, 0.9fr)
+    minmax(90px, 1fr)
+    minmax(80px, 0.9fr)
+    minmax(130px, 1.4fr);
+
+  gap: 12px;
+
+  padding: 12px 14px;
+
+  border-bottom: 1px solid #f1f5f9;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.2s ease;
+}
+
+.opd-prescription__medicine-row:hover {
+  background: #fafcff;
+}
+
+.opd-prescription__medicine-row:last-child {
+  border-bottom: 0;
+}
+
+
+/* =========================================================
+   MEDICINE FIELD
+========================================================= */
+
+.opd-prescription__medicine-field {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__medicine-label {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 9px;
+  line-height: 14px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.opd-prescription__medicine-value {
+  display: block;
+
+  min-width: 0;
+
+  color: #334155;
+
+  font-size: 11px;
+  line-height: 17px;
+
+  font-weight: 600;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   MEDICINE EMPTY STATE
+========================================================= */
+
+.opd-prescription__medicine-empty {
+  min-height: 96px;
+
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 4px;
+
+  text-align: center;
+
+  background: #fafafa;
+
+  box-sizing: border-box;
+}
+
+.opd-prescription__medicine-empty-title {
+  color: #475569;
+
+  font-size: 11px;
+  line-height: 17px;
+
+  font-weight: 600;
+}
+
+.opd-prescription__medicine-empty-text {
+  color: #94a3b8;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+  .opd-prescription__meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .opd-prescription__medicine-row {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .opd-prescription {
+    gap: 14px;
+  }
+
+  .opd-prescription__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .opd-prescription__medicine-row {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .opd-prescription {
+    gap: 12px;
+  }
+
+
+  /* -------------------------------------------------------
+     META
+  ------------------------------------------------------- */
+
+  .opd-prescription__meta {
+    gap: 8px;
+  }
+
+  .opd-prescription__meta-item {
+    min-height: 58px;
+
+    padding: 10px 11px;
+  }
+
+  .opd-prescription__meta-icon {
+    width: 32px;
+    height: 32px;
+
+    flex-basis: 32px;
+  }
+
+
+  /* -------------------------------------------------------
+     DOCTOR
+  ------------------------------------------------------- */
+
+  .opd-prescription__doctor-heading {
+    min-height: 40px;
+
+    padding: 0 12px;
+  }
+
+  .opd-prescription__doctor-body {
+    min-height: 64px;
+
+    padding: 10px 12px;
+  }
+
+  .opd-prescription__doctor-avatar {
+    width: 36px;
+    height: 36px;
+
+    flex-basis: 36px;
+  }
+
+
+  /* -------------------------------------------------------
+     DIAGNOSIS
+  ------------------------------------------------------- */
+
+  .opd-prescription__diagnosis-box {
+    padding: 10px;
+  }
+
+
+  /* -------------------------------------------------------
+     MEDICINES HEADER
+  ------------------------------------------------------- */
+
+  .opd-prescription__section-header {
+    min-height: auto;
+
+    padding: 10px 12px;
+
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  /* -------------------------------------------------------
+     MEDICINE ROW
+  ------------------------------------------------------- */
+
+  .opd-prescription__medicine-row {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+
+    padding: 11px 12px;
+  }
+
+  .opd-prescription__medicine-field {
+    gap: 2px;
+  }
+
+  .opd-prescription__medicine-value {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+
+  /* -------------------------------------------------------
+     EMPTY
+  ------------------------------------------------------- */
+
+  .opd-prescription__medicine-empty {
+    min-height: 85px;
+
+    padding: 14px 12px;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .opd-prescription__meta-item {
+    gap: 8px;
+
+    padding: 9px;
+  }
+
+  .opd-prescription__meta-value {
+    font-size: 11px;
+  }
+
+  .opd-prescription__doctor-name {
+    font-size: 11px;
+  }
+
+  .opd-prescription__medicine-count {
+    font-size: 9px;
+  }
+
+}

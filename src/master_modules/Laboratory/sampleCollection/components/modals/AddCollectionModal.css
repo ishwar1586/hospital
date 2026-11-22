@@ -1,0 +1,481 @@
+/* =========================================
+   BACKDROP
+========================================= */
+
+.add-collection-modal__backdrop {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1300;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(15, 23, 42, 0.45);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.add-collection-modal {
+    width: 100%;
+
+    max-width: 720px;
+
+    max-height: calc(100vh - 40px);
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 50px
+        rgba(15, 23, 42, 0.18);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.add-collection-modal__header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 16px 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    background: #ffffff;
+}
+
+
+.add-collection-modal__title-wrapper {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    min-width: 0;
+}
+
+
+.add-collection-modal__title-icon {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.add-collection-modal__title-icon svg {
+    width: 20px;
+
+    height: 20px;
+}
+
+
+.add-collection-modal__header h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.add-collection-modal__header p {
+    margin: 3px 0 0;
+
+    color: #6b7280;
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   CLOSE
+========================================= */
+
+.add-collection-modal__close {
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    cursor: pointer;
+}
+
+
+.add-collection-modal__close:hover {
+    background: #f3f4f6;
+
+    color: #111827;
+}
+
+
+.add-collection-modal__close:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.add-collection-modal__form {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.add-collection-modal__section {
+    padding: 16px 18px;
+
+    overflow-y: auto;
+}
+
+
+.add-collection-modal__section
++ .add-collection-modal__section {
+    border-top: 1px solid #f0f1f3;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.add-collection-modal__section-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 14px;
+
+    color: #374151;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.add-collection-modal__section-title svg {
+    width: 17px;
+
+    height: 17px;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.add-collection-modal__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px 18px;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.add-collection-field {
+    min-width: 0;
+}
+
+
+.add-collection-field label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #374151;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+.add-collection-field input,
+.add-collection-field select {
+    width: 100%;
+
+    height: 38px;
+
+    padding: 0 11px;
+
+    border: 1px solid #d7dce3;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #374151;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.add-collection-field input::placeholder {
+    color: #9ca3af;
+}
+
+
+.add-collection-field input:focus,
+.add-collection-field select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+.add-collection-field select {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.add-collection-modal__footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    border-top: 1px solid #e5e7eb;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.add-collection-modal__cancel,
+.add-collection-modal__save {
+    height: 35px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 14px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.add-collection-modal__cancel {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #374151;
+}
+
+
+.add-collection-modal__cancel:hover {
+    border-color: #9ca3af;
+
+    background: #f9fafb;
+}
+
+
+/* =========================================
+   SAVE
+========================================= */
+
+.add-collection-modal__save {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.add-collection-modal__save:hover {
+    border-color: #1d4ed8;
+
+    background: #1d4ed8;
+}
+
+
+.add-collection-modal__save:disabled,
+.add-collection-modal__cancel:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+.add-collection-modal__save svg {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .add-collection-modal__backdrop {
+        padding: 12px;
+    }
+
+
+    .add-collection-modal {
+        max-height:
+            calc(100vh - 24px);
+    }
+
+
+    .add-collection-modal__grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .add-collection-modal__header,
+    .add-collection-modal__section {
+        padding-left: 14px;
+
+        padding-right: 14px;
+    }
+
+
+    .add-collection-modal__footer {
+        padding-left: 14px;
+
+        padding-right: 14px;
+    }
+
+}

@@ -1,0 +1,145 @@
+/* ========================================= */
+
+.transfer-preview{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    /* overflow:hidden; */
+
+}
+
+
+/* .transfer-preview{
+
+    height:auto !important;
+
+    min-height:400px !important;
+
+} */
+/* ========================================= */
+
+.transfer-preview-header{
+
+    padding:18px 22px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.transfer-preview-header h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ========================================= */
+
+.transfer-preview-body{
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ========================================= */
+
+.transfer-preview-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:14px;
+
+    border-bottom:1px dashed #E2E8F0;
+
+}
+
+.transfer-preview-item:last-of-type{
+
+    border-bottom:none;
+
+}
+
+.transfer-preview-item span{
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+.transfer-preview-item strong{
+
+    font-size:15px;
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
+
+/* ========================================= */
+
+.transfer-preview-status{
+
+    margin-top:10px;
+
+}
+
+.status-success,
+
+.status-error{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 16px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+.status-success{
+
+    background:#ECFDF5;
+
+    color:#15803D;
+
+    border:1px solid #BBF7D0;
+
+}
+
+.status-error{
+
+    background:#FEF2F2;
+
+    color:#DC2626;
+
+    border:1px solid #FECACA;
+
+}

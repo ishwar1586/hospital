@@ -1,0 +1,220 @@
+/* =========================================
+   RESULT ENTRY WORKSPACE
+========================================= */
+
+.result-entry-workspace {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   WORKSPACE EMPTY STATE
+========================================= */
+
+.result-entry-workspace--empty {
+    min-height: 360px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.result-entry-workspace__empty {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    max-width: 420px;
+
+    text-align: center;
+}
+
+
+.result-entry-workspace__empty-title {
+    color: #334155;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.result-entry-workspace__empty-message {
+    max-width: 360px;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+.result-entry-workspace__empty button {
+    min-height: 30px;
+
+    margin-top: 7px;
+
+    padding: 0 11px;
+
+    border: 1px solid #dbe1e8;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.16s ease,
+        border-color 0.16s ease,
+        color 0.16s ease;
+}
+
+
+.result-entry-workspace__empty button:hover {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   TAB PLACEHOLDER
+========================================= */
+
+.result-entry-workspace__tab-placeholder {
+    width: 100%;
+
+    min-height: 240px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   WORKSPACE SCROLL SAFETY
+========================================= */
+
+.result-entry-workspace {
+    overflow: visible;
+}
+
+
+/*
+ * Tables themselves handle horizontal
+ * scrolling. The complete workspace should
+ * not create an unwanted horizontal scroll.
+ */
+
+.result-entry-workspace
+.test-result-table-wrapper {
+    max-width: 100%;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1400px) {
+
+    .result-entry-workspace {
+        gap: 11px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .result-entry-workspace {
+        gap: 9px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .result-entry-workspace {
+        gap: 8px;
+    }
+
+
+    .result-entry-workspace--empty {
+        min-height: 300px;
+
+        padding: 15px;
+    }
+
+}

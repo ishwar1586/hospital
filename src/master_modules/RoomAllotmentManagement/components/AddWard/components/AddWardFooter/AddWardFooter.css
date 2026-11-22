@@ -1,0 +1,106 @@
+
+.add-ward-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border: 1px solid #dce5f5;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+.add-ward-footer__left,
+.add-ward-footer__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-ward-footer__right {
+  margin-left: auto;
+}
+
+.add-ward-footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 98px;
+  height: 33px;
+  padding: 0 13px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.add-ward-footer__button-icon {
+  font-size: 17px;
+}
+
+.add-ward-footer__button--secondary {
+  color: #155eef;
+  background: #ffffff;
+  border-color: #7da5ff;
+}
+
+.add-ward-footer__button--secondary:hover {
+  background: #eff5ff;
+  border-color: #3978ed;
+}
+
+.add-ward-footer__button--primary {
+  min-width: 126px;
+  color: #ffffff;
+  background: #075bea;
+  border-color: #075bea;
+}
+
+.add-ward-footer__button--primary:hover {
+  background: #064bc2;
+  border-color: #064bc2;
+}
+
+.add-ward-footer__button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.add-ward-footer__button:focus-visible {
+  outline: 2px solid #3978ed;
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .add-ward-footer {
+    flex-wrap: wrap;
+    padding: 9px;
+  }
+
+  .add-ward-footer__left,
+  .add-ward-footer__right {
+    gap: 7px;
+  }
+
+  .add-ward-footer__right {
+    margin-left: auto;
+  }
+
+  .add-ward-footer__button {
+    min-width: auto;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .add-ward-footer__button--primary {
+    min-width: auto;
+  }
+}

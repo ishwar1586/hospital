@@ -1,0 +1,65 @@
+.thermal-footer {
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    color: #000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.thermal-footer-content {
+
+    text-align: center;
+
+}
+
+.thermal-footer-content p {
+
+    margin: 4px 0;
+
+    padding: 0;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+    word-break: break-word;
+
+}
+
+.footer-message {
+
+    margin-top: 8px !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+.footer-note {
+
+    font-size: 10px !important;
+
+    color: #000;
+
+    line-height: 1.5;
+
+}
+
+@media print {
+
+    .thermal-footer {
+
+        page-break-inside: avoid;
+
+    }
+
+}

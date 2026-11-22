@@ -1,0 +1,245 @@
+/* =========================================
+   FILTER CONTAINER
+========================================= */
+
+.collection-filters {
+    display: grid;
+
+    grid-template-columns:
+        1.25fr
+        1fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 24px;
+
+    width: 100%;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.collection-filter {
+    min-width: 0;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.collection-filter__label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #1f2937;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.collection-filter__search-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.collection-filter__input {
+    width: 100%;
+
+    height: 38px;
+
+    padding: 0 38px 0 12px;
+
+    border: 1px solid #d7dce3;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #1f2937;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.collection-filter__input::placeholder {
+    color: #9ca3af;
+}
+
+
+.collection-filter__input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================
+   SEARCH ICON
+========================================= */
+
+.collection-filter__search-icon {
+    position: absolute;
+
+    top: 50%;
+
+    right: 10px;
+
+    transform:
+        translateY(-50%);
+
+    color: #374151;
+
+    font-size: 18px !important;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.collection-filter__date-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.collection-filter--date
+.collection-filter__input {
+    padding: 0 12px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.collection-filter__select-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.collection-filter__select {
+    width: 100%;
+
+    height: 38px;
+
+    padding: 0 32px 0 12px;
+
+    border: 1px solid #d7dce3;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background-color: #ffffff;
+
+    color: #374151;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    appearance: auto;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.collection-filter__select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .collection-filters {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .collection-filters {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 16px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .collection-filters {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+        padding: 14px;
+    }
+
+}

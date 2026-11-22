@@ -1,0 +1,9 @@
+.medicine-master{
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    background:#ffff;
+    width: 100%;
+    height: auto;
+}

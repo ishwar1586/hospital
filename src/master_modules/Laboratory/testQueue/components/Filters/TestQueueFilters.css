@@ -1,0 +1,307 @@
+/* =========================================
+   FILTER CARD
+========================================= */
+
+.test-queue-filters {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.test-queue-filters__header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+.test-queue-filters__title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #1f2937;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+.test-queue-filters__reset {
+    height: 28px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 9px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.test-queue-filters__reset svg {
+    width: 14px;
+
+    height: 14px;
+}
+
+
+.test-queue-filters__reset:hover {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   CONTROLS
+========================================= */
+
+.test-queue-filters__controls {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.test-queue-filter {
+    width: var(--filter-width);
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    box-sizing: border-box;
+}
+
+
+.test-queue-filter label {
+    color: #475569;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================
+   SEARCH WRAPPER
+========================================= */
+
+.test-queue-filter__input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.test-queue-filter__input-wrapper svg {
+    position: absolute;
+
+    top: 50%;
+
+    left: 9px;
+
+    width: 15px;
+
+    height: 15px;
+
+    color: #94a3b8;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   INPUT / SELECT
+========================================= */
+
+.test-queue-filter input,
+.test-queue-filter select {
+    width: 100%;
+
+    height: 34px;
+
+    padding: 0 9px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.test-queue-filter--search input {
+    padding-left: 30px;
+}
+
+
+.test-queue-filter input::placeholder {
+    color: #9ca3af;
+}
+
+
+.test-queue-filter input:focus,
+.test-queue-filter select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+.test-queue-filter select {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .test-queue-filter {
+        flex: 1 1 160px;
+
+        width: auto;
+    }
+
+
+    .test-queue-filter--search {
+        flex: 1 1 230px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .test-queue-filters {
+        padding: 12px;
+    }
+
+
+    .test-queue-filters__controls {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+
+    .test-queue-filter,
+    .test-queue-filter--search {
+        width: 100%;
+
+        flex: none;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .test-queue-filters__controls {
+        grid-template-columns: 1fr;
+    }
+
+
+    .test-queue-filters__header {
+        align-items: flex-start;
+    }
+
+}

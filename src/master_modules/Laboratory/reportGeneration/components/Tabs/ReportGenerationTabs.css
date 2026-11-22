@@ -1,0 +1,239 @@
+/* =========================================
+   REPORT GENERATION TABS
+========================================= */
+
+.report-generation-tabs {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.report-generation-tabs__list {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 2px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.report-generation-tabs__tab {
+    position: relative;
+
+    min-height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    flex: 0 0 auto;
+
+    padding:
+        0 12px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+
+/* =========================================
+   TAB HOVER
+========================================= */
+
+.report-generation-tabs__tab:hover {
+    background: #f8fafc;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   ACTIVE TAB
+========================================= */
+
+.report-generation-tabs__tab--active {
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   ACTIVE INDICATOR
+========================================= */
+
+.report-generation-tabs__tab--active::after {
+    content: "";
+
+    position: absolute;
+
+    right: 10px;
+    bottom: -1px;
+    left: 10px;
+
+    height: 2px;
+
+    border-radius:
+        2px 2px 0 0;
+
+    background: #2563eb;
+}
+
+
+/* =========================================
+   TAB LABEL
+========================================= */
+
+.report-generation-tabs__label {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.report-generation-tabs__count {
+    min-width: 18px;
+    height: 17px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 5px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   ACTIVE COUNT
+========================================= */
+
+.report-generation-tabs__tab--active
+.report-generation-tabs__count {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.report-generation-tabs__tab:focus-visible {
+    outline: 2px solid #93c5fd;
+
+    outline-offset: -2px;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    .report-generation-tabs__tab {
+        min-height: 36px;
+
+        padding:
+            0 10px;
+
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .report-generation-tabs__list {
+        gap: 0;
+    }
+
+
+    .report-generation-tabs__tab {
+        min-height: 36px;
+
+        padding:
+            0 9px;
+
+        gap: 5px;
+    }
+
+
+    .report-generation-tabs__count {
+        min-width: 17px;
+
+        height: 16px;
+
+        padding:
+            0 4px;
+    }
+
+}

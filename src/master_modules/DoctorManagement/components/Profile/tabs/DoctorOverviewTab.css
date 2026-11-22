@@ -1,0 +1,146 @@
+/* =========================================================
+   DOCTOR OVERVIEW TAB
+   Namespace: doctor-overview-tab
+========================================================= */
+
+.doctor-overview-tab {
+    width: 100%;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.doctor-overview-tab__content {
+    width: 100%;
+
+    padding: 5px 14px 7px;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   INFORMATION ROW
+========================================================= */
+
+.doctor-overview-tab__row {
+    width: 100%;
+    min-height: 20px;
+
+    display: grid;
+    grid-template-columns: 84px minmax(0, 1fr);
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.doctor-overview-tab__label {
+    min-width: 0;
+
+    padding-right: 7px;
+
+    color: #64748b;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+/* =========================================================
+   VALUE
+========================================================= */
+
+.doctor-overview-tab__value {
+    min-width: 0;
+
+    color: #172554;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 600;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =========================================================
+   AVAILABILITY
+========================================================= */
+
+.doctor-overview-tab__availability {
+    min-height: 17px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2px 7px;
+
+    border: 1px solid #bbf7d0;
+    border-radius: 4px;
+
+    background: #ecfdf5;
+
+    color: #15803d;
+
+    font-size: 7px;
+    line-height: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   AVAILABILITY DOT
+========================================================= */
+
+.doctor-overview-tab__availability-dot {
+    width: 5px;
+    height: 5px;
+
+    margin-right: 4px;
+
+    flex: 0 0 5px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+/* =========================================================
+   AVAILABILITY ROW
+========================================================= */
+
+.doctor-overview-tab__row--availability {
+    margin-top: 1px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 480px) {
+    .doctor-overview-tab__content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .doctor-overview-tab__row {
+        grid-template-columns:
+            80px
+            minmax(0, 1fr);
+    }
+}

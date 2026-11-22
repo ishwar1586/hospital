@@ -1,0 +1,50 @@
+.appointment-summary-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.0);
+}
+
+.summary-title {
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.summary-total {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.summary-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.stat-box {
+  width: 110px;
+  padding: 14px 0;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.stat-box.completed {
+  background: #2f6df6;
+}
+
+.stat-box.upcoming {
+  background: #f58220;
+}
+
+.stat-number {
+  font-size: 22px;
+  font-weight: 700;
+  display: block;
+}
+
+.stat-label {
+  font-size: 13px;
+  opacity: 0.9;
+}

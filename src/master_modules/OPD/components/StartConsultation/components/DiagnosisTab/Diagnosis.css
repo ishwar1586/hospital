@@ -1,0 +1,60 @@
+
+.diagnosis-tab {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-sizing: border-box;
+}
+
+.diagnosis-tab__header {
+  width: 100%;
+}
+
+.diagnosis-tab__header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.diagnosis-tab__title {
+  margin: 0;
+  color: #172b4d;
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.diagnosis-tab__description {
+  margin: 0;
+  color: #71829f;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.diagnosis-tab__sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.diagnosis-tab__footer {
+  width: 100%;
+  margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+  .diagnosis-tab {
+    gap: 14px;
+  }
+
+  .diagnosis-tab__sections {
+    gap: 12px;
+  }
+
+  .diagnosis-tab__title {
+    font-size: 16px;
+  }
+}

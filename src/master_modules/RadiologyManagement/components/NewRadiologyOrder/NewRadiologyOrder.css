@@ -1,0 +1,290 @@
+
+/* =========================================================
+   NEW RADIOLOGY ORDER - PAGE LAYOUT
+   File: NewRadiologyOrder.css
+   ========================================================= */
+
+.new-radiology-order {
+  --nro-primary: #2563eb;
+  --nro-primary-hover: #1d4ed8;
+  --nro-text: #172b4d;
+  --nro-muted: #64748b;
+  --nro-border: #e2e8f0;
+  --nro-surface: #ffffff;
+  --nro-page-bg: #f5f7fb;
+  --nro-danger: #dc2626;
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  margin: 0;
+  padding: 24px;
+  background: var(--nro-page-bg);
+  color: var(--nro-text);
+  font-family: inherit;
+  overflow-wrap: anywhere;
+}
+
+.new-radiology-order,
+.new-radiology-order *,
+.new-radiology-order *::before,
+.new-radiology-order *::after {
+  box-sizing: border-box;
+}
+
+/* Main content container */
+
+.new-radiology-order__container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+/* Prevent children from forcing horizontal overflow */
+
+.new-radiology-order__container > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.new-radiology-order__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 0 22px;
+  border-bottom: 1px solid var(--nro-border);
+}
+
+.new-radiology-order__header-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.new-radiology-order__back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--nro-primary);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: color 160ms ease;
+}
+
+.new-radiology-order__back-link:hover {
+  color: var(--nro-primary-hover);
+}
+
+.new-radiology-order__back-link span {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.new-radiology-order__header h1 {
+  margin: 0;
+  color: var(--nro-text);
+  font-size: clamp(24px, 2.2vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.6px;
+  overflow-wrap: anywhere;
+}
+
+.new-radiology-order__header p {
+  max-width: 760px;
+  margin: 9px 0 0;
+  color: var(--nro-muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.new-radiology-order__header-badge {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  margin-top: 2px;
+  padding: 6px 12px;
+  border: 1px solid #bfdbfe;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   FORM LAYOUT
+   ========================================================= */
+
+.new-radiology-order__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+/* Child sections provide their own visual card styling.
+   This rule only controls their position and sizing. */
+
+.new-radiology-order__form > section {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Submission error */
+
+.new-radiology-order__submit-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  padding: 13px 15px;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: var(--nro-danger);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   ACCESSIBILITY AND INTERACTION
+   ========================================================= */
+
+.new-radiology-order button:focus-visible,
+.new-radiology-order input:focus-visible,
+.new-radiology-order select:focus-visible,
+.new-radiology-order textarea:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+}
+
+.new-radiology-order button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Avoid accidental horizontal overflow from form controls */
+
+.new-radiology-order input,
+.new-radiology-order select,
+.new-radiology-order textarea {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* =========================================================
+   RESPONSIVE LAYOUT
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .new-radiology-order {
+    padding: 20px;
+  }
+
+  .new-radiology-order__container {
+    gap: 18px;
+  }
+
+  .new-radiology-order__form {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-radiology-order {
+    padding: 16px;
+  }
+
+  .new-radiology-order__header {
+    gap: 14px;
+    padding-bottom: 18px;
+  }
+
+  .new-radiology-order__header h1 {
+    font-size: 25px;
+  }
+
+  .new-radiology-order__header p {
+    font-size: 13px;
+  }
+
+  .new-radiology-order__form {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .new-radiology-order {
+    padding: 12px;
+  }
+
+  .new-radiology-order__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .new-radiology-order__back-link {
+    margin-bottom: 14px;
+  }
+
+  .new-radiology-order__header h1 {
+    font-size: 23px;
+    letter-spacing: -0.3px;
+  }
+
+  .new-radiology-order__header-badge {
+    margin-top: 0;
+  }
+
+  .new-radiology-order__container {
+    gap: 16px;
+  }
+
+  .new-radiology-order__form {
+    gap: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .new-radiology-order *,
+  .new-radiology-order *::before,
+  .new-radiology-order *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

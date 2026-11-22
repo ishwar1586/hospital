@@ -1,0 +1,187 @@
+/* =========================================
+   REPORT ACTION MENU
+========================================= */
+
+.report-action-menu {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 28px;
+}
+
+
+/* =========================================
+   TRIGGER
+========================================= */
+
+.report-action-menu__trigger {
+    width: 28px !important;
+    height: 28px !important;
+
+    padding: 0 !important;
+
+    border: 1px solid transparent !important;
+
+    border-radius: 6px !important;
+
+    color: #64748b !important;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+/* =========================================
+   TRIGGER ICON
+========================================= */
+
+.report-action-menu__trigger svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =========================================
+   TRIGGER HOVER
+========================================= */
+
+.report-action-menu__trigger:hover {
+    border-color: #e2e8f0 !important;
+
+    background: #f8fafc !important;
+
+    color: #334155 !important;
+}
+
+
+/* =========================================
+   MENU PAPER
+========================================= */
+
+.report-action-menu__paper {
+    min-width: 180px !important;
+
+    margin-top: 4px;
+
+    padding:
+        4px 0 !important;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 7px !important;
+
+    box-shadow:
+        0 8px 24px rgba(
+            15,
+            23,
+            42,
+            0.10
+        ) !important;
+}
+
+
+/* =========================================
+   MENU ITEM
+========================================= */
+
+.report-action-menu__paper
+.MuiMenuItem-root {
+    min-height: 34px;
+
+    gap: 2px;
+
+    padding:
+        5px 10px;
+
+    color: #334155;
+
+    font-size: 8px;
+
+    border-radius: 4px;
+
+    margin:
+        1px 4px;
+
+    transition:
+        background-color 0.12s ease,
+        color 0.12s ease;
+}
+
+
+/* =========================================
+   MENU ITEM HOVER
+========================================= */
+
+.report-action-menu__paper
+.MuiMenuItem-root:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   MENU ITEM ICON
+========================================= */
+
+.report-action-menu__paper
+.MuiListItemIcon-root {
+    min-width: 28px;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   MENU ITEM SVG
+========================================= */
+
+.report-action-menu__paper
+.MuiListItemIcon-root svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================================
+   MENU ITEM TEXT
+========================================= */
+
+.report-action-menu__paper
+.MuiListItemText-root {
+    margin: 0;
+}
+
+
+.report-action-menu__paper
+.MuiListItemText-primary {
+    color: #334155;
+
+    font-size: 8px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   DISABLED ITEM
+========================================= */
+
+.report-action-menu__paper
+.MuiMenuItem-root.Mui-disabled {
+    opacity: 0.38;
+}
+
+
+/* =========================================
+   DISABLED ICON
+========================================= */
+
+.report-action-menu__paper
+.MuiMenuItem-root.Mui-disabled
+.MuiListItemIcon-root {
+    color: #94a3b8;
+}

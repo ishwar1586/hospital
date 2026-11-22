@@ -1,0 +1,217 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.bill-totals-card{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 16px rgba(15,23,42,.04);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.bill-card-header{
+
+    padding:18px 22px;
+
+    border-bottom:1px solid #EEF2F7;
+
+    background:#FAFBFC;
+
+}
+
+.bill-card-header h3{
+
+    margin:0;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   Statistics
+========================================================== */
+
+.bill-stats{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    padding:10px;
+
+}
+
+.bill-stat-box{
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:12px;
+
+    padding:10px;
+
+    text-align:center;
+
+}
+
+.bill-stat-box span{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#64748B;
+
+    margin-bottom:2px;
+
+}
+
+.bill-stat-box strong{
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   Summary List
+========================================================== */
+
+.bill-summary-list{
+
+    padding:0 15px 5px;
+
+}
+
+.bill-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:10px 0;
+
+    border-bottom:1px dashed #E2E8F0;
+
+}
+
+.bill-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.bill-row span{
+
+    font-size:12px;
+
+    color:#475569;
+
+}
+
+.bill-row strong{
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   Discount
+========================================================== */
+
+.discount-text{
+
+    color:#DC2626 !important;
+
+}
+
+/* ==========================================================
+   Grand Total
+========================================================== */
+
+.grand-total-box{
+
+    margin:10px;
+
+    padding:10px 10px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #EFF6FF,
+        #DBEAFE
+    );
+
+    border:1px solid #BFDBFE;
+
+}
+
+.grand-total-box span{
+
+    display:block;
+
+    font-size:12px !important;
+
+    color:#1D4ED8;
+
+    margin-bottom:3px;
+
+    font-weight:600;
+
+}
+
+.grand-total-box h2{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:800;
+
+    color:#1E3A8A;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:992px){
+
+    .bill-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

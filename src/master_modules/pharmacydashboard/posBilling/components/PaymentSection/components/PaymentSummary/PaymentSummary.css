@@ -1,0 +1,147 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.payment-summary{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 16px rgba(15,23,42,.05);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.payment-summary-header{
+
+    padding:18px 20px;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+.payment-summary-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   Body
+========================================================== */
+
+.payment-summary-body{
+
+    padding:10px 20px;
+
+}
+
+.payment-summary-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px dashed #E2E8F0;
+
+}
+
+.payment-summary-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.payment-summary-row span{
+
+    font-size:14px;
+
+    color:#475569;
+
+}
+
+.payment-summary-row strong{
+
+    min-width:110px;
+
+    text-align:right;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.discount-amount{
+
+    color:#DC2626 !important;
+
+}
+
+/* ==========================================================
+   Grand Total
+========================================================== */
+
+.payment-grand-total{
+
+    margin:18px;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        #EFF6FF,
+        #DBEAFE
+    );
+
+    border:1px solid #BFDBFE;
+
+}
+
+.payment-grand-total span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#1D4ED8;
+
+}
+
+.payment-grand-total h2{
+
+    margin:0;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#1E3A8A;
+
+}

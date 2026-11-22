@@ -1,0 +1,80 @@
+.notes-header {
+  display: flex !important;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.notes-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.patient-info-card {
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  margin-bottom: 20px;
+}
+
+.patient-info-card h3 {
+  margin: 0;
+
+  color: #1e3a8a;
+}
+
+.patient-info-card p {
+  margin-top: 6px;
+
+  color: #475569;
+}
+
+.notes-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-top: 10px;
+}
+
+.notes-textareas {
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.notes-footer {
+  padding: 16px 24px !important;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+
+  .notes-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

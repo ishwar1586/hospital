@@ -1,0 +1,128 @@
+/* =========================================================
+   IPD TABS
+   ========================================================= */
+
+.ipd-tabs {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  margin-top: 5px;
+}
+
+/* =========================================================
+   TABS LIST
+   ========================================================= */
+
+.ipd-tabs__list {
+  width: max-content;
+  min-width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 4px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TAB
+   ========================================================= */
+
+.ipd-tabs__tab {
+  position: relative;
+
+  height: 46px;
+
+  padding: 0 18px;
+
+  border: 0;
+  outline: none;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.ipd-tabs__tab:hover {
+  color: #155eef;
+  background: #f8faff;
+}
+
+/* =========================================================
+   ACTIVE TAB
+   ========================================================= */
+
+.ipd-tabs__tab--active {
+  color: #155eef;
+  font-weight: 600;
+}
+
+.ipd-tabs__tab--active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+
+  height: 2px;
+
+  background: #155eef;
+
+  border-radius: 2px 2px 0 0;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.ipd-tabs__label {
+  display: inline-flex;
+  align-items: center;
+
+  height: 100%;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.ipd-tabs__tab:focus-visible {
+  z-index: 1;
+
+  box-shadow:
+    inset 0 0 0 2px rgba(21, 94, 239, 0.12);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .ipd-tabs__tab {
+    height: 44px;
+    padding: 0 14px;
+    font-size: 11px;
+  }
+}

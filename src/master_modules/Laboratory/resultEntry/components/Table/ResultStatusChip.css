@@ -1,0 +1,203 @@
+/* =========================================
+   RESULT ENTRY STATUS CHIP
+========================================= */
+
+.result-entry-status-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 999px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.result-entry-status-chip svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   PENDING
+========================================= */
+
+.result-entry-status-chip--pending {
+
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   IN PROGRESS
+========================================= */
+
+.result-entry-status-chip--inprogress {
+
+    border-color: #ddd6fe;
+
+    background: #f5f3ff;
+
+    color: #7c3aed;
+}
+
+
+.result-entry-status-chip--inprogress svg {
+
+    animation:
+        result-entry-status-spin
+        1.5s linear infinite;
+}
+
+
+/* =========================================
+   COMPLETED
+========================================= */
+
+.result-entry-status-chip--completed {
+
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+/* =========================================
+   VERIFIED
+========================================= */
+
+.result-entry-status-chip--verified {
+
+    border-color: #a5f3fc;
+
+    background: #ecfeff;
+
+    color: #0891b2;
+}
+
+
+/* =========================================
+   CRITICAL
+========================================= */
+
+.result-entry-status-chip--critical {
+
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.result-entry-status-chip--critical svg {
+
+    animation:
+        result-entry-critical-pulse
+        1.5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   REJECTED
+========================================= */
+
+.result-entry-status-chip--rejected {
+
+    border-color: #e5e7eb;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes result-entry-status-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+@keyframes result-entry-critical-pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.55;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .result-entry-status-chip {
+
+        min-height: 21px;
+
+        padding: 0 6px;
+
+        font-size: 7px;
+
+    }
+
+
+    .result-entry-status-chip svg {
+
+        width: 11px;
+
+        height: 11px;
+
+    }
+
+}

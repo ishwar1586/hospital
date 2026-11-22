@@ -1,0 +1,281 @@
+/* =========================================
+   Recent Visits
+========================================= */
+
+.patient-recent-visits {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   Header
+========================================= */
+
+.patient-recent-visits-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 18px;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+
+/* =========================================
+   Title
+========================================= */
+
+.patient-recent-visits-title {
+  margin: 0;
+
+  color: #172554;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.patient-recent-visits-subtitle {
+  margin: 4px 0 0;
+
+  color: #7b8497;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   Count
+========================================= */
+
+.patient-recent-visits-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 24px;
+  height: 24px;
+
+  padding: 0 7px;
+
+  border-radius: 12px;
+
+  background: #eef4ff;
+
+  color: #155eef;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   Visits List
+========================================= */
+
+.patient-recent-visits-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* =========================================
+   Visit Row
+========================================= */
+
+.patient-recent-visit {
+  display: grid;
+
+  grid-template-columns: 48px minmax(0, 1fr) auto auto;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 14px 18px;
+
+  border-bottom: 1px solid #f0f2f5;
+}
+
+
+.patient-recent-visit:last-child {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   Date
+========================================= */
+
+.patient-recent-visit-date {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #f5f7fa;
+}
+
+
+.patient-recent-visit-day {
+  color: #172554;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  line-height: 1;
+}
+
+
+.patient-recent-visit-month {
+  margin-top: 3px;
+
+  color: #7b8497;
+
+  font-size: 9px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   Details
+========================================= */
+
+.patient-recent-visit-details {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.patient-recent-visit-doctor {
+  overflow: hidden;
+
+  color: #172554;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.patient-recent-visit-department {
+  overflow: hidden;
+
+  color: #7b8497;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   Visit Type
+========================================= */
+
+.patient-recent-visit-type {
+  color: #667085;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   Status
+========================================= */
+
+.patient-recent-visit-status {
+  padding: 5px 9px;
+
+  border-radius: 12px;
+
+  background: #f2f4f7;
+
+  color: #667085;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+.patient-recent-visit-status.status-completed {
+  background: #ecfdf3;
+
+  color: #027a48;
+}
+
+
+.patient-recent-visit-status.status-scheduled {
+  background: #eff8ff;
+
+  color: #175cd3;
+}
+
+
+.patient-recent-visit-status.status-cancelled {
+  background: #fef3f2;
+
+  color: #b42318;
+}
+
+
+/* =========================================
+   Empty State
+========================================= */
+
+.patient-recent-visits-empty {
+  padding: 30px 18px;
+
+  text-align: center;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 600px) {
+
+  .patient-recent-visit {
+    grid-template-columns: 42px minmax(0, 1fr);
+
+    gap: 10px;
+  }
+
+  .patient-recent-visit-type,
+  .patient-recent-visit-status {
+    grid-column: 2;
+  }
+}

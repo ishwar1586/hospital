@@ -1,0 +1,53 @@
+.purchase-page{
+    display:flex;
+    flex-direction:column;
+    background: #ffff;
+    padding: 20px;
+    gap:24px;
+}
+
+.purchase-page-header{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.purchase-page-header h2{
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0f172a;
+}
+
+.purchase-page-header p{
+    margin-top:4px;
+
+    color:#64748b;
+}
+
+.back-btn{
+    border:none;
+
+    background:#ffffff;
+
+    border:1px solid #dbe2ea;
+
+    height:42px;
+
+    padding:0 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+.back-btn:hover{
+    background:#f8fafc;
+}

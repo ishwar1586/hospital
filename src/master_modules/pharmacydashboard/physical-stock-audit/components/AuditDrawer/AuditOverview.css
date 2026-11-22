@@ -1,0 +1,113 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-overview-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.audit-overview-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:22px;
+
+}
+
+.audit-overview-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+/* ==========================================================
+   Grid
+========================================================== */
+
+.audit-overview-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px 24px;
+
+}
+
+/* ==========================================================
+   Item
+========================================================== */
+
+.audit-overview-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+}
+
+.audit-overview-item label{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#64748b;
+
+    text-transform:uppercase;
+
+    letter-spacing:.4px;
+
+}
+
+.audit-overview-item span{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#0f172a;
+
+    line-height:1.5;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:600px){
+
+    .audit-overview-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

@@ -1,0 +1,72 @@
+.department-table-row {
+  background: #ffffff;
+  transition: background 0.2s ease;
+}
+
+.department-table-row:hover {
+  background: #f8fbff;
+}
+
+.department-table-row td {
+  height: 65px;
+  padding: 9px 15px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 500;
+  border-bottom: 1px solid #edf1f5;
+  white-space: nowrap;
+}
+
+.department-table-row:last-child td {
+  border-bottom: none;
+}
+
+.department-table-row__name-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.department-table-row__department-name {
+  color: #1e293b;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.department-table-row__department-id {
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.department-table-row__code {
+  color: #475569;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.department-table-row__doctor {
+  color: #475569;
+}
+
+.department-table-row__services {
+  text-align: center;
+}
+
+.department-table-row__service-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 27px;
+  height: 25px;
+  padding: 0 7px;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.department-table-row__actions {
+  text-align: center;
+}

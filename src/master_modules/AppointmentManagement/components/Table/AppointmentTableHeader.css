@@ -1,0 +1,109 @@
+/* =========================================
+   Appointment Table Header
+========================================= */
+
+.appointment-table-header {
+  display: grid;
+
+  grid-template-columns:
+    1.25fr
+    1.35fr
+    1.25fr
+    1.15fr
+    0.9fr
+    0.9fr
+    70px;
+
+  align-items: center;
+
+  width: 100%;
+  min-height: 44px;
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  background: #f8fafc;
+
+  border-bottom: 1px solid #e4e7ec;
+}
+
+
+/* =========================================
+   Header Cell
+========================================= */
+
+.appointment-table-header__cell {
+  min-width: 0;
+
+  padding: 0 8px;
+
+  color: #667085;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   First Cell
+========================================= */
+
+.appointment-table-header__cell--appointment {
+  padding-left: 0;
+}
+
+
+/* =========================================
+   Actions Cell
+========================================= */
+
+.appointment-table-header__cell--actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-right: 0;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .appointment-table-header {
+    grid-template-columns:
+      1.2fr
+      1.3fr
+      1.2fr
+      1.1fr
+      0.85fr
+      0.85fr
+      64px;
+
+    padding: 0 12px;
+  }
+
+  .appointment-table-header__cell {
+    padding: 0 6px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .appointment-table-header {
+    min-width: 900px;
+  }
+
+}

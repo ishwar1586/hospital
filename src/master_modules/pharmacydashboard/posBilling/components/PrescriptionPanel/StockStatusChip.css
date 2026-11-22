@@ -1,0 +1,95 @@
+/* =======================================================
+   ROOT
+======================================================= */
+
+.stock-status-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    min-width:130px;
+
+    height:36px;
+
+    padding:0 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+    white-space:nowrap;
+
+}
+
+/* =======================================================
+   ICON
+======================================================= */
+
+.stock-status-chip svg{
+
+    font-size:18px;
+
+}
+
+/* =======================================================
+   AVAILABLE
+======================================================= */
+
+.stock-status-chip.available{
+
+    background:#ECFDF5;
+
+    color:#15803D;
+
+    border:1px solid #BBF7D0;
+
+}
+
+/* =======================================================
+   LOW STOCK
+======================================================= */
+
+.stock-status-chip.low-stock{
+
+    background:#FFFBEB;
+
+    color:#B45309;
+
+    border:1px solid #FCD34D;
+
+}
+
+/* =======================================================
+   OUT OF STOCK
+======================================================= */
+
+.stock-status-chip.out-of-stock{
+
+    background:#FEF2F2;
+
+    color:#DC2626;
+
+    border:1px solid #FECACA;
+
+}
+
+/* =======================================================
+   HOVER
+======================================================= */
+
+.stock-status-chip:hover{
+
+    transform:translateY(-1px);
+
+    box-shadow:0 6px 14px rgba(15,23,42,.08);
+
+}

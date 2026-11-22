@@ -1,0 +1,125 @@
+/* =========================================
+   Patient Management Page
+========================================= */
+
+.patient-management {
+  width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   Common Section
+========================================= */
+
+.patient-management-section {
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+
+/* =========================================
+   Stats Section
+========================================= */
+
+.patient-management-section:first-of-type {
+  /* margin-top: 24px; */
+}
+
+
+/* =========================================
+   Tabs Section
+========================================= */
+
+.patient-management-section + .patient-management-section {
+  /* margin-top: 20px; */
+}
+
+
+/* =========================================
+   Patient Table Section
+========================================= */
+
+.patient-table-section {
+  /* margin-top: 20px; */
+  /* padding-bottom: 24px; */
+}
+
+
+/* =========================================
+   Box Sizing
+========================================= */
+
+.patient-management,
+.patient-management * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Responsive - Tablet
+========================================= */
+
+@media (max-width: 1024px) {
+  .patient-management {
+    padding: 20px;
+  }
+
+  .patient-management-section {
+    margin-top: 18px;
+  }
+
+  .patient-table-section {
+    margin-top: 18px;
+  }
+}
+
+
+/* =========================================
+   Responsive - Mobile
+========================================= */
+
+@media (max-width: 768px) {
+  .patient-management {
+    padding: 16px;
+  }
+
+  .patient-management-section {
+    margin-top: 16px;
+  }
+
+  .patient-table-section {
+    margin-top: 16px;
+    padding-bottom: 20px;
+  }
+}
+
+
+/* =========================================
+   Small Mobile
+========================================= */
+
+@media (max-width: 480px) {
+  .patient-management {
+    padding: 12px;
+  }
+
+  .patient-management-section {
+    margin-top: 14px;
+  }
+
+  .patient-table-section {
+    margin-top: 14px;
+  }
+}

@@ -1,0 +1,57 @@
+.patient-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-cell img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.report-icon {
+  height: 18px;
+  width:15px;
+  color: #fe0000;
+  cursor: pointer;
+}
+
+.doctor-table-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.doctor-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.doctor-table-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.view-all {
+  font-size: 14px;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+
+.doctor-table-body {
+  flex: 1;
+  overflow: hidden;
+}
+
+
+
+

@@ -1,0 +1,203 @@
+/* ======================================================= */
+
+.customer-type{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+/* ======================================================= */
+
+.customer-type-header{
+
+    padding:20px 24px;
+
+    border-bottom:1px solid #E2E8F0;
+
+    background:#F8FAFC;
+
+}
+
+.customer-type-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.customer-type-header p{
+
+    margin-top:6px;
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+/* ======================================================= */
+
+.customer-type-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:18px;
+
+    padding:22px;
+
+}
+
+/* ======================================================= */
+
+.customer-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:22px;
+
+    border:2px solid #E2E8F0;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    background:#FFFFFF;
+
+}
+
+.customer-card:hover{
+
+    border-color:#2563EB;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 24px rgba(37,99,235,.08);
+
+}
+
+/* ======================================================= */
+
+.customer-card.active{
+
+    background:#EFF6FF;
+
+    border-color:#2563EB;
+
+}
+
+/* ======================================================= */
+
+.selected-icon{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    color:#2563EB;
+
+    font-size:22px !important;
+
+}
+
+/* ======================================================= */
+
+.customer-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:14px;
+
+    background:#EFF6FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.customer-icon svg{
+
+    font-size:30px;
+
+    color:#2563EB;
+
+}
+
+/* ======================================================= */
+
+.customer-card h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    text-align:center;
+
+}
+
+.customer-card span{
+
+    font-size:12px;
+
+    color:#64748B;
+
+    text-align:center;
+
+}
+
+/* ======================================================= */
+
+@media(max-width:992px){
+
+    .customer-type-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .customer-type-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

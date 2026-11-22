@@ -1,0 +1,78 @@
+.test-master-page {
+
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 14px;
+
+    padding: 20px;
+}
+
+/* ==================================
+   Bottom Widgets
+================================== */
+
+.test-master-bottom {
+
+    display: grid;
+
+    grid-template-columns: 1.2fr 1fr;
+
+    gap: 24px;
+}
+
+/* ==================================
+   Left Section
+================================== */
+
+.test-master-bottom-left {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+/* ==================================
+   Right Section
+================================== */
+
+.test-master-bottom-right {
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+/* ==================================
+   Responsive
+================================== */
+
+@media(max-width:1200px){
+
+    .test-master-bottom{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .test-master-page{
+
+        padding:18px;
+        gap:20px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .test-master-page{
+
+        padding:16px;
+    }
+
+}

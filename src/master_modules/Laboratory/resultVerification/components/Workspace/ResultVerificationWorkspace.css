@@ -1,0 +1,161 @@
+/* =========================================
+   RESULT VERIFICATION WORKSPACE
+========================================= */
+
+.result-verification-workspace {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    box-sizing: border-box;
+
+    padding: 12px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   EMPTY WORKSPACE
+========================================= */
+
+.result-verification-workspace--empty {
+    min-height: 360px;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.result-verification-workspace__empty {
+    width: 100%;
+
+    min-height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border: 1px dashed #cbd5e1;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+}
+
+
+.result-verification-workspace__empty-icon {
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 4px;
+
+    border-radius: 50%;
+
+    background: #fef3c7;
+
+    color: #b45309;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.result-verification-workspace__empty strong {
+    color: #334155;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.result-verification-workspace__empty span {
+    max-width: 390px;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    line-height: 1.5;
+}
+
+
+.result-verification-workspace__empty button {
+    min-height: 30px;
+
+    margin-top: 6px;
+
+    padding: 0 12px;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 6px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+.result-verification-workspace__empty button:hover {
+    border-color: #bfdbfe;
+
+    background: #dbeafe;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .result-verification-workspace {
+        padding: 8px;
+
+        gap: 8px;
+    }
+
+}

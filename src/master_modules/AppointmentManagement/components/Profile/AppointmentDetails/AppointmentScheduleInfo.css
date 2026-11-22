@@ -1,0 +1,278 @@
+/* =========================================================
+   APPOINTMENT SCHEDULE INFO
+   ========================================================= */
+
+.appointment-schedule-info {
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.appointment-schedule-info__header {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 16px;
+}
+
+
+.appointment-schedule-info__header-icon {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+
+.appointment-schedule-info__header-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+.appointment-schedule-info__header-content {
+    min-width: 0;
+}
+
+
+.appointment-schedule-info__header-content h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19px;
+}
+
+
+.appointment-schedule-info__header-content p {
+    margin: 2px 0 0;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   GRID
+   ========================================================= */
+
+.appointment-schedule-info__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   ITEM
+   ========================================================= */
+
+.appointment-schedule-info__item {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 11px;
+
+    border: 1px solid #edf0f4;
+    border-radius: 7px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ITEM ICON
+   ========================================================= */
+
+.appointment-schedule-info__item-icon {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+    color: #667085;
+}
+
+
+.appointment-schedule-info__item-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================================================
+   ITEM CONTENT
+   ========================================================= */
+
+.appointment-schedule-info__item-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.appointment-schedule-info__item-label {
+    color: #98a2b3;
+
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+
+/* =========================================================
+   VALUE
+   ========================================================= */
+
+.appointment-schedule-info__item-value {
+    min-width: 0;
+
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.appointment-schedule-info__status {
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+
+    min-height: 20px;
+
+    padding: 0 7px;
+
+    border-radius: 10px;
+
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 13px;
+}
+
+
+/* =========================================================
+   STATUS VARIANTS
+   ========================================================= */
+
+.appointment-schedule-info__status--scheduled {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+
+.appointment-schedule-info__status--confirmed {
+    background: #ecfdf3;
+    color: #027a48;
+}
+
+
+.appointment-schedule-info__status--checked-in {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+
+.appointment-schedule-info__status--completed {
+    background: #f2f4f7;
+    color: #475467;
+}
+
+
+.appointment-schedule-info__status--cancelled {
+    background: #fef3f2;
+    color: #b42318;
+}
+
+
+.appointment-schedule-info__status--no-show {
+    background: #fffaeb;
+    color: #b54708;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .appointment-schedule-info__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .appointment-schedule-info {
+        padding: 13px;
+    }
+
+
+    .appointment-schedule-info__grid {
+        grid-template-columns: 1fr;
+    }
+
+}

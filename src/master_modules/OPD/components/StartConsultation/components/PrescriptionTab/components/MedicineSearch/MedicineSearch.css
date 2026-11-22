@@ -1,0 +1,175 @@
+
+.prescription-medicine-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+/* Search Form */
+
+.prescription-medicine-search__form {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prescription-medicine-search__input-wrapper {
+  flex: 1;
+  min-width: 0;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 14px;
+  background: #ffffff;
+  border: 1px solid #d8e1ee;
+  border-radius: 8px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prescription-medicine-search__input-wrapper:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+.prescription-medicine-search__search-icon {
+  flex-shrink: 0;
+  color: #8291a8;
+  font-size: 20px !important;
+}
+
+.prescription-medicine-search__input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172b4d;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.prescription-medicine-search__input::placeholder {
+  color: #91a0b5;
+  opacity: 1;
+}
+
+.prescription-medicine-search__input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Search Button */
+
+.prescription-medicine-search__button {
+  flex-shrink: 0;
+  min-width: 90px;
+  height: 46px;
+  padding: 0 18px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.prescription-medicine-search__button:hover:not(:disabled) {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.prescription-medicine-search__button:disabled {
+  background: #a9c4f8;
+  border-color: #a9c4f8;
+  cursor: not-allowed;
+}
+
+/* Previous Prescription Button */
+
+.prescription-medicine-search__previous-button {
+  flex-shrink: 0;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 15px;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1d4ed8;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.prescription-medicine-search__previous-button svg {
+  font-size: 19px;
+}
+
+.prescription-medicine-search__previous-button:hover:not(:disabled) {
+  background: #eff6ff;
+  border-color: #1d4ed8;
+}
+
+.prescription-medicine-search__previous-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .prescription-medicine-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prescription-medicine-search__form {
+    width: 100%;
+  }
+
+  .prescription-medicine-search__previous-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .prescription-medicine-search__form {
+    gap: 7px;
+  }
+
+  .prescription-medicine-search__input-wrapper {
+    height: 42px;
+    padding: 0 10px;
+  }
+
+  .prescription-medicine-search__input {
+    font-size: 12px;
+  }
+
+  .prescription-medicine-search__button {
+    min-width: 72px;
+    height: 42px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .prescription-medicine-search__previous-button {
+    min-height: 42px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,324 @@
+
+/* =========================================================
+   IPD BILLING REVIEW — BILL SUMMARY
+   File: BillSummaryReview.css
+========================================================= */
+
+.ipd-review-bill-summary,
+.ipd-review-bill-summary * {
+  box-sizing: border-box;
+}
+
+.ipd-review-bill-summary {
+  width: 100%;
+  min-width: 0;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #e1e8f2;
+  border-radius: 12px;
+  font-family: "Inter", "Roboto", sans-serif;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.025);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.ipd-review-bill-summary__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.ipd-review-bill-summary__heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.ipd-review-bill-summary__header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+}
+
+.ipd-review-bill-summary__header-icon .MuiSvgIcon-root {
+  font-size: 19px;
+}
+
+.ipd-review-bill-summary__title {
+  margin: 0;
+  color: #172554;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.15px;
+}
+
+/* =========================
+   PREVIEW BUTTON
+========================= */
+
+.ipd-review-bill-summary__preview-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+  min-width: 0;
+  padding: 5px 9px;
+  color: #2563eb;
+  background: #ffffff;
+  border: 1px solid #bcd2ff;
+  border-radius: 6px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ipd-review-bill-summary__preview-button:hover {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #7da7ff;
+}
+
+.ipd-review-bill-summary__preview-button .MuiSvgIcon-root {
+  font-size: 15px;
+}
+
+.ipd-review-bill-summary__preview-button .MuiTypography-root {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* =========================
+   CHARGE LIST
+========================= */
+
+.ipd-review-bill-summary__body {
+  width: 100%;
+  min-width: 0;
+}
+
+.ipd-review-bill-summary__charge-list {
+  width: 100%;
+}
+
+.ipd-review-bill-summary__charge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 0;
+  padding: 6px 2px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.ipd-review-bill-summary__charge-label {
+  flex: 1;
+  min-width: 0;
+  color: #40516c;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.ipd-review-bill-summary__charge-amount {
+  flex-shrink: 0;
+  color: #172554;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* =========================
+   SUBTOTAL, DISCOUNT & TAX
+========================= */
+
+.ipd-review-bill-summary__calculation-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-width: 0;
+  padding: 8px 2px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.ipd-review-bill-summary__calculation-row .MuiTypography-root {
+  color: #40516c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.ipd-review-bill-summary__calculation-row .MuiTypography-root:last-child {
+  flex-shrink: 0;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.ipd-review-bill-summary__calculation-row
+  .ipd-review-bill-summary__discount {
+  color: #64748b;
+}
+
+/* =========================
+   FINAL TOTAL
+========================= */
+
+.ipd-review-bill-summary__total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px 10px;
+  margin-top: 8px;
+  background: linear-gradient(100deg, #eff5ff 0%, #e5efff 100%);
+  border: 1px solid #d8e6ff;
+  border-radius: 7px;
+}
+
+.ipd-review-bill-summary__total-label {
+  min-width: 0;
+  color: #172554;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.ipd-review-bill-summary__total-amount {
+  flex-shrink: 0;
+  color: #1d4ed8;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .ipd-review-bill-summary {
+    padding: 14px;
+  }
+
+  .ipd-review-bill-summary__charge-row,
+  .ipd-review-bill-summary__calculation-row {
+    gap: 12px;
+  }
+
+  .ipd-review-bill-summary__total-amount {
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .ipd-review-bill-summary {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .ipd-review-bill-summary__header {
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .ipd-review-bill-summary__heading {
+    gap: 7px;
+  }
+
+  .ipd-review-bill-summary__header-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .ipd-review-bill-summary__header-icon .MuiSvgIcon-root {
+    font-size: 17px;
+  }
+
+  .ipd-review-bill-summary__title {
+    font-size: 14px;
+  }
+
+  .ipd-review-bill-summary__preview-button {
+    gap: 3px;
+    padding: 4px 6px;
+  }
+
+  .ipd-review-bill-summary__preview-button .MuiSvgIcon-root {
+    font-size: 13px;
+  }
+
+  .ipd-review-bill-summary__preview-button .MuiTypography-root {
+    font-size: 10px;
+  }
+
+  .ipd-review-bill-summary__charge-row {
+    padding: 7px 1px;
+  }
+
+  .ipd-review-bill-summary__charge-label,
+  .ipd-review-bill-summary__charge-amount,
+  .ipd-review-bill-summary__calculation-row .MuiTypography-root {
+    font-size: 11px;
+  }
+
+  .ipd-review-bill-summary__calculation-row {
+    padding: 8px 1px;
+  }
+
+  .ipd-review-bill-summary__total-row {
+    padding: 10px 8px;
+  }
+
+  .ipd-review-bill-summary__total-label {
+    font-size: 11px;
+  }
+
+  .ipd-review-bill-summary__total-amount {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .ipd-review-bill-summary__preview-button {
+    transition: none;
+  }
+}
+
+.ipd-review-bill-summary__preview-button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}

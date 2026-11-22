@@ -1,0 +1,91 @@
+
+.staff-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 14px 30px 18px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.staff-form-footer__left,
+.staff-form-footer__right {
+  display: flex;
+  align-items: center;
+}
+
+.staff-form-footer__back.MuiButton-root {
+  min-width: 76px;
+  min-height: 34px;
+  padding: 5px 13px;
+  border: 1px solid #89909c;
+  border-radius: 22px;
+  background: #ffffff;
+  color: #344054;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.staff-form-footer__back.MuiButton-root:hover {
+  border-color: #4054c5;
+  background: #f5f7ff;
+}
+
+.staff-form-footer__back.Mui-disabled {
+  border-color: #e5e7eb;
+  color: #a1a1aa;
+}
+
+.staff-form-footer__primary.MuiButton-root {
+  min-width: 76px;
+  min-height: 34px;
+  padding: 6px 15px;
+  border-radius: 22px;
+  background: #0563c9;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.staff-form-footer__primary.MuiButton-root:hover {
+  background: #0755a7;
+  box-shadow: none;
+}
+
+.staff-form-footer__primary.Mui-disabled {
+  background: #e4e4e7;
+  color: #92929a;
+}
+
+.staff-form-footer__submit.MuiButton-root {
+  min-width: 84px;
+}
+
+.staff-form-footer .MuiButton-startIcon,
+.staff-form-footer .MuiButton-endIcon {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.staff-form-footer .MuiSvgIcon-root {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .staff-form-footer {
+    padding: 12px 16px 16px;
+  }
+
+  .staff-form-footer__back.MuiButton-root,
+  .staff-form-footer__primary.MuiButton-root {
+    min-height: 36px;
+  }
+}

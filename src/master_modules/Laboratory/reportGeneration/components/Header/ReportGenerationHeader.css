@@ -1,0 +1,432 @@
+/* =========================================
+   REPORT GENERATION HEADER
+========================================= */
+
+.report-generation-header {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.report-generation-header__content {
+    min-width: 0;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   TITLE GROUP
+========================================= */
+
+.report-generation-header__title-group {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.report-generation-header__title {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.2px;
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.report-generation-header__subtitle {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.report-generation-header__actions {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   COMMON ACTION
+========================================= */
+
+.report-generation-header__action {
+    min-height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 11px;
+
+    border: 1px solid #dbe3ee;
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #172554;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.16s ease,
+        background-color 0.16s ease,
+        color 0.16s ease,
+        box-shadow 0.16s ease,
+        opacity 0.16s ease;
+}
+
+
+/* =========================================
+   ACTION ICON
+========================================= */
+
+.report-generation-header__action svg {
+    width: 15px;
+    height: 15px;
+
+    flex-shrink: 0;
+
+    color: #172554;
+}
+
+
+/* =========================================
+   ACTION HOVER
+========================================= */
+
+.report-generation-header__action:hover:not(:disabled) {
+    border-color: #bfdbfe;
+
+    background: #f8fbff;
+
+    color: #1d4ed8;
+
+    box-shadow:
+        0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+
+.report-generation-header__action:hover:not(:disabled) svg {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   ACTION FOCUS
+========================================= */
+
+.report-generation-header__action:focus-visible {
+    outline: 2px solid #93c5fd;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   ACTION DISABLED
+========================================= */
+
+.report-generation-header__action:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   REFRESH ICON
+========================================= */
+
+.report-generation-header__refresh-icon--loading {
+    animation:
+        report-generation-refresh-spin
+        0.8s linear infinite;
+}
+
+
+/* =========================================
+   REFRESH ANIMATION
+========================================= */
+
+@keyframes report-generation-refresh-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================
+   GENERATE BUTTON
+========================================= */
+
+.report-generation-header__generate {
+    min-height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 10px;
+
+    border: 1px solid #172554;
+    border-radius: 6px;
+
+    background: #172554;
+
+    color: #ffffff;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.16s ease,
+        border-color 0.16s ease,
+        box-shadow 0.16s ease,
+        opacity 0.16s ease;
+}
+
+
+/* =========================================
+   GENERATE ICON
+========================================= */
+
+.report-generation-header__generate > svg:first-child {
+    width: 15px;
+    height: 15px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   GENERATE HOVER
+========================================= */
+
+.report-generation-header__generate:hover:not(:disabled) {
+    border-color: #0f1b3d;
+
+    background: #0f1b3d;
+
+    box-shadow:
+        0 3px 8px rgba(23, 37, 84, 0.18);
+}
+
+
+/* =========================================
+   GENERATE FOCUS
+========================================= */
+
+.report-generation-header__generate:focus-visible {
+    outline: 2px solid #93c5fd;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   GENERATE DISABLED
+========================================= */
+
+.report-generation-header__generate:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   DROPDOWN ARROW
+========================================= */
+
+.report-generation-header__generate-arrow {
+    width: 14px !important;
+    height: 14px !important;
+
+    margin-left: 2px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .report-generation-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .report-generation-header__content {
+        width: 100%;
+    }
+
+
+    .report-generation-header__actions {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    .report-generation-header {
+        padding: 13px;
+    }
+
+
+    .report-generation-header__actions {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 7px;
+    }
+
+
+    .report-generation-header__action,
+    .report-generation-header__generate {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .report-generation-header {
+        padding: 12px;
+
+        gap: 11px;
+    }
+
+
+    .report-generation-header__title {
+        font-size: 16px;
+    }
+
+
+    .report-generation-header__subtitle {
+        font-size: 8px;
+    }
+
+
+    .report-generation-header__actions {
+        grid-template-columns: 1fr;
+    }
+
+
+    .report-generation-header__action,
+    .report-generation-header__generate {
+        min-height: 34px;
+
+        font-size: 8px;
+    }
+
+}

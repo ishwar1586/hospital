@@ -1,0 +1,347 @@
+
+/* =========================================================
+   IPD BILLING — BILL SUMMARY
+   File: BillSummary.css
+========================================================= */
+
+.ipd-bill-summary {
+  width: 100%;
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e2e9f2;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.ipd-bill-summary *,
+.ipd-bill-summary *::before,
+.ipd-bill-summary *::after {
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.ipd-bill-summary__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ipd-bill-summary__heading {
+  min-width: 0;
+}
+
+.ipd-bill-summary__title {
+  margin: 0;
+  color: #172b4d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ipd-bill-summary__subtitle {
+  margin: 5px 0 0;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ipd-bill-summary__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  color: #1768d1;
+  background: #edf5ff;
+  border-radius: 10px;
+}
+
+/* Invoice information */
+
+.ipd-bill-summary__invoice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 11px 12px;
+  background: #f7f9fc;
+  border: 1px solid #e9eef5;
+  border-radius: 9px;
+}
+
+.ipd-bill-summary__invoice-label {
+  color: #718096;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ipd-bill-summary__invoice-value {
+  color: #344563;
+  font-size: 12px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* Summary rows */
+
+.ipd-bill-summary__rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ipd-bill-summary__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.ipd-bill-summary__row:first-child {
+  padding-top: 0;
+}
+
+.ipd-bill-summary__label {
+  min-width: 0;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.ipd-bill-summary__value {
+  flex-shrink: 0;
+  color: #253858;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.6;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.ipd-bill-summary__value--discount {
+  color: #16804a;
+}
+
+.ipd-bill-summary__value--paid {
+  color: #16804a;
+}
+
+.ipd-bill-summary__value--due {
+  color: #c2413b;
+}
+
+/* Net charges highlight */
+
+.ipd-bill-summary__row--net {
+  margin-top: 4px;
+  padding: 15px 12px;
+  background: #f0f6ff;
+  border: 1px solid #dce9fb;
+  border-radius: 9px;
+}
+
+.ipd-bill-summary__row--net .ipd-bill-summary__label {
+  color: #344563;
+  font-weight: 650;
+}
+
+.ipd-bill-summary__row--net .ipd-bill-summary__value {
+  color: #1768d1;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+/* Current payment section */
+
+.ipd-bill-summary__payment {
+  margin-top: 20px;
+  padding: 16px;
+  background: #f8fbff;
+  border: 1px solid #dce9fb;
+  border-radius: 11px;
+}
+
+.ipd-bill-summary__payment-heading {
+  margin: 0 0 13px;
+  color: #344563;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ipd-bill-summary__payment-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ipd-bill-summary__payment-label {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.ipd-bill-summary__payment-value {
+  color: #1768d1;
+  font-size: 20px;
+  font-weight: 750;
+  line-height: 1.4;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.ipd-bill-summary__payment-hint {
+  margin: 8px 0 0;
+  color: #8491a5;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* Balance after current payment */
+
+.ipd-bill-summary__balance {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-top: 14px;
+  padding: 15px;
+  background: #fff9e8;
+  border: 1px solid #f2e1a9;
+  border-radius: 10px;
+}
+
+.ipd-bill-summary__balance--settled {
+  background: #edfaf2;
+  border-color: #c5ecd3;
+}
+
+.ipd-bill-summary__balance-label {
+  color: #775817;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.6;
+}
+
+.ipd-bill-summary__balance--settled
+.ipd-bill-summary__balance-label {
+  color: #17683b;
+}
+
+.ipd-bill-summary__balance-value {
+  color: #b7791f;
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.5;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+.ipd-bill-summary__balance--settled
+.ipd-bill-summary__balance-value {
+  color: #16804a;
+}
+
+/* Footer note */
+
+.ipd-bill-summary__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-top: 16px;
+  color: #718096;
+}
+
+.ipd-bill-summary__note-icon {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #8491a5;
+}
+
+.ipd-bill-summary__note-text {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* Empty state */
+
+.ipd-bill-summary__empty {
+  padding: 22px 12px;
+  color: #8491a5;
+  font-size: 13px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .ipd-bill-summary {
+    padding: 18px;
+  }
+
+  .ipd-bill-summary__header {
+    margin-bottom: 17px;
+  }
+
+  .ipd-bill-summary__payment {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ipd-bill-summary {
+    padding: 14px;
+    border-radius: 11px;
+  }
+
+  .ipd-bill-summary__title {
+    font-size: 15px;
+  }
+
+  .ipd-bill-summary__row {
+    gap: 10px;
+    padding: 11px 0;
+  }
+
+  .ipd-bill-summary__label,
+  .ipd-bill-summary__value {
+    font-size: 12px;
+  }
+
+  .ipd-bill-summary__row--net {
+    padding: 13px 10px;
+  }
+
+  .ipd-bill-summary__row--net .ipd-bill-summary__value {
+    font-size: 14px;
+  }
+
+  .ipd-bill-summary__payment-value {
+    font-size: 18px;
+  }
+
+  .ipd-bill-summary__balance {
+    padding: 12px;
+  }
+
+  .ipd-bill-summary__balance-value {
+    font-size: 15px;
+  }
+}

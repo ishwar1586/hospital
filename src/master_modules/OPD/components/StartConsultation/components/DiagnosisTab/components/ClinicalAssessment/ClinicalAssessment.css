@@ -1,0 +1,137 @@
+
+.clinical-assessment {
+  width: 100%;
+  padding: 16px 18px 12px;
+  background: #ffffff;
+  border: 1px solid #e1e9f3;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.clinical-assessment__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-bottom: 10px;
+}
+
+.clinical-assessment__icon {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1673e6;
+  margin-top: 1px;
+}
+
+.clinical-assessment__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.clinical-assessment__heading {
+  min-width: 0;
+}
+
+.clinical-assessment__title {
+  margin: 0 0 3px;
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.clinical-assessment__description {
+  margin: 0;
+  color: #71829f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.clinical-assessment__field {
+  width: 100%;
+}
+
+.clinical-assessment__textarea {
+  display: block;
+  width: 100%;
+  min-height: 110px;
+  padding: 11px 12px;
+  color: #26374f;
+  background: #ffffff;
+  border: 1px solid #d8e2ef;
+  border-radius: 7px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clinical-assessment__textarea::placeholder {
+  color: #8191ac;
+  opacity: 1;
+}
+
+.clinical-assessment__textarea:hover:not(:disabled) {
+  border-color: #a9bedb;
+}
+
+.clinical-assessment__textarea:focus {
+  border-color: #3985e8;
+  box-shadow: 0 0 0 3px rgba(57, 133, 232, 0.09);
+}
+
+.clinical-assessment__textarea--error {
+  border-color: #dc5555;
+}
+
+.clinical-assessment__textarea--error:focus {
+  border-color: #dc5555;
+  box-shadow: 0 0 0 3px rgba(220, 85, 85, 0.08);
+}
+
+.clinical-assessment__textarea:disabled {
+  background: #f7f9fc;
+  color: #8492a6;
+  cursor: not-allowed;
+}
+
+.clinical-assessment__footer {
+  min-height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.clinical-assessment__counter {
+  margin-left: auto;
+  color: #77849a;
+  font-size: 11px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.clinical-assessment__error {
+  color: #dc5555;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .clinical-assessment {
+    padding: 14px;
+  }
+
+  .clinical-assessment__textarea {
+    min-height: 110px;
+  }
+}

@@ -1,0 +1,220 @@
+/* =========================================
+   RESULT VERIFICATION TABS
+========================================= */
+
+.result-verification-tabs {
+    width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    overflow-x: auto;
+
+    scrollbar-width: thin;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.result-verification-tabs__list {
+    min-width: max-content;
+
+    display: flex;
+
+    align-items: stretch;
+
+    padding: 0 6px;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.result-verification-tabs__tab {
+    position: relative;
+
+    min-height: 38px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 0 12px;
+
+    border: 0;
+
+    border-bottom: 2px solid transparent;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        color 0.15s ease,
+        background-color 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.result-verification-tabs__tab:hover {
+    background: #f8fafc;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.result-verification-tabs__tab--active {
+    border-bottom-color: #2563eb;
+
+    color: #2563eb;
+
+    background: #ffffff;
+}
+
+
+.result-verification-tabs__tab--active:hover {
+    background: #ffffff;
+
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.result-verification-tabs__label {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.result-verification-tabs__count {
+    min-width: 16px;
+
+    height: 16px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 4px;
+
+    box-sizing: border-box;
+
+    border-radius: 999px;
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.result-verification-tabs__tab--active
+.result-verification-tabs__count {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.result-verification-tabs__tab:focus-visible {
+    z-index: 1;
+
+    outline: 2px solid #bfdbfe;
+
+    outline-offset: -2px;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.result-verification-tabs::-webkit-scrollbar {
+    height: 4px;
+}
+
+
+.result-verification-tabs::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.result-verification-tabs::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+
+    background: #cbd5e1;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .result-verification-tabs__tab {
+        min-height: 36px;
+
+        padding: 0 10px;
+
+        font-size: 8px;
+    }
+
+}

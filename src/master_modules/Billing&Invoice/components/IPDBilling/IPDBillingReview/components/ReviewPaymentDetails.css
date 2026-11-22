@@ -1,0 +1,278 @@
+
+/* =========================================================
+   IPD BILLING REVIEW — PAYMENT DETAILS
+   File: ReviewPaymentDetails.css
+========================================================= */
+
+.ipd-review-payment-details,
+.ipd-review-payment-details * {
+  box-sizing: border-box;
+}
+
+.ipd-review-payment-details {
+  width: 100%;
+  min-width: 0;
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid #e1e8f2;
+  border-radius: 12px;
+  font-family: "Inter", "Roboto", sans-serif;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.025);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.ipd-review-payment-details__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.ipd-review-payment-details__heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.ipd-review-payment-details__header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+}
+
+.ipd-review-payment-details__header-icon .MuiSvgIcon-root {
+  font-size: 19px;
+}
+
+.ipd-review-payment-details__title {
+  margin: 0;
+  color: #172554;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.15px;
+}
+
+/* =========================
+   EDIT BUTTON
+========================= */
+
+.ipd-review-payment-details__edit-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+  padding: 5px 9px;
+  color: #2563eb;
+  background: #ffffff;
+  border: 1px solid #bcd2ff;
+  border-radius: 6px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ipd-review-payment-details__edit-button:hover {
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-color: #7da7ff;
+}
+
+.ipd-review-payment-details__edit-button .MuiSvgIcon-root {
+  font-size: 15px;
+}
+
+.ipd-review-payment-details__edit-button .MuiTypography-root {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* =========================
+   DETAILS BODY
+========================= */
+
+.ipd-review-payment-details__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+}
+
+/* =========================
+   INDIVIDUAL ROW
+========================= */
+
+.ipd-review-payment-details__row {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.8fr) 10px minmax(0, 1.5fr);
+  align-items: start;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 8px 2px;
+  border-bottom: 1px solid #edf1f7;
+}
+
+.ipd-review-payment-details__row:last-child {
+  border-bottom: none;
+}
+
+.ipd-review-payment-details__label {
+  min-width: 0;
+  color: #40516c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.ipd-review-payment-details__separator {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.ipd-review-payment-details__value {
+  min-width: 0;
+  color: #172554;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* =========================
+   RECEIVED AMOUNT
+========================= */
+
+.ipd-review-payment-details__row--highlight {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  background: #f8fbff;
+  border-bottom-color: #e3edff;
+}
+
+.ipd-review-payment-details__row--highlight
+  .ipd-review-payment-details__value {
+  color: #1d4ed8;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .ipd-review-payment-details {
+    padding: 14px;
+  }
+
+  .ipd-review-payment-details__row {
+    grid-template-columns: minmax(95px, 0.8fr) 8px minmax(0, 1.4fr);
+    gap: 7px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .ipd-review-payment-details {
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .ipd-review-payment-details__header {
+    gap: 8px;
+    padding-bottom: 10px;
+  }
+
+  .ipd-review-payment-details__heading {
+    gap: 7px;
+  }
+
+  .ipd-review-payment-details__header-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .ipd-review-payment-details__header-icon .MuiSvgIcon-root {
+    font-size: 17px;
+  }
+
+  .ipd-review-payment-details__title {
+    font-size: 14px;
+  }
+
+  .ipd-review-payment-details__edit-button {
+    gap: 3px;
+    padding: 4px 6px;
+  }
+
+  .ipd-review-payment-details__edit-button .MuiSvgIcon-root {
+    font-size: 13px;
+  }
+
+  .ipd-review-payment-details__edit-button .MuiTypography-root {
+    font-size: 10px;
+  }
+
+  .ipd-review-payment-details__row {
+    grid-template-columns: minmax(85px, 0.8fr) 7px minmax(0, 1.3fr);
+    gap: 6px;
+    padding: 8px 1px;
+  }
+
+  .ipd-review-payment-details__label,
+  .ipd-review-payment-details__separator,
+  .ipd-review-payment-details__value {
+    font-size: 11px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL MOBILE
+========================= */
+
+@media (max-width: 340px) {
+  .ipd-review-payment-details__row {
+    grid-template-columns: minmax(72px, 0.8fr) 6px minmax(0, 1.2fr);
+    gap: 4px;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+
+.ipd-review-payment-details__edit-button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ipd-review-payment-details__edit-button {
+    transition: none;
+  }
+}

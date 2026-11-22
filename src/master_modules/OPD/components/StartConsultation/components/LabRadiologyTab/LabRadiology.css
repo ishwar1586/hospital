@@ -1,0 +1,93 @@
+
+.lab-radiology-tab {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  gap: 16px;
+  padding: 18px 20px;
+  background: #f8faff;
+}
+
+.lab-radiology-tab__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.lab-radiology-tab__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lab-radiology-tab__title {
+  margin: 0;
+  color: #25344d;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.lab-radiology-tab__search {
+  width: 100%;
+  min-width: 0;
+}
+
+.lab-radiology-tab__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
+  align-items: start;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.lab-radiology-tab__selection,
+.lab-radiology-tab__selected {
+  min-width: 0;
+  width: 100%;
+}
+
+.lab-radiology-tab__feedback {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.lab-radiology-tab__feedback--error {
+  color: #b42318;
+  background: #fff1f0;
+  border-color: #ffd6d2;
+}
+
+.lab-radiology-tab__feedback--success {
+  color: #167344;
+  background: #eaf8f0;
+  border-color: #c9ecd7;
+}
+
+@media (max-width: 900px) {
+  .lab-radiology-tab__layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .lab-radiology-tab__selected {
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .lab-radiology-tab {
+    gap: 12px;
+    padding: 12px 10px;
+  }
+
+  .lab-radiology-tab__title {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,428 @@
+/* =========================================
+   HEADER ROOT
+========================================= */
+
+.app-header {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+}
+
+.app-header * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* MENU BUTTON */
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* =========================================
+   USER INFO
+========================================= */
+
+.user-info {
+  font-size: 14px;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* =========================================
+   LOGOUT BUTTON
+========================================= */
+
+.logout-btn {
+  background: #ef4444;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 7px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* =========================================
+   NOTIFICATION
+========================================= */
+
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-icon-box {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.notif-icon-box:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* BELL ICON */
+
+.bell-icon {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px;
+  min-height: 22px;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* BADGE */
+
+.notif-badge {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  background: #ef4444;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================
+   NOTIFICATION DROPDOWN
+========================================= */
+
+.notification-dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+  z-index: 999;
+  animation: dropdownFade 0.2s ease;
+}
+
+/* TOP */
+
+.notif-top {
+  background: #6674f4;
+  color: white;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notif-top h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.notif-top button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* LIST */
+
+.notif-list {
+  max-height: 300px;
+  font-size: 11px!important;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* ITEM */
+
+.notif-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  border-bottom: 1px solid #eeeeee;
+  transition: background 0.2s ease;
+}
+
+.notif-item:hover {
+  background: #f8f9ff;
+}
+
+.notif-item.unread {
+  background: #f4f7ff;
+}
+
+/* LEFT ICON */
+
+.notif-left {
+  flex-shrink: 0;
+}
+
+/* TYPE ICON */
+
+.notif-type-icon {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px;
+  min-height: 22px;
+}
+
+/* CONTENT */
+
+.notif-content {
+  flex: 1;
+}
+
+.notif-content h5 {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+.notif-content p {
+  margin: 0;
+  font-size: 11px;
+  color: #777;
+}
+
+/* VIEW BUTTON */
+
+.notif-btn {
+  margin-top: 10px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid #6674f4;
+  background: transparent;
+  color: #6674f4;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.notif-btn:hover {
+  background: #6674f4;
+  color: white;
+}
+
+/* FOOTER */
+
+.notif-footer {
+  padding: 16px;
+  text-align: center;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: white;
+}
+
+.notif-footer:hover {
+  background: #f5f7ff;
+}
+
+/* =========================================
+   ICON COLORS
+========================================= */
+
+.green {
+  color: #22c55e;
+}
+
+.blue {
+  color: #3b82f6;
+}
+
+.orange {
+  color: #f59e0b;
+}
+
+.purple {
+  color: #8b5cf6;
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-wrapper {
+  position: relative;
+}
+
+/* PROFILE BOX */
+
+.profile-box {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #eef2ff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.profile-box:hover {
+  background: #e0e7ff;
+}
+
+/* PROFILE INFO */
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-info h4 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1.2;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 11px;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+/* PROFILE IMAGE */
+
+.profile-img {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================================
+   PROFILE DROPDOWN
+========================================= */
+
+.profile-dropdown {
+  position: absolute;
+  top: 62px;
+  right: 0;
+  width: 130px;
+  min-width: 130px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+  z-index: 999;
+  animation: dropdownFade 0.2s ease;
+}
+
+/* MENU ITEM */
+
+.profile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  color: #222;
+}
+
+.profile-menu-item svg {
+  width: 18px !important;
+  height: 18px !important;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.profile-menu-item:hover {
+  background: #f5f5f5;
+}
+
+/* LOGOUT */
+
+.profile-menu-item.logout {
+  color: #ef4444;
+}
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

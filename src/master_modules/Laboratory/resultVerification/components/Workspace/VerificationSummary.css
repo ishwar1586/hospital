@@ -1,0 +1,420 @@
+/* =========================================
+   VERIFICATION SUMMARY
+========================================= */
+
+.verification-summary {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   CRITICAL ALERT
+========================================= */
+
+.verification-summary__critical {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 8px 9px;
+
+    border: 1px solid #fed7aa;
+
+    border-radius: 6px;
+
+    background: #fff7ed;
+}
+
+
+.verification-summary__critical-icon {
+    width: 27px;
+
+    height: 27px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #ffedd5;
+
+    color: #c2410c;
+}
+
+
+.verification-summary__critical-icon svg {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+.verification-summary__critical-content {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.verification-summary__critical-content strong {
+    color: #9a3412;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+.verification-summary__critical-content span {
+    color: #c2410c;
+
+    font-size: 7px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   SUMMARY GRID
+========================================= */
+
+.verification-summary__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 7px;
+}
+
+
+/* =========================================
+   SUMMARY CARD
+========================================= */
+
+.verification-summary__card {
+    min-width: 0;
+
+    min-height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #eef2f7;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    transition:
+        border-color 0.15s ease,
+        background-color 0.15s ease;
+}
+
+
+.verification-summary__card:hover {
+    border-color: #e2e8f0;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.verification-summary__icon {
+    width: 28px;
+
+    height: 28px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+}
+
+
+.verification-summary__icon svg {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+/* =========================================
+   ICON VARIANTS
+========================================= */
+
+.verification-summary__icon--patient {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.verification-summary__icon--test {
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+.verification-summary__icon--sample {
+    background: #f5f3ff;
+
+    color: #7c3aed;
+}
+
+
+.verification-summary__icon--time {
+    background: #f8fafc;
+
+    color: #64748b;
+}
+
+
+.verification-summary__icon--doctor {
+    background: #fdf4ff;
+
+    color: #a21caf;
+}
+
+
+.verification-summary__icon--verification {
+    background: #ecfdf5;
+
+    color: #059669;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.verification-summary__content {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.verification-summary__content span {
+    color: #94a3b8;
+
+    font-size: 6px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.02em;
+}
+
+
+.verification-summary__content strong {
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.verification-summary__content small {
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 6px;
+
+    line-height: 1.2;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   REMARKS
+========================================= */
+
+.verification-summary__remarks {
+    padding: 7px 8px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 6px;
+
+    background: #f8fafc;
+}
+
+
+.verification-summary__remarks span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #64748b;
+
+    font-size: 6px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+
+.verification-summary__remarks p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 7px;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================
+   VERIFICATION STATE
+========================================= */
+
+.verification-summary__state {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 7px;
+}
+
+
+.verification-summary__state > div {
+    min-height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    padding: 5px 8px;
+
+    border-top: 1px solid #f1f5f9;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+
+.verification-summary__state span {
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    font-weight: 500;
+}
+
+
+.verification-summary__state strong {
+    color: #475569;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .verification-summary__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .verification-summary {
+        padding: 8px;
+    }
+
+
+    .verification-summary__grid {
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .verification-summary__state {
+        grid-template-columns:
+            1fr;
+    }
+
+}

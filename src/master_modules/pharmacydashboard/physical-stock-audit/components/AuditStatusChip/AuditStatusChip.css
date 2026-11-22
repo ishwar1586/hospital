@@ -1,0 +1,77 @@
+/* ==========================================================
+   Status Chip
+========================================================== */
+
+.audit-status-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+   Success
+========================================================== */
+
+.audit-status-chip.success{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+/* ==========================================================
+   Warning
+========================================================== */
+
+.audit-status-chip.warning{
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+}
+
+/* ==========================================================
+   Danger
+========================================================== */
+
+.audit-status-chip.danger{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+/* ==========================================================
+   Secondary
+========================================================== */
+
+.audit-status-chip.secondary{
+
+    background:#e2e8f0;
+
+    color:#475569;
+
+}
+
+.audit-status-chip svg{
+
+    font-size:16px;
+
+}

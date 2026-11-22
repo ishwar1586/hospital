@@ -1,0 +1,133 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-notes-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.audit-notes-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================================================
+   Note Item
+========================================================== */
+
+.audit-note-item{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:flex-start;
+
+    padding-bottom:18px;
+
+    border-bottom:1px dashed #e2e8f0;
+
+}
+
+.audit-note-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.audit-note-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.audit-note-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:8px;
+
+}
+
+.audit-note-top h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.audit-note-top span{
+
+    font-size:12px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    padding:4px 10px;
+
+    border-radius:999px;
+
+}
+
+.audit-note-content p{
+
+    margin:0 0 8px;
+
+    line-height:1.6;
+
+    font-size:14px;
+
+    color:#475569;
+
+}
+
+.audit-note-content small{
+
+    color:#94a3b8;
+
+    font-size:12px;
+
+}

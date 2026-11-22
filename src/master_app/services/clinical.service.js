@@ -1,0 +1,18 @@
+import {clinicalApi} from "./axios.config.js";
+export const createModuleService=(resource)=>({list:(filters={})=>clinicalApi.list(resource,filters),getById:(id)=>clinicalApi.get(resource,id),create:(payload)=>clinicalApi.create(resource,payload),update:(id,payload)=>clinicalApi.update(resource,id,payload),transition:(id,status,extra={})=>clinicalApi.transition(resource,id,status,extra)});
+export const patientService=createModuleService("patients");
+export const appointmentService=createModuleService("appointments");
+export const doctorService=createModuleService("doctors");
+export const admissionService=createModuleService("admissions");
+export const bedService=createModuleService("beds");
+export const encounterService=createModuleService("encounters");
+export const labOrderService=createModuleService("labOrders");
+export const radiologyOrderService=createModuleService("radiologyOrders");
+export const prescriptionService=createModuleService("prescriptions");
+export const invoiceService=createModuleService("invoices");
+export const paymentService=createModuleService("payments");
+export const medicineService=createModuleService("medicines");
+export const stockBatchService=createModuleService("stockBatches");
+export const bloodUnitService=createModuleService("bloodUnits");
+export const surgeryService=createModuleService("surgeries");
+export default createModuleService;

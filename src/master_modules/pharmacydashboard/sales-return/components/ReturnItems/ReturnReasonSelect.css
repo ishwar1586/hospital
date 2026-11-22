@@ -1,0 +1,74 @@
+/* ==========================================================
+   Return Reason Select
+========================================================== */
+
+.return-reason-select{
+
+    position:relative;
+
+    /* width:100%; */
+    width: 150px;
+
+}
+
+.return-reason-select select{
+
+    width:100%;
+
+    height:42px;
+
+    padding:0 40px 0 14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    background:#ffffff;
+
+    color:#111827;
+
+    font-size:12px;
+
+    font-weight:500;
+
+    outline:none;
+
+    cursor:pointer;
+
+    appearance:none;
+
+    transition:.25s;
+
+}
+
+.return-reason-select select:hover{
+
+    border-color:#93c5fd;
+
+}
+
+.return-reason-select select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+.select-icon{
+
+    position:absolute;
+
+    right:12px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#6b7280;
+
+    pointer-events:none;
+
+    font-size:14px;
+
+}

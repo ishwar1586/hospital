@@ -1,0 +1,1 @@
+export default function StatusChip({status="pending"}){const value=String(status).replaceAll("_"," ");const color=/paid|success|completed/i.test(value)?"#dcfce7":/failed|cancel/i.test(value)?"#fee2e2":"#fef3c7";return <span style={{display:"inline-flex",padding:"4px 9px",borderRadius:999,background:color,fontSize:12,fontWeight:600,textTransform:"capitalize"}}>{value}</span>}

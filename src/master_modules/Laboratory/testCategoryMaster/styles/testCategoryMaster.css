@@ -1,0 +1,11 @@
+.test-category-master-page {
+    width: 100%;
+
+    min-height: 100%;
+    /* gap: 14px; */
+    padding: 20px;
+
+
+    box-sizing: border-box;
+    background: #f9fafb;
+}

@@ -1,0 +1,498 @@
+/* =========================================
+   RESULT ENTRY STATS
+========================================= */
+
+.result-entry-stats {
+    width: 100%;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   STATS GRID
+========================================= */
+
+.result-entry-stats__grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.result-entry-stat-card {
+    position: relative;
+
+    min-width: 0;
+
+    min-height: 112px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 12px 13px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 1px 2px
+        rgba(15, 23, 42, 0.03);
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease,
+        transform 0.18s ease;
+}
+
+
+.result-entry-stat-card:hover {
+
+    border-color: #dbe2ea;
+
+    box-shadow:
+        0 5px 16px
+        rgba(15, 23, 42, 0.06);
+
+    transform:
+        translateY(-1px);
+}
+
+
+/* =========================================
+   TOP ROW
+========================================= */
+
+.result-entry-stat-card__top {
+
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.result-entry-stat-card__icon {
+
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.result-entry-stat-card__icon svg {
+
+    width: 17px;
+
+    height: 17px;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.result-entry-stat-card__value {
+
+    margin-top: 9px;
+
+    color: #172554;
+
+    font-size: 19px;
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: -0.3px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.result-entry-stat-card__label {
+
+    margin-top: 5px;
+
+    overflow: hidden;
+
+    color: #475569;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.result-entry-stat-card__description {
+
+    margin-top: 3px;
+
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TREND
+========================================= */
+
+.result-entry-stat-card__trend {
+
+    min-height: 19px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 3px;
+
+    padding: 0 6px;
+
+    border-radius: 999px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.result-entry-stat-card__trend svg {
+
+    width: 11px;
+
+    height: 11px;
+}
+
+
+/* =========================================
+   TREND TYPES
+========================================= */
+
+.result-entry-stat-card__trend--positive {
+
+    background: #ecfdf5;
+
+    color: #15803d;
+}
+
+
+.result-entry-stat-card__trend--negative {
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.result-entry-stat-card__trend--neutral {
+
+    background: #f1f5f9;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   CARD VARIANTS
+========================================= */
+
+
+/* -----------------------------------------
+   PENDING
+----------------------------------------- */
+
+.result-entry-stat-card--pending
+.result-entry-stat-card__icon {
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* -----------------------------------------
+   PROGRESS
+----------------------------------------- */
+
+.result-entry-stat-card--progress
+.result-entry-stat-card__icon {
+
+    background: #f5f3ff;
+
+    color: #7c3aed;
+}
+
+
+/* -----------------------------------------
+   COMPLETED
+----------------------------------------- */
+
+.result-entry-stat-card--completed
+.result-entry-stat-card__icon {
+
+    background: #ecfdf5;
+
+    color: #16a34a;
+}
+
+
+/* -----------------------------------------
+   CRITICAL
+----------------------------------------- */
+
+.result-entry-stat-card--critical
+.result-entry-stat-card__icon {
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* -----------------------------------------
+   TAT
+----------------------------------------- */
+
+.result-entry-stat-card--tat
+.result-entry-stat-card__icon {
+
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* -----------------------------------------
+   QUALITY
+----------------------------------------- */
+
+.result-entry-stat-card--quality
+.result-entry-stat-card__icon {
+
+    background: #ecfeff;
+
+    color: #0891b2;
+}
+
+
+/* =========================================
+   CARD ACCENT
+========================================= */
+
+.result-entry-stat-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #e2e8f0;
+}
+
+
+/* -----------------------------------------
+   PENDING ACCENT
+----------------------------------------- */
+
+.result-entry-stat-card--pending::before {
+
+    background: #2563eb;
+}
+
+
+/* -----------------------------------------
+   PROGRESS ACCENT
+----------------------------------------- */
+
+.result-entry-stat-card--progress::before {
+
+    background: #7c3aed;
+}
+
+
+/* -----------------------------------------
+   COMPLETED ACCENT
+----------------------------------------- */
+
+.result-entry-stat-card--completed::before {
+
+    background: #16a34a;
+}
+
+
+/* -----------------------------------------
+   CRITICAL ACCENT
+----------------------------------------- */
+
+.result-entry-stat-card--critical::before {
+
+    background: #dc2626;
+}
+
+
+/* -----------------------------------------
+   TAT ACCENT
+----------------------------------------- */
+
+.result-entry-stat-card--tat::before {
+
+    background: #ea580c;
+}
+
+
+/* -----------------------------------------
+   QUALITY ACCENT
+----------------------------------------- */
+
+.result-entry-stat-card--quality::before {
+
+    background: #0891b2;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .result-entry-stats__grid {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 760px) {
+
+    .result-entry-stats__grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .result-entry-stats__grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+    }
+
+
+    .result-entry-stat-card {
+
+        min-height: 96px;
+
+        padding: 11px 12px;
+
+    }
+
+
+    .result-entry-stat-card__value {
+
+        font-size: 18px;
+
+    }
+
+}

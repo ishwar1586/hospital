@@ -1,0 +1,95 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.stock-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    min-width:140px;
+
+    height:42px;
+
+    padding:0 16px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    border:1px solid transparent;
+
+}
+
+/* ===========================================================
+ICON
+=========================================================== */
+
+.stock-badge svg{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+AVAILABLE
+=========================================================== */
+
+.stock-badge.available{
+
+    background:#ECFDF3;
+
+    color:#15803D;
+
+    border-color:#BBF7D0;
+
+}
+
+/* ===========================================================
+LOW STOCK
+=========================================================== */
+
+.stock-badge.low-stock{
+
+    background:#FFF7ED;
+
+    color:#C2410C;
+
+    border-color:#FED7AA;
+
+}
+
+/* ===========================================================
+NEAR EXPIRY
+=========================================================== */
+
+.stock-badge.near-expiry{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+    border-color:#FCD34D;
+
+}
+
+/* ===========================================================
+OUT OF STOCK
+=========================================================== */
+
+.stock-badge.out-of-stock{
+
+    background:#FEF2F2;
+
+    color:#DC2626;
+
+    border-color:#FECACA;
+
+}

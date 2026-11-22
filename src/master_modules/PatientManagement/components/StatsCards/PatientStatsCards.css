@@ -1,0 +1,156 @@
+/* =========================================
+   Patient Stats Cards
+========================================= */
+
+.patient-stats-cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+
+/* =========================================
+   Single Stat Card
+========================================= */
+
+.patient-stat-card {
+  min-width: 0;
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.patient-stat-card:hover {
+  border-color: #d9deea;
+  box-shadow: 0 5px 18px rgba(23, 36, 92, 0.06);
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   Card Top
+========================================= */
+
+.patient-stat-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.patient-stat-card__info {
+  min-width: 0;
+}
+
+.patient-stat-card__title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #697386;
+}
+
+.patient-stat-card__value {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #17245c;
+}
+
+
+/* =========================================
+   Icon
+========================================= */
+
+.patient-stat-card__icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  background: #eef4ff;
+  color: #155eef;
+}
+
+.patient-stat-card__icon .MuiSvgIcon-root {
+  font-size: 21px;
+}
+
+
+/* =========================================
+   Card Bottom
+========================================= */
+
+.patient-stat-card__bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.patient-stat-card__change {
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.patient-stat-card__change--positive {
+  color: #16803c;
+}
+
+.patient-stat-card__change--negative {
+  color: #d92d20;
+}
+
+.patient-stat-card__description {
+  font-size: 11px;
+  line-height: 1.4;
+  color: #8a93a6;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1200px) {
+  .patient-stats-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 768px) {
+  .patient-stats-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .patient-stat-card {
+    padding: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .patient-stats-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-stat-card__value {
+    font-size: 22px;
+  }
+}

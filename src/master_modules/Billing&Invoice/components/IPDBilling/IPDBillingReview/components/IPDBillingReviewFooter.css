@@ -1,0 +1,232 @@
+
+/* =========================================================
+   IPD BILLING REVIEW — FOOTER
+   File: IPDBillingReviewFooter.css
+========================================================= */
+
+.ipd-review-footer,
+.ipd-review-footer * {
+  box-sizing: border-box;
+}
+
+.ipd-review-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  padding: 16px 20px;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 -2px 10px rgba(15, 23, 42, 0.025);
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+/* =========================
+   LEFT BUTTON GROUP
+========================= */
+
+.ipd-review-footer__left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* =========================
+   SHARED BUTTON STYLES
+========================= */
+
+.ipd-review-footer .ipd-review-footer__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 40px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+  box-shadow: none;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ipd-review-footer .ipd-review-footer__button .MuiButton-startIcon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1px;
+  margin-left: 0;
+}
+
+.ipd-review-footer .ipd-review-footer__button .MuiButton-startIcon .MuiSvgIcon-root {
+  font-size: 18px;
+}
+
+/* =========================
+   CANCEL BUTTON
+========================= */
+
+.ipd-review-footer .ipd-review-footer__cancel {
+  color: #64748b;
+  background: #ffffff;
+  border: 1px solid #d8e0eb;
+}
+
+.ipd-review-footer .ipd-review-footer__cancel:hover {
+  color: #b42318;
+  background: #fff7f6;
+  border-color: #f1b8b2;
+  box-shadow: 0 2px 5px rgba(180, 35, 24, 0.05);
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.ipd-review-footer .ipd-review-footer__back {
+  color: #334155;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+}
+
+.ipd-review-footer .ipd-review-footer__back:hover {
+  color: #1d4ed8;
+  background: #f5f8ff;
+  border-color: #9bb9f7;
+}
+
+/* =========================
+   GENERATE INVOICE BUTTON
+========================= */
+
+.ipd-review-footer .ipd-review-footer__generate {
+  min-width: 190px;
+  min-height: 42px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background: #2563eb;
+  border: 1px solid #2563eb;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 3px 7px rgba(37, 99, 235, 0.16);
+}
+
+.ipd-review-footer .ipd-review-footer__generate:hover {
+  color: #ffffff;
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.22);
+}
+
+.ipd-review-footer .ipd-review-footer__generate:active {
+  background: #1e40af;
+  border-color: #1e40af;
+  box-shadow: none;
+}
+
+/* =========================
+   LOADING STATE
+========================= */
+
+.ipd-review-footer .ipd-review-footer__generate .MuiCircularProgress-root {
+  flex-shrink: 0;
+}
+
+.ipd-review-footer .ipd-review-footer__button.Mui-disabled {
+  cursor: not-allowed;
+  opacity: 0.58;
+  box-shadow: none;
+}
+
+/* =========================
+   KEYBOARD ACCESSIBILITY
+========================= */
+
+.ipd-review-footer .ipd-review-footer__button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.22);
+  outline-offset: 3px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .ipd-review-footer {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .ipd-review-footer__left {
+    gap: 8px;
+  }
+
+  .ipd-review-footer .ipd-review-footer__button {
+    min-height: 38px;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .ipd-review-footer .ipd-review-footer__generate {
+    min-width: 165px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+  .ipd-review-footer {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px;
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  .ipd-review-footer__left {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 8px;
+  }
+
+  .ipd-review-footer .ipd-review-footer__button {
+    width: 100%;
+    min-width: 0;
+    min-height: 40px;
+    padding: 9px 8px;
+    font-size: 12px;
+  }
+
+  .ipd-review-footer .ipd-review-footer__generate {
+    min-width: 0;
+    min-height: 44px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .ipd-review-footer .ipd-review-footer__button {
+    transition: none;
+  }
+}

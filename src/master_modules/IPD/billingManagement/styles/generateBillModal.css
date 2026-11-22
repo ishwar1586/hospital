@@ -1,0 +1,117 @@
+.generate-bill-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generate-bill-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.generate-bill-title span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.generate-bill-body {
+  padding-top: 10px;
+}
+
+.bill-patient-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.bill-patient-card label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.bill-patient-card span {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.bill-charge-section {
+  margin-top: 24px;
+}
+
+.bill-charge-section h3 {
+  margin-bottom: 16px;
+}
+
+.charges-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.charge-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.charge-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.charge-field input {
+  height: 44px;
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+  padding: 0 12px;
+  outline: none;
+}
+
+.charge-field input:focus {
+  border-color: #2563eb;
+}
+
+.bill-total-card {
+  margin-top: 24px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bill-total-card h4 {
+  margin: 0;
+  color: #475569;
+}
+
+.bill-total-card h2 {
+  margin-top: 10px;
+  color: #2563eb;
+  font-size: 32px;
+}
+
+.generate-bill-footer {
+  padding: 20px !important;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+
+  .bill-patient-card {
+    grid-template-columns: 1fr;
+  }
+
+  .charges-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,192 @@
+.edit-header {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 24px !important;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.edit-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.edit-title svg {
+  color: #2563eb;
+}
+
+/* Patient Card */
+
+.edit-patient-card {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: white;
+
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.edit-patient-card h2 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.edit-tags {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 12px;
+}
+
+.edit-tags span {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.15
+  );
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Sections */
+
+.edit-section {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.edit-section h3 {
+  margin: 0 0 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* Grid */
+
+.edit-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(1, 1fr);
+
+  gap: 16px;
+}
+
+/* Inputs */
+
+.edit-grid .MuiTextField-root {
+  width: 100%;
+}
+
+.edit-grid .MuiOutlinedInput-root {
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.edit-grid .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #2563eb;
+}
+
+.edit-grid
+  .Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #2563eb !important;
+}
+
+.edit-grid .MuiInputLabel-root {
+  font-size: 13px;
+}
+
+.edit-grid .MuiInputBase-input {
+  font-size: 14px;
+}
+
+/* Readonly */
+
+.edit-grid
+  .MuiInputBase-input.Mui-disabled {
+  -webkit-text-fill-color: #0f172a;
+}
+
+/* Footer */
+
+.edit-footer {
+  padding: 18px 24px !important;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.edit-footer button {
+  min-width: 150px;
+
+  border-radius: 10px !important;
+
+  text-transform: none !important;
+  font-weight: 600 !important;
+}
+
+/* Scroll */
+
+.MuiDialogContent-root::-webkit-scrollbar {
+  width: 8px;
+}
+
+.MuiDialogContent-root::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .edit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edit-tags {
+    flex-wrap: wrap;
+  }
+
+  .edit-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .edit-footer button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,345 @@
+/* =========================
+   HEADER
+========================= */
+
+.billing-header {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 24px !important;
+
+  border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.billing-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.billing-title svg {
+  color: #2563eb;
+  font-size: 28px !important;
+}
+
+/* =========================
+   BODY
+========================= */
+
+.MuiDialogContent-root {
+  background: #f8fafc;
+  padding: 24px !important;
+}
+
+/* =========================
+   PATIENT CARD
+========================= */
+
+.billing-patient-card {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 20px;
+  margin-bottom: 20px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.billing-patient-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: -70px;
+  top: -70px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+}
+
+.billing-patient-card h2 {
+  margin: 0;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  position: relative;
+  z-index: 2;
+}
+
+.billing-tags {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 12px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.billing-tags span {
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.15
+    );
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.billing-section {
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.billing-section h3 {
+  margin: 0 0 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* =========================
+   INFO GRID
+========================= */
+
+.billing-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.billing-info-card {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  padding: 16px;
+}
+
+.billing-info-card label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 12px;
+  color: #64748b;
+}
+
+.billing-info-card h4 {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* =========================
+   FORM GRID
+========================= */
+
+.billing-form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.billing-form-grid .MuiTextField-root {
+  width: 100%;
+}
+
+/* =========================
+   TEXTFIELDS
+========================= */
+
+.MuiOutlinedInput-root {
+  border-radius: 12px !important;
+  background: #ffffff;
+}
+
+.MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #2563eb;
+}
+
+.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #2563eb !important;
+}
+
+/* =========================
+   BILL SUMMARY
+========================= */
+
+.billing-summary {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 16px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.summary-row span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.summary-row strong {
+  font-size: 18px;
+  color: #0f172a;
+}
+
+.summary-row.balance {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.summary-row.balance strong {
+  color: #dc2626;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.billing-footer {
+  padding: 18px 24px !important;
+
+  border-top: 1px solid #e5e7eb;
+
+  background: #ffffff;
+}
+
+.billing-footer button {
+  min-width: 140px;
+  height: 42px;
+
+  border-radius: 10px !important;
+
+  text-transform: none !important;
+
+  font-weight: 600 !important;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+.MuiDialogContent-root::-webkit-scrollbar {
+  width: 8px;
+}
+
+.MuiDialogContent-root::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .billing-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .billing-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .billing-tags {
+    flex-wrap: wrap;
+  }
+
+  .billing-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .billing-footer button {
+    width: 100%;
+  }
+}
+
+
+
+
+.status.paid strong {
+  color: #16a34a;
+}
+
+.status.partially-paid strong {
+  color: #d97706;
+}
+
+.status.unpaid strong {
+  color: #dc2626;
+}

@@ -1,0 +1,180 @@
+.billing-filters-card {
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 16px;
+
+  padding: 24px;
+}
+
+.billing-filters-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, 1fr);
+
+  gap: 16px;
+}
+
+.billing-filter-item {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.billing-filter-item label {
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #334155;
+}
+
+.billing-filter-input,
+.billing-filter-select {
+
+  height: 44px;
+
+  border: 1px solid #dbe2ea;
+
+  border-radius: 10px;
+
+  padding: 0 12px;
+
+  outline: none;
+
+  font-size: 14px;
+
+  background: #fff;
+}
+
+.billing-filter-input:focus,
+.billing-filter-select:focus {
+
+  border-color: #2563eb;
+}
+
+.billing-search-box {
+
+  height: 44px;
+
+  border: 1px solid #dbe2ea;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 12px;
+}
+
+.billing-search-box svg {
+
+  color: #64748b;
+}
+
+.billing-search-box input {
+
+  border: none;
+
+  outline: none;
+
+  width: 100%;
+
+  font-size: 14px;
+}
+
+.billing-filter-actions {
+
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 12px;
+
+  margin-top: 20px;
+}
+
+.billing-reset-btn,
+.billing-apply-btn {
+
+  height: 44px;
+
+  border-radius: 10px;
+
+  padding: 0 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.billing-reset-btn {
+
+  background: #ffffff;
+
+  border: 1px solid #dbe2ea;
+
+  color: #334155;
+}
+
+.billing-apply-btn {
+
+  border: none;
+
+  background: #2563eb;
+
+  color: white;
+}
+
+.billing-apply-btn:hover {
+
+  background: #1d4ed8;
+}
+
+@media (max-width: 1400px) {
+
+  .billing-filters-grid {
+
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .billing-filters-grid {
+
+    grid-template-columns: 1fr;
+  }
+
+  .billing-filter-actions {
+
+    flex-direction: column;
+  }
+
+  .billing-reset-btn,
+  .billing-apply-btn {
+
+    width: 100%;
+    justify-content: center;
+  }
+}

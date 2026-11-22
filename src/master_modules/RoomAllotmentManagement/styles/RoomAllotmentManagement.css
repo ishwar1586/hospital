@@ -1,0 +1,53 @@
+
+/* ==========================================
+   ROOM ALLOTMENT MANAGEMENT PAGE
+========================================== */
+
+.room-allotment-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  gap: 14px;
+  background-color: #f8faff;
+  overflow-x: hidden;
+}
+
+/* ==========================================
+   PAGE HEADER SECTION
+========================================== */
+
+.room-allotment-page__header {
+  width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media screen and (max-width: 1024px) {
+  .room-allotment-page {
+    padding: 12px;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .room-allotment-page {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .room-allotment-page {
+    padding: 8px;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,478 @@
+/* ===========================================================
+DIALOG
+=========================================================== */
+
+.walkin-modal-paper{
+
+    border-radius:22px !important;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 60px rgba(15,23,42,.18) !important;
+
+}
+
+/* ===========================================================
+TITLE
+=========================================================== */
+
+.walkin-modal-title{
+
+    padding:26px 30px !important;
+
+    background:#FFFFFF;
+
+}
+
+.walkin-modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:24px;
+
+}
+
+.walkin-modal-heading{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.walkin-modal-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+        135deg,
+        #2563EB,
+        #1D4ED8
+    );
+
+    color:#FFFFFF;
+
+}
+
+.walkin-modal-icon svg{
+
+    font-size:28px;
+
+}
+
+.walkin-modal-heading h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.walkin-modal-heading p{
+
+    margin-top:6px;
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+.walkin-close-btn{
+
+    min-width:42px !important;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px !important;
+
+    color:#64748B !important;
+
+}
+
+/* ===========================================================
+CONTENT
+=========================================================== */
+
+.walkin-dialog-content{
+
+    padding:30px !important;
+
+}
+
+/* ===========================================================
+FORM
+=========================================================== */
+
+.walkin-dialog-content .MuiGrid-container{
+
+    row-gap:8px;
+
+}
+
+.walkin-dialog-content .MuiOutlinedInput-root{
+
+    border-radius:12px;
+
+    background:#FAFBFC;
+
+    transition:.25s;
+
+}
+
+.walkin-dialog-content .MuiOutlinedInput-root:hover{
+
+    background:#FFFFFF;
+
+}
+
+.walkin-dialog-content
+.MuiOutlinedInput-root.Mui-focused{
+
+    background:#FFFFFF;
+
+}
+
+.walkin-dialog-content .MuiInputLabel-root{
+
+    font-size:14px;
+
+}
+
+.walkin-dialog-content .MuiOutlinedInput-input{
+
+    padding:15px 16px;
+
+    font-size:15px;
+
+}
+
+.walkin-dialog-content textarea{
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+DIVIDER
+=========================================================== */
+
+.MuiDivider-root{
+
+    border-color:#E2E8F0 !important;
+
+}
+
+
+/* ===========================================================
+FOOTER
+=========================================================== */
+
+.walkin-dialog-actions{
+
+    padding:24px 30px !important;
+
+    border-top:1px solid #E2E8F0;
+
+    background:#FFFFFF;
+
+}
+
+.walkin-footer{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+}
+
+/* ===========================================================
+NOTE
+=========================================================== */
+
+.walkin-footer-note{
+
+    flex:1;
+
+    padding:16px 18px;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    color:#475569;
+
+    font-size:14px;
+
+    line-height:1.7;
+
+}
+
+.walkin-footer-note strong{
+
+    color:#0F172A;
+
+}
+
+/* ===========================================================
+BUTTONS
+=========================================================== */
+
+.walkin-footer-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.walkin-btn-cancel{
+
+    min-width:120px !important;
+
+    height:44px !important;
+
+    border-radius:10px !important;
+
+    text-transform:none !important;
+
+    font-weight:600 !important;
+
+}
+
+.walkin-btn-cash{
+
+    min-width:220px !important;
+
+    height:44px !important;
+
+    border-radius:10px !important;
+
+    text-transform:none !important;
+
+    font-weight:600 !important;
+
+}
+
+.walkin-btn-primary{
+
+    min-width:180px !important;
+
+    height:44px !important;
+
+    border-radius:10px !important;
+
+    text-transform:none !important;
+
+    font-weight:600 !important;
+
+    box-shadow:0 10px 20px rgba(37,99,235,.18) !important;
+
+}
+
+.walkin-btn-primary:hover{
+
+    box-shadow:0 14px 28px rgba(37,99,235,.28) !important;
+
+    transform:translateY(-1px);
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .walkin-footer{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .walkin-footer-buttons{
+
+        width:100%;
+
+        justify-content:flex-end;
+
+        flex-wrap:wrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .walkin-modal-title{
+
+        padding:20px !important;
+
+    }
+
+    .walkin-dialog-content{
+
+        padding:20px !important;
+
+    }
+
+    .walkin-dialog-actions{
+
+        padding:20px !important;
+
+    }
+
+    .walkin-modal-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .walkin-footer-buttons{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .walkin-btn-cancel,
+
+    .walkin-btn-cash,
+
+    .walkin-btn-primary{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .walkin-modal-heading{
+
+        gap:12px;
+
+    }
+
+    .walkin-modal-icon{
+
+        width:48px;
+
+        height:48px;
+
+        border-radius:12px;
+
+    }
+
+    .walkin-modal-icon svg{
+
+        font-size:22px;
+
+    }
+
+    .walkin-modal-heading h2{
+
+        font-size:20px;
+
+    }
+
+    .walkin-modal-heading p{
+
+        font-size:13px;
+
+    }
+
+}
+
+
+/* ==========================================
+FORM LAYOUT
+========================================== */
+
+.walkin-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.walkin-grid-2{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.walkin-grid-3{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+/* ==========================================
+Responsive
+========================================== */
+
+@media (max-width:768px){
+
+    .walkin-grid-2{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .walkin-grid-3{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

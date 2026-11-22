@@ -1,0 +1,123 @@
+.invoice-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.invoice-preview {
+  background: #ffffff;
+}
+
+.hospital-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.hospital-header h1 {
+  margin: 0;
+  color: #0f172a;
+}
+
+.hospital-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.invoice-badge {
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.invoice-info {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.invoice-info label,
+.patient-info-card label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.invoice-info span,
+.patient-info-card span {
+  font-weight: 600;
+}
+
+.patient-info-card {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.invoice-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.invoice-table th,
+.invoice-table td {
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.invoice-table th {
+  background: #f8fafc;
+}
+
+.invoice-summary {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
+}
+
+.invoice-summary div {
+  background: #f8fafc;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.invoice-summary label {
+  display: block;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.invoice-summary h3 {
+  margin: 0;
+}
+
+.invoice-footer {
+  padding: 20px !important;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media(max-width:768px){
+
+  .invoice-info,
+  .patient-info-card,
+  .invoice-summary{
+    grid-template-columns:1fr;
+  }
+
+  .hospital-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+}

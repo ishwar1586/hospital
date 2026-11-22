@@ -1,0 +1,105 @@
+
+.staff-account-step {
+  width: 100%;
+  min-width: 0;
+}
+
+.staff-account-heading {
+  margin-bottom: 24px;
+}
+
+.staff-account-heading h2 {
+  margin: 0;
+  color: #172b4d;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.staff-account-heading p {
+  margin: 7px 0 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.staff-account-security {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  background: #eff6ff;
+}
+
+.staff-account-security-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.staff-account-security h3 {
+  margin: 0 0 5px;
+  color: #1e40af;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.staff-account-security p {
+  margin: 0;
+  color: #1e40af;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.staff-account-section {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.staff-account-section > h3 {
+  margin: 0 0 22px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.staff-account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 20px;
+}
+
+.staff-account-field {
+  min-width: 0;
+}
+
+.staff-account-checkbox-field {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) {
+  .staff-account-section {
+    padding: 16px;
+  }
+
+  .staff-account-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+
+  .staff-account-checkbox-field {
+    grid-column: auto;
+  }
+}

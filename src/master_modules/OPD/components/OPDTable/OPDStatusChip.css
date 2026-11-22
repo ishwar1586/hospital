@@ -1,0 +1,52 @@
+
+.opd-status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.opd-status-chip__dot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.opd-status-chip--scheduled {
+  color: #475569;
+  background: #f1f5f9;
+}
+
+.opd-status-chip--waiting {
+  color: #b45309;
+  background: #fff7ed;
+}
+
+.opd-status-chip--checked-in {
+  color: #047857;
+  background: #ecfdf5;
+}
+
+.opd-status-chip--in-consultation {
+  color: #1d4ed8;
+  background: #eff6ff;
+}
+
+.opd-status-chip--consulted {
+  color: #6d28d9;
+  background: #f5f3ff;
+}
+
+.opd-status-chip--no-show,
+.opd-status-chip--cancelled {
+  color: #b91c1c;
+  background: #fef2f2;
+}

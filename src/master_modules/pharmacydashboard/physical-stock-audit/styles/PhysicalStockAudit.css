@@ -1,0 +1,116 @@
+/* ==========================================================
+   Page
+========================================================== */
+
+.physical-stock-audit-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    padding:24px;
+
+    background:#f8fafc;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.audit-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+.audit-header h1{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.audit-header p{
+
+    margin-top:8px;
+
+    font-size:15px;
+
+    color:#64748b;
+
+    max-width:760px;
+
+}
+
+/* ==========================================================
+   Bottom Cards
+========================================================== */
+
+.audit-bottom-grid{
+
+    display:grid;
+
+    /* grid-template-columns:repeat(4,1fr); */
+     /* width: 100% !important; */
+
+    gap:20px;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1200px){
+
+    .audit-bottom-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .physical-stock-audit-page{
+
+        padding:18px;
+
+    }
+
+    .audit-header{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .audit-header h1{
+
+        font-size:24px;
+
+    }
+
+    .audit-bottom-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

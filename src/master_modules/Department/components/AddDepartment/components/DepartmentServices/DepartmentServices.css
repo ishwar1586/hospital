@@ -1,0 +1,260 @@
+
+/* =========================================
+   DEPARTMENT SERVICES
+========================================= */
+
+.department-services {
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.035);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.department-services__header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.department-services__icon-wrapper {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #edf5ff;
+}
+
+.department-services__header-icon {
+  color: #3478c9;
+  font-size: 21px !important;
+}
+
+.department-services__heading-content {
+  min-width: 0;
+}
+
+.department-services__title {
+  margin: 0;
+  color: #263445;
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.department-services__description {
+  margin: 4px 0 0;
+  color: #8492a6;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.department-services__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 22px;
+}
+
+.department-services__group {
+  min-width: 0;
+}
+
+.department-services__group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.department-services__group-title {
+  margin: 0;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.department-services__group-description {
+  margin: 4px 0 0;
+  color: #98a2b3;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.department-services__count {
+  flex-shrink: 0;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #edf5ff;
+  color: #3478c9;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* =========================================
+   OPTION GRID
+========================================= */
+
+.department-services__options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.department-services__options--specialties {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* =========================================
+   OPTION CARD
+========================================= */
+
+.department-services__option {
+  width: 100%;
+  min-width: 0;
+  min-height: 66px;
+  padding: 13px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  text-align: left;
+  border: 1px solid #e4e9f0;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.department-services__option:hover {
+  border-color: #9fc4f3;
+  background: #f8fbff;
+}
+
+.department-services__option--selected {
+  border-color: #4389df;
+  background: #f3f8ff;
+  box-shadow: 0 0 0 1px rgba(67, 137, 223, 0.08);
+}
+
+.department-services__option-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.department-services__option-label {
+  color: #344054;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.department-services__option-description {
+  color: #98a2b3;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.department-services__checkbox {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #cbd3df;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+.department-services__option--selected
+.department-services__checkbox {
+  border-color: #3478c9;
+  background: #3478c9;
+}
+
+.department-services__check-icon {
+  color: #ffffff;
+  font-size: 17px !important;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.department-services__empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 18px;
+  border: 1px dashed #dce3ec;
+  border-radius: 8px;
+  color: #98a2b3;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+.department-services__option:focus-visible {
+  outline: 3px solid rgba(52, 120, 201, 0.18);
+  outline-offset: 2px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .department-services__options--specialties {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .department-services {
+    padding: 18px;
+  }
+
+  .department-services__options,
+  .department-services__options--specialties {
+    grid-template-columns: 1fr;
+  }
+
+  .department-services__group-header {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 380px) {
+  .department-services {
+    padding: 15px;
+  }
+
+  .department-services__option {
+    padding: 11px;
+  }
+}

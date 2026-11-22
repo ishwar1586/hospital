@@ -1,0 +1,291 @@
+/* =====================================================
+   CARD
+===================================================== */
+
+.ledger-table-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 16px rgba(15,23,42,.05);
+
+}
+
+/* =====================================================
+   WRAPPER
+===================================================== */
+
+.ledger-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:auto;
+
+    max-height:60vh;
+
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.ledger-table{
+
+    width:100%;
+
+    min-width:1300px;
+
+    border-collapse:collapse;
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.ledger-table thead{
+
+    /* position:sticky; */
+
+    top:0;
+
+    z-index:10;
+
+}
+
+.ledger-table th{
+
+    padding:14px 16px;
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    border-bottom:1px solid #E5E7EB;
+
+    white-space:nowrap;
+
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.ledger-table td{
+
+    padding:14px 16px;
+
+    border-bottom:1px solid #EEF2F7;
+
+    font-size:13px;
+
+    color:#334155;
+
+    white-space:nowrap;
+
+    vertical-align:middle;
+
+}
+
+.ledger-row{
+
+    transition:.25s;
+
+}
+
+.ledger-row:hover{
+
+    background:#F8FBFF;
+
+}
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.ledger-date{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:2px;
+
+}
+
+.ledger-main-date{
+
+    font-weight:600;
+
+    color:#0F172A;
+
+}
+
+.ledger-time{
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+/* =====================================================
+   REFERENCE
+===================================================== */
+
+.ledger-reference{
+
+    font-weight:600;
+
+    color:#2563EB;
+
+}
+
+/* =====================================================
+   QTY
+===================================================== */
+
+.ledger-col-opening,
+.ledger-col-closing{
+
+    text-align:center;
+
+    font-weight:700;
+
+}
+
+.ledger-col-in{
+
+    text-align:center;
+
+}
+
+.ledger-col-out{
+
+    text-align:center;
+
+}
+
+.ledger-in{
+
+    color:#16A34A;
+
+    font-weight:700;
+
+}
+
+.ledger-out{
+
+    color:#DC2626;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   USER
+===================================================== */
+
+.ledger-col-user{
+
+    font-weight:500;
+
+}
+
+/* =====================================================
+   REMARKS
+===================================================== */
+
+.ledger-col-remarks{
+
+    max-width:280px;
+
+}
+
+.ledger-col-remarks{
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+/* =====================================================
+   COLUMN WIDTH
+===================================================== */
+
+.ledger-col-date{
+
+    min-width:150px;
+
+}
+
+.ledger-col-reference{
+
+    min-width:140px;
+
+}
+
+.ledger-col-transaction{
+
+    min-width:180px;
+
+}
+
+.ledger-col-opening,
+.ledger-col-in,
+.ledger-col-out,
+.ledger-col-closing{
+
+    min-width:110px;
+
+}
+
+.ledger-col-user{
+
+    min-width:180px;
+
+}
+
+.ledger-col-remarks{
+
+    min-width:280px;
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.ledger-table-wrapper::-webkit-scrollbar{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+.ledger-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}
+
+.ledger-table-wrapper::-webkit-scrollbar-track{
+
+    background:#F8FAFC;
+
+}

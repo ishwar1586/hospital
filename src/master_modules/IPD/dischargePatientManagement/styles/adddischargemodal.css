@@ -1,0 +1,49 @@
+.add-discharge-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.add-discharge-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.add-discharge-title svg {
+  color: #2563eb;
+}
+
+.add-discharge-form {
+  display: grid;
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 20px;
+}
+
+.add-discharge-remarks {
+  margin-top: 20px;
+}
+
+.add-discharge-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 24px !important;
+}
+
+.add-discharge-footer button {
+  min-width: 160px;
+}
+
+@media (max-width: 768px) {
+
+  .add-discharge-form {
+    grid-template-columns: 1fr;
+  }
+
+}

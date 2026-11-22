@@ -1,0 +1,463 @@
+/* =========================================
+   DOCTOR FILTERS
+========================================= */
+
+.doctor-filters {
+    width: 100%;
+
+    padding:
+        10px
+        10px
+        0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FILTER ROW
+========================================= */
+
+.doctor-filters__row {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 12px;
+
+    padding: 16px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.doctor-filter-field {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+
+.doctor-filter-field--search {
+    flex: 2;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.doctor-filter-field__label {
+    color: #475569;
+
+    font-size: 12px;
+
+    line-height: 17px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.doctor-filter-input-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   SEARCH ICON
+========================================= */
+
+.doctor-filter-input__icon {
+    position: absolute;
+
+    left: 12px;
+    top: 50%;
+
+    width: 19px !important;
+    height: 19px !important;
+
+    color: #94a3b8;
+
+    transform:
+        translateY(-50%);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   SEARCH INPUT
+========================================= */
+
+.doctor-filter-input {
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0
+        12px
+        0
+        38px;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        #dbe1e8;
+
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    color: #1e293b;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    line-height: 20px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.doctor-filter-input::placeholder {
+    color: #94a3b8;
+}
+
+
+.doctor-filter-input:hover {
+    border-color: #cbd5e1;
+}
+
+
+.doctor-filter-input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================
+   SELECT WRAPPER
+========================================= */
+
+.doctor-filter-select-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.doctor-filter-select {
+    width: 100%;
+
+    height: 40px;
+
+    padding:
+        0
+        34px
+        0
+        12px;
+
+    appearance: none;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        #dbe1e8;
+
+    border-radius: 8px;
+
+    color: #334155;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    line-height: 20px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.doctor-filter-select:hover {
+    border-color: #cbd5e1;
+}
+
+
+.doctor-filter-select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================
+   SELECT ICON
+========================================= */
+
+.doctor-filter-select__icon {
+    position: absolute;
+
+    right: 9px;
+    top: 50%;
+
+    width: 18px !important;
+    height: 18px !important;
+
+    color: #64748b;
+
+    transform:
+        translateY(-50%);
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.doctor-filter-clear,
+.doctor-filter-export {
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding:
+        0
+        13px;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    line-height: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.doctor-filter-clear svg,
+.doctor-filter-export svg {
+
+    width: 18px !important;
+    height: 18px !important;
+
+}
+
+
+/* =========================================
+   CLEAR BUTTON
+========================================= */
+
+.doctor-filter-clear {
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        #dbe1e8;
+
+    color: #64748b;
+}
+
+
+.doctor-filter-clear:hover {
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   EXPORT BUTTON
+========================================= */
+
+.doctor-filter-export {
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        #dbe1e8;
+
+    color: #334155;
+}
+
+
+.doctor-filter-export:hover {
+
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+}
+
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.doctor-filter-input:disabled,
+.doctor-filter-select:disabled,
+.doctor-filter-clear:disabled,
+.doctor-filter-export:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .doctor-filters__row {
+
+        flex-wrap: wrap;
+
+        align-items: flex-end;
+    }
+
+
+    .doctor-filter-field {
+
+        flex:
+            1 1
+            calc(33.333% - 12px);
+    }
+
+
+    .doctor-filter-field--search {
+
+        flex:
+            1 1
+            100%;
+    }
+
+
+    .doctor-filter-clear,
+    .doctor-filter-export {
+
+        flex:
+            0 0
+            auto;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+    .doctor-filters {
+
+        padding:
+            16px
+            16px
+            0;
+    }
+
+
+    .doctor-filters__row {
+
+        padding: 14px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .doctor-filter-field,
+    .doctor-filter-field--search {
+
+        flex: none;
+
+        width: 100%;
+    }
+
+
+    .doctor-filter-clear,
+    .doctor-filter-export {
+
+        width: 100%;
+    }
+
+}

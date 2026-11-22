@@ -1,0 +1,417 @@
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.category-table-container {
+    width: 100%;
+
+    margin-top: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px 8px 0 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.category-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+    scrollbar-width: thin;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.category-table {
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.category-table thead {
+    background: #f8fafc;
+}
+
+
+.category-table th {
+    height: 40px;
+
+    padding: 10px 15px;
+
+     /* border-right: 1px solid #e5e7eb; */
+
+    border-bottom: 1px solid #e5e7eb; 
+
+    color: #111827;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+.category-table th:last-child {
+    border-right: none;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.category-table td {
+    height: 40px;
+
+    padding: 10px 12px;
+
+     /* border-right: 1px solid #edf0f3; */
+
+    border-bottom: 1px solid #edf0f3; 
+
+    color: #374151;
+
+    font-size: 11px;
+
+    vertical-align: middle;
+
+    box-sizing: border-box;
+}
+
+
+.category-table td:last-child {
+    border-right: none;
+}
+
+
+.category-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.category-table tbody tr:hover {
+    background: #fafcff;
+}
+
+
+/* =========================================
+   SERIAL
+========================================= */
+
+.category-table__serial {
+    color: #6b7280 !important;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CODE
+========================================= */
+
+.category-table__code {
+    color: #374151;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.category-table__name {
+    display: block;
+
+    overflow: hidden;
+
+    color: #111827;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.category-table__number {
+    color: #374151;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   DEPARTMENT CHIP
+========================================= */
+
+.department-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    max-width: 100%;
+
+    padding: 4px 7px;
+
+    border-radius: 5px;
+
+    background: #f3f4f6;
+
+    color: #374151;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+
+.department-chip svg {
+    width: 14px;
+
+    height: 14px;
+
+    flex-shrink: 0;
+}
+
+
+.department-chip span {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS CHIP
+========================================= */
+
+.status-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 48px;
+
+    padding: 4px 8px;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    box-sizing: border-box;
+}
+
+
+.status-chip--active {
+    background: #e8f7ef;
+
+    color: #16834d;
+}
+
+
+.status-chip--inactive {
+    background: #feeceb;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   AUTHORIZATION CHIP
+========================================= */
+
+.authorization-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 32px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+.authorization-chip--yes {
+    color: #16834d;
+}
+
+
+.authorization-chip--no {
+    color: #6b7280;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.category-table__actions {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 4px;
+}
+
+
+.category-table__action-button {
+    width: 28px !important;
+
+    height: 28px !important;
+
+    padding: 0 !important;
+
+    border: 1px solid #e5e7eb !important;
+
+    border-radius: 5px !important;
+
+    background: #ffffff !important;
+
+    color: #475569 !important;
+}
+
+
+.category-table__action-button:hover {
+    border-color: #cbd5e1 !important;
+
+    background: #f8fafc !important;
+
+    color: #2563eb !important;
+}
+
+
+.category-table__action-button svg {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+/* =========================================
+   MUI MENU
+========================================= */
+
+.MuiMenu-paper {
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px !important;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, 0.12) !important;
+}
+
+
+.MuiMenuItem-root {
+    min-width: 130px;
+
+    gap: 9px;
+
+    padding: 8px 12px !important;
+
+    color: #374151;
+
+    font-size: 11px !important;
+}
+
+
+.MuiMenuItem-root svg {
+    width: 17px;
+
+    height: 17px;
+
+    color: #64748b;
+}
+
+
+.MuiMenuItem-root:hover {
+    background: #f8fafc !important;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.category-table__empty {
+    height: 100px !important;
+
+    color: #9ca3af !important;
+
+    font-size: 12px !important;
+
+    text-align: center;
+
+    border-right: none !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .category-table {
+        min-width: 1050px;
+    }
+
+}

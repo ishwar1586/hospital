@@ -1,0 +1,171 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.medicine-catalog{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    width:100%;
+
+    padding:20px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    box-shadow:0 4px 18px rgba(15,23,42,.05);
+
+}
+
+/* ===========================================================
+LIST
+=========================================================== */
+
+.medicine-catalog .medicine-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+/* ===========================================================
+PAGINATION WRAPPER
+=========================================================== */
+
+.medicine-catalog .MuiTablePagination-root{
+
+    margin-top:8px;
+
+    padding:0;
+
+    border-top:1px solid #E2E8F0;
+
+    overflow-x:auto;
+
+}
+
+/* ===========================================================
+TOOLBAR
+=========================================================== */
+
+.medicine-catalog .MuiTablePagination-toolbar{
+
+    min-height:58px;
+
+    padding:10px 0;
+
+}
+
+/* ===========================================================
+ROWS LABEL
+=========================================================== */
+
+.medicine-catalog .MuiTablePagination-selectLabel,
+
+.medicine-catalog .MuiTablePagination-displayedRows{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#475569;
+
+}
+
+/* ===========================================================
+SELECT
+=========================================================== */
+
+.medicine-catalog .MuiTablePagination-select{
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+ICON BUTTONS
+=========================================================== */
+
+.medicine-catalog .MuiIconButton-root{
+
+    color:#334155;
+
+    transition:.25s;
+
+}
+
+.medicine-catalog .MuiIconButton-root:hover{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media (max-width:992px){
+
+    .medicine-catalog{
+
+        padding:16px;
+
+        gap:18px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .medicine-catalog{
+
+        padding:14px;
+
+        border-radius:12px;
+
+    }
+
+    .medicine-catalog .MuiTablePagination-toolbar{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:8px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .medicine-catalog{
+
+        padding:12px;
+
+    }
+
+    .medicine-catalog .MuiTablePagination-selectLabel,
+
+    .medicine-catalog .MuiTablePagination-displayedRows{
+
+        font-size:12px;
+
+    }
+
+}

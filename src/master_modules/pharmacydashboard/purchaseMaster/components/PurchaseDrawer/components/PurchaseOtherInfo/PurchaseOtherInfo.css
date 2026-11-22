@@ -1,0 +1,47 @@
+.purchase-other-info{
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    height:100%;
+}
+
+.purchase-other-info h3{
+    margin:0 0 20px;
+
+    color:#0f172a;
+}
+
+.info-row{
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    margin-bottom:18px;
+}
+
+.info-row span{
+    color:#64748b;
+}
+
+.info-row strong{
+    color:#0f172a;
+}
+
+.remarks{
+    flex-direction:column;
+}
+
+.remarks p{
+    margin-top:8px;
+
+    color:#334155;
+
+    line-height:1.6;
+}

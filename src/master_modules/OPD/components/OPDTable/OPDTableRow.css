@@ -1,0 +1,43 @@
+
+.opd-table-row__cell {
+  height: 62px;
+  padding: 12px 15px;
+  color: #475569;
+  background: #ffffff;
+  border-bottom: 1px solid #edf1f6;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.opd-table-row:hover .opd-table-row__cell {
+  background: #f8fbff;
+}
+
+.opd-table-row__cell--center {
+  text-align: center;
+}
+
+.opd-table-row__patient-link {
+  max-width: 200px;
+  padding: 0;
+  overflow: hidden;
+  color: #2458bd;
+  background: transparent;
+  border: 0;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.opd-table-row__patient-link:hover {
+  text-decoration: underline;
+}
+
+.opd-table-row__patient-link:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 3px;
+}

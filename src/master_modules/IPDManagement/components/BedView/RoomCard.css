@@ -1,0 +1,305 @@
+/* ============================================================
+   ROOM CARD
+   ============================================================ */
+
+.bed-view-room-card {
+  width: 100%;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.bed-view-room-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+
+/* ============================================================
+   ROOM HEADER
+   ============================================================ */
+
+.bed-view-room-card__header {
+  width: 100%;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   TITLE WRAPPER
+   ============================================================ */
+
+.bed-view-room-card__title-wrapper {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* ============================================================
+   ROOM ICON
+   ============================================================ */
+
+.bed-view-room-card__icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+
+  color: #2563eb;
+}
+
+.bed-view-room-card__icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+
+/* ============================================================
+   TITLE CONTENT
+   ============================================================ */
+
+.bed-view-room-card__title-content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+
+.bed-view-room-card__title {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.bed-view-room-card__type {
+  color: #64748b;
+
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ============================================================
+   ROOM SUMMARY
+   ============================================================ */
+
+.bed-view-room-card__summary {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  white-space: nowrap;
+}
+
+
+.bed-view-room-card__count,
+.bed-view-room-card__occupied,
+.bed-view-room-card__available {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 24px;
+  padding: 3px 8px;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+}
+
+
+.bed-view-room-card__count {
+  color: #475569;
+  background: #f1f5f9;
+}
+
+
+.bed-view-room-card__occupied {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+
+.bed-view-room-card__available {
+  color: #15803d;
+  background: #f0fdf4;
+}
+
+
+/* ============================================================
+   ROOM CONTENT
+   ============================================================ */
+
+.bed-view-room-card__content {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   BED GRID
+   ============================================================ */
+
+.bed-view-room-card__beds {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(150px, 1fr)
+  );
+
+  gap: 10px;
+}
+
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.bed-view-room-card__empty {
+  width: 100%;
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #94a3b8;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 6px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .bed-view-room-card__header {
+    align-items: flex-start;
+  }
+
+  .bed-view-room-card__summary {
+    flex-wrap: wrap;
+  }
+
+  .bed-view-room-card__beds {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(140px, 1fr)
+    );
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .bed-view-room-card__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .bed-view-room-card__summary {
+    justify-content: flex-start;
+  }
+
+  .bed-view-room-card__content {
+    padding: 10px;
+  }
+
+  .bed-view-room-card__beds {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 420px) {
+  .bed-view-room-card__title {
+    font-size: 13px;
+  }
+
+  .bed-view-room-card__summary {
+    gap: 5px;
+  }
+
+  .bed-view-room-card__count,
+  .bed-view-room-card__occupied,
+  .bed-view-room-card__available {
+    padding: 3px 6px;
+    font-size: 10px;
+  }
+
+  .bed-view-room-card__beds {
+    grid-template-columns: 1fr;
+  }
+}

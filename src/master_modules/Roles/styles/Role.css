@@ -1,0 +1,146 @@
+/* ========================================
+   PAGE
+======================================== */
+
+.role-page {
+  padding: 24px 0;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.role-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.role-title {
+  font-size: 34px !important;
+
+  font-weight: 700 !important;
+
+  color: #223367;
+}
+
+.role-subtitle {
+  margin-top: 6px !important;
+
+  color: #8A92A6;
+
+  font-size: 15px !important;
+}
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.add-role-btn {
+  background: #05C168 !important;
+
+  color: white !important;
+
+  text-transform: none !important;
+
+  border-radius: 10px !important;
+
+  padding: 12px 22px !important;
+
+  font-weight: 600 !important;
+
+  box-shadow: none !important;
+}
+
+.add-role-btn:hover {
+  background: #04a85a !important;
+}
+
+/* ========================================
+   TABLE
+======================================== */
+
+.role-table-wrapper {
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* ========================================
+   MODAL
+======================================== */
+
+.role-modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 700px;
+
+  background: white;
+
+  border-radius: 24px;
+
+  padding: 32px;
+
+  outline: none;
+}
+
+/* ========================================
+   STATUS
+======================================== */
+
+.active-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 90px;
+
+  height: 34px;
+
+  border-radius: 999px;
+
+  background: rgba(5,193,104,0.12);
+
+  color: #05C168;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.inactive-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 90px;
+
+  height: 34px;
+
+  border-radius: 999px;
+
+  background: rgba(255,77,79,0.12);
+
+  color: #FF4D4F;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}

@@ -1,0 +1,168 @@
+/* =========================================================
+   APPOINTMENT DETAILS TABS
+   ========================================================= */
+
+.appointment-details-tabs {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 0 12px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   TAB LIST
+   ========================================================= */
+
+.appointment-details-tabs__list {
+    width: 100%;
+
+    display: flex;
+    align-items: stretch;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+}
+
+
+.appointment-details-tabs__list::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================================
+   TAB ITEM
+   ========================================================= */
+
+.appointment-details-tabs__item {
+    position: relative;
+
+    flex: 0 0 auto;
+
+    min-height: 38px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0 10px;
+
+    border: 0;
+
+    background: transparent;
+    color: #475569;
+
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 14px;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        color 0.18s ease,
+        background-color 0.18s ease;
+}
+
+
+/* =========================================================
+   TAB HOVER
+   ========================================================= */
+
+.appointment-details-tabs__item:hover {
+    color: #1d4ed8;
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   ACTIVE TAB
+   ========================================================= */
+
+.appointment-details-tabs__item--active {
+    color: #2563eb;
+}
+
+
+/* =========================================================
+   ACTIVE INDICATOR
+   ========================================================= */
+
+.appointment-details-tabs__item--active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 8px;
+    right: 8px;
+    bottom: -1px;
+
+    height: 2px;
+
+    border-radius: 2px 2px 0 0;
+
+    background: #2563eb;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.appointment-details-tabs__item:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: -2px;
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   FIRST TAB
+   ========================================================= */
+
+.appointment-details-tabs__item:first-child {
+    padding-left: 8px;
+}
+
+
+/* =========================================================
+   LAST TAB
+   ========================================================= */
+
+.appointment-details-tabs__item:last-child {
+    padding-right: 8px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .appointment-details-tabs {
+        padding: 0 10px;
+    }
+
+    .appointment-details-tabs__item {
+        min-height: 36px;
+        padding: 0 9px;
+
+        font-size: 9px;
+    }
+
+    .appointment-details-tabs__item--active::after {
+        left: 7px;
+        right: 7px;
+    }
+
+}

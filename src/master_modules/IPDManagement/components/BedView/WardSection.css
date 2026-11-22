@@ -1,0 +1,413 @@
+/* ============================================================
+   WARD SECTION
+   ============================================================ */
+
+.bed-view-ward-section {
+  width: 100%;
+  margin-top: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe5f0;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   WARD HEADER
+   ============================================================ */
+
+.bed-view-ward-section__header {
+  width: 100%;
+
+  min-height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  padding: 12px 16px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e8eef5;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   HEADER LEFT
+   ============================================================ */
+
+.bed-view-ward-section__header-left {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* ============================================================
+   EXPAND / COLLAPSE BUTTON
+   ============================================================ */
+
+.bed-view-ward-section__toggle {
+  width: 30px;
+  height: 30px;
+
+  flex: 0 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.bed-view-ward-section__toggle:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.bed-view-ward-section__toggle:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   TOGGLE ICON
+   ============================================================ */
+
+.bed-view-ward-section__toggle-icon {
+  width: 20px;
+  height: 20px;
+
+  transition: transform 0.2s ease;
+}
+
+.bed-view-ward-section__toggle-icon--expanded {
+  transform: rotate(0deg);
+}
+
+
+/* ============================================================
+   WARD ICON
+   ============================================================ */
+
+.bed-view-ward-section__icon {
+  width: 36px;
+  height: 36px;
+
+  flex: 0 0 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #2563eb;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+  border-radius: 7px;
+
+  box-sizing: border-box;
+}
+
+.bed-view-ward-section__icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+
+/* ============================================================
+   WARD INFORMATION
+   ============================================================ */
+
+.bed-view-ward-section__info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.bed-view-ward-section__title {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.bed-view-ward-section__subtitle {
+  color: #64748b;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   WARD SUMMARY
+   ============================================================ */
+
+.bed-view-ward-section__summary {
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.bed-view-ward-section__summary-item {
+  display: flex;
+  align-items: baseline;
+
+  gap: 5px;
+
+  white-space: nowrap;
+}
+
+
+.bed-view-ward-section__summary-item strong {
+  color: #0f172a;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+
+.bed-view-ward-section__summary-item span {
+  color: #64748b;
+
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   WARD CONTENT
+   ============================================================ */
+
+.bed-view-ward-section__content {
+  width: 100%;
+
+  padding: 16px;
+
+  background: #f8fafc;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   ROOMS GRID
+   ============================================================ */
+
+.bed-view-ward-section__rooms {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.bed-view-ward-section__empty {
+  width: 100%;
+
+  min-height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  color: #94a3b8;
+
+  background: #ffffff;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 7px;
+
+  box-sizing: border-box;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.bed-view-ward-section__empty svg {
+  width: 22px;
+  height: 22px;
+
+  color: #94a3b8;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 1000px) {
+
+  .bed-view-ward-section__rooms {
+    grid-template-columns:
+      repeat(1, minmax(0, 1fr));
+  }
+
+  .bed-view-ward-section__header {
+    padding: 12px 14px;
+  }
+
+  .bed-view-ward-section__content {
+    padding: 14px;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+  .bed-view-ward-section {
+    margin-top: 14px;
+  }
+
+  .bed-view-ward-section__header {
+    min-height: auto;
+
+    align-items: flex-start;
+
+    padding: 12px;
+  }
+
+  .bed-view-ward-section__header-left {
+    gap: 8px;
+  }
+
+  .bed-view-ward-section__toggle {
+    width: 28px;
+    height: 28px;
+
+    flex-basis: 28px;
+  }
+
+  .bed-view-ward-section__icon {
+    width: 32px;
+    height: 32px;
+
+    flex-basis: 32px;
+  }
+
+  .bed-view-ward-section__icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .bed-view-ward-section__title {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .bed-view-ward-section__summary {
+    gap: 10px;
+
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .bed-view-ward-section__summary-item {
+    gap: 4px;
+  }
+
+  .bed-view-ward-section__summary-item strong {
+    font-size: 12px;
+  }
+
+  .bed-view-ward-section__content {
+    padding: 10px;
+  }
+
+  .bed-view-ward-section__rooms {
+    gap: 10px;
+  }
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 420px) {
+
+  .bed-view-ward-section__header {
+    gap: 10px;
+  }
+
+  .bed-view-ward-section__header-left {
+    min-width: 0;
+  }
+
+  .bed-view-ward-section__summary {
+    display: none;
+  }
+
+  .bed-view-ward-section__title {
+    max-width: 150px;
+  }
+
+  .bed-view-ward-section__content {
+    padding: 8px;
+  }
+}

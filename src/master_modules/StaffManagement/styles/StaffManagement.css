@@ -1,0 +1,128 @@
+
+/* =========================================
+   STAFF MANAGEMENT - PAGE STYLES
+   File: StaffManagement.css
+========================================= */
+
+.staff-management-page {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #f8fafc;
+  color: #1e293b;
+  font-family: inherit;
+}
+
+/* Prevent child content from expanding the page */
+.staff-management-page *,
+.staff-management-page *::before,
+.staff-management-page *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   HEADER SECTION
+========================================= */
+
+.staff-management-header-section {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 24px;
+}
+
+/* =========================================
+   STATS SECTION
+========================================= */
+
+.staff-management-stats-section {
+  width: 100%;
+  min-width: 0;
+  margin-bottom: 24px;
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.staff-management-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  width: 100%;
+  margin: 16px 0;
+  padding: 14px 16px;
+
+  color: #b91c1c;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-left: 4px solid #dc2626;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+  .staff-management-page {
+    padding: 20px;
+  }
+
+  .staff-management-header-section {
+    margin-bottom: 20px;
+  }
+
+  .staff-management-stats-section {
+    margin-bottom: 20px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .staff-management-page {
+    padding: 16px;
+  }
+
+  .staff-management-header-section {
+    margin-bottom: 18px;
+  }
+
+  .staff-management-stats-section {
+    margin-bottom: 18px;
+  }
+
+  .staff-management-error {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+  .staff-management-page {
+    padding: 12px;
+  }
+
+  .staff-management-header-section {
+    margin-bottom: 16px;
+  }
+
+  .staff-management-stats-section {
+    margin-bottom: 16px;
+  }
+}

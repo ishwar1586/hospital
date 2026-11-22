@@ -1,0 +1,506 @@
+.walk-in-customer-information {
+  width: 100%;
+  min-height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #f7f8fa;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.walk-in-customer-information__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.walk-in-customer-information__header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.walk-in-customer-information__page-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eaf2ff;
+  color: #2563eb;
+}
+
+.walk-in-customer-information__page-icon svg {
+  font-size: 24px;
+}
+
+.walk-in-customer-information__heading {
+  min-width: 0;
+}
+
+.walk-in-customer-information__title {
+  margin: 0;
+  color: #172033;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.walk-in-customer-information__subtitle {
+  margin: 4px 0 0;
+  color: #7b8494;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.walk-in-customer-information__customer-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid #dbe5f2;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.walk-in-customer-information__customer-type svg {
+  font-size: 18px;
+  color: #2563eb;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.walk-in-customer-information__card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.walk-in-customer-information__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.walk-in-customer-information__card-title {
+  margin: 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.walk-in-customer-information__card-subtitle {
+  margin: 5px 0 0;
+  color: #8a93a2;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   VERIFIED
+========================================================= */
+
+.walk-in-customer-information__verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid #d9f0df;
+  border-radius: 7px;
+  background: #f2fbf5;
+  color: #198754;
+  font-size: 11.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.walk-in-customer-information__verified-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+}
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.walk-in-customer-information__summary {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 22px;
+  padding: 14px 16px;
+  border: 1px solid #e1eaff;
+  border-radius: 10px;
+  background: #f8faff;
+}
+
+.walk-in-customer-information__summary-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: #e8f0ff;
+  color: #2563eb;
+}
+
+.walk-in-customer-information__summary-icon svg {
+  font-size: 20px;
+}
+
+.walk-in-customer-information__summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.walk-in-customer-information__summary-label {
+  color: #7b8494;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.walk-in-customer-information__summary-value {
+  color: #1e293b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   DETAILS
+========================================================= */
+
+.walk-in-customer-information__details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 22px 22px;
+  border: 1px solid #e5e9f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.walk-in-customer-information__detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  min-width: 0;
+  padding: 18px;
+  border-right: 1px solid #edf0f4;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.walk-in-customer-information__detail:nth-child(even) {
+  border-right: none;
+}
+
+.walk-in-customer-information__detail:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.walk-in-customer-information__detail--full {
+  grid-column: 1 / -1;
+  border-right: none;
+}
+
+.walk-in-customer-information__detail-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #f3f6fa;
+  color: #64748b;
+}
+
+.walk-in-customer-information__detail-icon svg {
+  font-size: 18px;
+}
+
+.walk-in-customer-information__detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.walk-in-customer-information__detail-label {
+  color: #8a93a2;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.walk-in-customer-information__detail-value {
+  overflow-wrap: anywhere;
+  color: #1f2937;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.walk-in-customer-information__detail-value--empty {
+  color: #a0a8b5;
+  font-weight: 500;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.walk-in-customer-information__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.walk-in-customer-information__footer-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #7b8494;
+  font-size: 12px;
+}
+
+.walk-in-customer-information__hint-icon {
+  width: 19px;
+  height: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eaf7ee;
+  color: #198754;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.walk-in-customer-information__footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.walk-in-customer-information__button {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.walk-in-customer-information__button svg {
+  font-size: 18px;
+}
+
+.walk-in-customer-information__button:active {
+  transform: translateY(1px);
+}
+
+.walk-in-customer-information__button--secondary {
+  border-color: #d9dee7;
+  background: #ffffff;
+  color: #475569;
+}
+
+.walk-in-customer-information__button--secondary:hover {
+  border-color: #c6ceda;
+  background: #f8fafc;
+}
+
+.walk-in-customer-information__button--primary {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.18);
+}
+
+.walk-in-customer-information__button--primary:hover {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.22);
+}
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.walk-in-customer-information__empty {
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #e5e9f0;
+  border-radius: 14px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.walk-in-customer-information__empty-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  background: #eef4ff;
+  color: #2563eb;
+}
+
+.walk-in-customer-information__empty-icon svg {
+  font-size: 28px;
+}
+
+.walk-in-customer-information__empty-title {
+  margin: 0;
+  color: #1f2937;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.walk-in-customer-information__empty-text {
+  max-width: 420px;
+  margin: 7px 0 18px;
+  color: #8a93a2;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1199px) {
+  .walk-in-customer-information {
+    padding: 20px;
+  }
+
+  .walk-in-customer-information__detail {
+    padding: 16px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+  .walk-in-customer-information {
+    padding: 14px;
+  }
+
+  .walk-in-customer-information__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .walk-in-customer-information__customer-type {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .walk-in-customer-information__card-header {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px 16px;
+  }
+
+  .walk-in-customer-information__verified {
+    align-self: flex-start;
+  }
+
+  .walk-in-customer-information__summary {
+    margin: 16px;
+  }
+
+  .walk-in-customer-information__details {
+    grid-template-columns: 1fr;
+    margin: 0 16px 16px;
+  }
+
+  .walk-in-customer-information__detail,
+  .walk-in-customer-information__detail:nth-child(even),
+  .walk-in-customer-information__detail:nth-last-child(-n + 2) {
+    border-right: none;
+    border-bottom: 1px solid #edf0f4;
+  }
+
+  .walk-in-customer-information__detail:last-child {
+    border-bottom: none;
+  }
+
+  .walk-in-customer-information__detail--full {
+    grid-column: auto;
+  }
+
+  .walk-in-customer-information__footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .walk-in-customer-information__footer-hint {
+    align-items: flex-start;
+  }
+
+  .walk-in-customer-information__footer-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .walk-in-customer-information__button {
+    width: 100%;
+  }
+}

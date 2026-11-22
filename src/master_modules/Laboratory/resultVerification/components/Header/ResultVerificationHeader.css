@@ -1,0 +1,316 @@
+/* =========================================
+   RESULT VERIFICATION HEADER
+========================================= */
+
+.result-verification-header {
+     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 18px;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 14px;
+    padding: 24px 28px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.04) !important;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT
+========================================= */
+
+.result-verification-header__left {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.result-verification-header__icon {
+    width: 32px;
+
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.result-verification-header__icon svg {
+    width: 19px;
+
+    height: 19px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.result-verification-header__content {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.result-verification-header__content h1 {
+    margin: 0;
+
+    color: #0f172a;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.01em;
+}
+
+
+.result-verification-header__content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   RIGHT
+========================================= */
+
+.result-verification-header__right {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.result-verification-header__button {
+    min-height: 29px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 9px;
+
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease,
+        opacity 0.15s ease;
+}
+
+
+.result-verification-header__button svg {
+    width: 14px;
+
+    height: 14px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.result-verification-header__button--secondary {
+    border-color: #e2e8f0;
+
+    background: #ffffff;
+
+    color: #475569;
+}
+
+
+.result-verification-header__button--secondary:hover:not(:disabled) {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.result-verification-header__button--primary {
+    border-color: #2563eb;
+
+    background: #2563eb;
+
+    color: #ffffff;
+}
+
+
+.result-verification-header__button--primary:hover:not(:disabled) {
+    border-color: #1d4ed8;
+
+    background: #1d4ed8;
+}
+
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.result-verification-header__button:disabled {
+    opacity: 0.55;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   REFRESH ANIMATION
+========================================= */
+
+.result-verification-header__refresh-icon--spinning {
+    animation:
+        result-verification-refresh-spin
+        0.8s linear infinite;
+}
+
+
+@keyframes result-verification-refresh-spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.result-verification-header__button:focus-visible {
+    outline: 2px solid #bfdbfe;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .result-verification-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .result-verification-header__right {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .result-verification-header {
+        padding: 10px;
+    }
+
+
+    .result-verification-header__content p {
+        display: none;
+    }
+
+
+    .result-verification-header__right {
+        width: 100%;
+    }
+
+
+    .result-verification-header__button {
+        flex: 1;
+    }
+
+}

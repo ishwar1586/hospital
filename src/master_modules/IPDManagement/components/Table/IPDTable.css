@@ -1,0 +1,274 @@
+/* =========================================================
+   IPD TABLE
+   ========================================================= */
+
+.ipd-table {
+  width: 100%;
+
+  margin-top: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLE WRAPPER
+   ========================================================= */
+
+.ipd-table__wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  box-sizing: border-box;
+
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.ipd-table__wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.ipd-table__wrapper::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.ipd-table__wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.ipd-table__wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================================================
+   TABLE
+   ========================================================= */
+
+.ipd-table__table {
+  width: 100%;
+
+  min-width: 1080px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  table-layout: fixed;
+
+  background: #ffffff;
+}
+
+/* =========================================================
+   COLUMN WIDTHS
+   ========================================================= */
+
+.ipd-table__th--ipdNumber,
+.ipd-table-row__cell--ipdNumber {
+  width: 80px;
+}
+
+.ipd-table__th--patientDetails,
+.ipd-table-row__cell--patientDetails {
+  width: 185px;
+}
+
+.ipd-table__th--ageGender,
+.ipd-table-row__cell--ageGender {
+  width: 105px;
+}
+
+.ipd-table__th--wardRoomBed,
+.ipd-table-row__cell--wardRoomBed {
+  width: 145px;
+}
+
+.ipd-table__th--admittingDoctor,
+.ipd-table-row__cell--admittingDoctor {
+  width: 155px;
+}
+
+.ipd-table__th--admissionDate,
+.ipd-table-row__cell--admissionDate {
+  width: 125px;
+}
+
+.ipd-table__th--status,
+.ipd-table-row__cell--status {
+  width: 120px;
+}
+
+.ipd-table__th--actions,
+.ipd-table-row__cell--actions {
+  width: 55px;
+}
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.ipd-table__empty-row {
+  height: 150px;
+}
+
+.ipd-table__empty-cell {
+  padding: 30px 16px;
+
+  border: 0;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.ipd-table__pagination {
+  width: 100%;
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  border-top: 1px solid #e5eaf1;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   ACTION MENU
+   ========================================================= */
+
+.ipd-action-menu__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 4px;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #005cff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.ipd-action-menu__button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ipd-action-menu__button:hover {
+  background: #eef4ff;
+}
+
+.ipd-action-menu__button:focus-visible {
+  background: #eef4ff;
+
+  box-shadow:
+    0 0 0 2px rgba(21, 94, 239, 0.12);
+}
+
+/* =========================================================
+   ACTION MENU PAPER
+   ========================================================= */
+
+.ipd-action-menu__paper {
+  min-width: 175px !important;
+
+  margin-top: 4px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 6px !important;
+
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.12) !important;
+}
+
+/* =========================================================
+   MENU ITEM
+   ========================================================= */
+
+.ipd-menu-item {
+  min-height: 36px !important;
+
+  padding: 7px 12px !important;
+
+  gap: 9px;
+
+  color: #334155 !important;
+
+  font-size: 11px !important;
+}
+
+.ipd-menu-item:hover {
+  background: #f5f8ff !important;
+
+  color: #155eef !important;
+}
+
+.ipd-menu-item__icon {
+  width: 16px !important;
+  height: 16px !important;
+
+  color: #64748b;
+}
+
+.ipd-menu-item:hover
+  .ipd-menu-item__icon {
+  color: #155eef;
+}
+
+.ipd-menu-item__label {
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .ipd-table {
+    margin-top: 10px;
+  }
+
+  .ipd-table__table {
+    min-width: 1000px;
+  }
+
+  .ipd-table__pagination {
+    justify-content: flex-start;
+  }
+}

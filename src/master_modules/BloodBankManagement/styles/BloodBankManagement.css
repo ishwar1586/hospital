@@ -1,0 +1,2 @@
+/* Shared baseline: component-specific rules can extend these accessible defaults. */
+:root { --hospital-border: #dbe3ed; --hospital-muted: #64748b; --hospital-primary: #1769aa; }

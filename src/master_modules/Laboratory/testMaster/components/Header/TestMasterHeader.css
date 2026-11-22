@@ -1,0 +1,183 @@
+.test-master-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 24px 28px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.04);
+}
+
+.test-master-header__left{
+    flex:1;
+}
+
+.test-master-header__title-wrapper{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.test-master-header__icon{
+    width:60px;
+    height:60px;
+
+    border-radius:16px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#eff6ff;
+    color:#2563eb;
+
+    flex-shrink:0;
+}
+
+.test-master-header__icon svg{
+    font-size:32px;
+}
+
+.test-master-header__title{
+
+    margin:0;
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#111827;
+}
+
+.test-master-header__subtitle{
+
+    margin-top:8px;
+
+    color:#6b7280;
+
+    font-size:15px;
+
+    line-height:1.6;
+}
+
+.test-master-header__actions{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    flex-wrap:wrap;
+}
+
+.header-btn{
+
+    height:44px;
+
+    padding:0 18px;
+
+    border-radius:10px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:.25s ease;
+
+    white-space:nowrap;
+}
+
+.secondary-btn{
+
+    background:#fff;
+
+    border:1px solid #d1d5db;
+
+    color:#374151;
+}
+
+.secondary-btn:hover{
+
+    background:#f9fafb;
+
+    border-color:#2563eb;
+
+    color:#2563eb;
+}
+
+.primary-btn{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:#fff;
+}
+
+.primary-btn:hover{
+
+    background:#1d4ed8;
+}
+
+@media(max-width:992px){
+
+    .test-master-header{
+
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .test-master-header__actions{
+
+        width:100%;
+    }
+}
+
+@media(max-width:768px){
+
+    .test-master-header{
+
+        padding:20px;
+    }
+
+    .test-master-header__title{
+
+        font-size:24px;
+    }
+
+    .test-master-header__actions{
+
+        display:grid;
+
+        grid-template-columns:repeat(2,1fr);
+
+        width:100%;
+    }
+
+    .header-btn{
+
+        justify-content:center;
+    }
+}
+
+@media(max-width:480px){
+
+    .test-master-header__actions{
+
+        grid-template-columns:1fr;
+    }
+
+    .test-master-header__title-wrapper{
+
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}

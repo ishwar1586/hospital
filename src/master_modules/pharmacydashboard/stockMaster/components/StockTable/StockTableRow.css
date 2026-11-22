@@ -1,0 +1,98 @@
+.stock-table-row{
+
+    transition:.25s;
+
+}
+
+.stock-table-row:hover{
+
+    background:#F8FBFF;
+
+}
+
+/* =============================== */
+
+.stock-table-row td{
+
+    padding:14px 16px;
+
+    border-bottom:1px solid #EEF2F7;
+
+    white-space:nowrap;
+
+    vertical-align:middle;
+
+    font-size:13px;
+
+    color:#334155;
+
+}
+
+/* =============================== */
+
+.medicine-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.medicine-name{
+
+    font-weight:600;
+
+    color:#0F172A;
+
+}
+
+/* =============================== */
+
+.category-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 12px;
+
+    border-radius:8px;
+
+    background:#EEF2FF;
+
+    color:#4338CA;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/* =============================== */
+
+.col-mrp,
+.col-purchase,
+.col-selling,
+.col-value{
+
+    text-align:right;
+
+    font-weight:600;
+
+}
+
+.col-current,
+.col-reserved,
+.col-available,
+.col-reorder,
+.col-unit,
+.col-status,
+.col-action{
+
+    text-align:center;
+
+}

@@ -1,0 +1,76 @@
+.doctor-clearance-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.doctor-clearance-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.doctor-clearance-title svg {
+  color: #16a34a;
+}
+
+.doctor-clearance-patient {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.doctor-clearance-patient > div {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.doctor-clearance-patient label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 5px;
+}
+
+.doctor-clearance-patient span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.doctor-clearance-form {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+}
+
+.doctor-clearance-notes {
+  margin-top: 20px;
+}
+
+.doctor-clearance-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 24px !important;
+}
+
+.doctor-clearance-footer button {
+  min-width: 150px;
+}
+
+@media (max-width:768px){
+
+  .doctor-clearance-patient {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-clearance-form {
+    grid-template-columns: 1fr;
+  }
+
+}

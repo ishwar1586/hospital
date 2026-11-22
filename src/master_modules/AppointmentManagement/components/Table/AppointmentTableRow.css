@@ -1,0 +1,490 @@
+/* =========================================
+   Appointment Table Row
+========================================= */
+
+.appointment-table-row {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        1.25fr
+        1.35fr
+        1.25fr
+        1.15fr
+        0.9fr
+        0.9fr
+        70px;
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 68px;
+
+    padding: 0 16px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #edf0f4;
+
+    transition:
+        background-color 0.18s ease;
+}
+
+
+/* =========================================
+   Hover
+========================================= */
+
+.appointment-table-row:hover {
+    background: #fafbfc;
+}
+
+
+/* =========================================
+   Cell
+========================================= */
+
+.appointment-table-row__cell {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+    color: #344054;
+
+    font-size: 10px;
+
+    line-height: 1.35;
+}
+
+
+/* =========================================
+   Appointment
+========================================= */
+
+.appointment-table-row__cell--appointment {
+    padding-left: 0;
+}
+
+.appointment-table-row__appointment-id {
+    color: #172554;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.appointment-table-row__appointment-date {
+    margin-top: 3px;
+
+    color: #667085;
+
+    font-size: 9px;
+
+    white-space: nowrap;
+}
+
+.appointment-table-row__appointment-time {
+    margin-top: 2px;
+
+    color: #98a2b3;
+
+    font-size: 9px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   Patient
+========================================= */
+
+.appointment-table-row__patient-name {
+    color: #172554;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.appointment-table-row__patient-id {
+    margin-top: 3px;
+
+    color: #667085;
+
+    font-size: 9px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   Doctor
+========================================= */
+
+.appointment-table-row__doctor-name {
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   Department
+========================================= */
+
+.appointment-table-row__cell--department span {
+    display: block;
+
+    color: #475467;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   Appointment Type
+========================================= */
+
+.appointment-table-row__type {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 22px;
+
+    padding: 0 8px;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 999px;
+
+    background: #f8fafc;
+
+    color: #475467;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   Status
+========================================= */
+
+.appointment-table-row__status {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 22px;
+
+    padding: 0 8px;
+
+    border-radius: 999px;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   Scheduled
+========================================= */
+
+.appointment-table-row__status--scheduled {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+
+/* =========================================
+   Confirmed
+========================================= */
+
+.appointment-table-row__status--confirmed {
+    background: #ecfdf3;
+    color: #027a48;
+}
+
+
+/* =========================================
+   Completed
+========================================= */
+
+.appointment-table-row__status--completed {
+    background: #f2f4f7;
+    color: #475467;
+}
+
+
+/* =========================================
+   Checked In
+========================================= */
+
+.appointment-table-row__status--checked-in {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+
+/* =========================================
+   Cancelled
+========================================= */
+
+.appointment-table-row__status--cancelled {
+    background: #fef3f2;
+    color: #b42318;
+}
+
+
+/* =========================================
+   No Show
+========================================= */
+
+.appointment-table-row__status--no-show {
+    background: #fef3f2;
+    color: #b42318;
+}
+
+
+/* =========================================
+   Actions
+========================================= */
+
+.appointment-table-row__cell--actions {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 0;
+}
+
+
+/* =========================================
+   Action Button
+========================================= */
+
+.appointment-table-row__action-button {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    border: 1px solid transparent;
+
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #667085;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+.appointment-table-row__action-button:hover {
+    border-color: #e4e7ec;
+
+    background: #f8fafc;
+
+    color: #344054;
+}
+
+
+/* =========================================
+   Action Menu
+========================================= */
+
+.appointment-table-row__action-menu {
+    position: absolute;
+
+    right: 10px;
+
+    z-index: 9999;
+
+    width: 170px;
+
+    padding: 5px;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 8px 24px rgba(16, 24, 40, 0.10),
+        0 2px 6px rgba(16, 24, 40, 0.06);
+}
+
+
+/* =========================================
+   Open Downward
+========================================= */
+
+.appointment-table-row__action-menu--bottom {
+    top: 42px;
+}
+
+
+/* =========================================
+   Open Upward
+========================================= */
+
+.appointment-table-row__action-menu--top {
+    bottom: 42px;
+}
+
+
+/* =========================================
+   Menu Item
+========================================= */
+
+.appointment-table-row__menu-item {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+    min-height: 34px;
+
+    padding: 0 10px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: transparent;
+
+    color: #344054;
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+.appointment-table-row__menu-item:hover {
+    background: #f8fafc;
+
+    color: #172554;
+}
+
+
+/* =========================================
+   Danger Action
+========================================= */
+
+.appointment-table-row__menu-item--danger {
+    color: #b42318;
+}
+
+.appointment-table-row__menu-item--danger:hover {
+    background: #fef3f2;
+
+    color: #b42318;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .appointment-table-row {
+        grid-template-columns:
+            1.2fr
+            1.3fr
+            1.2fr
+            1.1fr
+            0.85fr
+            0.85fr
+            64px;
+
+        padding: 0 12px;
+    }
+
+
+    .appointment-table-row__cell {
+        padding: 8px 6px;
+    }
+
+
+    .appointment-table-row__cell--appointment {
+        padding-left: 0;
+    }
+
+
+    .appointment-table-row__cell--actions {
+        padding-right: 0;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .appointment-table-row {
+        min-width: 900px;
+    }
+
+}

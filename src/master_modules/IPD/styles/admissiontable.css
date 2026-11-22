@@ -1,0 +1,230 @@
+.admission-table-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  margin-top: 20px;
+  overflow: visible;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+.admission-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.admission-table-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.record-count {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 20px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.admission-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admission-table thead {
+  background: #f8fafc;
+}
+
+.admission-table th {
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.admission-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.admission-table tbody tr {
+  transition: all 0.2s ease;
+}
+
+.admission-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* IPD Number */
+
+.ipd-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* Patient */
+
+.patient-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.patient-meta {
+  margin-top: 3px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Doctor */
+
+.doctor-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.doctor-department {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Ward */
+
+.ward-info span {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #64748b;
+}
+.ward-info  {
+  font-weight: 600;
+  color: #0f172a;
+  font-size: 13px;
+}
+
+.admission-date {
+  font-size: 12px;
+  color: #64748b;
+    font-weight: 500;
+}
+/* Status Badge */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.admitted {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-badge.pending-discharge {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-badge.critical {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge.transferred {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Action Column */
+
+.action-cell {
+  width: 80px;
+}
+
+.action-icon-btn {
+  color: #64748b !important;
+  border-radius: 10px !important;
+}
+
+.action-icon-btn:hover {
+  background: #f1f5f9 !important;
+}
+
+/* Empty State */
+
+.empty-state {
+  text-align: center;
+  padding: 50px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+
+/* pagination */
+
+.MuiTablePagination-root {
+  border-top: 1px solid #e5e7eb;
+}
+
+.MuiTablePagination-toolbar {
+  min-height: 64px !important;
+}
+
+.MuiTablePagination-selectLabel,
+.MuiTablePagination-displayedRows {
+  font-size: 13px !important;
+  color: #64748b;
+}
+
+/* pagination */
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .admission-table {
+    min-width: 900px;
+  }
+
+  .admission-table th,
+  .admission-table td {
+    padding: 14px;
+  }
+}

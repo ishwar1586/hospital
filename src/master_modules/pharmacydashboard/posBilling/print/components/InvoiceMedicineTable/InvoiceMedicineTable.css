@@ -1,0 +1,169 @@
+.thermal-medicine {
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    color: #000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.thermal-empty {
+
+    margin: 12px 0;
+
+    text-align: center;
+
+    font-size: 11px;
+
+    font-style: italic;
+
+}
+
+.thermal-medicine-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 6px;
+
+    padding: 8px 0;
+
+    border-bottom: 1px dashed #000;
+
+}
+
+.thermal-medicine-item:last-child {
+
+    border-bottom: none;
+
+}
+
+.medicine-index {
+
+    min-width: 18px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+}
+
+.medicine-content {
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+.medicine-name {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    word-break: break-word;
+
+}
+
+.medicine-strength {
+
+    margin-top: 2px;
+
+    font-size: 10px;
+
+    color: #000;
+
+}
+
+.medicine-details {
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    border-collapse: collapse;
+
+}
+
+.medicine-details td {
+
+    padding: 2px 0;
+
+    font-size: 10px;
+
+    vertical-align: top;
+
+}
+
+.medicine-details td:nth-child(1) {
+
+    width: 42px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+.medicine-details td:nth-child(2) {
+
+    width: 8px;
+
+    text-align: center;
+
+}
+
+.medicine-details td:nth-child(3) {
+
+    word-break: break-word;
+
+}
+
+.medicine-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 6px;
+
+    padding-top: 5px;
+
+    border-top: 1px dotted #000;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+.medicine-total span {
+
+    font-size: 13px;
+
+}
+
+@media print {
+
+    .thermal-medicine {
+
+        page-break-inside: avoid;
+
+    }
+
+    .thermal-medicine-item {
+
+        page-break-inside: avoid;
+
+    }
+
+}

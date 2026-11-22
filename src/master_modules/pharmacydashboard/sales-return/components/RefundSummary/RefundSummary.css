@@ -1,0 +1,430 @@
+/* ==========================================================
+   Refund Summary Card
+========================================================== */
+
+.refund-summary-card{
+
+    margin-top:24px;
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.refund-summary-header{
+
+    margin-bottom:24px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+.refund-summary-header h2{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.refund-summary-header p{
+
+    margin-top:6px;
+
+    font-size:14px;
+
+    color:#6b7280;
+
+}
+
+/* ==========================================================
+   Summary Body
+========================================================== */
+
+.refund-summary-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+/* ==========================================================
+   Summary Row
+========================================================== */
+
+.summary-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 16px;
+
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    border:1px solid #edf2f7;
+
+    transition:.25s;
+
+}
+
+.summary-item:hover{
+
+    background:#ffffff;
+
+    border-color:#bfdbfe;
+
+}
+
+.summary-item span{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#6b7280;
+
+}
+
+.summary-item strong{
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+/* ==========================================================
+   Refund Total
+========================================================== */
+
+.refund-total{
+
+    margin-top:8px;
+
+    background:linear-gradient(135deg,#16a34a,#15803d);
+
+    border:none;
+
+}
+
+.refund-total span{
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.refund-total strong{
+
+    color:#ffffff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+/* ==========================================================
+   Refund Form
+========================================================== */
+
+.refund-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-top:22px;
+
+}
+
+.refund-form label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.refund-form label svg{
+
+    color:#2563eb;
+
+    font-size:20px;
+
+}
+
+/* ==========================================================
+   Select
+========================================================== */
+
+.refund-form select{
+
+    width:100%;
+
+    height:46px;
+
+    padding:0 14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    font-size:14px;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.refund-form select:hover{
+
+    border-color:#93c5fd;
+
+}
+
+.refund-form select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+/* ==========================================================
+   Textarea
+========================================================== */
+
+.refund-form textarea{
+
+    width:100%;
+
+    resize:vertical;
+
+    min-height:90px;
+
+    padding:14px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    outline:none;
+
+    transition:.25s;
+
+    font-family:inherit;
+
+}
+
+.refund-form textarea:hover{
+
+    border-color:#93c5fd;
+
+}
+
+.refund-form textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+/* ==========================================================
+   Actions
+========================================================== */
+
+.refund-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:14px;
+
+    margin-top:28px;
+
+    padding-top:22px;
+
+    border-top:1px solid #edf2f7;
+
+}
+
+/* ==========================================================
+   Common Button
+========================================================== */
+
+.refund-actions button{
+
+    height:46px;
+
+    padding:0 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+/* ==========================================================
+   Save Button
+========================================================== */
+
+.save-return-btn{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+.save-return-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================================================
+   Process Button
+========================================================== */
+
+.process-refund-btn{
+
+    background:#16a34a;
+
+    color:#ffffff;
+
+}
+
+.process-refund-btn:hover{
+
+    background:#15803d;
+
+}
+
+/* ==========================================================
+   Print Button
+========================================================== */
+
+.print-receipt-btn{
+
+    background:#ffffff;
+
+    color:#374151;
+
+    border:1px solid #d1d5db !important;
+
+}
+
+.print-receipt-btn:hover{
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:992px){
+
+    .refund-actions{
+
+        flex-wrap:wrap;
+
+    }
+
+    .refund-actions button{
+
+        flex:1;
+
+        min-width:180px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .refund-summary-card{
+
+        padding:18px;
+
+    }
+
+    .refund-actions{
+
+        flex-direction:column;
+
+    }
+
+    .refund-actions button{
+
+        width:100%;
+
+    }
+
+}

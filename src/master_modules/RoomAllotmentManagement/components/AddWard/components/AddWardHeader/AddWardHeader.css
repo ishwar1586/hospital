@@ -1,0 +1,78 @@
+
+.add-ward-header {
+  width: 100%;
+  min-width: 0;
+  padding: 2px 0 8px;
+  box-sizing: border-box;
+}
+
+.add-ward-header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.add-ward-header__text {
+  min-width: 0;
+}
+
+.add-ward-header__title {
+  margin: 0;
+  color: #172554;
+  font-size: 23px;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.add-ward-header__description {
+  margin: 2px 0 0;
+  color: #52617d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.add-ward-header__back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 32px;
+  padding: 0 12px;
+  flex-shrink: 0;
+  border: 1px solid #7da5ff;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #155eef;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.add-ward-header__back-button:hover {
+  background: #eff5ff;
+  border-color: #3978ed;
+}
+
+.add-ward-header__back-icon {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .add-ward-header__content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .add-ward-header__title {
+    font-size: 20px;
+  }
+
+  .add-ward-header__back-button {
+    align-self: flex-start;
+  }
+}

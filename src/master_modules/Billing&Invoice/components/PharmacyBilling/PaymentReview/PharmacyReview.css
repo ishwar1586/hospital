@@ -1,0 +1,996 @@
+/* =========================================================
+   PHARMACY REVIEW
+   ========================================================= */
+
+.pharmacy-review {
+  width: 100%;
+  min-height: 100%;
+  background: #f4f7fb;
+  box-sizing: border-box;
+  color: #0f172a;
+}
+
+.pharmacy-review *,
+.pharmacy-review *::before,
+.pharmacy-review *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.pharmacy-review__container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 14px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.pharmacy-review__header {
+  min-height: 74px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 18px;
+
+  border-radius: 8px 8px 0 0;
+}
+
+.pharmacy-review__header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+
+/* =========================================================
+   HEADER BACK BUTTON
+   ========================================================= */
+
+.pharmacy-review__back-button {
+  width: 38px;
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dbe3ef;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #475569;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.pharmacy-review__back-button svg {
+  width: 19px;
+  height: 19px;
+}
+
+.pharmacy-review__back-button:hover {
+  background: #f8fafc;
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   HEADER ICON
+   ========================================================= */
+
+.pharmacy-review__header-icon {
+  width: 40px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #ecfdf5;
+  color: #059669;
+
+  flex-shrink: 0;
+}
+
+.pharmacy-review__header-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+
+/* =========================================================
+   HEADER CONTENT
+   ========================================================= */
+
+.pharmacy-review__header-content {
+  min-width: 0;
+}
+
+.pharmacy-review__title {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.pharmacy-review__subtitle {
+  margin: 2px 0 0;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   HEADER CLOSE
+   ========================================================= */
+
+.pharmacy-review__close-button {
+  width: 38px;
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dbe3ef;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #475569;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.pharmacy-review__close-button svg {
+  width: 19px;
+  height: 19px;
+}
+
+.pharmacy-review__close-button:hover {
+  background: #fff7f7;
+  border-color: #fecaca;
+  color: #dc2626;
+}
+
+
+/* =========================================================
+   STEPPER
+   ========================================================= */
+
+.pharmacy-review__stepper {
+  margin-top: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-top: none;
+
+  border-radius: 0 0 8px 8px;
+
+  padding: 12px 16px 14px;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.pharmacy-review__content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+
+  margin-top: 14px;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.pharmacy-review__card {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe6ef;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.pharmacy-review__card-header {
+  min-height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 16px;
+
+  border-bottom: 1px solid #e8edf3;
+}
+
+.pharmacy-review__card-header-left {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+
+/* =========================================================
+   SECTION ICON
+   ========================================================= */
+
+.pharmacy-review__section-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.pharmacy-review__section-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================================================
+   CARD HEADER TEXT
+   ========================================================= */
+
+.pharmacy-review__card-header h2 {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.pharmacy-review__card-header p {
+  margin: 2px 0 0;
+
+  font-size: 11px;
+  line-height: 16px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   INFO GRID
+   ========================================================= */
+
+.pharmacy-review__info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  min-width: 0;
+}
+
+.pharmacy-review__info-item {
+  min-width: 0;
+
+  padding: 12px 14px;
+
+  border-right: 1px solid #e8edf3;
+}
+
+.pharmacy-review__info-item:last-child {
+  border-right: none;
+}
+
+.pharmacy-review__info-item span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  color: #64748b;
+}
+
+.pharmacy-review__info-item strong {
+  display: block;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 12px;
+  line-height: 18px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+
+/* =========================================================
+   COUNT BADGE
+   ========================================================= */
+
+.pharmacy-review__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 26px;
+
+  padding: 0 10px;
+
+  border-radius: 14px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   MEDICINE TABLE
+   ========================================================= */
+
+.pharmacy-review__medicine-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.pharmacy-review__medicine-table table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 620px;
+}
+
+.pharmacy-review__medicine-table th {
+  height: 40px;
+
+  padding: 0 14px;
+
+  background: #f8fafc;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #64748b;
+
+  font-size: 10px;
+  line-height: 15px;
+
+  font-weight: 700;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+.pharmacy-review__medicine-table td {
+  height: 46px;
+
+  padding: 0 14px;
+
+  border-bottom: 1px solid #edf1f5;
+
+  color: #334155;
+
+  font-size: 11px;
+  line-height: 17px;
+
+  white-space: nowrap;
+}
+
+.pharmacy-review__medicine-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pharmacy-review__medicine-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.pharmacy-review__medicine-table td strong {
+  color: #0f172a;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.pharmacy-review__empty {
+  min-height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   BOTTOM GRID
+   ========================================================= */
+
+.pharmacy-review__bottom-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 14px;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   PAYMENT INFORMATION
+   ========================================================= */
+
+.pharmacy-review__payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.pharmacy-review__payment-method {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 10px 14px;
+
+  border-bottom: 1px solid #edf1f5;
+}
+
+.pharmacy-review__payment-method:last-child {
+  border-bottom: none;
+}
+
+.pharmacy-review__payment-method > span {
+  font-size: 11px;
+  line-height: 17px;
+
+  color: #64748b;
+}
+
+.pharmacy-review__payment-method > strong {
+  font-size: 12px;
+  line-height: 18px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+
+  text-align: right;
+}
+
+
+/* =========================================================
+   PAYMENT LABEL
+   ========================================================= */
+
+.pharmacy-review__payment-label {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.pharmacy-review__payment-label svg {
+  width: 17px;
+  height: 17px;
+
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.pharmacy-review__summary {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2px 14px 8px;
+}
+
+.pharmacy-review__summary > div {
+  min-height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #edf1f5;
+
+  gap: 20px;
+}
+
+.pharmacy-review__summary > div > span {
+  font-size: 11px;
+  line-height: 17px;
+
+  color: #64748b;
+}
+
+.pharmacy-review__summary > div > strong {
+  font-size: 11px;
+  line-height: 17px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+
+/* =========================================================
+   TOTAL
+   ========================================================= */
+
+.pharmacy-review__summary-total {
+  min-height: 52px !important;
+
+  margin-top: 2px;
+
+  border-bottom: none !important;
+
+  border-top: 1px solid #cbd5e1;
+}
+
+.pharmacy-review__summary-total > span {
+  color: #0f172a !important;
+
+  font-weight: 700;
+}
+
+.pharmacy-review__summary-total > strong {
+  color: #059669 !important;
+
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.pharmacy-review__footer {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 14px;
+
+  padding: 12px 18px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+.pharmacy-review__footer-right {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   FOOTER BUTTON
+   ========================================================= */
+
+.pharmacy-review__footer-button {
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 0 15px;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.pharmacy-review__footer-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* =========================================================
+   CANCEL
+   ========================================================= */
+
+.pharmacy-review__footer-button--cancel {
+  background: #ffffff;
+
+  border: 1px solid #dbe3ef;
+
+  color: #475569;
+}
+
+.pharmacy-review__footer-button--cancel:hover {
+  background: #fff7f7;
+
+  border-color: #fecaca;
+
+  color: #dc2626;
+}
+
+
+/* =========================================================
+   BACK
+   ========================================================= */
+
+.pharmacy-review__footer-button--back {
+  background: #ffffff;
+
+  border: 1px solid #cbd5e1;
+
+  color: #475569;
+}
+
+.pharmacy-review__footer-button--back:hover {
+  background: #f8fafc;
+
+  border-color: #94a3b8;
+
+  color: #0f172a;
+}
+
+
+/* =========================================================
+   CONFIRM
+   ========================================================= */
+
+.pharmacy-review__footer-button--confirm {
+  min-width: 215px;
+
+  background: #2563eb;
+
+  border: 1px solid #2563eb;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.08);
+}
+
+.pharmacy-review__footer-button--confirm:hover {
+  background: #1d4ed8;
+
+  border-color: #1d4ed8;
+
+  box-shadow:
+    0 4px 10px rgba(37, 99, 235, 0.18);
+
+  transform: translateY(-1px);
+}
+
+.pharmacy-review__footer-button--confirm:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.pharmacy-review__back-button:focus-visible,
+.pharmacy-review__close-button:focus-visible,
+.pharmacy-review__footer-button:focus-visible {
+  outline: 2px solid #2563eb;
+
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1199px) {
+
+  .pharmacy-review__container {
+    padding: 12px;
+  }
+
+  .pharmacy-review__info-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pharmacy-review__info-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .pharmacy-review__info-item:nth-child(n + 3) {
+    border-top: 1px solid #e8edf3;
+  }
+
+  .pharmacy-review__bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .pharmacy-review__container {
+    padding: 8px;
+  }
+
+
+  /* HEADER */
+
+  .pharmacy-review__header {
+    min-height: 64px;
+
+    padding: 10px 12px;
+  }
+
+  .pharmacy-review__header-left {
+    gap: 8px;
+  }
+
+  .pharmacy-review__back-button,
+  .pharmacy-review__close-button {
+    width: 34px;
+    height: 34px;
+  }
+
+  .pharmacy-review__header-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .pharmacy-review__header-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .pharmacy-review__title {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .pharmacy-review__subtitle {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+
+  /* STEPPER */
+
+  .pharmacy-review__stepper {
+    padding: 10px 8px;
+    overflow-x: auto;
+  }
+
+
+  /* CONTENT */
+
+  .pharmacy-review__content {
+    gap: 10px;
+
+    margin-top: 10px;
+  }
+
+
+  /* CARD */
+
+  .pharmacy-review__card {
+    border-radius: 8px;
+  }
+
+
+  /* CARD HEADER */
+
+  .pharmacy-review__card-header {
+    min-height: 58px;
+
+    padding: 10px 12px;
+  }
+
+  .pharmacy-review__card-header h2 {
+    font-size: 13px;
+  }
+
+  .pharmacy-review__card-header p {
+    font-size: 10px;
+  }
+
+
+  /* INFO GRID */
+
+  .pharmacy-review__info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-review__info-item {
+    border-right: none;
+
+    border-bottom: 1px solid #e8edf3;
+  }
+
+  .pharmacy-review__info-item:last-child {
+    border-bottom: none;
+  }
+
+  .pharmacy-review__info-item:nth-child(n + 3) {
+    border-top: none;
+  }
+
+
+  /* MEDICINE */
+
+  .pharmacy-review__medicine-table {
+    overflow-x: auto;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pharmacy-review__medicine-table table {
+    min-width: 600px;
+  }
+
+
+  /* BOTTOM GRID */
+
+  .pharmacy-review__bottom-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+
+  /* FOOTER */
+
+  .pharmacy-review__footer {
+    min-height: auto;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+  }
+
+  .pharmacy-review__footer-right {
+    width: 100%;
+  }
+
+  .pharmacy-review__footer-button {
+    flex: 1;
+
+    min-height: 40px;
+  }
+
+  .pharmacy-review__footer-button--confirm {
+    min-width: 0;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  .pharmacy-review__footer-right {
+    flex-direction: column;
+  }
+
+  .pharmacy-review__footer-right
+  .pharmacy-review__footer-button {
+    width: 100%;
+  }
+
+  .pharmacy-review__footer-button--cancel {
+    width: 100%;
+  }
+
+  .pharmacy-review__payment-method {
+    align-items: flex-start;
+  }
+
+}

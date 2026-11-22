@@ -1,0 +1,330 @@
+/* src/master_modules/RadiologyManagement/components/RadiologyTable/RadiologyTable.css */
+
+.radiology-table {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 10px;
+  color: #25344d;
+  font-family: inherit;
+}
+
+.radiology-table *,
+.radiology-table *::before,
+.radiology-table *::after {
+  box-sizing: border-box;
+}
+
+.radiology-table__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 20px;
+}
+
+.radiology-table__title {
+  margin: 0;
+  color: #172641;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.radiology-table__subtitle {
+  margin: 4px 0 0;
+  color: #7b879a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.radiology-table__total {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  color: #425675;
+  background: #f2f5fa;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.radiology-table__scroll {
+  width: 100%;
+  overflow-x: auto;
+  border-top: 1px solid #edf0f5;
+  scrollbar-width: thin;
+}
+
+.radiology-table__element {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.radiology-table__heading {
+  padding: 13px 15px;
+  color: #65748b;
+  background: #f8fafd;
+  border-bottom: 1px solid #e8edf4;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.radiology-table__cell {
+  padding: 15px;
+  color: #46556c;
+  border-bottom: 1px solid #edf0f5;
+  font-size: 12px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.radiology-table__row:last-child .radiology-table__cell {
+  border-bottom: 0;
+}
+
+.radiology-table__row:hover .radiology-table__cell {
+  background: #fafcff;
+}
+
+.radiology-table__patient {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 130px;
+}
+
+.radiology-table__patient-name {
+  color: #25344d;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.radiology-table__patient-id {
+  color: #8995a8;
+  font-size: 10px;
+}
+
+.radiology-table__status,
+.radiology-table__modality {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.radiology-table__status-dot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.radiology-table__status--pending {
+  color: #a96308;
+  background: #fff5df;
+}
+
+.radiology-table__status--in-progress {
+  color: #245fc8;
+  background: #eaf2ff;
+}
+
+.radiology-table__status--completed {
+  color: #087f5b;
+  background: #e6f7ef;
+}
+
+.radiology-table__status--cancelled {
+  color: #b42332;
+  background: #fff0f1;
+}
+
+.radiology-table__status--unknown {
+  color: #596579;
+  background: #eef1f5;
+}
+
+.radiology-table__modality--xray {
+  color: #245fc8;
+  background: #edf4ff;
+}
+
+.radiology-table__modality--ct {
+  color: #6d42bb;
+  background: #f3edff;
+}
+
+.radiology-table__modality--mri {
+  color: #087f79;
+  background: #e5f8f6;
+}
+
+.radiology-table__modality--ultrasound {
+  color: #a65b10;
+  background: #fff3e3;
+}
+
+.radiology-table__modality--mammography {
+  color: #a13d83;
+  background: #fbeafa;
+}
+
+.radiology-table__modality--default {
+  color: #53627a;
+  background: #f0f3f8;
+}
+
+
+
+.radiology-table__cell--actions {
+  white-space: nowrap;
+}
+
+.radiology-table__actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radiology-table__action-menu-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  color: #53627a;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    color 150ms ease,
+    background-color 150ms ease,
+    border-color 150ms ease;
+}
+
+.radiology-table__action-menu-trigger:hover {
+  color: #2162d5;
+  background: #f1f6ff;
+  border-color: #dce8ff;
+}
+
+.radiology-table__action-menu-trigger:focus-visible,
+.radiology-table__action-menu-item:focus-visible {
+  outline: 2px solid #80b1ff;
+  outline-offset: 2px;
+}
+
+.radiology-table__action-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  right: 0;
+  min-width: 165px;
+  padding: 5px;
+  background: #ffffff;
+  border: 1px solid #e3e9f2;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgb(20 33 61 / 12%);
+}
+
+.radiology-table__action-menu-item {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  width: 100%;
+  min-height: 40px;
+  padding: 8px;
+  color: #161b25;
+  /* background: transparent; */
+  border: 0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 13px;
+  /* text-align: center; */
+  cursor: pointer;
+}
+
+.radiology-table__action-menu-item:hover:not(:disabled) {
+  color: #2162d5;
+  background: #f3f7ff;
+}
+
+.radiology-table__action-menu-item:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radiology-table__action-menu-trigger {
+    transition: none;
+  }
+}
+
+
+
+
+.radiology-table__empty {
+  padding: 44px 20px;
+  color: #7b879a;
+  text-align: center;
+}
+
+.radiology-table__empty strong,
+.radiology-table__empty span {
+  display: block;
+}
+
+.radiology-table__empty strong {
+  color: #34435c;
+  font-size: 13px;
+}
+
+.radiology-table__empty span {
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+.radiology-table__pagination {
+  padding: 4px 12px;
+  border-top: 1px solid #edf0f5;
+}
+
+@media (max-width: 600px) {
+  .radiology-table__top {
+    padding: 15px;
+  }
+
+  .radiology-table__title {
+    font-size: 14px;
+  }
+
+  .radiology-table__pagination {
+    padding: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radiology-table__action {
+    transition: none;
+  }
+}

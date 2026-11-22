@@ -1,0 +1,163 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-variance-table-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.audit-section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.audit-section-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#0f172a;
+
+}
+
+.audit-section-header span{
+
+    font-size:13px;
+
+    color:#64748b;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.audit-variance-wrapper{
+
+    overflow-x:auto;
+
+}
+
+.audit-variance-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:760px;
+
+}
+
+.audit-variance-table th{
+
+    background:#f8fafc;
+
+    padding:14px;
+
+    font-size:13px;
+
+    text-align:left;
+
+    color:#475569;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.audit-variance-table td{
+
+    padding:14px;
+
+    border-bottom:1px solid #eef2f7;
+
+    font-size:14px;
+
+}
+
+.audit-variance-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* ==========================================================
+   Difference
+========================================================== */
+
+.positive{
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.negative{
+
+    color:#dc2626;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   Status
+========================================================== */
+
+.variance-status{
+
+    display:inline-flex;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.variance-status.matched{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.variance-status.short{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+.variance-status.excess{
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+}

@@ -1,0 +1,264 @@
+/* =========================================
+   Doctor Management Page
+========================================= */
+
+.doctor-management {
+    width: 100%;
+    min-height: 100%;
+    background: #f8fafc;
+    color: #111827;
+    box-sizing: border-box;
+    padding: 18px;
+}
+
+
+/* =========================================
+   Page Content
+========================================= */
+
+.doctor-management__content {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 32px;
+}
+
+
+/* =========================================
+   Generic Section
+========================================= */
+
+.doctor-management__section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   Stats Section
+========================================= */
+
+.doctor-management__stats-section {
+    width: 100%;
+}
+
+
+/* =========================================
+   Stats Loading / Error State
+========================================= */
+
+.doctor-management__stats-state {
+    width: calc(100% - 48px);
+    min-height: 142px;
+    margin: 20px 24px 0;
+    padding: 20px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/* =========================================
+   Loading
+========================================= */
+
+.doctor-management__stats-loading {
+    color: #6b7280;
+}
+
+
+.doctor-management__loading-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    animation: doctorManagementPulse 1.2s
+        ease-in-out infinite;
+}
+
+
+@keyframes doctorManagementPulse {
+
+    0%,
+    100% {
+        opacity: 0.35;
+        transform: scale(0.85);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================================
+   Error
+========================================= */
+
+.doctor-management__stats-error {
+    justify-content: space-between;
+    color: #b91c1c;
+}
+
+
+.doctor-management__retry-button {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+
+    color: #374151;
+
+    padding: 8px 14px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.doctor-management__retry-button:hover {
+    background: #f9fafb;
+    border-color: #9ca3af;
+}
+
+
+.doctor-management__retry-button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   Future Content
+========================================= */
+
+.doctor-management__future-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 768px) {
+
+    .doctor-management__stats-state {
+        width: calc(100% - 32px);
+        margin: 16px 16px 0;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .doctor-management__stats-state {
+        min-height: 120px;
+
+        padding: 16px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .doctor-management__stats-error {
+        justify-content: center;
+    }
+
+}
+
+
+
+/* =========================================
+   DOCTOR TABLE + DETAILS WORKSPACE
+========================================= */
+
+.doctor-management__workspace {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    align-items: stretch;
+
+    gap: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.doctor-management__table-section {
+    flex: 1 1 auto;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   DETAILS PANEL
+========================================= */
+
+.doctor-management__details-section {
+    flex: 0 0 440px;
+
+    width: 440px;
+    max-width: 440px;
+
+    min-width: 0;
+
+    height: fit-content;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1150px) {
+
+    .doctor-management__workspace {
+        flex-direction: column;
+    }
+
+
+    .doctor-management__details-section {
+        flex: 1 1 auto;
+
+        width: 100%;
+        max-width: none;
+    }
+
+}

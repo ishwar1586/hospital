@@ -1,0 +1,119 @@
+/* ==========================================================
+   Footer
+========================================================== */
+
+.payment-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px 20px;
+
+    background:#FFFFFF;
+
+    border-top:1px solid #E2E8F0;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================================================
+   Common Button
+========================================================== */
+
+.payment-footer-btn{
+
+    flex:1;
+
+    height:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:all .25s ease;
+
+}
+
+.payment-footer-btn svg{
+
+    font-size:20px;
+
+}
+
+/* ==========================================================
+   Cancel
+========================================================== */
+
+.cancel-btn{
+
+    background:#FFFFFF;
+
+    color:#DC2626;
+
+    border:1px solid #FECACA;
+
+}
+
+.cancel-btn:hover{
+
+    background:#FEF2F2;
+
+    border-color:#FCA5A5;
+
+}
+
+/* ==========================================================
+   Complete
+========================================================== */
+
+.complete-btn{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.complete-btn:hover:not(:disabled){
+
+    background:#1D4ED8;
+
+    transform:translateY(-1px);
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================================
+   Disabled
+========================================================== */
+
+.complete-btn:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}

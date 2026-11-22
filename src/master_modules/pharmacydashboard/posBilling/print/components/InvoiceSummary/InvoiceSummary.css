@@ -1,0 +1,91 @@
+.thermal-summary {
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    color: #000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.thermal-summary-table {
+
+    width: 100%;
+
+    margin-top: 6px;
+
+    border-collapse: collapse;
+
+}
+
+.thermal-summary-table td {
+
+    padding: 3px 0;
+
+    font-size: 11px;
+
+}
+
+.thermal-summary-table td:first-child {
+
+    text-align: left;
+
+    width: 70%;
+
+    font-weight: 500;
+
+}
+
+.thermal-summary-table td:last-child {
+
+    text-align: right;
+
+    width: 30%;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+}
+
+.thermal-grand-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin: 8px 0;
+
+    padding: 8px 0;
+
+    border-top: 2px solid #000;
+
+    border-bottom: 2px solid #000;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+}
+
+.thermal-grand-total span:last-child {
+
+    font-size: 15px;
+
+}
+
+@media print {
+
+    .thermal-summary {
+
+        page-break-inside: avoid;
+
+    }
+
+}

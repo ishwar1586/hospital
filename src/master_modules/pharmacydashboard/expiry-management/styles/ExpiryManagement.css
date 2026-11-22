@@ -1,0 +1,79 @@
+/* ==========================================================
+   Page
+========================================================== */
+
+.expiry-management-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    padding:24px;
+
+    background:#f8fafc;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.expiry-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.expiry-header h1{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.expiry-header p{
+
+    margin-top:6px;
+
+    font-size:14px;
+
+    color:#64748b;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .expiry-management-page{
+
+        padding:16px;
+
+    }
+
+    .expiry-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+}

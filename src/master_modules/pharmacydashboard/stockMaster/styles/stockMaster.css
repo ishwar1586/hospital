@@ -1,0 +1,118 @@
+.stock-master{
+
+    max-width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:24px;
+
+    background:#F8FAFC;
+
+    min-height:100%;
+
+    box-sizing:border-box;
+
+}
+
+/* =====================================================
+   STATS SECTION
+===================================================== */
+
+.stock-stats-section{
+
+    width:100%;
+
+}
+
+
+
+/* =======================================================
+   FILTER
+======================================================= */
+
+.stock-filter-section{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    box-shadow:
+
+        0 2px 12px rgba(15,23,42,.05);
+
+}
+
+
+/* ========================================= */
+
+.stock-tabs-section{
+
+    width:100%;
+
+    margin-top:20px;
+
+}
+
+
+
+/* ====================================== */
+
+.stock-table-section{
+
+     width:100%;
+
+    max-width:100%;
+    min-width: 0;
+    overflow:hidden;
+
+    margin-top:4px;
+
+}
+
+/* ====================================== */
+
+.stock-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 4px;
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+.stock-footer strong{
+
+    color:#0F172A;
+
+}
+
+/* ====================================== */
+
+/* @media(max-width:768px){
+
+.stock-footer{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:8px;
+
+}
+
+} */

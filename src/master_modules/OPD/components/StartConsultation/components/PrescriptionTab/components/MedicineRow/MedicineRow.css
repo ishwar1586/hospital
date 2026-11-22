@@ -1,0 +1,149 @@
+
+.prescription-medicine-row {
+  background: #ffffff;
+  transition: background 0.2s ease;
+}
+
+.prescription-medicine-row:hover {
+  background: #f8fbff;
+}
+
+.prescription-medicine-row td {
+  padding: 9px 10px;
+  border-bottom: 1px solid #edf1f6;
+  vertical-align: middle;
+}
+
+/* Serial Number */
+
+.prescription-medicine-row__serial {
+  text-align: center;
+  color: #53657d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Medicine Details */
+
+.prescription-medicine-row__medicine {
+  min-width: 190px;
+}
+
+.prescription-medicine-row__medicine-name {
+  color: #172b4d;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.prescription-medicine-row__medicine-form {
+  margin-top: 2px;
+  color: #77869b;
+  font-size: 11px;
+}
+
+/* Input and Select Fields */
+
+.prescription-medicine-row__field {
+  width: 100%;
+  min-width: 75px;
+  height: 36px;
+  padding: 0 9px;
+  border: 1px solid #d5dfec;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #253650;
+  font-family: inherit;
+  font-size: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.prescription-medicine-row__field:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.08);
+}
+
+.prescription-medicine-row__field:disabled {
+  background: #f5f7fa;
+  color: #8795a9;
+  cursor: not-allowed;
+}
+
+.prescription-medicine-row__dose {
+  min-width: 85px;
+}
+
+.prescription-medicine-row__instruction {
+  min-width: 115px;
+}
+
+/* Action Buttons */
+
+.prescription-medicine-row__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.prescription-medicine-row__action-button {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #d5dfec;
+  border-radius: 7px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.prescription-medicine-row__action-button svg {
+  font-size: 18px;
+}
+
+.prescription-medicine-row__edit-button {
+  color: #1d4ed8;
+}
+
+.prescription-medicine-row__edit-button:hover:not(:disabled) {
+  background: #eff6ff;
+  border-color: #93b4f8;
+}
+
+.prescription-medicine-row__delete-button {
+  color: #ef4444;
+  background: #fff7f7;
+  border-color: #fee2e2;
+}
+
+.prescription-medicine-row__delete-button:hover:not(:disabled) {
+  background: #fee2e2;
+  border-color: #fca5a5;
+}
+
+.prescription-medicine-row__action-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .prescription-medicine-row td {
+    padding: 8px;
+  }
+
+  .prescription-medicine-row__field {
+    height: 34px;
+    font-size: 11px;
+  }
+
+  .prescription-medicine-row__action-button {
+    width: 31px;
+    height: 31px;
+  }
+}

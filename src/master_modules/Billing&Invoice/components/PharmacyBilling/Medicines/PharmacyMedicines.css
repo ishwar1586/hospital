@@ -1,0 +1,1852 @@
+
+/* =========================================================
+   PHARMACY MEDICINES
+   Professional Hospital ERP Design
+========================================================= */
+
+.pharmacy-medicines {
+  --pm-primary: #2563eb;
+  --pm-primary-dark: #1d4ed8;
+  --pm-primary-light: #eff6ff;
+
+  --pm-success: #16a34a;
+  --pm-success-light: #f0fdf4;
+
+  --pm-danger: #dc2626;
+  --pm-danger-light: #fef2f2;
+
+  --pm-warning: #d97706;
+  --pm-warning-light: #fffbeb;
+
+  --pm-text: #172033;
+  --pm-text-secondary: #64748b;
+  --pm-text-muted: #94a3b8;
+
+  --pm-border: #e2e8f0;
+  --pm-border-light: #edf1f5;
+
+  --pm-background: #f8fafc;
+  --pm-white: #ffffff;
+
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  background: var(--pm-background);
+
+  color: var(--pm-text);
+
+  font-family:
+    "Inter",
+    "Roboto",
+    "Segoe UI",
+    sans-serif;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.pharmacy-medicines *,
+.pharmacy-medicines *::before,
+.pharmacy-medicines *::after {
+  box-sizing: border-box;
+}
+
+.pharmacy-medicines button,
+.pharmacy-medicines input {
+  font: inherit;
+}
+
+.pharmacy-medicines button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pharmacy-medicines button:focus-visible,
+.pharmacy-medicines input:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.18);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.pharmacy-medicines__header {
+  width: 100%;
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 16px 20px;
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 12px;
+
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+}
+
+.pharmacy-medicines__header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  min-width: 0;
+}
+
+.pharmacy-medicines__icon-button {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--pm-border);
+  border-radius: 9px;
+
+  background: var(--pm-white);
+  color: var(--pm-text-secondary);
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__icon-button svg {
+  font-size: 21px;
+}
+
+.pharmacy-medicines__icon-button:hover {
+  background: var(--pm-primary-light);
+  color: var(--pm-primary);
+  border-color: #bfdbfe;
+}
+
+.pharmacy-medicines__header-icon {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--pm-primary-light);
+  color: var(--pm-primary);
+
+  border-radius: 11px;
+}
+
+.pharmacy-medicines__header-icon svg {
+  font-size: 25px;
+}
+
+.pharmacy-medicines__header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.pharmacy-medicines__title {
+  margin: 0;
+
+  color: var(--pm-text);
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+}
+
+.pharmacy-medicines__subtitle {
+  margin: 0;
+
+  color: var(--pm-text-secondary);
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.pharmacy-medicines__close-button {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: 1px solid var(--pm-border);
+  border-radius: 8px;
+
+  color: var(--pm-text-secondary);
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__close-button svg {
+  font-size: 20px;
+}
+
+.pharmacy-medicines__close-button:hover {
+  background: var(--pm-danger-light);
+  border-color: #fecaca;
+  color: var(--pm-danger);
+}
+
+
+/* =========================================================
+   BILLING STEPPER WRAPPER
+
+   Stepper component has its own CSS file.
+========================================================= */
+
+.pharmacy-medicines__stepper {
+  width: 100%;
+  min-width: 0;
+
+  padding: 18px 20px;
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 12px;
+
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.03);
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   COMMON SECTION STYLES
+========================================================= */
+
+.pharmacy-medicines__customer,
+.pharmacy-medicines__prescription,
+.pharmacy-medicines__available,
+.pharmacy-medicines__selected,
+.pharmacy-medicines__summary {
+  width: 100%;
+  min-width: 0;
+
+  padding: 20px;
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 12px;
+
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.025);
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.pharmacy-medicines__section-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+
+.pharmacy-medicines__section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+.pharmacy-medicines__section-heading > div:last-child {
+  min-width: 0;
+}
+
+.pharmacy-medicines__section-heading h2 {
+  margin: 0;
+
+  color: var(--pm-text);
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.pharmacy-medicines__section-heading p {
+  margin: 4px 0 0;
+
+  color: var(--pm-text-secondary);
+
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.pharmacy-medicines__section-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--pm-primary-light);
+
+  color: var(--pm-primary);
+
+  border-radius: 10px;
+}
+
+.pharmacy-medicines__section-icon svg {
+  font-size: 21px;
+}
+
+
+/* =========================================================
+   CUSTOMER / PATIENT / STAFF INFORMATION
+========================================================= */
+
+.pharmacy-medicines__customer {
+  border-left: 3px solid var(--pm-primary);
+}
+
+.pharmacy-medicines__customer-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.pharmacy-medicines__customer-item {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding: 14px 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid var(--pm-border-light);
+  border-radius: 9px;
+
+  transition: background 0.2s ease;
+}
+
+.pharmacy-medicines__customer-item:hover {
+  background: #f1f5f9;
+}
+
+.pharmacy-medicines__customer-item > span {
+  color: var(--pm-text-muted);
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.pharmacy-medicines__customer-item strong {
+  color: var(--pm-text);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   PRESCRIPTION SECTION
+========================================================= */
+
+.pharmacy-medicines__prescription {
+  background: #fbfdff;
+
+  border: 1px solid #dbeafe;
+  border-left: 3px solid var(--pm-primary);
+}
+
+.pharmacy-medicines__prescription .pharmacy-medicines__section-icon {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.pharmacy-medicines__prescription-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 4px;
+
+  padding: 9px 13px;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+  border-radius: 8px;
+
+  flex-shrink: 0;
+}
+
+.pharmacy-medicines__prescription-number span {
+  color: var(--pm-text-secondary);
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.pharmacy-medicines__prescription-number strong {
+  color: var(--pm-primary-dark);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   PRESCRIPTION MEDICINE LIST
+========================================================= */
+
+.pharmacy-medicines__prescription-list {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.pharmacy-medicines__prescription-item {
+  width: 100%;
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(150px, 1fr)
+    minmax(200px, 1.2fr)
+    auto;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 13px 15px;
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 9px;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__prescription-item:hover {
+  border-color: #bfdbfe;
+
+  box-shadow: 0 3px 10px rgba(37, 99, 235, 0.06);
+}
+
+.pharmacy-medicines__prescription-info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.pharmacy-medicines__prescription-info strong {
+  color: var(--pm-text);
+
+  font-size: 12.5px;
+  font-weight: 700;
+
+  overflow-wrap: anywhere;
+}
+
+.pharmacy-medicines__prescription-info span {
+  color: var(--pm-text-muted);
+
+  font-size: 10.5px;
+  font-weight: 500;
+}
+
+.pharmacy-medicines__prescription-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+.pharmacy-medicines__prescription-meta span {
+  padding: 5px 9px;
+
+  color: #475569;
+
+  background: #f1f5f9;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+
+  font-size: 10.5px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* Prescription Add Button */
+
+.pharmacy-medicines__prescription-add-button {
+  min-width: 95px;
+  min-height: 34px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 7px 12px;
+
+  color: var(--pm-white);
+
+  background: var(--pm-primary);
+
+  border: 1px solid var(--pm-primary);
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__prescription-add-button svg {
+  font-size: 17px;
+}
+
+.pharmacy-medicines__prescription-add-button:hover:not(:disabled) {
+  background: var(--pm-primary-dark);
+  border-color: var(--pm-primary-dark);
+
+  transform: translateY(-1px);
+}
+
+.pharmacy-medicines__prescription-add-button:disabled {
+  color: #64748b;
+
+  background: #f1f5f9;
+
+  border-color: #e2e8f0;
+
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   SEARCH MEDICINES
+========================================================= */
+
+.pharmacy-medicines__search {
+  width: 100%;
+  min-width: 0;
+}
+
+.pharmacy-medicines__search-wrapper {
+  width: 100%;
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 5px 7px 5px 15px;
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 9px;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__search-wrapper:focus-within {
+  border-color: var(--pm-primary);
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+.pharmacy-medicines__search-wrapper > svg {
+  flex-shrink: 0;
+
+  color: var(--pm-text-muted);
+
+  font-size: 21px;
+}
+
+.pharmacy-medicines__search-wrapper input {
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+  outline: none;
+
+  color: var(--pm-text);
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pharmacy-medicines__search-wrapper input::placeholder {
+  color: #94a3b8;
+
+  font-weight: 400;
+}
+
+.pharmacy-medicines__search-wrapper input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Clear Search Button */
+
+.pharmacy-medicines__search-wrapper > button:not(.pharmacy-medicines__search-button) {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+  border-radius: 6px;
+
+  color: var(--pm-text-secondary);
+
+  cursor: pointer;
+}
+
+.pharmacy-medicines__search-wrapper > button:not(.pharmacy-medicines__search-button):hover {
+  background: var(--pm-danger-light);
+  color: var(--pm-danger);
+}
+
+.pharmacy-medicines__search-wrapper > button svg {
+  font-size: 19px;
+}
+
+/* Search Action */
+
+.pharmacy-medicines__search-button {
+  min-width: 90px;
+  height: 36px;
+
+  padding: 0 17px;
+
+  color: var(--pm-white);
+
+  background: var(--pm-primary);
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 11.5px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.pharmacy-medicines__search-button:hover {
+  background: var(--pm-primary-dark);
+}
+
+/* Search Empty Message */
+
+.pharmacy-medicines__search-empty {
+  margin-top: 10px;
+
+  padding: 12px 15px;
+
+  color: var(--pm-danger);
+
+  background: var(--pm-danger-light);
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   AVAILABLE MEDICINES
+========================================================= */
+
+.pharmacy-medicines__available {
+  min-width: 0;
+}
+
+.pharmacy-medicines__available .pharmacy-medicines__section-header {
+  margin-bottom: 16px;
+}
+
+
+/* =========================================================
+   TABLE WRAPPERS
+========================================================= */
+
+.pharmacy-medicines__available-table-wrapper,
+.pharmacy-medicines__selected-table-wrapper {
+  width: 100%;
+  max-width: 100%;
+
+  overflow-x: auto;
+  overflow-y: auto;
+
+  border: 1px solid var(--pm-border);
+  border-radius: 9px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.pharmacy-medicines__available-table-wrapper {
+  max-height: 390px;
+}
+
+.pharmacy-medicines__selected-table-wrapper {
+  max-height: 420px;
+}
+
+.pharmacy-medicines__available-table-wrapper::-webkit-scrollbar,
+.pharmacy-medicines__selected-table-wrapper::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.pharmacy-medicines__available-table-wrapper::-webkit-scrollbar-track,
+.pharmacy-medicines__selected-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.pharmacy-medicines__available-table-wrapper::-webkit-scrollbar-thumb,
+.pharmacy-medicines__selected-table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.pharmacy-medicines__available-table-wrapper::-webkit-scrollbar-thumb:hover,
+.pharmacy-medicines__selected-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+
+/* =========================================================
+   COMMON MEDICINE TABLE
+========================================================= */
+
+.pharmacy-medicines__table {
+  width: 100%;
+  min-width: 760px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: var(--pm-white);
+
+  text-align: left;
+}
+
+.pharmacy-medicines__table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  padding: 13px 15px;
+
+  color: #475569;
+
+  background: #f8fafc;
+
+  border-bottom: 1px solid var(--pm-border);
+
+  font-size: 10.5px;
+  font-weight: 700;
+
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.pharmacy-medicines__table td {
+  padding: 13px 15px;
+
+  color: #475569;
+
+  background: var(--pm-white);
+
+  border-bottom: 1px solid var(--pm-border-light);
+
+  font-size: 11.5px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.pharmacy-medicines__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pharmacy-medicines__table tbody tr {
+  transition: background 0.15s ease;
+}
+
+.pharmacy-medicines__table tbody tr:hover td {
+  background: #f8fbff;
+}
+
+
+/* =========================================================
+   MEDICINE NAME
+========================================================= */
+
+.pharmacy-medicines__medicine-name {
+  min-width: 145px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.pharmacy-medicines__medicine-name strong {
+  color: var(--pm-text);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pharmacy-medicines__medicine-name span {
+  color: var(--pm-text-muted);
+
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   AVAILABLE MEDICINE ADD BUTTON
+========================================================= */
+
+.pharmacy-medicines__add-button {
+  min-width: 85px;
+  min-height: 32px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 6px 11px;
+
+  color: var(--pm-primary);
+
+  background: var(--pm-primary-light);
+
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+
+  font-size: 10.5px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__add-button svg {
+  font-size: 16px;
+}
+
+.pharmacy-medicines__add-button:hover:not(:disabled) {
+  color: var(--pm-white);
+
+  background: var(--pm-primary);
+
+  border-color: var(--pm-primary);
+}
+
+.pharmacy-medicines__add-button:disabled {
+  color: #64748b;
+
+  background: #f1f5f9;
+
+  border-color: #e2e8f0;
+
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   SELECTED MEDICINES
+========================================================= */
+
+.pharmacy-medicines__selected {
+  min-width: 0;
+}
+
+.pharmacy-medicines__selected .pharmacy-medicines__section-icon {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+
+/* Selected Medicine Count */
+
+.pharmacy-medicines__count {
+  min-width: 65px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px 12px;
+
+  color: #15803d;
+
+  background: var(--pm-success-light);
+
+  border: 1px solid #bbf7d0;
+  border-radius: 20px;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* Selected Table */
+
+.pharmacy-medicines__table--selected {
+  min-width: 1000px;
+}
+
+.pharmacy-medicines__table--selected th,
+.pharmacy-medicines__table--selected td {
+  padding: 13px 12px;
+}
+
+.pharmacy-medicines__table--selected th {
+  text-align: left;
+}
+
+
+/* =========================================================
+   QUANTITY CONTROL
+========================================================= */
+
+.pharmacy-medicines__quantity {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 32px;
+
+  padding: 3px 5px;
+
+  background: #f8fafc;
+
+  border: 1px solid var(--pm-border);
+  border-radius: 7px;
+}
+
+.pharmacy-medicines__quantity button {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  color: var(--pm-primary);
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__quantity button svg {
+  font-size: 16px;
+}
+
+.pharmacy-medicines__quantity button:hover:not(:disabled) {
+  color: var(--pm-white);
+
+  background: var(--pm-primary);
+
+  border-color: var(--pm-primary);
+}
+
+.pharmacy-medicines__quantity button:disabled {
+  color: #cbd5e1;
+
+  background: #f1f5f9;
+
+  cursor: not-allowed;
+}
+
+.pharmacy-medicines__quantity > span {
+  min-width: 19px;
+
+  color: var(--pm-text);
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* =========================================================
+   SELECTED MEDICINE TOTAL
+========================================================= */
+
+.pharmacy-medicines__total {
+  color: var(--pm-primary) !important;
+
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   REMOVE MEDICINE BUTTON
+========================================================= */
+
+.pharmacy-medicines__remove-button {
+  width: 33px;
+  height: 33px;
+  min-width: 33px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  color: var(--pm-danger);
+
+  background: var(--pm-danger-light);
+
+  border: 1px solid #fecaca;
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__remove-button svg {
+  font-size: 18px;
+}
+
+.pharmacy-medicines__remove-button:hover {
+  color: var(--pm-white);
+
+  background: var(--pm-danger);
+
+  border-color: var(--pm-danger);
+}
+
+
+/* =========================================================
+   EMPTY STATES
+========================================================= */
+
+.pharmacy-medicines__empty {
+  width: 100%;
+  min-height: 125px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 25px 15px;
+
+  background: #f8fafc;
+
+  border: 1px dashed #cbd5e1;
+  border-radius: 9px;
+
+  text-align: center;
+}
+
+.pharmacy-medicines__empty strong {
+  color: var(--pm-text);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pharmacy-medicines__empty span {
+  max-width: 400px;
+
+  color: var(--pm-text-secondary);
+
+  font-size: 11.5px;
+  font-weight: 400;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   BILL SUMMARY
+========================================================= */
+
+.pharmacy-medicines__summary {
+  max-width: 100%;
+  margin-left: auto;
+
+  border-top: 3px solid var(--pm-primary);
+}
+
+.pharmacy-medicines__summary-header {
+  width: 100%;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid var(--pm-border-light);
+}
+
+.pharmacy-medicines__summary-header .pharmacy-medicines__section-icon {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+.pharmacy-medicines__summary-body {
+  width: 100%;
+  max-width: 390px;
+
+  margin-left: auto;
+  padding-top: 12px;
+}
+
+.pharmacy-medicines__summary-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 10px 0;
+
+  border-bottom: 1px solid var(--pm-border-light);
+}
+
+.pharmacy-medicines__summary-row span {
+  color: var(--pm-text-secondary);
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.pharmacy-medicines__summary-row strong {
+  color: var(--pm-text);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* Grand Total */
+
+.pharmacy-medicines__summary-grand-total {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 12px;
+  padding: 15px 16px;
+
+  background: var(--pm-primary-light);
+
+  border: 1px solid #bfdbfe;
+  border-radius: 9px;
+}
+
+.pharmacy-medicines__summary-grand-total span {
+  color: var(--pm-primary-dark);
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.pharmacy-medicines__summary-grand-total strong {
+  color: var(--pm-primary-dark);
+
+  font-size: 19px;
+  font-weight: 800;
+
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.pharmacy-medicines__footer {
+  /* position: sticky; */
+  bottom: 0;
+  z-index: 5;
+
+  width: 100%;
+  min-height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: auto;
+  padding: 12px 18px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border: 1px solid var(--pm-border);
+  border-radius: 11px;
+
+  box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.045);
+
+  backdrop-filter: blur(10px);
+}
+
+.pharmacy-medicines__footer-left,
+.pharmacy-medicines__footer-right {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.pharmacy-medicines__footer-right {
+  margin-left: auto;
+}
+
+
+/* Footer Common Button */
+
+.pharmacy-medicines__cancel-button,
+.pharmacy-medicines__back-button,
+.pharmacy-medicines__continue-button {
+  min-height: 39px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 9px 17px;
+
+  border-radius: 7px;
+
+  font-size: 11.5px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.pharmacy-medicines__cancel-button svg,
+.pharmacy-medicines__back-button svg,
+.pharmacy-medicines__continue-button svg {
+  font-size: 18px;
+}
+
+
+/* Cancel */
+
+.pharmacy-medicines__cancel-button {
+  color: var(--pm-danger);
+
+  background: var(--pm-white);
+
+  border: 1px solid #fecaca;
+}
+
+.pharmacy-medicines__cancel-button:hover {
+  color: var(--pm-white);
+
+  background: var(--pm-danger);
+
+  border-color: var(--pm-danger);
+}
+
+
+/* Back */
+
+.pharmacy-medicines__back-button {
+  color: #475569;
+
+  background: var(--pm-white);
+
+  border: 1px solid var(--pm-border);
+}
+
+.pharmacy-medicines__back-button:hover {
+  color: var(--pm-primary);
+
+  background: var(--pm-primary-light);
+
+  border-color: #bfdbfe;
+}
+
+
+/* Continue */
+
+.pharmacy-medicines__continue-button {
+  min-width: 145px;
+
+  color: var(--pm-white);
+
+  background: var(--pm-primary);
+
+  border: 1px solid var(--pm-primary);
+}
+
+.pharmacy-medicines__continue-button:hover:not(:disabled) {
+  background: var(--pm-primary-dark);
+
+  border-color: var(--pm-primary-dark);
+
+  box-shadow: 0 3px 9px rgba(37, 99, 235, 0.18);
+
+  transform: translateY(-1px);
+}
+
+.pharmacy-medicines__continue-button:disabled {
+  color: #94a3b8;
+
+  background: #e2e8f0;
+
+  border-color: #e2e8f0;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   DISABLED / INTERACTION STATES
+========================================================= */
+
+.pharmacy-medicines button:disabled {
+  transform: none;
+}
+
+.pharmacy-medicines button:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.2);
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .pharmacy-medicines {
+    padding: 18px;
+    gap: 17px;
+  }
+
+  .pharmacy-medicines__customer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pharmacy-medicines__prescription-item {
+    grid-template-columns:
+      minmax(130px, 1fr)
+      minmax(160px, 1fr)
+      auto;
+
+    gap: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .pharmacy-medicines {
+    padding: 14px;
+    gap: 14px;
+  }
+
+  .pharmacy-medicines__header {
+    min-height: 68px;
+    padding: 13px 15px;
+  }
+
+  .pharmacy-medicines__title {
+    font-size: 17px;
+  }
+
+  .pharmacy-medicines__header-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+
+  .pharmacy-medicines__stepper {
+    padding: 15px 12px;
+  }
+
+  .pharmacy-medicines__customer,
+  .pharmacy-medicines__prescription,
+  .pharmacy-medicines__available,
+  .pharmacy-medicines__selected,
+  .pharmacy-medicines__summary {
+    padding: 16px;
+  }
+
+  .pharmacy-medicines__prescription-item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .pharmacy-medicines__prescription-info {
+    grid-column: 1 / -1;
+  }
+
+  .pharmacy-medicines__prescription-meta {
+    min-width: 0;
+  }
+
+  .pharmacy-medicines__prescription-add-button {
+    min-width: 90px;
+  }
+
+  .pharmacy-medicines__summary-body {
+    max-width: 100%;
+  }
+
+  .pharmacy-medicines__footer {
+    padding: 11px 12px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 576px) {
+
+  .pharmacy-medicines {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  /* Header */
+
+  .pharmacy-medicines__header {
+    min-height: 62px;
+    padding: 11px;
+
+    gap: 8px;
+  }
+
+  .pharmacy-medicines__header-left {
+    gap: 9px;
+  }
+
+  .pharmacy-medicines__icon-button {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .pharmacy-medicines__header-icon {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+  }
+
+  .pharmacy-medicines__header-icon svg {
+    font-size: 20px;
+  }
+
+  .pharmacy-medicines__title {
+    font-size: 14px;
+  }
+
+  .pharmacy-medicines__subtitle {
+    font-size: 10px;
+  }
+
+  .pharmacy-medicines__close-button {
+    width: 31px;
+    height: 31px;
+    min-width: 31px;
+  }
+
+  /* Stepper */
+
+  .pharmacy-medicines__stepper {
+    padding: 12px 8px;
+  }
+
+  /* Sections */
+
+  .pharmacy-medicines__customer,
+  .pharmacy-medicines__prescription,
+  .pharmacy-medicines__available,
+  .pharmacy-medicines__selected,
+  .pharmacy-medicines__summary {
+    padding: 13px;
+    border-radius: 9px;
+  }
+
+  /* Section Heading */
+
+  .pharmacy-medicines__section-header {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .pharmacy-medicines__section-heading {
+    gap: 9px;
+  }
+
+  .pharmacy-medicines__section-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .pharmacy-medicines__section-icon svg {
+    font-size: 18px;
+  }
+
+  .pharmacy-medicines__section-heading h2 {
+    font-size: 13px;
+  }
+
+  .pharmacy-medicines__section-heading p {
+    font-size: 10px;
+  }
+
+  /* Customer Grid */
+
+  .pharmacy-medicines__customer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .pharmacy-medicines__customer-item {
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .pharmacy-medicines__customer-item > span {
+    font-size: 9px;
+  }
+
+  .pharmacy-medicines__customer-item strong {
+    font-size: 11px;
+  }
+
+  /* Prescription */
+
+  .pharmacy-medicines__prescription-number {
+    padding: 7px 9px;
+  }
+
+  .pharmacy-medicines__prescription-number span {
+    font-size: 9px;
+  }
+
+  .pharmacy-medicines__prescription-number strong {
+    font-size: 10px;
+  }
+
+  .pharmacy-medicines__prescription-item {
+    padding: 11px;
+    gap: 9px;
+  }
+
+  .pharmacy-medicines__prescription-info strong {
+    font-size: 11.5px;
+  }
+
+  .pharmacy-medicines__prescription-meta {
+    gap: 5px;
+  }
+
+  .pharmacy-medicines__prescription-meta span {
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+
+  .pharmacy-medicines__prescription-add-button {
+    min-width: 78px;
+    min-height: 32px;
+    padding: 6px 8px;
+    font-size: 10px;
+  }
+
+  /* Search */
+
+  .pharmacy-medicines__search-wrapper {
+    min-height: 43px;
+    padding-left: 11px;
+    gap: 8px;
+  }
+
+  .pharmacy-medicines__search-wrapper input {
+    font-size: 11px;
+  }
+
+  .pharmacy-medicines__search-button {
+    min-width: 67px;
+    height: 33px;
+    padding: 0 9px;
+    font-size: 10px;
+  }
+
+  /* Tables */
+
+  .pharmacy-medicines__available-table-wrapper,
+  .pharmacy-medicines__selected-table-wrapper {
+    max-height: 350px;
+  }
+
+  .pharmacy-medicines__table th {
+    padding: 11px 12px;
+    font-size: 9px;
+  }
+
+  .pharmacy-medicines__table td {
+    padding: 11px 12px;
+    font-size: 10.5px;
+  }
+
+  .pharmacy-medicines__table--selected {
+    min-width: 950px;
+  }
+
+  .pharmacy-medicines__medicine-name {
+    min-width: 130px;
+  }
+
+  /* Count */
+
+  .pharmacy-medicines__count {
+    min-width: 55px;
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  /* Summary */
+
+  .pharmacy-medicines__summary-row {
+    padding: 9px 0;
+  }
+
+  .pharmacy-medicines__summary-row span {
+    font-size: 11px;
+  }
+
+  .pharmacy-medicines__summary-row strong {
+    font-size: 11px;
+  }
+
+  .pharmacy-medicines__summary-grand-total {
+    padding: 12px;
+  }
+
+  .pharmacy-medicines__summary-grand-total span {
+    font-size: 11px;
+  }
+
+  .pharmacy-medicines__summary-grand-total strong {
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  .pharmacy-medicines__footer {
+    min-height: 58px;
+    padding: 9px;
+
+    gap: 7px;
+  }
+
+  .pharmacy-medicines__footer-left,
+  .pharmacy-medicines__footer-right {
+    gap: 6px;
+  }
+
+  .pharmacy-medicines__cancel-button,
+  .pharmacy-medicines__back-button,
+  .pharmacy-medicines__continue-button {
+    min-height: 35px;
+    padding: 7px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
+
+  .pharmacy-medicines__cancel-button svg,
+  .pharmacy-medicines__back-button svg,
+  .pharmacy-medicines__continue-button svg {
+    font-size: 15px;
+  }
+
+  .pharmacy-medicines__continue-button {
+    min-width: 0;
+  }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .pharmacy-medicines {
+    padding: 8px;
+  }
+
+  .pharmacy-medicines__header {
+    padding: 9px;
+  }
+
+  .pharmacy-medicines__title {
+    font-size: 13px;
+  }
+
+  .pharmacy-medicines__customer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-medicines__prescription-item {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-medicines__prescription-info {
+    grid-column: auto;
+  }
+
+  .pharmacy-medicines__prescription-add-button {
+    width: 100%;
+  }
+
+  .pharmacy-medicines__footer {
+    flex-wrap: wrap;
+  }
+
+  .pharmacy-medicines__footer-left,
+  .pharmacy-medicines__footer-right {
+    flex: 1;
+  }
+
+  .pharmacy-medicines__footer-right {
+    justify-content: flex-end;
+  }
+
+}

@@ -1,0 +1,108 @@
+/* ==========================================================
+   Qty Stepper
+========================================================== */
+
+.qty-stepper{
+
+    display:flex;
+
+    /* align-items:center; */
+
+    /* justify-content:center; */
+
+    gap:6px;
+
+}
+
+.qty-stepper input{
+
+    width:35px;
+
+    height:30px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.qty-stepper input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.10);
+
+}
+
+.qty-stepper input::-webkit-outer-spin-button,
+.qty-stepper input::-webkit-inner-spin-button{
+
+    -webkit-appearance:none;
+
+    margin:0;
+
+}
+
+.qty-stepper input[type="number"]{
+
+    -moz-appearance:textfield;
+
+}
+
+.qty-btn{
+
+    width:30px;
+
+    height:30px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f3f4f6;
+
+    color:#374151;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.qty-btn:hover:not(:disabled){
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+.qty-btn:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+}
+
+.qty-btn svg{
+
+    font-size:14px;
+
+}

@@ -1,0 +1,759 @@
+/* ==========================================================
+   Invoice Search Dialog
+========================================================== */
+
+.MuiDialog-paper {
+
+    border-radius: 18px !important;
+
+    overflow: hidden;
+
+}
+
+.invoice-search-dialog-title {
+
+    display: flex !important;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 24px !important;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    background: #ffffff;
+
+}
+
+.invoice-search-title {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+.invoice-search-title h2 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #111827;
+
+}
+
+.invoice-search-title p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #6b7280;
+
+}
+
+/* ==========================================================
+   Filter Card
+========================================================== */
+
+.invoice-search-filters {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    margin-bottom: 24px;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 18px;
+
+}
+
+.filter-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+}
+
+.filter-group label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+}
+
+.filter-group label svg {
+
+    color: #2563eb;
+
+    font-size: 18px;
+
+}
+
+.filter-group input,
+
+.filter-group select {
+
+    width: 100%;
+
+    height: 44px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 10px;
+
+    padding: 0 14px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: .25s;
+
+}
+
+.filter-group input:focus,
+
+.filter-group select:focus {
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.filter-group input:hover,
+
+.filter-group select:hover {
+
+    border-color: #93c5fd;
+
+}
+
+/* ==========================================================
+   Buttons
+========================================================== */
+
+.filter-actions {
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 12px;
+
+}
+
+.search-btn,
+
+.reset-btn {
+
+    height: 44px;
+
+    padding: 0 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.search-btn {
+
+    background: #2563eb;
+
+    color: #fff;
+
+}
+
+.search-btn:hover {
+
+    background: #1d4ed8;
+
+}
+
+.reset-btn {
+
+    background: #f3f4f6;
+
+    color: #374151;
+
+}
+
+.reset-btn:hover {
+
+    background: #e5e7eb;
+
+}
+
+
+
+/* ==========================================================
+   Invoice Table Card
+========================================================== */
+
+.invoice-search-table-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+}
+
+/* ==========================================================
+   Table Wrapper
+========================================================== */
+
+.invoice-search-table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: auto;
+
+    max-height: 500px;
+
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.invoice-search-table {
+
+    width: 100%;
+
+    min-width: 1200px;
+
+    border-collapse: collapse;
+
+}
+
+/* ==========================================================
+   Table Header
+========================================================== */
+
+.invoice-search-table thead {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 20;
+
+    background: #f8fafc;
+
+}
+
+.invoice-search-table th {
+
+    padding: 15px 16px;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    color: #374151;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    white-space: nowrap;
+
+}
+
+/* ==========================================================
+   Table Body
+========================================================== */
+
+.invoice-search-table td {
+
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #edf2f7;
+
+    font-size: 14px;
+
+    color: #374151;
+
+    white-space: nowrap;
+
+}
+
+/* ==========================================================
+   Hover
+========================================================== */
+
+.invoice-search-table tbody tr {
+
+    transition: .25s;
+
+    cursor: pointer;
+
+}
+
+.invoice-search-table tbody tr:hover {
+
+    background: #f8fbff;
+
+}
+
+/* ==========================================================
+   Zebra Strip
+========================================================== */
+
+.invoice-search-table tbody tr:nth-child(even){
+
+    background:#fcfcfc;
+
+}
+
+.invoice-search-table tbody tr:nth-child(even):hover{
+
+    background:#f8fbff;
+
+}
+
+/* ==========================================================
+   Amount Column
+========================================================== */
+
+.invoice-search-table td:nth-child(6){
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+/* ==========================================================
+   Action Buttons
+========================================================== */
+
+.invoice-table-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.table-icon-btn{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:8px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    background:#f3f4f6;
+
+    color:#374151;
+
+}
+
+.table-icon-btn svg{
+
+    font-size:20px;
+
+}
+
+.table-icon-btn:hover{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   Select Button
+========================================================== */
+
+.select-btn{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.select-btn:hover{
+
+    background:#16a34a;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   No Data
+========================================================== */
+
+.no-data{
+
+    padding:50px 0 !important;
+
+    text-align:center;
+
+    color:#9ca3af;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+.invoice-search-table-wrapper::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+.invoice-search-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.invoice-search-table-wrapper::-webkit-scrollbar-track{
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   Pagination
+========================================================== */
+
+.invoice-pagination{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    padding:18px 20px;
+
+    border-top:1px solid #e5e7eb;
+
+    background:#ffffff;
+
+}
+
+
+
+/* ==========================================================
+   Dialog Content
+========================================================== */
+
+.MuiDialogContent-root{
+
+    padding:24px !important;
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   Table Row Selected
+========================================================== */
+
+.invoice-search-table tbody tr.selected{
+
+    background:#eff6ff !important;
+
+    border-left:4px solid #2563eb;
+
+}
+
+.invoice-search-table tbody tr.selected td{
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Loading State
+========================================================== */
+
+.invoice-loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:250px;
+
+    font-size:15px;
+
+    color:#6b7280;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.invoice-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    height:280px;
+
+    color:#9ca3af;
+
+}
+
+.invoice-empty svg{
+
+    font-size:60px;
+
+    color:#d1d5db;
+
+}
+
+.invoice-empty h3{
+
+    margin:0;
+
+    color:#374151;
+
+    font-size:18px;
+
+}
+
+.invoice-empty p{
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Button Animation
+========================================================== */
+
+.search-btn,
+.reset-btn,
+.table-icon-btn{
+
+    transition:all .25s ease;
+
+}
+
+.search-btn:active,
+.reset-btn:active,
+.table-icon-btn:active{
+
+    transform:scale(.95);
+
+}
+
+/* ==========================================================
+   Smooth Animation
+========================================================== */
+
+.invoice-search-filters,
+.invoice-search-table-card{
+
+    animation:fadeIn .3s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1400px){
+
+    .invoice-search-filters{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .invoice-search-filters{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .filter-actions{
+
+        grid-column:1/-1;
+
+        justify-content:flex-end;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .MuiDialog-paper{
+
+        width:98% !important;
+
+        margin:8px;
+
+    }
+
+    .MuiDialogContent-root{
+
+        padding:16px !important;
+
+    }
+
+    .invoice-search-dialog-title{
+
+        padding:16px 18px !important;
+
+    }
+
+    .invoice-search-title h2{
+
+        font-size:20px;
+
+    }
+
+    .invoice-search-filters{
+
+        grid-template-columns:1fr;
+
+        padding:18px;
+
+    }
+
+    .filter-actions{
+
+        justify-content:stretch;
+
+        flex-direction:column;
+
+    }
+
+    .search-btn,
+    .reset-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .invoice-search-table{
+
+        min-width:1000px;
+
+    }
+
+}

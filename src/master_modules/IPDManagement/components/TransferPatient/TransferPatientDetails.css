@@ -1,0 +1,197 @@
+/* ============================================================
+   TRANSFER PATIENT DETAILS
+   ============================================================ */
+
+.ipd-transfer-patient-details {
+  width: 100%;
+
+  padding: 24px 28px;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-transfer-patient-details__header {
+  margin-bottom: 22px;
+}
+
+
+.ipd-transfer-patient-details__title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+.ipd-transfer-patient-details__subtitle {
+  margin: 5px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   DETAILS GRID
+   ============================================================ */
+
+.ipd-transfer-patient-details__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 0;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   DETAIL ITEM
+   ============================================================ */
+
+.ipd-transfer-patient-details__item {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  padding: 14px 16px;
+
+  background: #ffffff;
+
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Remove right border from every 4th item */
+
+.ipd-transfer-patient-details__item:nth-child(4n) {
+  border-right: none;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-transfer-patient-details__label {
+  color: #6b7280;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+
+/* ============================================================
+   VALUE
+   ============================================================ */
+
+.ipd-transfer-patient-details__value {
+  min-width: 0;
+
+  overflow: hidden;
+
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+
+.ipd-transfer-patient-details__empty {
+  padding: 32px 20px;
+
+  text-align: center;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1000px) {
+
+  .ipd-transfer-patient-details__grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+
+  .ipd-transfer-patient-details__item:nth-child(4n) {
+    border-right: 1px solid #e5e7eb;
+  }
+
+  .ipd-transfer-patient-details__item:nth-child(3n) {
+    border-right: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .ipd-transfer-patient-details {
+    padding: 20px;
+  }
+
+  .ipd-transfer-patient-details__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .ipd-transfer-patient-details__item:nth-child(3n) {
+    border-right: 1px solid #e5e7eb;
+  }
+
+  .ipd-transfer-patient-details__item:nth-child(2n) {
+    border-right: none;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .ipd-transfer-patient-details {
+    padding: 16px;
+  }
+
+  .ipd-transfer-patient-details__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-transfer-patient-details__item {
+    border-right: none;
+  }
+}

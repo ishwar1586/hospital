@@ -1,0 +1,271 @@
+/* =========================================
+   STATS CARDS CONTAINER
+========================================= */
+
+.processing-stats-cards {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.processing-stat-card {
+    min-width: 0;
+
+    min-height: 108px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 13px 14px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.processing-stat-card:hover {
+    border-color: #d7dde6;
+
+    box-shadow:
+        0 4px 14px
+        rgba(15, 23, 42, 0.05);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.processing-stat-card__top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+.processing-stat-card__title {
+    min-width: 0;
+
+    color: #6b7280;
+
+    font-size: 12px !important;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.processing-stat-card__icon {
+    width: 20px !important;
+
+    height: 20px !important;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.processing-stat-card__icon svg {
+    width: 17px;
+
+    height: 17px;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.processing-stat-card__value {
+    margin-top: 5px;
+
+    color: #111827;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.processing-stat-card__footer {
+    min-height: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 7px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TREND
+========================================= */
+
+.processing-stat-card__trend {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 2px;
+
+    flex-shrink: 0;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+
+.processing-stat-card__trend svg {
+    width: 13px;
+
+    height: 13px;
+}
+
+
+.processing-stat-card__trend--up {
+    color: #16a34a;
+}
+
+
+.processing-stat-card__trend--down {
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TREND LABEL
+========================================= */
+
+.processing-stat-card__trend-label {
+    overflow: hidden;
+
+    color: #9ca3af;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.processing-stat-card__description {
+    overflow: hidden;
+
+    color: #9ca3af;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1250px) {
+
+    .processing-stats-cards {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .processing-stats-cards {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .processing-stats-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .processing-stat-card {
+        min-height: 100px;
+    }
+
+}

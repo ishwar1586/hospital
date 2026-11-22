@@ -1,0 +1,1009 @@
+/* =========================================
+   TEST QUEUE TABLE CARD
+========================================= */
+
+.test-queue-table-card {
+    width: 100%;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.test-queue-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        #cbd5e1
+        transparent;
+}
+
+
+.test-queue-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+
+.test-queue-table-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.test-queue-table-wrapper::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+
+    border-radius: 10px;
+}
+
+
+.test-queue-table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.test-queue-table {
+    width: 100%;
+
+    min-width: 1350px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    font-family: inherit;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.test-queue-table thead {
+    background: #f8fafc;
+}
+
+
+.test-queue-table th {
+    height: 42px;
+
+    padding: 0 10px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER ALIGNMENT
+========================================= */
+
+.test-queue-table__header-cell--left {
+    text-align: left;
+}
+
+
+.test-queue-table__header-cell--center {
+    text-align: center;
+}
+
+
+.test-queue-table__header-cell--right {
+    text-align: right;
+}
+
+
+/* =========================================
+   HEADER CONTENT
+========================================= */
+
+.test-queue-table__header-content {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 5px;
+
+    max-width: 100%;
+
+    vertical-align: middle;
+}
+
+
+.test-queue-table__header-cell--center
+.test-queue-table__header-content {
+    justify-content: center;
+}
+
+
+.test-queue-table__header-content svg {
+    width: 13px;
+
+    height: 13px;
+
+    flex-shrink: 0;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.test-queue-table tbody tr {
+    background: #ffffff;
+
+    transition:
+        background-color 0.15s ease;
+}
+
+
+.test-queue-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+.test-queue-table td {
+    height: 48px;
+
+    padding: 7px 10px;
+
+    border-bottom: 1px solid #eef2f7;
+
+    color: #334155;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+
+    vertical-align: middle;
+
+    box-sizing: border-box;
+}
+
+
+.test-queue-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   ROW ALIGNMENT
+========================================= */
+
+.test-queue-table-row__cell--left {
+    text-align: left;
+}
+
+
+.test-queue-table-row__cell--center {
+    text-align: center;
+}
+
+
+.test-queue-table-row__cell--right {
+    text-align: right;
+}
+
+
+/* =========================================
+   DEFAULT CELL TEXT
+========================================= */
+
+.test-queue-table-row__text {
+    display: inline-block;
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ACCESSION NUMBER
+========================================= */
+
+.test-queue-table-row__text--accessionNo {
+    color: #2563eb;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PATIENT NAME
+========================================= */
+
+.test-queue-table-row__text--patientName {
+    color: #1e293b;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TEST NAME
+========================================= */
+
+.test-queue-table-row__text--testName {
+    color: #334155;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SAMPLE TYPE
+========================================= */
+
+.test-queue-table-row__text--sampleType {
+    color: #64748b;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   DEPARTMENT
+========================================= */
+
+.test-queue-table-row__text--department {
+    color: #475569;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   ANALYZER
+========================================= */
+
+.test-queue-table-row__text--analyzer {
+    max-width: 150px;
+
+    color: #64748b;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   PRIORITY CHIP
+========================================= */
+
+.test-queue-priority-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 3px 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.test-queue-priority-chip svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   PRIORITY - URGENT
+========================================= */
+
+.test-queue-priority-chip--urgent {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   PRIORITY - HIGH
+========================================= */
+
+.test-queue-priority-chip--high {
+    border-color: #fed7aa;
+
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* =========================================
+   PRIORITY - MEDIUM
+========================================= */
+
+.test-queue-priority-chip--medium {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #b45309;
+}
+
+
+/* =========================================
+   PRIORITY - NORMAL
+========================================= */
+
+.test-queue-priority-chip--normal {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   PRIORITY - LOW
+========================================= */
+
+.test-queue-priority-chip--low {
+    border-color: #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   TAT CHIP
+========================================= */
+
+.test-queue-tat-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 3px 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.test-queue-tat-chip svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   TAT - NORMAL
+========================================= */
+
+.test-queue-tat-chip--normal {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   TAT - WARNING
+========================================= */
+
+.test-queue-tat-chip--warning {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #b45309;
+}
+
+
+/* =========================================
+   TAT - CRITICAL
+========================================= */
+
+.test-queue-tat-chip--critical {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TAT - OVERDUE
+========================================= */
+
+.test-queue-tat-chip--overdue {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   TAT - COMPLETED
+========================================= */
+
+.test-queue-tat-chip--completed {
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #15803d;
+}
+
+
+/* =========================================
+   TAT STATUS CHIP
+========================================= */
+
+.test-queue-tat-status-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 3px 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.test-queue-tat-status-chip__icon {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.test-queue-tat-status-chip__icon svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   TAT STATUS - NORMAL
+========================================= */
+
+.test-queue-tat-status-chip--normal {
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #15803d;
+}
+
+
+/* =========================================
+   TAT STATUS - WARNING
+========================================= */
+
+.test-queue-tat-status-chip--warning {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #b45309;
+}
+
+
+/* =========================================
+   TAT STATUS - CRITICAL
+========================================= */
+
+.test-queue-tat-status-chip--critical {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TAT STATUS - OVERDUE
+========================================= */
+
+.test-queue-tat-status-chip--overdue {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   TAT STATUS - COMPLETED
+========================================= */
+
+.test-queue-tat-status-chip--completed {
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #15803d;
+}
+
+
+/* =========================================
+   QUEUE STATUS CHIP
+========================================= */
+
+.test-queue-status-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 3px 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.test-queue-status-chip__icon {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.test-queue-status-chip__icon svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   QUEUE STATUS - QUEUED
+========================================= */
+
+.test-queue-status-chip--queued {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #475569;
+}
+
+
+/* =========================================
+   QUEUE STATUS - IN PROGRESS
+========================================= */
+
+.test-queue-status-chip--in-progress {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   QUEUE STATUS - ON HOLD
+========================================= */
+
+.test-queue-status-chip--on-hold {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #b45309;
+}
+
+
+/* =========================================
+   QUEUE STATUS - COMPLETED
+========================================= */
+
+.test-queue-status-chip--completed {
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #15803d;
+}
+
+
+/* =========================================
+   QUEUE STATUS - OVERDUE
+========================================= */
+
+.test-queue-status-chip--overdue {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   ACTION MENU BUTTON
+========================================= */
+
+.test-queue-action-menu__button {
+    width: 30px !important;
+
+    height: 30px !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    padding: 0 !important;
+
+    border: 1px solid transparent !important;
+
+    border-radius: 5px !important;
+
+    color: #64748b !important;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease !important;
+}
+
+
+.test-queue-action-menu__button:hover {
+    border-color: #dbe2ea !important;
+
+    background: #f8fafc !important;
+
+    color: #334155 !important;
+}
+
+
+.test-queue-action-menu__button svg {
+    width: 18px;
+
+    height: 18px;
+}
+
+
+/* =========================================
+   MUI ACTION MENU
+========================================= */
+
+#test-queue-action-menu {
+    padding: 5px 0;
+}
+
+
+#test-queue-action-menu
+.MuiMenuItem-root {
+    min-height: 36px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 7px 12px;
+
+    color: #334155;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+#test-queue-action-menu
+.MuiMenuItem-root:hover {
+    background: #f8fafc;
+}
+
+
+#test-queue-action-menu
+.MuiMenuItem-root svg {
+    width: 16px;
+
+    height: 16px;
+
+    color: #64748b;
+
+    flex-shrink: 0;
+}
+
+
+#test-queue-action-menu
+.MuiMenuItem-root:first-child svg {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.test-queue-table__empty {
+    height: 180px !important;
+
+    padding: 20px !important;
+
+    text-align: center;
+
+    background: #ffffff !important;
+}
+
+
+.test-queue-table__empty-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    color: #64748b;
+}
+
+
+.test-queue-table__empty-content span {
+    color: #475569;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+.test-queue-table__empty-content small {
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .test-queue-table {
+        min-width: 1350px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .test-queue-table {
+        min-width: 1250px;
+    }
+
+
+    .test-queue-table th {
+        height: 40px;
+
+        padding: 0 8px;
+    }
+
+
+    .test-queue-table td {
+        height: 46px;
+
+        padding: 6px 8px;
+    }
+
+
+    .test-queue-table-row__text {
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL SCREEN
+========================================= */
+
+@media (max-width: 600px) {
+
+    .test-queue-table-card {
+        border-radius: 6px;
+    }
+
+
+    .test-queue-table {
+        min-width: 1200px;
+    }
+
+
+    .test-queue-table th {
+        font-size: 7px;
+    }
+
+
+    .test-queue-table td {
+        font-size: 8px;
+    }
+
+
+    .test-queue-priority-chip,
+    .test-queue-tat-chip,
+    .test-queue-tat-status-chip,
+    .test-queue-status-chip {
+        min-height: 20px;
+
+        padding: 3px 6px;
+
+        font-size: 7px;
+    }
+
+
+    .test-queue-priority-chip svg,
+    .test-queue-tat-chip svg,
+    .test-queue-tat-status-chip__icon svg,
+    .test-queue-status-chip__icon svg {
+        width: 11px;
+
+        height: 11px;
+    }
+
+}

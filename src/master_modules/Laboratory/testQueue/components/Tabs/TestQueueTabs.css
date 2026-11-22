@@ -1,0 +1,310 @@
+/* =========================================
+   TABS CONTAINER
+========================================= */
+
+.test-queue-tabs {
+    width: 100%;
+
+    margin-bottom: 14px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.test-queue-tabs__list {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+
+.test-queue-tabs__list::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.test-queue-tabs__tab {
+    position: relative;
+
+    min-height: 38px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 0 13px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+.test-queue-tabs__tab::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: -1px;
+
+    left: 0;
+
+    height: 2px;
+
+    background: transparent;
+
+    border-radius: 2px 2px 0 0;
+
+    transition:
+        background-color 0.2s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.test-queue-tabs__tab:hover {
+    color: #1e40af;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.test-queue-tabs__tab--active {
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+.test-queue-tabs__tab--active::after {
+    background: #2563eb;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.test-queue-tabs__count {
+    min-width: 20px;
+
+    height: 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 5px;
+
+    border-radius: 10px;
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.test-queue-tabs__tab--active
+.test-queue-tabs__count {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   HIGH PRIORITY
+========================================= */
+
+.test-queue-tabs__tab--high:hover {
+    color: #ea580c;
+}
+
+
+.test-queue-tabs__tab--high.test-queue-tabs__tab--active {
+    color: #ea580c;
+}
+
+
+.test-queue-tabs__tab--high.test-queue-tabs__tab--active::after {
+    background: #f97316;
+}
+
+
+.test-queue-tabs__tab--high.test-queue-tabs__tab--active
+.test-queue-tabs__count {
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* =========================================
+   WARNING
+========================================= */
+
+.test-queue-tabs__tab--warning:hover {
+    color: #9333ea;
+}
+
+
+.test-queue-tabs__tab--warning.test-queue-tabs__tab--active {
+    color: #9333ea;
+}
+
+
+.test-queue-tabs__tab--warning.test-queue-tabs__tab--active::after {
+    background: #9333ea;
+}
+
+
+.test-queue-tabs__tab--warning.test-queue-tabs__tab--active
+.test-queue-tabs__count {
+    background: #faf5ff;
+
+    color: #9333ea;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+.test-queue-tabs__tab--progress:hover {
+    color: #059669;
+}
+
+
+.test-queue-tabs__tab--progress.test-queue-tabs__tab--active {
+    color: #059669;
+}
+
+
+.test-queue-tabs__tab--progress.test-queue-tabs__tab--active::after {
+    background: #059669;
+}
+
+
+.test-queue-tabs__tab--progress.test-queue-tabs__tab--active
+.test-queue-tabs__count {
+    background: #ecfdf5;
+
+    color: #059669;
+}
+
+
+/* =========================================
+   DANGER
+========================================= */
+
+.test-queue-tabs__tab--danger:hover {
+    color: #dc2626;
+}
+
+
+.test-queue-tabs__tab--danger.test-queue-tabs__tab--active {
+    color: #dc2626;
+}
+
+
+.test-queue-tabs__tab--danger.test-queue-tabs__tab--active::after {
+    background: #dc2626;
+}
+
+
+.test-queue-tabs__tab--danger.test-queue-tabs__tab--active
+.test-queue-tabs__count {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .test-queue-tabs__tab {
+        min-height: 36px;
+
+        padding: 0 10px;
+
+        font-size: 8px;
+    }
+
+
+    .test-queue-tabs__count {
+        min-width: 18px;
+
+        height: 17px;
+
+        font-size: 7px;
+    }
+
+}

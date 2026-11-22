@@ -1,0 +1,43 @@
+.add-category-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background: #ffff;
+    padding: 20px;
+}
+
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.page-header h2{
+    margin:0;
+
+    font-size:28px;
+    font-weight:700;
+
+    color:#0f172a;
+}
+
+.back-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#475569;
+
+    font-size:14px;
+    font-weight:600;
+}
+
+.back-btn:hover{
+    color:#4f46e5;
+}

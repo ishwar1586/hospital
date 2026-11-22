@@ -1,0 +1,369 @@
+/* =========================================
+   REPORT PREVIEW TOOLBAR
+========================================= */
+
+.report-preview-toolbar {
+    width: 100%;
+
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding:
+        7px 9px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   LEFT
+========================================= */
+
+.report-preview-toolbar__left {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.report-preview-toolbar__title {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.report-preview-toolbar__title strong {
+    overflow: hidden;
+
+    color: #1e293b;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.report-preview-toolbar__title span {
+    flex-shrink: 0;
+
+    padding:
+        3px 6px;
+
+    border:
+        1px solid #bbf7d0;
+
+    border-radius: 4px;
+
+    background: #f0fdf4;
+
+    color: #15803d;
+
+    font-size: 6.5px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   CENTER
+========================================= */
+
+.report-preview-toolbar__center {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2px;
+
+    padding:
+        2px;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   ICON BUTTON
+========================================= */
+
+.report-preview-toolbar__icon-btn {
+    width: 28px;
+
+    height: 28px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+.report-preview-toolbar__icon-btn:hover {
+    background: #f1f5f9;
+
+    color: #334155;
+}
+
+
+.report-preview-toolbar__icon-btn svg {
+    width: 15px;
+
+    height: 15px;
+}
+
+
+/* =========================================
+   ZOOM VALUE
+========================================= */
+
+.report-preview-toolbar__zoom-value {
+    min-width: 42px;
+
+    color: #334155;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   RIGHT
+========================================= */
+
+.report-preview-toolbar__right {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+/* =========================================
+   ACTION BUTTON
+========================================= */
+
+.report-preview-toolbar__action {
+    min-height: 29px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding:
+        0 8px;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+.report-preview-toolbar__action:hover {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+}
+
+
+.report-preview-toolbar__action svg {
+    width: 14px;
+
+    height: 14px;
+}
+
+
+/* =========================================
+   CLOSE
+========================================= */
+
+.report-preview-toolbar__close {
+    width: 29px;
+
+    height: 29px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border:
+        1px solid #e2e8f0;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+.report-preview-toolbar__close:hover {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+.report-preview-toolbar__close svg {
+    width: 16px;
+
+    height: 16px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+    .report-preview-toolbar {
+        flex-wrap: wrap;
+    }
+
+
+    .report-preview-toolbar__left {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .report-preview-toolbar__center {
+        order: 3;
+    }
+
+
+    .report-preview-toolbar__right {
+        margin-left: auto;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .report-preview-toolbar__center {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+
+    .report-preview-toolbar__right {
+        width: 100%;
+
+        margin-left: 0;
+
+        justify-content: flex-end;
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .report-preview-toolbar__action span {
+        display: none;
+    }
+
+}

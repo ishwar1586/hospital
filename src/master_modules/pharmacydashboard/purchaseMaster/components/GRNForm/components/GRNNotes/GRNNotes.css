@@ -1,0 +1,81 @@
+.grn-notes-card{
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:24px;
+
+}
+
+.grn-notes-card h3{
+
+    margin:0 0 20px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.grn-notes-body{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.grn-notes-field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.grn-notes-field label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#475569;
+
+}
+
+.grn-notes-field textarea{
+
+    width:100%;
+
+    min-height:120px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    resize:vertical;
+
+    outline:none;
+
+    font-size:14px;
+
+}
+
+.grn-notes-field textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.08);
+
+}

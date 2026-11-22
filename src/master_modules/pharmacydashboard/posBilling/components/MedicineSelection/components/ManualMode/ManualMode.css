@@ -1,0 +1,499 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.manual-mode{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    width:100%;
+
+}
+
+/* ===========================================================
+BANNER
+=========================================================== */
+
+.manual-mode-banner{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    padding:24px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.05);
+
+}
+
+/* ===========================================================
+LEFT
+=========================================================== */
+
+.manual-mode-banner-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    flex:1;
+
+}
+
+.manual-mode-banner-left h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.manual-mode-banner-left p{
+
+    margin:0;
+
+    max-width:560px;
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:#64748B;
+
+}
+
+/* ===========================================================
+RIGHT
+=========================================================== */
+
+.manual-mode-banner-right{
+
+    display:flex;
+
+    gap:16px;
+
+}
+
+/* ===========================================================
+STAT CARD
+=========================================================== */
+
+.manual-mode-stat{
+
+    min-width:140px;
+
+    padding:18px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    transition:.25s;
+
+}
+
+.manual-mode-stat:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 24px rgba(15,23,42,.08);
+
+}
+
+.manual-mode-stat span{
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+.manual-mode-stat strong{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+/* ===========================================================
+CATALOG
+=========================================================== */
+
+.manual-mode .medicine-catalog{
+
+    width:100%;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .manual-mode-banner{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .manual-mode-banner-right{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .manual-mode-banner-right{
+
+        flex-direction:column;
+
+    }
+
+    .manual-mode-stat{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .manual-mode{
+
+        gap:18px;
+
+    }
+
+    .manual-mode-banner{
+
+        padding:18px;
+
+    }
+
+    .manual-mode-banner-left h2{
+
+        font-size:22px;
+
+    }
+
+    .manual-mode-banner-left p{
+
+        font-size:14px;
+
+    }
+
+}
+
+
+
+/* ===========================================================
+MANUAL BILLING BADGE
+=========================================================== */
+
+.manual-mode-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    width:max-content;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+CUSTOMER CARD
+=========================================================== */
+
+.manual-customer-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    padding:24px;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.05);
+
+}
+
+.manual-customer-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:24px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.manual-customer-header h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#0F172A;
+
+}
+
+.manual-customer-header p{
+
+    margin-top:6px;
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+.customer-type-chip{
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+GRID
+=========================================================== */
+
+.manual-customer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.manual-customer-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding:18px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+}
+
+.manual-customer-item label{
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+    color:#64748B;
+
+    font-weight:600;
+
+}
+
+.manual-customer-item span{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    word-break:break-word;
+
+}
+
+/* ===========================================================
+EMPTY STATE
+=========================================================== */
+
+.manual-empty-state{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:16px;
+
+    padding:60px 24px;
+
+    background:#FFFFFF;
+
+    border:1px dashed #CBD5E1;
+
+    border-radius:20px;
+
+}
+
+.manual-empty-icon{
+
+    font-size:52px;
+
+}
+
+.manual-empty-state h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#0F172A;
+
+}
+
+.manual-empty-state p{
+
+    max-width:420px;
+
+    text-align:center;
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
+
+.manual-reset-btn{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+}
+
+.manual-reset-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .manual-customer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .manual-customer-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:16px;
+
+    }
+
+    .manual-customer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

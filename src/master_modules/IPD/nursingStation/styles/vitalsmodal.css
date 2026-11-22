@@ -1,0 +1,103 @@
+.vitals-header {
+  display: flex !important;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.vitals-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.vitals-title svg {
+  color: #ef4444;
+}
+
+.patient-card {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 20px;
+
+  margin-bottom: 24px;
+}
+
+.patient-info-item {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  padding: 14px;
+}
+
+.patient-info-item label {
+  display: block;
+
+  font-size: 12px;
+
+  color: #64748b;
+
+  margin-bottom: 6px;
+}
+
+.patient-info-item span {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.vitals-form {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.remarks-section {
+  margin-top: 20px;
+}
+
+.vitals-footer {
+  padding: 16px 24px !important;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.vitals-footer button {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+
+  .patient-card {
+    grid-template-columns: 1fr;
+  }
+
+  .vitals-form {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,277 @@
+/* ============================================================
+   DISCHARGE PATIENT FOOTER
+   ============================================================ */
+
+.ipd-discharge-patient-footer {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 16px;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid #e2e8f0;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   LEFT
+   ============================================================ */
+
+.ipd-discharge-patient-footer__left {
+  display: flex;
+  align-items: center;
+}
+
+
+/* ============================================================
+   RIGHT
+   ============================================================ */
+
+.ipd-discharge-patient-footer__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+}
+
+
+/* ============================================================
+   COMMON BUTTON
+   ============================================================ */
+
+.ipd-discharge-patient-footer__cancel,
+.ipd-discharge-patient-footer__back,
+.ipd-discharge-patient-footer__next,
+.ipd-discharge-patient-footer__confirm {
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 16px;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   CANCEL
+   ============================================================ */
+
+.ipd-discharge-patient-footer__cancel {
+  min-width: 60px;
+
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+
+  color: #334155;
+}
+
+.ipd-discharge-patient-footer__cancel:hover {
+  background: #f8fafc;
+
+  border-color: #94a3b8;
+
+  color: #1e293b;
+}
+
+.ipd-discharge-patient-footer__cancel:active {
+  background: #f1f5f9;
+}
+
+
+/* ============================================================
+   BACK
+   ============================================================ */
+
+.ipd-discharge-patient-footer__back {
+  min-width: 58px;
+
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+
+  color: #334155;
+}
+
+.ipd-discharge-patient-footer__back:hover {
+  background: #f8fafc;
+
+  border-color: #94a3b8;
+
+  color: #1e293b;
+}
+
+.ipd-discharge-patient-footer__back:active {
+  background: #f1f5f9;
+}
+
+
+/* ============================================================
+   NEXT
+   ============================================================ */
+
+.ipd-discharge-patient-footer__next {
+  min-width: 60px;
+
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+.ipd-discharge-patient-footer__next:hover {
+  background: #1d4ed8;
+
+  border-color: #1d4ed8;
+}
+
+.ipd-discharge-patient-footer__next:active {
+  background: #1e40af;
+
+  border-color: #1e40af;
+}
+
+
+/* ============================================================
+   CONFIRM DISCHARGE
+   ============================================================ */
+
+.ipd-discharge-patient-footer__confirm {
+  min-width: 132px;
+
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+.ipd-discharge-patient-footer__confirm:hover {
+  background: #1d4ed8;
+
+  border-color: #1d4ed8;
+}
+
+.ipd-discharge-patient-footer__confirm:active {
+  background: #1e40af;
+
+  border-color: #1e40af;
+}
+
+
+/* ============================================================
+   FOCUS
+   ============================================================ */
+
+.ipd-discharge-patient-footer__cancel:focus-visible,
+.ipd-discharge-patient-footer__back:focus-visible,
+.ipd-discharge-patient-footer__next:focus-visible,
+.ipd-discharge-patient-footer__confirm:focus-visible {
+  outline: none;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* ============================================================
+   DISABLED
+   ============================================================ */
+
+.ipd-discharge-patient-footer__cancel:disabled,
+.ipd-discharge-patient-footer__back:disabled,
+.ipd-discharge-patient-footer__next:disabled,
+.ipd-discharge-patient-footer__confirm:disabled {
+  cursor: not-allowed;
+
+  opacity: 0.55;
+
+  box-shadow: none;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .ipd-discharge-patient-footer {
+    padding: 14px;
+
+    gap: 12px;
+  }
+
+  .ipd-discharge-patient-footer__right {
+    gap: 6px;
+  }
+
+  .ipd-discharge-patient-footer__cancel,
+  .ipd-discharge-patient-footer__back,
+  .ipd-discharge-patient-footer__next,
+  .ipd-discharge-patient-footer__confirm {
+    height: 36px;
+
+    padding: 0 13px;
+
+    font-size: 12px;
+  }
+
+  .ipd-discharge-patient-footer__confirm {
+    min-width: 120px;
+  }
+}
+
+
+/* ============================================================
+   VERY SMALL SCREENS
+   ============================================================ */
+
+@media (max-width: 420px) {
+
+  .ipd-discharge-patient-footer {
+    align-items: stretch;
+  }
+
+  .ipd-discharge-patient-footer__left,
+  .ipd-discharge-patient-footer__right {
+    display: flex;
+  }
+
+  .ipd-discharge-patient-footer__right {
+    flex: 1;
+
+    justify-content: flex-end;
+  }
+
+  .ipd-discharge-patient-footer__cancel {
+    min-width: 58px;
+  }
+}

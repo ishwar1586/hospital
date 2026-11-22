@@ -1,0 +1,67 @@
+
+export const roomAllotmentColumnsConfig = [
+  {
+    id: "patient",
+    label: "Patient Details",
+    field: "patientName",
+    sortable: true,
+    minWidth: "190px",
+  },
+  {
+    id: "ipdNo",
+    label: "IPD No.",
+    field: "ipdNo",
+    sortable: true,
+    minWidth: "115px",
+  },
+  {
+    id: "ward",
+    label: "Ward",
+    field: "ward",
+    sortable: true,
+    minWidth: "130px",
+  },
+  {
+    id: "roomNo",
+    label: "Room No.",
+    field: "roomNo",
+    sortable: true,
+    minWidth: "100px",
+  },
+  {
+    id: "bedNo",
+    label: "Bed No.",
+    field: "bedNo",
+    sortable: true,
+    minWidth: "100px",
+  },
+  {
+    id: "roomType",
+    label: "Room Type",
+    field: "roomType",
+    sortable: true,
+    minWidth: "125px",
+  },
+  {
+    id: "allotmentDate",
+    label: "Allotment Date",
+    field: "allotmentDate",
+    sortable: true,
+    minWidth: "140px",
+  },
+  {
+    id: "status",
+    label: "Bed Status",
+    field: "status",
+    sortable: true,
+    minWidth: "120px",
+  },
+  {
+    id: "actions",
+    label: "Actions",
+    field: "actions",
+    sortable: false,
+    minWidth: "100px",
+    align: "center",
+  },
+];

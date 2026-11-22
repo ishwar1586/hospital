@@ -1,0 +1,42 @@
+
+.lab-test-selection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  background: #ffffff;
+  border: 1px solid #e0e8f2;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.lab-test-selection__tabs {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.lab-test-selection__content {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 14px 12px;
+}
+
+.lab-test-selection__table {
+  width: 100%;
+  min-width: 0;
+}
+
+.lab-test-selection__table-title {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .lab-test-selection {
+    border-radius: 9px;
+  }
+
+  .lab-test-selection__content {
+    padding: 10px 8px;
+  }
+}

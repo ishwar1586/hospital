@@ -1,0 +1,61 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.medicine-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+/* ===========================================================
+EMPTY
+=========================================================== */
+
+.medicine-list-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    border:1px dashed #CBD5E1;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+}
+
+.medicine-list-empty h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.medicine-list-empty p{
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    color:#64748B;
+
+}

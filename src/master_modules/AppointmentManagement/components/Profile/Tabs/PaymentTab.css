@@ -1,0 +1,349 @@
+/* =========================================================
+   APPOINTMENT PAYMENT TAB
+   ========================================================= */
+
+.appointment-payment-tab {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.appointment-payment-tab__section {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.appointment-payment-tab__section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+
+.appointment-payment-tab__section-header h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+.appointment-payment-tab__section-header p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.appointment-payment-tab__summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   SUMMARY CARD
+   ========================================================= */
+
+.appointment-payment-tab__summary-card {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 13px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SUMMARY LABEL
+   ========================================================= */
+
+.appointment-payment-tab__summary-label {
+    color: #98a2b3;
+
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   SUMMARY VALUE
+   ========================================================= */
+
+.appointment-payment-tab__summary-value {
+    color: #111827;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.appointment-payment-tab__details {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   DETAIL ITEM
+   ========================================================= */
+
+.appointment-payment-tab__detail-item {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    min-height: 48px;
+
+    padding: 10px 13px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+
+.appointment-payment-tab__detail-item:nth-child(odd) {
+    border-right: 1px solid #edf0f4;
+}
+
+
+.appointment-payment-tab__detail-item:nth-last-child(-n + 2) {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   DETAIL LABEL
+   ========================================================= */
+
+.appointment-payment-tab__detail-label {
+    flex-shrink: 0;
+
+    color: #667085;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+
+/* =========================================================
+   DETAIL VALUE
+   ========================================================= */
+
+.appointment-payment-tab__detail-value {
+    min-width: 0;
+
+    color: #1f2937;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+
+    text-align: right;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.appointment-payment-tab__status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 22px;
+
+    padding: 0 8px;
+
+    border-radius: 12px;
+
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   STATUS VARIANTS
+   ========================================================= */
+
+.appointment-payment-tab__status--paid {
+    background: #ecfdf3;
+    color: #027a48;
+}
+
+
+.appointment-payment-tab__status--pending {
+    background: #fffaeb;
+    color: #b54708;
+}
+
+
+.appointment-payment-tab__status--partial {
+    background: #eff8ff;
+    color: #175cd3;
+}
+
+
+.appointment-payment-tab__status--failed {
+    background: #fef3f2;
+    color: #b42318;
+}
+
+
+.appointment-payment-tab__status--refunded {
+    background: #f2f4f7;
+    color: #475467;
+}
+
+
+/* =========================================================
+   NOTICE
+   ========================================================= */
+
+.appointment-payment-tab__notice {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    margin-top: 4px;
+    padding: 13px;
+
+    border: 1px dashed #d9dee8;
+    border-radius: 7px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.appointment-payment-tab__notice-title {
+    color: #475467;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+
+.appointment-payment-tab__notice-message {
+    color: #98a2b3;
+
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.appointment-payment-tab--empty {
+    min-height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.appointment-payment-tab--empty p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .appointment-payment-tab__summary {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-payment-tab__details {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-payment-tab__detail-item {
+        border-right: none !important;
+        border-bottom: 1px solid #edf0f4 !important;
+    }
+
+    .appointment-payment-tab__detail-item:last-child {
+        border-bottom: none !important;
+    }
+
+}

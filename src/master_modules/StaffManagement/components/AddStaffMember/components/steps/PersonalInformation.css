@@ -1,0 +1,35 @@
+.staff-personal-step {
+  width: 100%;
+}
+
+.staff-step-heading {
+  margin-bottom: 24px;
+}
+
+.staff-step-heading h2 {
+  margin: 0 0 7px;
+  color: #172b4d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.staff-step-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.staff-step-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 24px;
+  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .staff-step-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+}

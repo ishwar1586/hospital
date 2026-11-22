@@ -1,0 +1,180 @@
+/* ============================================================
+   DISCHARGE PATIENT STEPPER
+   ============================================================ */
+
+.ipd-discharge-patient-stepper {
+  width: 100%;
+  padding: 18px 28px 16px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e6ebf4;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   TRACK
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__track {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   STEP
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__step {
+  min-width: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #9aa6bd;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  text-align: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ============================================================
+   CIRCLE
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__circle {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #cbd4e4;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #7c88a2;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+.ipd-discharge-patient-stepper__circle
+.material-symbols-outlined {
+  font-size: 16px;
+}
+
+
+/* ============================================================
+   ACTIVE STEP
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__step--active {
+  color: #185cf2;
+}
+
+
+.ipd-discharge-patient-stepper__step--active
+.ipd-discharge-patient-stepper__circle {
+  border-color: #185cf2;
+  background: #185cf2;
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   COMPLETED STEP
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__step--completed {
+  color: #185cf2;
+}
+
+
+.ipd-discharge-patient-stepper__step--completed
+.ipd-discharge-patient-stepper__circle {
+  border-color: #185cf2;
+  background: #185cf2;
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__label {
+  max-width: 120px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ============================================================
+   CONNECTING LINE
+   ============================================================ */
+
+.ipd-discharge-patient-stepper__line {
+  flex: 1;
+
+  height: 1px;
+
+  margin-top: 14px;
+
+  background: #dce3ee;
+
+  transition: background-color 0.2s ease;
+}
+
+
+.ipd-discharge-patient-stepper__line--completed {
+  background: #185cf2;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  .ipd-discharge-patient-stepper {
+    padding: 15px 16px;
+  }
+
+  .ipd-discharge-patient-stepper__step {
+    min-width: 70px;
+  }
+
+  .ipd-discharge-patient-stepper__label {
+    max-width: 80px;
+    font-size: 10px;
+  }
+
+}

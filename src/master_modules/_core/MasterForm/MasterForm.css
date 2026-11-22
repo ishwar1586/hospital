@@ -1,0 +1,351 @@
+/* ================= CARD ================= */
+.form-card {
+  /* background: #fff; */
+  width: 100% !important;
+  background: #f8fafc;
+  /* margin-left: 10% !important; */
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* height: 99%; */
+  /* overflow-y: auto; */
+  /* scrollbar-width:none; */
+}
+
+/* ================= SECTION ================= */
+.form-section {
+  margin-top: 16px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* ================= GRID ================= */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ! important;
+  gap: 8px;
+}
+
+/* ================= FLOATING ================= */
+.floating-group {
+  position: relative;
+  width: 100%;
+}
+
+/* INPUT */
+.floating-input {
+  width: 100%;
+  height: 40px;
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid #444444;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* LABEL */
+.floating-group label {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  font-size: 12px;
+  color: #6b7280;
+  /* background: #fff; */
+  background: transparent !important;
+  padding: 0 4px;
+  transition: 0.2s ease;
+  /* pointer-events: none; */
+}
+/* TEXTAREA */
+.floating-textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 6px 8px;
+  font-size: 12px;
+  /* border: 1px solid #ddd; */
+   border: 1px solid #444444;
+  border-radius: 6px;
+  outline: none;
+}
+
+
+
+
+/* 🔥 FLOAT */
+.floating-group.active label,
+.floating-input:focus + label,
+.floating-textarea:focus + label {
+  top: -11px;
+  font-size: 10px;
+  color: #2563eb;
+}
+
+/* ================= HOVER ================= */
+.floating-input:hover,
+.floating-textarea:hover,
+.react-select__control:hover {
+  border: 1px solid black !important;
+}
+
+/* ================= FOCUS ================= */
+.floating-input:focus,
+.floating-textarea:focus,
+.react-select__control--is-focused {
+  border: 1px solid black !important;
+  box-shadow: none !important;
+}
+
+/* ================= SELECT ================= */
+.react-select__control {
+  min-height: 40px !important;
+  height: 30px !important;
+  border-radius: 6px !important;
+  border: 1px solid #ddd !important;
+  font-size: 12px;
+}
+
+.react-select__value-container {
+  padding: 0 6px !important;
+}
+
+.react-select__indicator {
+  padding: 2px !important;
+}
+
+.react-select__menu {
+  z-index: 9999;
+}
+
+/* SELECT LABEL */
+.floating-label {
+  position: absolute;
+  top: -6px;
+  left: 8px;
+  font-size: 10px;
+  background: #fff;
+  padding: 0 4px;
+  color: #2563eb;
+}
+
+/* ================= FILE ================= */
+.file-upload {
+  border: 1px dashed #aaa;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* ================= ACTIONS ================= */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.reset-btn {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.submit-btn {
+  background: #10b981;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+
+
+/* 🔥 DROPDOWN ARROW FIX */
+.react-select__indicator {
+  padding: 0 6px !important;   /* pehle zyada tha */
+}
+
+/* 🔥 ARROW SIZE CONTROL */
+.react-select__indicator svg {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/* 🔥 ALIGN CENTER PERFECT */
+.react-select__indicators {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔥 REMOVE EXTRA SPACE */
+.react-select__control {
+  display: flex;
+  align-items: center;
+  padding-right: 4px !important;
+}
+
+
+.react-select__indicator-separator {
+  display: none;
+}
+
+
+/* 🔥 DEFAULT ARROW */
+.react-select__indicator svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.3s ease;  /* smooth animation */
+}
+
+/* 🔥 OPEN STATE (ROTATE UP) */
+.react-select__control--menu-is-open 
+.react-select__indicator svg {
+  transform: rotate(180deg);
+}
+
+/* 🔥 SEARCH TEXT FIX */
+.react-select__input-container {
+  color: #000 !important;
+}
+
+.react-select__input input {
+  opacity: 1 !important;
+}
+
+/* 🔥 VALUE TEXT */
+.react-select__single-value {
+  color: #000 !important;
+}
+
+/* 🔥 REMOVE HEIGHT BUG */
+/* .react-select__control {
+  min-height: 32px !important;
+  height: 32px !important;
+} */
+
+/* 🔥 DON'T DO THIS (REMOVE if hai) */
+/* max-height: 10px ❌ */
+
+
+.full-width {
+  grid-column: span 3;
+}
+
+
+
+
+
+/* ===== FILE UPLOAD ===== */
+
+.file-label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: block;
+  color: #374151;
+}
+
+/* box */
+.file-upload-box {
+  position: relative;
+  border: 1px dashed #6366f1;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+}
+
+/* hidden input */
+.file-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* button */
+.file-btn {
+  background: #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  transition: 0.2s;
+}
+
+.file-btn:hover {
+  background: #d1d5db;
+}
+
+/* text */
+.file-text {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* ===== TIME SLOT ===== */
+
+.time-label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  display: block;
+  color: #374151;
+}
+
+.time-slot-wrapper {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  padding: 16px 24px;
+}
+
+.time-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.time-title {
+  font-weight: 600;
+  color: #4f46e5;
+}
+
+.time-item {
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  position: relative;
+  transition: 0.2s;
+}
+
+.time-item:hover {
+  background: #f1f5f9;
+}
+
+.time-item.active {
+  background: #c7d2fe;
+  padding-left: 26px;
+  font-weight: 500;
+}
+
+.check {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}

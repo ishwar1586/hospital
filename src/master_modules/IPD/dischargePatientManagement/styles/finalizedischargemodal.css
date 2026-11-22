@@ -1,0 +1,77 @@
+.finalize-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.finalize-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.finalize-title svg {
+  color: #16a34a;
+}
+
+.finalize-patient-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.finalize-patient-card > div {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.finalize-patient-card label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 5px;
+}
+
+.finalize-patient-card span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.finalize-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.finalize-notes {
+  margin-top: 20px;
+}
+
+.finalize-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 24px !important;
+}
+
+.finalize-footer button {
+  min-width: 170px;
+}
+
+@media (max-width: 768px) {
+
+  .finalize-patient-card {
+    grid-template-columns: 1fr;
+  }
+
+  .finalize-form {
+    grid-template-columns: 1fr;
+  }
+
+}

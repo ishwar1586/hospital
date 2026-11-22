@@ -1,0 +1,203 @@
+/* ============================================================
+   DISCHARGE INFORMATION
+   ============================================================ */
+
+.ipd-discharge-information {
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-discharge-information__header {
+  margin-bottom: 24px;
+}
+
+
+.ipd-discharge-information__title {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+
+  line-height: 1.35;
+
+  font-weight: 600;
+
+  color: #172033;
+}
+
+
+.ipd-discharge-information__subtitle {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #64748b;
+}
+
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.ipd-discharge-information__form {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px 22px;
+}
+
+
+/* ============================================================
+   FIELD
+   ============================================================ */
+
+.ipd-discharge-information__field {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  min-width: 0;
+}
+
+
+.ipd-discharge-information__field--full {
+  grid-column: 1 / -1;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-discharge-information__label {
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  font-weight: 500;
+
+  color: #475569;
+}
+
+
+.ipd-discharge-information__required {
+  margin-left: 3px;
+
+  color: #dc2626;
+}
+
+
+/* ============================================================
+   INPUT
+   ============================================================ */
+
+.ipd-discharge-information__input,
+.ipd-discharge-information__select,
+.ipd-discharge-information__textarea {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d7dee8;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #172033;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+
+.ipd-discharge-information__input,
+.ipd-discharge-information__select {
+
+  height: 42px;
+
+  padding: 0 12px;
+}
+
+
+.ipd-discharge-information__textarea {
+
+  min-height: 105px;
+
+  padding: 11px 12px;
+
+  resize: vertical;
+
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   PLACEHOLDER
+   ============================================================ */
+
+.ipd-discharge-information__input::placeholder,
+.ipd-discharge-information__textarea::placeholder {
+
+  color: #94a3b8;
+}
+
+
+/* ============================================================
+   FOCUS
+   ============================================================ */
+
+.ipd-discharge-information__input:focus,
+.ipd-discharge-information__select:focus,
+.ipd-discharge-information__textarea:focus {
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .ipd-discharge-information__form {
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .ipd-discharge-information__field--full {
+
+    grid-column: auto;
+  }
+
+}

@@ -1,0 +1,167 @@
+/* ==========================================================
+   SUMMARY GRID
+========================================================== */
+
+.drawer-summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.drawer-summary-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:14px;
+
+    transition:.25s;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+.drawer-summary-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 24px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.summary-icon{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.summary-icon svg{
+
+    font-size:24px;
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.summary-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.summary-title{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#64748B;
+
+    text-transform:uppercase;
+
+    letter-spacing:.5px;
+
+}
+
+.summary-content h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   COLORS
+========================================================== */
+
+.drawer-summary-card.primary .summary-icon{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.drawer-summary-card.success .summary-icon{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.drawer-summary-card.warning .summary-icon{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+
+}
+
+.drawer-summary-card.danger .summary-icon{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:600px){
+
+    .drawer-summary-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

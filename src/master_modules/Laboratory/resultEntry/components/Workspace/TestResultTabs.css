@@ -1,0 +1,209 @@
+/* =========================================
+   TEST RESULT TABS
+========================================= */
+
+.test-result-tabs {
+    width: 100%;
+
+    min-width: 0;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.test-result-tabs__list {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 0;
+
+    overflow-x: auto;
+
+    scrollbar-width: thin;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.test-result-tab {
+    position: relative;
+
+    min-height: 40px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 6px;
+
+    flex-shrink: 0;
+
+    padding: 0 13px;
+
+    border: none;
+
+    border-right: 1px solid #f1f5f9;
+
+    background: transparent;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        color 0.18s ease,
+        background-color 0.18s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.test-result-tab:hover {
+    background: #f8fafc;
+
+    color: #334155;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.test-result-tab--active {
+    background: #ffffff;
+
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+.test-result-tab--active::after {
+    content: "";
+
+    position: absolute;
+
+    right: 10px;
+
+    bottom: 0;
+
+    left: 10px;
+
+    height: 2px;
+
+    border-radius: 2px 2px 0 0;
+
+    background: #2563eb;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.test-result-tab__label {
+    display: inline-block;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.test-result-tab__count {
+    min-width: 17px;
+
+    height: 16px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 4px;
+
+    border-radius: 999px;
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.test-result-tab--active
+.test-result-tab__count {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.test-result-tab:focus-visible {
+    outline: 2px solid #bfdbfe;
+
+    outline-offset: -2px;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .test-result-tab {
+        min-height: 38px;
+
+        padding:
+            0 10px;
+    }
+
+}

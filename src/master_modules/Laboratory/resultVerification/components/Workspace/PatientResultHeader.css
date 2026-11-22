@@ -1,0 +1,740 @@
+/* =========================================
+   RESULT VERIFICATION
+   PATIENT RESULT HEADER
+========================================= */
+
+.patient-result-header {
+    width: 100%;
+    min-width: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(270px, 1.15fr)
+        minmax(260px, 1fr)
+        auto;
+
+    align-items: center;
+
+    column-gap: 24px;
+
+    padding: 11px 12px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.patient-result-header__left {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.patient-result-header__back {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 30px;
+
+    padding: 0;
+
+    border: 1px solid #dbe3ee;
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.patient-result-header__back:hover {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.patient-result-header__back:focus-visible {
+    outline: 2px solid #bfdbfe;
+
+    outline-offset: 1px;
+}
+
+
+.patient-result-header__back svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.patient-result-header__avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 34px;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.patient-result-header__avatar svg {
+    width: 19px;
+    height: 19px;
+}
+
+
+/* =========================================
+   PATIENT INFO
+========================================= */
+
+.patient-result-header__patient {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   PATIENT NAME ROW
+========================================= */
+
+.patient-result-header__name-row {
+    min-width: 0;
+
+    display: flex;
+    align-items: baseline;
+
+    gap: 7px;
+
+    overflow: hidden;
+}
+
+
+.patient-result-header__name-row h2 {
+    min-width: 0;
+    max-width: 190px;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #1e293b;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   AGE / GENDER
+========================================= */
+
+.patient-result-header__age-gender {
+    flex-shrink: 0;
+
+    color: #64748b;
+
+    font-size: 8px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   IDENTIFIERS
+========================================= */
+
+.patient-result-header__identifiers {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 7px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+.patient-result-header__identifiers span {
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.patient-result-header__identifiers
+.patient-result-header__separator {
+    flex: 0 0 auto;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================
+   CENTER / RESULT SECTION
+========================================= */
+
+.patient-result-header__result {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TEST ROW
+========================================= */
+
+.patient-result-header__test {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    overflow: hidden;
+}
+
+
+.patient-result-header__test > svg {
+    width: 16px;
+    height: 16px;
+
+    flex: 0 0 16px;
+
+    color: #64748b;
+}
+
+
+.patient-result-header__test > div {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    overflow: hidden;
+}
+
+
+.patient-result-header__test strong {
+    min-width: 0;
+    max-width: 250px;
+
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TEST CODE
+========================================= */
+
+.patient-result-header__test span {
+    flex: 0 0 auto;
+
+    padding: 3px 5px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 6px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   RESULT META
+========================================= */
+
+.patient-result-header__meta {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding-left: 23px;
+
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 7px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+.patient-result-header__meta > span {
+    min-width: 0;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+.patient-result-header__meta
+.patient-result-header__separator {
+    flex: 0 0 auto;
+
+    color: #cbd5e1;
+}
+
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.patient-result-header__right {
+    min-width: max-content;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   REVIEW BUTTON
+========================================= */
+
+.patient-result-header__review-btn {
+    min-height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 10px;
+
+    border: 1px solid #2563eb;
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        opacity 0.15s ease;
+}
+
+
+.patient-result-header__review-btn:hover:not(:disabled) {
+    border-color: #1d4ed8;
+
+    background: #1d4ed8;
+
+    box-shadow:
+        0 2px 6px rgba(37, 99, 235, 0.18);
+}
+
+
+.patient-result-header__review-btn:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+
+.patient-result-header__review-btn:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+.patient-result-header__review-btn:focus-visible {
+    outline: 2px solid #93c5fd;
+
+    outline-offset: 2px;
+}
+
+
+.patient-result-header__review-btn svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* =========================================
+   REVIEWING STATE
+========================================= */
+
+.patient-result-header__reviewing {
+    min-height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 0 9px;
+
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   REVIEWING DOT
+========================================= */
+
+.patient-result-header__reviewing-dot {
+    width: 6px;
+    height: 6px;
+
+    flex: 0 0 6px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    animation:
+        patient-result-header-pulse
+        1.4s ease-in-out infinite;
+}
+
+
+/* =========================================
+   PULSE
+========================================= */
+
+@keyframes patient-result-header-pulse {
+
+    0%,
+    100% {
+        opacity: 0.45;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .patient-result-header {
+        grid-template-columns:
+            minmax(240px, 1.1fr)
+            minmax(220px, 1fr)
+            auto;
+
+        column-gap: 14px;
+
+        padding: 10px;
+    }
+
+
+    .patient-result-header__name-row h2 {
+        max-width: 150px;
+    }
+
+
+    .patient-result-header__test strong {
+        max-width: 190px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 820px) {
+
+    .patient-result-header {
+        grid-template-columns:
+            minmax(220px, 1fr)
+            minmax(220px, 1fr);
+
+        row-gap: 10px;
+
+        column-gap: 14px;
+    }
+
+
+    .patient-result-header__left {
+        min-width: 0;
+    }
+
+
+    .patient-result-header__result {
+        min-width: 0;
+    }
+
+
+    .patient-result-header__right {
+        grid-column: 1 / -1;
+
+        justify-content: flex-end;
+
+        padding-top: 2px;
+
+        border-top: 1px solid #eef2f7;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .patient-result-header {
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+
+        padding: 10px;
+    }
+
+
+    .patient-result-header__left {
+        width: 100%;
+    }
+
+
+    .patient-result-header__result {
+        width: 100%;
+
+        padding-top: 2px;
+
+        padding-bottom: 2px;
+
+        border-top: 1px solid #f1f5f9;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+
+    .patient-result-header__right {
+        width: 100%;
+
+        justify-content: flex-start;
+
+        flex-wrap: wrap;
+
+        padding-top: 0;
+
+        border-top: none;
+    }
+
+
+    .patient-result-header__name-row h2 {
+        max-width: 180px;
+    }
+
+
+    .patient-result-header__test strong {
+        max-width: 210px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .patient-result-header__left {
+        align-items: flex-start;
+    }
+
+
+    .patient-result-header__patient {
+        flex: 1;
+
+        min-width: 0;
+    }
+
+
+    .patient-result-header__name-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 2px;
+    }
+
+
+    .patient-result-header__identifiers {
+        flex-wrap: wrap;
+
+        white-space: normal;
+    }
+
+
+    .patient-result-header__test > div {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 3px;
+    }
+
+
+    .patient-result-header__meta {
+        padding-left: 0;
+    }
+
+
+    .patient-result-header__right {
+        justify-content: stretch;
+    }
+
+
+    .patient-result-header__review-btn,
+    .patient-result-header__reviewing {
+        flex: 1;
+    }
+
+}

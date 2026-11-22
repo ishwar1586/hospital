@@ -1,0 +1,126 @@
+
+/* StaffTabs.css */
+
+.staff-tabs {
+  width: 100%;
+  min-width: 0;
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.staff-tabs .staff-tabs__list {
+  min-height: 54px;
+  padding: 0 12px;
+}
+
+.staff-tabs .staff-tabs__list .MuiTabs-flexContainer {
+  gap: 8px;
+}
+
+.staff-tabs .staff-tabs__list .MuiTabs-indicator {
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background-color: #2563eb;
+}
+
+.staff-tabs .staff-tabs__item {
+  min-height: 54px;
+  min-width: 100px;
+  padding: 10px 14px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: none;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.staff-tabs .staff-tabs__item:hover {
+  color: #2563eb;
+  background-color: #f8faff;
+}
+
+.staff-tabs .staff-tabs__item.Mui-selected {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.staff-tabs__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.staff-tabs__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.staff-tabs__item.Mui-selected .staff-tabs__count {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.staff-tabs .MuiTabs-scrollButtons {
+  color: #64748b;
+}
+
+.staff-tabs .MuiTabs-scrollButtons.Mui-disabled {
+  opacity: 0.25;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .staff-tabs {
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  .staff-tabs .staff-tabs__list {
+    padding: 0 6px;
+  }
+
+  .staff-tabs .staff-tabs__item {
+    min-width: 90px;
+    min-height: 50px;
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .staff-tabs .staff-tabs__item {
+    min-width: 82px;
+    min-height: 46px;
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .staff-tabs__label {
+    gap: 6px;
+  }
+
+  .staff-tabs__count {
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    font-size: 10px;
+  }
+}

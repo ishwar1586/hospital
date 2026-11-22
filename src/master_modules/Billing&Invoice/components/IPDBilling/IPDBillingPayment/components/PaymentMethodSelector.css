@@ -1,0 +1,363 @@
+
+/* =========================================================
+   IPD BILLING — PAYMENT METHOD SELECTOR
+   File: PaymentMethodSelector.css
+   Namespace: ipd-payment-method
+========================================================= */
+
+.ipd-payment-method {
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5eaf1;
+  border-radius: 16px;
+  box-sizing: border-box;
+  font-family: "Inter", "Roboto", sans-serif;
+  box-shadow: 0 3px 14px rgba(15, 23, 42, 0.035);
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.ipd-payment-method .ipd-payment-method__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.ipd-payment-method .ipd-payment-method__header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+}
+
+.ipd-payment-method .ipd-payment-method__header-icon .MuiSvgIcon-root {
+  font-size: 25px;
+}
+
+.ipd-payment-method .ipd-payment-method__title {
+  margin: 0;
+  color: #172033;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: -0.3px;
+}
+
+.ipd-payment-method .ipd-payment-method__subtitle {
+  margin-top: 4px;
+  color: #7b8798;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* =========================
+   PAYMENT OPTIONS GRID
+========================= */
+
+.ipd-payment-method .ipd-payment-method__options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+/* =========================
+   INDIVIDUAL PAYMENT CARD
+========================= */
+
+.ipd-payment-method .ipd-payment-method__option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-width: 0;
+  min-height: 100px;
+  padding: 18px;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover */
+
+.ipd-payment-method .ipd-payment-method__option:not(:disabled):hover {
+  background: #f8fbff;
+  border-color: #93b4f8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.07);
+  transform: translateY(-1px);
+}
+
+/* Keyboard accessibility */
+
+.ipd-payment-method .ipd-payment-method__option:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.24);
+  outline-offset: 3px;
+}
+
+/* Selected card */
+
+.ipd-payment-method
+  .ipd-payment-method__option--selected {
+  background: #f0f6ff;
+  border: 1.5px solid #3974e8;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.055);
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option--selected:hover {
+  background: #edf4ff;
+  border-color: #2563eb;
+}
+
+/* =========================
+   METHOD ICON
+========================= */
+
+.ipd-payment-method .ipd-payment-method__option-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  color: #52647c;
+  background: #f1f5f9;
+  border: 1px solid #e8edf4;
+  border-radius: 11px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option-icon
+  .MuiSvgIcon-root {
+  font-size: 24px;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option--selected
+  .ipd-payment-method__option-icon {
+  color: #2563eb;
+  background: #ffffff;
+  border-color: #d5e4ff;
+}
+
+/* =========================
+   METHOD TEXT
+========================= */
+
+.ipd-payment-method .ipd-payment-method__option-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.ipd-payment-method .ipd-payment-method__option-label {
+  display: block;
+  color: #263449;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  transition: color 0.2s ease;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option--selected
+  .ipd-payment-method__option-label {
+  color: #1d4ed8;
+}
+
+.ipd-payment-method .ipd-payment-method__option-description {
+  display: block;
+  color: #7b8798;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+   RADIO INDICATOR
+========================= */
+
+.ipd-payment-method .ipd-payment-method__radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-left: auto;
+  color: #c3ccd8;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__radio
+  .MuiSvgIcon-root {
+  font-size: 21px;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option--selected
+  .ipd-payment-method__radio {
+  color: #2563eb;
+}
+
+/* =========================
+   DISABLED STATE
+========================= */
+
+.ipd-payment-method .ipd-payment-method__option:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  box-shadow: none;
+  transform: none;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option:disabled:hover {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.ipd-payment-method
+  .ipd-payment-method__option--selected:disabled {
+  background: #f0f6ff;
+  border-color: #93b4f8;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+  .ipd-payment-method {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__options {
+    gap: 12px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option {
+    gap: 11px;
+    min-height: 94px;
+    padding: 14px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ipd-payment-method
+    .ipd-payment-method__option-icon
+    .MuiSvgIcon-root {
+    font-size: 22px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option-description {
+    font-size: 11.5px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+  .ipd-payment-method {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__header {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__header-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__header-icon .MuiSvgIcon-root {
+    font-size: 22px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__title {
+    font-size: 16px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__subtitle {
+    font-size: 12px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__options {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option {
+    min-height: 82px;
+    padding: 14px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option-label {
+    font-size: 13.5px;
+  }
+
+  .ipd-payment-method .ipd-payment-method__option-description {
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .ipd-payment-method .ipd-payment-method__option,
+  .ipd-payment-method .ipd-payment-method__option-icon,
+  .ipd-payment-method .ipd-payment-method__option-label {
+    transition: none;
+  }
+}

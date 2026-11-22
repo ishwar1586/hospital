@@ -1,0 +1,124 @@
+
+.selected-medicine-list {
+  width: 100%;
+  margin-top: 14px;
+  background: #ffffff;
+  border: 1px solid #dce5f0;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+/* Header */
+
+.selected-medicine-list__header {
+  padding: 13px 15px;
+  border-bottom: 1px solid #e8edf4;
+  background: #ffffff;
+}
+
+.selected-medicine-list__heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.selected-medicine-list__title {
+  margin: 0;
+  color: #172b4d;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.selected-medicine-list__count {
+  min-width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  border-radius: 20px;
+  background: #eaf2ff;
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.selected-medicine-list__description {
+  margin: 5px 0 0;
+  color: #8795a9;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Table Wrapper */
+
+.selected-medicine-list__table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table */
+
+.selected-medicine-list__table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.selected-medicine-list__table thead {
+  background: #f0f5fc;
+}
+
+.selected-medicine-list__table th {
+  padding: 12px 10px;
+  color: #304563;
+  font-size: 11px;
+  font-weight: 650;
+  white-space: nowrap;
+  border-bottom: 1px solid #dce5f0;
+}
+
+.selected-medicine-list__table td {
+  padding: 9px 10px;
+  color: #253650;
+  font-size: 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid #edf1f6;
+}
+
+.selected-medicine-list__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.selected-medicine-list__table tbody tr:hover {
+  background: #f8fbff;
+}
+
+.selected-medicine-list__serial {
+  width: 45px;
+  text-align: center;
+}
+
+.selected-medicine-list__medicine {
+  min-width: 190px;
+}
+
+.selected-medicine-list__actions {
+  width: 95px;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .selected-medicine-list__header {
+    padding: 11px 12px;
+  }
+
+  .selected-medicine-list__table th,
+  .selected-medicine-list__table td {
+    padding: 9px 8px;
+  }
+}

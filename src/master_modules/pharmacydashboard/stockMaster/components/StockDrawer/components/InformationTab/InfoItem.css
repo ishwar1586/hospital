@@ -1,0 +1,156 @@
+/* =====================================================
+   INFO ITEM
+===================================================== */
+
+.info-item{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px !important;
+
+    width:100%;
+
+    min-width:0;
+
+    padding:8px 0;
+
+    border-bottom:1px dashed #E2E8F0;
+
+}
+
+.info-item:last-child{
+
+    border-bottom:none;
+
+}
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.info-label{
+
+    width:160px;
+
+    min-width:160px;
+
+    flex-shrink:0;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#64748B;
+
+    line-height:16px;
+
+}
+
+/* =====================================================
+   VALUE
+===================================================== */
+
+.info-value{
+
+    flex:1;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#0F172A;
+
+    text-align:right;
+
+    white-space:normal;
+
+    overflow:visible;
+
+    text-overflow:unset;
+
+}
+/* =====================================================
+   COLUMN
+===================================================== */
+
+.info-item.column{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.info-item.column .info-label{
+
+    width:100%;
+
+    min-width:100%;
+
+}
+
+.info-item.column .info-value{
+
+    width:100%;
+
+    margin-top:6px;
+
+    text-align:left;
+
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.info-item:hover{
+
+    background:#F8FAFC;
+
+    border-radius:8px;
+
+    padding-left:4px;
+
+    padding-right:4px;
+
+    transition:.25s;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .info-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:6px;
+
+    }
+
+    .info-label{
+
+        width:100%;
+
+        min-width:100%;
+
+    }
+
+    .info-value{
+
+        width:100%;
+
+        text-align:left;
+
+    }
+
+}

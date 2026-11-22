@@ -1,0 +1,238 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-quick-actions{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:14px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.audit-quick-header{
+
+    margin-bottom:10px;
+
+}
+
+.audit-quick-header h3{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.audit-quick-header p{
+
+    margin-top:2px;
+
+    color:#64748b;
+
+    font-size:13px;
+
+}
+
+/* ==========================================================
+   Grid
+========================================================== */
+
+.audit-quick-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+    /* width: 100% !important; */
+
+    gap:18px;
+
+}
+
+/* ==========================================================
+   Action Card
+========================================================== */
+
+.quick-card{
+
+    border:1px solid;
+
+    border-radius:14px;
+
+    background:#ffffff;
+
+    padding:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    text-align:left;
+
+}
+
+.quick-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 24px rgba(15,23,42,.08);
+
+}
+
+.quick-card-left{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:flex-start;
+
+}
+
+.quick-icon{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.quick-icon svg{
+
+    font-size:18px;
+
+}
+
+.quick-card h4{
+
+    margin:0;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.quick-card p{
+
+    margin-top:4px;
+
+    font-size:12px;
+
+    color:#64748b;
+
+}
+
+.quick-arrow{
+
+    color:#94a3b8;
+
+    transition:.25s;
+
+}
+
+.quick-card:hover .quick-arrow{
+
+    transform:translateX(5px);
+
+}
+
+/* ==========================================================
+   Colors
+========================================================== */
+
+.quick-card.green{
+
+    border-color:#bbf7d0;
+
+}
+
+.quick-icon.green{
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+}
+
+.quick-card.orange{
+
+    border-color:#fed7aa;
+
+}
+
+.quick-icon.orange{
+
+    background:#fff7ed;
+
+    color:#ea580c;
+
+}
+
+.quick-card.blue{
+
+    border-color:#bfdbfe;
+
+}
+
+.quick-icon.blue{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.quick-card.purple{
+
+    border-color:#ddd6fe;
+
+}
+
+.quick-icon.purple{
+
+    background:#ede9fe;
+
+    color:#7c3aed;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-quick-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

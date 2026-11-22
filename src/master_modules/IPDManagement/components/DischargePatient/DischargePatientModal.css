@@ -1,0 +1,281 @@
+/* ============================================================
+   DISCHARGE PATIENT MODAL
+   ============================================================ */
+
+
+/* ============================================================
+   DIALOG
+   ============================================================ */
+
+.ipd-discharge-patient-modal-dialog {
+  width: 100%;
+}
+
+
+/* ============================================================
+   MUI PAPER
+   ============================================================ */
+
+.ipd-discharge-patient-modal-dialog
+.MuiDialog-paper {
+
+  width: min(1200px, calc(100vw - 40px));
+
+  max-width: 1200px;
+
+  height: calc(100vh - 40px);
+
+  max-height: calc(100vh - 40px);
+
+  margin: 20px;
+
+  padding: 0;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   MAIN MODAL
+   ============================================================ */
+
+.ipd-discharge-patient-modal {
+
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   SINGLE SCROLL AREA
+   HEADER + STEPPER + CONTENT
+   ============================================================ */
+
+.ipd-discharge-patient-modal__scroll {
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow-y: auto;
+
+  overflow-x: hidden;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  scrollbar-width: thin;
+
+  scrollbar-color: #c7cfdd transparent;
+}
+
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+
+.ipd-discharge-patient-modal__scroll::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+.ipd-discharge-patient-modal__scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.ipd-discharge-patient-modal__scroll::-webkit-scrollbar-thumb {
+
+  background: #c7cfdd;
+
+  border-radius: 10px;
+}
+
+
+.ipd-discharge-patient-modal__scroll::-webkit-scrollbar-thumb:hover {
+
+  background: #aeb8c8;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-discharge-patient-modal__header {
+
+  width: 100%;
+
+  background: #ffffff;
+
+  flex: none;
+}
+
+
+/* ============================================================
+   STEPPER
+   ============================================================ */
+
+.ipd-discharge-patient-modal__stepper {
+
+  width: 100%;
+
+  background: #ffffff;
+
+  flex: none;
+}
+
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.ipd-discharge-patient-modal__content {
+
+  width: 100%;
+
+  padding: 28px 36px 40px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  overflow: visible;
+
+  height: auto;
+
+  max-height: none;
+}
+
+
+/* ============================================================
+   STEP CONTENT
+   ============================================================ */
+
+.ipd-discharge-patient-modal__step-content {
+
+  width: 100%;
+
+  overflow: visible;
+
+  height: auto;
+
+  max-height: none;
+}
+
+
+/* ============================================================
+   PATIENT DETAILS
+   ============================================================ */
+
+.ipd-discharge-patient-modal
+.ipd-discharge-patient-details {
+
+  width: 100%;
+
+  overflow: visible;
+
+  height: auto;
+
+  max-height: none;
+}
+
+
+/* ============================================================
+   DISCHARGE TYPE
+   ============================================================ */
+
+.ipd-discharge-patient-modal
+.ipd-discharge-type {
+
+  width: 100%;
+
+  margin-top: 22px;
+
+  overflow: visible;
+
+  height: auto;
+
+  max-height: none;
+}
+
+
+/* ============================================================
+   PREVENT NESTED SCROLL
+   ============================================================ */
+
+.ipd-discharge-patient-modal__scroll
+.ipd-discharge-patient-details,
+
+.ipd-discharge-patient-modal__scroll
+.ipd-discharge-type,
+
+.ipd-discharge-patient-modal__scroll
+.ipd-discharge-patient-details__grid,
+
+.ipd-discharge-patient-modal__scroll
+.ipd-discharge-type__options {
+
+  overflow: visible;
+}
+
+
+/* ============================================================
+   PLACEHOLDER
+   ============================================================ */
+
+.ipd-discharge-patient-modal__placeholder {
+
+  width: 100%;
+
+  min-height: 300px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 15px;
+
+  color: #64748b;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .ipd-discharge-patient-modal-dialog
+  .MuiDialog-paper {
+
+    width: calc(100vw - 20px);
+
+    height: calc(100vh - 20px);
+
+    max-height: calc(100vh - 20px);
+
+    margin: 10px;
+
+    border-radius: 12px;
+  }
+
+
+  .ipd-discharge-patient-modal__content {
+
+    padding: 22px 18px 32px;
+  }
+
+}

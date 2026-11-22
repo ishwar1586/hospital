@@ -1,0 +1,267 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.prescription-progress{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:20px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    box-shadow:0 4px 18px rgba(15,23,42,.05);
+
+}
+
+/* ===========================================================
+HEADER
+=========================================================== */
+
+.progress-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.progress-header h2{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.progress-header p{
+
+    margin-top:6px;
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+/* ===========================================================
+PERCENTAGE
+=========================================================== */
+
+.progress-percentage{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+STATS
+=========================================================== */
+
+.progress-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+}
+
+/* ===========================================================
+CARD
+=========================================================== */
+
+.progress-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:16px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:14px;
+
+    background:#F8FAFC;
+
+}
+
+.progress-card svg{
+
+    font-size:30px;
+
+    color:#2563EB;
+
+}
+
+.progress-card div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.progress-card span{
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+.progress-card strong{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ===========================================================
+SUCCESS
+=========================================================== */
+
+.progress-card.success{
+
+    background:#ECFDF3;
+
+    border-color:#BBF7D0;
+
+}
+
+.progress-card.success svg{
+
+    color:#16A34A;
+
+}
+
+/* ===========================================================
+WARNING
+=========================================================== */
+
+.progress-card.warning{
+
+    background:#FFF7ED;
+
+    border-color:#FED7AA;
+
+}
+
+.progress-card.warning svg{
+
+    color:#EA580C;
+
+}
+
+/* ===========================================================
+PROGRESS BAR
+=========================================================== */
+
+.progress-bar{
+
+    width:100%;
+
+    height:10px;
+
+    overflow:hidden;
+
+    border-radius:999px;
+
+    background:#E2E8F0;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #2563EB,
+
+        #3B82F6
+
+    );
+
+    transition:width .35s ease;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:768px){
+
+    .progress-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .progress-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .progress-percentage{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:18px;
+
+    }
+
+}

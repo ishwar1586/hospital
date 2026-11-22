@@ -1,0 +1,37 @@
+.audit-danger-item{
+
+    color:#dc2626;
+
+}
+
+.audit-danger-item:hover{
+
+    background:#fef2f2;
+
+}
+
+.MuiMenu-paper{
+
+    border-radius:12px !important;
+
+    box-shadow:0 12px 30px rgba(15,23,42,.12) !important;
+
+    border:1px solid #e5e7eb;
+
+    min-width:220px;
+
+}
+
+.MuiMenuItem-root{
+
+    min-height:42px !important;
+
+    font-size:14px;
+
+}
+
+.MuiListItemIcon-root{
+
+    min-width:34px !important;
+
+}

@@ -1,0 +1,116 @@
+/* =========================================
+   Patient Profile Overlay
+========================================= */
+
+.patient-profile-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+
+  background: rgba(15, 23, 42, 0.25);
+
+  z-index: 1000;
+}
+
+
+/* =========================================
+   Patient Profile Drawer
+========================================= */
+
+.patient-profile {
+  width: 720px;
+  max-width: 90vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border-left: 1px solid #e5e7eb;
+
+  box-shadow:
+    -8px 0 30px rgba(15, 23, 42, 0.12);
+
+  overflow: hidden;
+
+  animation: patientProfileDrawerIn 0.25s ease-out;
+}
+
+
+/* =========================================
+   Drawer Animation
+========================================= */
+
+@keyframes patientProfileDrawerIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* =========================================
+   Profile Content
+========================================= */
+
+.patient-profile-content {
+  flex: 1;
+
+  min-height: 0;
+
+  padding: 20px 24px;
+
+  overflow-y: auto;
+}
+
+
+/* =========================================
+   Placeholder
+========================================= */
+
+.patient-profile-tab-placeholder {
+  min-height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   Scrollbar
+========================================= */
+
+.patient-profile-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.patient-profile-content::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 768px) {
+
+  .patient-profile {
+    width: 100%;
+    max-width: 100vw;
+  }
+}

@@ -1,0 +1,47 @@
+.adjustment-drawer-paper{
+
+    width:960px !important;
+
+    max-width:100%;
+
+    overflow:hidden;
+
+}
+
+.adjustment-drawer{
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#F8FAFC;
+
+}
+
+.adjustment-body{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:40px;
+
+    scrollbar-width:thin;
+
+}
+
+.adjustment-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.adjustment-body::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}

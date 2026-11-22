@@ -1,0 +1,125 @@
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.drawer-section{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    margin-bottom:10px !important;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.drawer-section-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:10px;
+
+    padding-bottom:14px;
+
+    border-bottom:1px solid #EEF2F7;
+
+}
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.drawer-section-icon{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:10px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.drawer-section-icon svg{
+
+    font-size:22px;
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.drawer-section-header h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================================================
+   BODY
+========================================================== */
+
+.drawer-section-body{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:10px;
+
+}
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
+.drawer-section:hover{
+
+    box-shadow:0 8px 20px rgba(15,23,42,.06);
+
+    transition:.25s;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .drawer-section{
+
+        padding:16px;
+
+    }
+
+}

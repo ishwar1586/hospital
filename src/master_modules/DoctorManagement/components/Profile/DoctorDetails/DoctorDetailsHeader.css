@@ -1,0 +1,117 @@
+/* =========================================================
+   DOCTOR DETAILS HEADER
+   Namespace: doctor-details-header
+========================================================= */
+
+.doctor-details-header {
+    width: 100%;
+    min-height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.doctor-details-header__title {
+    min-width: 0;
+
+    color: #172554;
+
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+/* =========================================================
+   EDIT BUTTON
+========================================================= */
+
+.doctor-details-header__edit-button {
+    height: 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 8px;
+
+    border: 1px solid #dbe5f0;
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    color: #2563eb;
+
+    font-family: inherit;
+    font-size: 9px;
+    line-height: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.doctor-details-header__edit-button:hover {
+    background: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1d4ed8;
+}
+
+.doctor-details-header__edit-button:active {
+    background: #dbeafe;
+}
+
+.doctor-details-header__edit-button:focus-visible {
+    outline: 2px solid #93c5fd;
+    outline-offset: 1px;
+}
+
+/* =========================================================
+   EDIT ICON
+========================================================= */
+
+.doctor-details-header__edit-icon {
+    width: 12px !important;
+    height: 12px !important;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 480px) {
+    .doctor-details-header {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .doctor-details-header__edit-button {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}

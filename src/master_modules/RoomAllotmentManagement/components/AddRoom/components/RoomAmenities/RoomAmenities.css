@@ -1,0 +1,82 @@
+
+.add-room__amenities {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #dce5f5;
+  border-radius: 10px;
+}
+
+.add-room__amenities .add-room__section-header {
+  margin-bottom: 12px;
+}
+
+.add-room__amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 16px;
+  row-gap: 12px;
+  padding: 0 10px 2px;
+}
+
+.add-room__amenity-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 18px;
+  cursor: pointer;
+}
+
+.add-room__amenity-checkbox {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin: 0;
+  accent-color: #1765ed;
+  cursor: pointer;
+}
+
+.add-room__amenity-label {
+  color: #172554;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.add-room__amenity-item:hover .add-room__amenity-label {
+  color: #155eef;
+}
+
+.add-room__amenity-checkbox:focus-visible {
+  outline: 2px solid #3978ed;
+  outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+  .add-room__amenities-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .add-room__amenities-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 8px;
+    padding: 0 5px 2px;
+  }
+
+  .add-room__amenity-label {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  .add-room__amenities-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

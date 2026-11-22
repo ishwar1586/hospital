@@ -1,0 +1,31 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+*{
+  font-family: 'Sora', sans-serif;
+} */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-primary: 'Manrope', sans-serif;
+}
+
+*{
+  font-family: var(--font-primary);
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-primary: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Apply globally */
+* {
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+

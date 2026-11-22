@@ -1,0 +1,446 @@
+/* =========================================================
+   APPOINTMENT HISTORY TAB
+   ========================================================= */
+
+.appointment-history-tab {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.appointment-history-tab__section {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.appointment-history-tab__section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+
+.appointment-history-tab__section-header h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+.appointment-history-tab__section-header p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.appointment-history-tab__timeline {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   TIMELINE LINE
+   ========================================================= */
+
+.appointment-history-tab__timeline-line {
+    position: absolute;
+
+    top: 7px;
+    bottom: 7px;
+    left: 6px;
+
+    width: 1px;
+
+    background: #dbe3ef;
+}
+
+
+/* =========================================================
+   HISTORY ITEM
+   ========================================================= */
+
+.appointment-history-tab__item {
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    padding-left: 22px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TIMELINE DOT
+   ========================================================= */
+
+.appointment-history-tab__timeline-dot {
+    position: absolute;
+
+    top: 6px;
+    left: 2px;
+
+    width: 9px;
+    height: 9px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    box-shadow:
+        0 0 0 1px #2563eb;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HISTORY CARD
+   ========================================================= */
+
+.appointment-history-tab__card {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.appointment-history-tab__card-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   DATE WRAPPER
+   ========================================================= */
+
+.appointment-history-tab__date-wrapper {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+.appointment-history-tab__date {
+    color: #111827;
+
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+
+/* =========================================================
+   TIME
+   ========================================================= */
+
+.appointment-history-tab__time {
+    color: #6b7280;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.appointment-history-tab__status {
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 22px;
+
+    padding: 2px 8px;
+
+    border-radius: 999px;
+
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+
+/* =========================================================
+   STATUS VARIANTS
+   ========================================================= */
+
+.appointment-history-tab__status--scheduled {
+    color: #2563eb;
+    background: #eff6ff;
+}
+
+.appointment-history-tab__status--confirmed {
+    color: #059669;
+    background: #ecfdf5;
+}
+
+.appointment-history-tab__status--checked-in {
+    color: #16a34a;
+    background: #f0fdf4;
+}
+
+.appointment-history-tab__status--completed {
+    color: #4b5563;
+    background: #f3f4f6;
+}
+
+.appointment-history-tab__status--cancelled {
+    color: #dc2626;
+    background: #fef2f2;
+}
+
+.appointment-history-tab__status--no-show {
+    color: #ea580c;
+    background: #fff7ed;
+}
+
+.appointment-history-tab__status--pending {
+    color: #d97706;
+    background: #fffbeb;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.appointment-history-tab__title {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.appointment-history-tab__description {
+    margin: 4px 0 0;
+
+    color: #64748b;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+
+/* =========================================================
+   META
+   ========================================================= */
+
+.appointment-history-tab__meta {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-top: 12px;
+    padding-top: 10px;
+
+    border-top: 1px solid #edf0f4;
+}
+
+
+/* =========================================================
+   META ITEM
+   ========================================================= */
+
+.appointment-history-tab__meta-item {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+/* =========================================================
+   META LABEL
+   ========================================================= */
+
+.appointment-history-tab__meta-label {
+    color: #94a3b8;
+
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   META VALUE
+   ========================================================= */
+
+.appointment-history-tab__meta-value {
+    min-width: 0;
+
+    color: #334155;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   PATIENT REFERENCE
+   ========================================================= */
+
+.appointment-history-tab__patient-reference {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 11px 13px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    background: #f8fafc;
+}
+
+
+.appointment-history-tab__patient-reference-label {
+    color: #64748b;
+
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+
+.appointment-history-tab__patient-reference-value {
+    color: #111827;
+
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.appointment-history-tab--empty {
+    min-height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.appointment-history-tab--empty p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .appointment-history-tab__meta {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .appointment-history-tab__card-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .appointment-history-tab__patient-reference {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .appointment-history-tab__patient-reference-value {
+        text-align: left;
+    }
+
+}

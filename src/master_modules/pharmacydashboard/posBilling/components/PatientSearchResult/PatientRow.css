@@ -1,0 +1,219 @@
+/* ===========================================================
+   ROW
+=========================================================== */
+
+.patient-row{
+
+    transition:.25s;
+
+}
+
+.patient-row:hover{
+
+    background:#F8FAFC;
+
+}
+
+/* ===========================================================
+   CELL
+=========================================================== */
+
+.patient-row td{
+
+    padding:18px 16px;
+
+    border-bottom:1px solid #E2E8F0;
+
+    vertical-align:middle;
+
+}
+
+/* ===========================================================
+   UHID
+=========================================================== */
+
+.patient-uhid{
+
+    font-weight:600;
+
+    color:#2563EB;
+
+}
+
+/* ===========================================================
+   PROFILE
+=========================================================== */
+
+.patient-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+.patient-avatar{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+.patient-profile h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#0F172A;
+
+}
+
+.patient-profile span{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:#64748B;
+
+    font-size:12px;
+
+}
+
+/* ===========================================================
+   TYPE
+=========================================================== */
+
+.patient-type{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.patient-type.opd{
+
+    background:#ECFDF5;
+
+    color:#15803D;
+
+}
+
+.patient-type.ipd{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+}
+
+.patient-type svg{
+
+    font-size:16px;
+
+}
+
+/* ===========================================================
+   DOCTOR
+=========================================================== */
+
+.doctor-info,
+
+.mobile-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    color:#334155;
+
+    font-size:13px;
+
+}
+
+.doctor-info svg,
+
+.mobile-info svg{
+
+    color:#2563EB;
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+   BUTTON
+=========================================================== */
+
+.patient-select-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    height:38px;
+
+    padding:0 16px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.patient-select-btn:hover{
+
+    background:#1D4ED8;
+
+}

@@ -1,0 +1,127 @@
+/* ===========================================================
+   TABLE WRAPPER
+=========================================================== */
+
+.patient-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    background:#FFFFFF;
+
+}
+
+/* ===========================================================
+   TABLE
+=========================================================== */
+
+.patient-table{
+
+    width:100%;
+
+    min-width:1250px;
+
+    border-collapse:collapse;
+
+}
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.patient-table thead{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:5;
+
+}
+
+.patient-table thead tr{
+
+    background:#F8FAFC;
+
+}
+
+.patient-table th{
+
+    padding:16px;
+
+    text-align:left;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:#475569;
+
+    border-bottom:1px solid #E2E8F0;
+
+    white-space:nowrap;
+
+}
+
+/* ===========================================================
+   BODY
+=========================================================== */
+
+.patient-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.patient-table tbody tr:nth-child(even){
+
+    background:#FCFCFD;
+
+}
+
+.patient-table tbody tr:hover{
+
+    background:#F1F5F9;
+
+}
+
+/* ===========================================================
+   ACTION
+=========================================================== */
+
+.action-column{
+
+    text-align:center;
+
+    width:130px;
+
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+.patient-table-wrapper::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.patient-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}
+
+.patient-table-wrapper::-webkit-scrollbar-track{
+
+    background:#F8FAFC;
+
+}

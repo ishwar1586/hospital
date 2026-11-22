@@ -1,0 +1,250 @@
+/* =========================================
+   CARD
+========================================= */
+
+.today-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.today-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.today-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.today-header span {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* =========================================
+   DATE STRIP
+========================================= */
+
+.day-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+/* NAV BUTTON */
+
+.nav-btn {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f3f4f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+  background: #e5e7eb;
+}
+
+.nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* DAYS */
+
+.days-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 12px; */
+}
+
+/* ITEM */
+
+.day-item {
+  flex: 1;
+  text-align: center;
+  /* padding: 10px 0; */
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-item small {
+  display: block;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.day-item b {
+  font-size: 12px;
+  color: #111827;
+}
+
+/* ACTIVE */
+
+.day-item.active {
+  background: #edf4ff;
+}
+
+.day-item.active small {
+  color: #2563eb;
+}
+
+.day-item.active b {
+  color: #2563eb;
+}
+
+/* =========================================
+   COUNT
+========================================= */
+
+.count-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #ff7a00;
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   APPOINTMENT LIST
+========================================= */
+
+.appt-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+/* SCROLLBAR */
+
+.appt-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.appt-list::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 20px;
+}
+
+/* =========================================
+   APPOINTMENT CARD
+========================================= */
+
+.appt-item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 18px;
+
+  padding: 1px;
+
+  margin-bottom: 3px;
+
+  transition: all 0.2s ease;
+}
+
+.appt-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+/* BAR */
+
+.appt-bar {
+  width: 2px;
+  height: 40px; 
+  margin-left: 10px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* CONTENT */
+
+.appt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* NAME */
+
+.appt-content h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* TYPE */
+
+.appt-content p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3b82f6;
+}
+.appt-content small svg {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+/* DOCTOR */
+
+.appt-content small {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 11px;
+  color: #6b7280;
+}
+
+/* TIME */
+
+.appt-time {
+  margin-left: auto;
+
+  font-size: 9px;
+  font-weight: 700;
+  color: #9ca3af;
+}

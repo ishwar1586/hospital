@@ -1,0 +1,103 @@
+/* ==========================================================
+   Tabs
+========================================================== */
+
+.audit-tabs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    /* margin-bottom:24px; */
+
+    padding:6px;
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:14px;
+
+    overflow-x:auto;
+
+    box-shadow:0 6px 18px rgba(15,23,42,.05);
+
+}
+
+.audit-tabs::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+/* ==========================================================
+   Tab Button
+========================================================== */
+
+.audit-tab{
+
+    border:none;
+
+    background:transparent;
+
+    color:#64748b;
+
+    padding:12px 20px;
+
+    border-radius:999px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    white-space:nowrap;
+
+    transition:all .25s ease;
+
+}
+
+.audit-tab:hover{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+}
+
+.audit-tab.active{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-tabs{
+
+        gap:8px;
+
+        padding:4px;
+
+    }
+
+    .audit-tab{
+
+        padding:10px 16px;
+
+        font-size:13px;
+
+    }
+
+}

@@ -1,0 +1,677 @@
+/* =========================================================
+   DEPARTMENT SELECTION MODAL
+   ========================================================= */
+
+.department-selection-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1400;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: rgba(15, 23, 42, 0.48);
+
+  animation: departmentSelectionModalFadeIn 0.2s ease;
+}
+
+
+/* =========================================================
+   MODAL CONTAINER
+   ========================================================= */
+
+.department-selection-modal__container {
+  width: 100%;
+  max-width: 760px;
+
+  max-height: calc(100vh - 48px);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  box-shadow:
+    0 24px 60px rgba(15, 23, 42, 0.18),
+    0 8px 24px rgba(15, 23, 42, 0.08);
+
+  animation: departmentSelectionModalScaleIn 0.22s ease;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.department-selection-modal__header {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 22px 24px 18px;
+
+  border-bottom: 1px solid #eef0f3;
+
+  background: #ffffff;
+}
+
+
+/* Header Content */
+
+.department-selection-modal__header-content {
+  min-width: 0;
+  flex: 1;
+}
+
+
+.department-selection-modal__title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+
+.department-selection-modal__subtitle {
+  margin: 6px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+/* Header Actions */
+
+.department-selection-modal__header-actions {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.department-selection-modal__close {
+  width: 34px;
+  height: 34px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #6b7280;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+
+.department-selection-modal__close:hover {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+
+.department-selection-modal__close:active {
+  transform: scale(0.94);
+}
+
+
+.department-selection-modal__close:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+.department-selection-modal__close-icon {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+.department-selection-modal__body {
+  flex: 1;
+
+  min-height: 0;
+
+  overflow-y: auto;
+
+  padding: 22px 24px 24px;
+
+  background: #ffffff;
+
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+
+.department-selection-modal__body::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+.department-selection-modal__body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.department-selection-modal__body::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   DEPARTMENT GRID
+   ========================================================= */
+
+.department-selection-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+
+/* =========================================================
+   DEPARTMENT CARD
+   ========================================================= */
+
+.department-selection-card {
+  position: relative;
+
+  min-width: 0;
+  min-height: 86px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 15px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+
+.department-selection-card:hover {
+  border-color: #cbd5e1;
+
+  background: #fafbfc;
+
+  box-shadow:
+    0 5px 14px rgba(15, 23, 42, 0.07);
+
+  transform: translateY(-1px);
+}
+
+
+.department-selection-card:active {
+  transform: translateY(0);
+}
+
+
+.department-selection-card:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   CARD ICON
+   ========================================================= */
+
+.department-selection-card__icon {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  transition:
+    background-color 0.18s ease,
+    color 0.18s ease;
+}
+
+
+.department-selection-card__icon-svg {
+  width: 21px;
+  height: 21px;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.department-selection-card__content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.department-selection-card__title {
+  overflow: hidden;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.35;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.department-selection-card__description {
+  overflow: hidden;
+
+  color: #6b7280;
+
+  font-size: 11.5px;
+  font-weight: 400;
+  line-height: 1.4;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================================================
+   COLOR VARIANTS
+   ========================================================= */
+
+/* Blue */
+
+.department-selection-card--blue
+  .department-selection-card__icon {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+
+/* Indigo */
+
+.department-selection-card--indigo
+  .department-selection-card__icon {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+
+/* Teal */
+
+.department-selection-card--teal
+  .department-selection-card__icon {
+  background: #ecfeff;
+  color: #0f766e;
+}
+
+
+/* Purple */
+
+.department-selection-card--purple
+  .department-selection-card__icon {
+  background: #faf5ff;
+  color: #9333ea;
+}
+
+
+/* Orange */
+
+.department-selection-card--orange
+  .department-selection-card__icon {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+
+/* Sky */
+
+.department-selection-card--sky
+  .department-selection-card__icon {
+  background: #f0f9ff;
+  color: #0284c7;
+}
+
+
+/* Red */
+
+.department-selection-card--red
+  .department-selection-card__icon {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+
+/* Cyan */
+
+.department-selection-card--cyan
+  .department-selection-card__icon {
+  background: #ecfeff;
+  color: #0891b2;
+}
+
+
+/* =========================================================
+   SELECTED CARD
+   ========================================================= */
+
+.department-selection-card--selected {
+  border-color: #2563eb;
+
+  background: #f8fbff;
+
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.08);
+}
+
+
+.department-selection-card--selected::after {
+  content: "";
+
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+}
+
+
+/* Selected icon */
+
+.department-selection-card--selected
+  .department-selection-card__icon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+
+/* =========================================================
+   DISABLED CARD
+   ========================================================= */
+
+.department-selection-card--disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+
+  transform: none;
+}
+
+
+.department-selection-card--disabled:hover {
+  border-color: #e5e7eb;
+
+  background: #ffffff;
+
+  box-shadow: none;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.department-selection-modal__footer {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  padding: 14px 24px;
+
+  border-top: 1px solid #eef0f3;
+
+  background: #ffffff;
+}
+
+
+.department-selection-modal__footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 10px;
+}
+
+
+/* =========================================================
+   FOOTER BUTTON
+   ========================================================= */
+
+.department-selection-modal__footer-button {
+  min-width: 88px;
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+
+/* Secondary */
+
+.department-selection-modal__footer-button--secondary {
+  border: 1px solid #d1d5db;
+
+  background: #ffffff;
+
+  color: #374151;
+}
+
+
+.department-selection-modal__footer-button--secondary:hover {
+  border-color: #9ca3af;
+
+  background: #f9fafb;
+
+  color: #111827;
+}
+
+
+.department-selection-modal__footer-button--secondary:active {
+  background: #f3f4f6;
+}
+
+
+.department-selection-modal__footer-button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+.department-selection-modal__footer-button-icon {
+  width: 17px;
+  height: 17px;
+}
+
+
+.department-selection-modal__footer-button-label {
+  line-height: 1;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes departmentSelectionModalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes departmentSelectionModalScaleIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 760px) {
+  .department-selection-modal {
+    padding: 18px;
+  }
+
+  .department-selection-modal__container {
+    max-width: 100%;
+  }
+
+  .department-selection-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+  .department-selection-modal {
+    align-items: flex-end;
+
+    padding: 0;
+  }
+
+  .department-selection-modal__container {
+    max-height: 92vh;
+
+    border-radius: 16px 16px 0 0;
+  }
+
+  .department-selection-modal__header {
+    padding: 18px 18px 15px;
+  }
+
+  .department-selection-modal__body {
+    padding: 18px;
+  }
+
+  .department-selection-grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .department-selection-card {
+    min-height: 78px;
+  }
+
+  .department-selection-modal__footer {
+    padding: 13px 18px;
+  }
+
+  .department-selection-modal__footer-button {
+    width: 100%;
+  }
+
+  .department-selection-modal__footer-actions {
+    width: 100%;
+  }
+}

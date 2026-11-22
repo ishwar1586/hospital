@@ -1,0 +1,131 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-activity-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.audit-activity-card h3{
+
+    margin:0 0 22px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+/* ==========================================================
+   Timeline
+========================================================== */
+
+.audit-timeline{
+
+    position:relative;
+
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:18px;
+
+    position:relative;
+
+    padding-bottom:24px;
+
+}
+
+.timeline-item:last-child{
+
+    padding-bottom:0;
+
+}
+
+.timeline-item:not(:last-child)::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:15px;
+
+    top:34px;
+
+    width:2px;
+
+    height:calc(100% - 18px);
+
+    background:#e2e8f0;
+
+}
+
+.timeline-icon{
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    background:#dcfce7;
+
+    color:#16a34a;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    z-index:1;
+
+}
+
+.timeline-content h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.timeline-content p{
+
+    margin:6px 0;
+
+    font-size:13px;
+
+    color:#64748b;
+
+    line-height:1.6;
+
+}
+
+.timeline-content span{
+
+    font-size:12px;
+
+    color:#94a3b8;
+
+}

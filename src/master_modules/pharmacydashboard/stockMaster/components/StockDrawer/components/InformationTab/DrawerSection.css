@@ -1,0 +1,105 @@
+/* =====================================================
+   DRAWER SECTION
+===================================================== */
+
+.drawer-section{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.drawer-section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:16px 20px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.drawer-section-title h3{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.drawer-section-body{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:18px 30px;
+
+    padding:20px;
+
+}
+
+/* =====================================================
+   GRID ITEM
+===================================================== */
+
+.drawer-section-item{
+
+    width:100%;
+
+    min-width:0;
+
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.drawer-section:hover{
+
+    box-shadow:0 8px 24px rgba(15,23,42,.08);
+
+    transition:.25s;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .drawer-section-body{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

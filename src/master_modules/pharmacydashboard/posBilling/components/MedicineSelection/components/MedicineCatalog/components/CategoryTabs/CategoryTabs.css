@@ -1,0 +1,71 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.category-tabs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    overflow-x:auto;
+
+    padding-bottom:6px;
+
+    scrollbar-width:none;
+
+}
+
+.category-tabs::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+/* ===========================================================
+TAB
+=========================================================== */
+
+.category-tab{
+
+    flex-shrink:0;
+
+    padding:10px 18px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:999px;
+
+    background:#FFFFFF;
+
+    color:#475569;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.category-tab:hover{
+
+    border-color:#2563EB;
+
+    color:#2563EB;
+
+}
+
+.category-tab.active{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    border-color:#2563EB;
+
+}

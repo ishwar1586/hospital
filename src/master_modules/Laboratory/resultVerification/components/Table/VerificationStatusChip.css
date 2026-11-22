@@ -1,0 +1,107 @@
+/* =========================================
+   VERIFICATION STATUS CHIP
+========================================= */
+
+.result-verification-status-chip {
+    min-height: 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 6px;
+
+    box-sizing: border-box;
+
+    border: 1px solid transparent;
+
+    border-radius: 999px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.result-verification-status-chip svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.result-verification-status-chip__label {
+    display: inline-flex;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   PENDING
+========================================= */
+
+.result-verification-status-chip--pending {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #b45309;
+}
+
+
+/* =========================================
+   UNDER REVIEW
+========================================= */
+
+.result-verification-status-chip--under-review {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   VERIFIED
+========================================= */
+
+.result-verification-status-chip--verified {
+    border-color: #a7f3d0;
+
+    background: #ecfdf5;
+
+    color: #047857;
+}
+
+
+/* =========================================
+   REJECTED
+========================================= */
+
+.result-verification-status-chip--rejected {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+}

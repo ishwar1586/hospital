@@ -1,0 +1,215 @@
+/* =========================================
+   TABS CONTAINER
+========================================= */
+
+.processing-tabs {
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.processing-tabs__list {
+    width: 100%;
+
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 4px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+
+.processing-tabs__list::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.processing-tab {
+    position: relative;
+
+    min-height: 42px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    flex-shrink: 0;
+
+    padding: 0 13px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.processing-tab:hover {
+    color: #1f2937;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.processing-tab--active {
+    color: #2563eb;
+
+    background: #ffffff;
+}
+
+
+.processing-tab--active::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: -1px;
+
+    left: 0;
+
+    height: 2px;
+
+    border-radius:
+        2px 2px 0 0;
+
+    background: #2563eb;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.processing-tab__label {
+    line-height: 1;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.processing-tab__count {
+    min-width: 21px;
+
+    height: 19px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 5px;
+
+    border-radius: 10px;
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+
+.processing-tab--active
+.processing-tab__count {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.processing-tab:focus-visible {
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .processing-tab {
+        min-height: 40px;
+
+        padding: 0 11px;
+
+        font-size: 9px;
+    }
+
+
+    .processing-tab__count {
+        min-width: 19px;
+
+        height: 18px;
+
+        font-size: 8px;
+    }
+
+}

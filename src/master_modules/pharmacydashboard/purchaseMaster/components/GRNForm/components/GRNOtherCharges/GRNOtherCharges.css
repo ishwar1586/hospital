@@ -1,0 +1,81 @@
+.grn-other-charges{
+
+    background:#fff;
+    width: 100%;
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:24px;
+
+}
+
+.grn-other-charges h3{
+
+    margin:0 0 20px;
+
+    color:#0f172a;
+
+    font-size:18px;
+
+}
+
+.grn-other-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.grn-other-field{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.grn-other-field label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#475569;
+
+}
+
+.grn-other-field input{
+
+    height:42px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 12px;
+
+    outline:none;
+
+}
+
+.grn-other-field input:focus{
+
+    border-color:#2563eb;
+
+}
+
+@media(max-width:992px){
+
+    .grn-other-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

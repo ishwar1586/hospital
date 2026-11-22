@@ -1,0 +1,401 @@
+/* =========================================
+   RESULT VERIFICATION TABLE
+========================================= */
+
+.result-verification-table {
+    width: 100%;
+
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TABLE SCROLL
+========================================= */
+
+.result-verification-table__scroll {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scrollbar-width: thin;
+}
+
+
+.result-verification-table__scroll::-webkit-scrollbar {
+    height: 5px;
+}
+
+
+.result-verification-table__scroll::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+
+.result-verification-table__scroll::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+
+    background: #cbd5e1;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.result-verification-table table {
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    table-layout: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.result-verification-table thead {
+    background: #f8fafc;
+}
+
+
+.result-verification-table th {
+    height: 34px;
+
+    padding: 0 10px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.02em;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.result-verification-table td {
+    height: 43px;
+
+    padding: 7px 10px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    color: #334155;
+
+    font-size: 12px;
+
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    vertical-align: middle;
+
+    white-space: nowrap;
+}
+
+
+.result-verification-table tbody tr {
+    background: #ffffff;
+
+    transition:
+        background-color 0.12s ease;
+}
+
+
+.result-verification-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+.result-verification-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.result-verification-table__loading {
+    min-height: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #64748b;
+
+    font-size: 8px;
+
+    font-weight: 500;
+}
+
+
+.result-verification-table__spinner {
+    width: 15px;
+
+    height: 15px;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    border: 2px solid #dbeafe;
+
+    border-top-color: #2563eb;
+
+    border-radius: 50%;
+
+    animation:
+        result-verification-table-spin
+        0.7s linear infinite;
+}
+
+
+@keyframes result-verification-table-spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.result-verification-table__empty {
+    min-height: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+.result-verification-table__empty-icon {
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 3px;
+
+    border-radius: 50%;
+
+    background: #f1f5f9;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+.result-verification-table__empty strong {
+    color: #334155;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+.result-verification-table__empty span {
+    max-width: 340px;
+
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+
+/* =========================================
+   TABLE ROW CONTENT
+========================================= */
+
+.result-verification-table-row__patient {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.result-verification-table-row__patient strong {
+    overflow: hidden;
+
+    max-width: 180px;
+
+    color: #334155;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.result-verification-table-row__patient span {
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   ACCESSION
+========================================= */
+
+.result-verification-table-row__accession {
+    color: #2563eb;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TEST
+========================================= */
+
+.result-verification-table-row__test {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.result-verification-table-row__test strong {
+    overflow: hidden;
+
+    max-width: 210px;
+
+    color: #334155;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.result-verification-table-row__test span {
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   ACTION CELL
+========================================= */
+
+.result-verification-table-row td:last-child {
+    width: 46px;
+
+    padding-right: 8px;
+
+    padding-left: 8px;
+
+    text-align: center;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .result-verification-table table {
+        min-width: 1000px;
+    }
+
+}

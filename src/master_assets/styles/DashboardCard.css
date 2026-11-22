@@ -1,0 +1,142 @@
+/* =========================================
+   CARD
+========================================= */
+
+.dashboard-card {
+  position: relative;
+
+  height: 140px;
+
+  border-radius: 20px;
+
+  padding: 20px;
+
+  overflow: hidden;
+
+  transition: all 0.25s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   TOP
+========================================= */
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.card-icon {
+  width: 58px;
+  height: 58px;
+
+  min-width: 58px;
+
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  box-shadow:
+    0 8px 18px rgba(0,0,0,0.12);
+
+  backdrop-filter: blur(4px);
+}
+
+/* ICON SVG */
+
+.card-icon svg {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+/* =========================================
+   INFO
+========================================= */
+
+.card-info {
+  text-align: right;
+}
+
+.card-title {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: rgba(0,0,0,0.72);
+}
+
+.card-value {
+  margin-top: 14px;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  color: rgba(0,0,0,0.82);
+
+  line-height: 1;
+}
+
+/* =========================================
+   COLORS
+========================================= */
+
+/* PURPLE */
+
+.dashboard-card.purple {
+  background: #ece8ff;
+  color: #6f42c1;
+}
+
+.dashboard-card.purple .card-icon {
+  background: #6f42c1;
+}
+
+/* ORANGE */
+
+.dashboard-card.orange {
+  background: #f7ebe3;
+  color: #f97316;
+}
+
+.dashboard-card.orange .card-icon {
+  background: #f97316;
+}
+
+/* GREEN */
+
+.dashboard-card.green {
+  background: #e6f4ec;
+  color: #4caf50;
+}
+
+.dashboard-card.green .card-icon {
+  background: #4caf50;
+}
+
+/* BLUE */
+
+.dashboard-card.blue {
+  background: #e8f1ff;
+  color: #2196f3;
+}
+
+.dashboard-card.blue .card-icon {
+  background: #2196f3;
+}

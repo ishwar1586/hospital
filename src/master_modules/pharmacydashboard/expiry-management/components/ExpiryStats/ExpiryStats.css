@@ -1,0 +1,276 @@
+/* ==========================================================
+   Top Buttons
+========================================================== */
+
+.expiry-top-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+}
+
+.expiry-btn{
+
+    height:42px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+
+}
+
+.expiry-btn.primary{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+.expiry-btn.success{
+
+    background:#16a34a;
+
+    color:#fff;
+
+}
+
+/* ==========================================================
+   Stats Grid
+========================================================== */
+
+.expiry-stats-grid{
+
+    margin-top:20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+}
+
+/* ==========================================================
+   Card
+========================================================== */
+
+.expiry-stat-card{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:10px;
+
+    border:1px solid #e5e7eb;
+
+    overflow:hidden;
+
+    transition:.25s;
+
+}
+
+.expiry-stat-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+
+}
+
+
+/* ==========================================================
+   Card Top
+========================================================== */
+
+.expiry-stat-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:10px !important;
+
+}
+
+/* ==========================================================
+   Icon
+========================================================== */
+
+.expiry-icon{
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.expiry-icon svg{
+
+    font-size:20px;
+
+}
+
+/* ==========================================================
+   Text
+========================================================== */
+
+.expiry-stat-card small{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#64748b;
+
+}
+
+.expiry-stat-card h2{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.expiry-stat-card p{
+
+    margin-top:4px;
+
+    margin-bottom:0;
+
+    font-size:12px;
+
+    color:#94a3b8;
+
+}
+
+/* ==========================================================
+   Bottom Color Line
+========================================================== */
+
+.expiry-bottom-line{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:5px;
+
+}
+
+/* ==========================================================
+   Hover
+========================================================== */
+
+.expiry-stat-card:hover .expiry-icon{
+
+    transform:scale(1.08);
+
+    transition:.3s;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1400px){
+
+    .expiry-stats-grid{
+
+        grid-template-columns:repeat(5,1fr);
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .expiry-stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .expiry-top-actions{
+
+        flex-wrap:wrap;
+
+        justify-content:flex-start;
+
+    }
+
+    .expiry-btn{
+
+        flex:1;
+
+        min-width:180px;
+
+    }
+
+    .expiry-stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .expiry-btn{
+
+        width:100%;
+
+    }
+
+}

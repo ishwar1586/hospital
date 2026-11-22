@@ -1,0 +1,820 @@
+/* =========================================
+   UPDATE PRIORITY MODAL
+========================================= */
+
+.update-priority-dialog
+    .MuiDialog-paper {
+
+    width: 100%;
+
+    max-width: 560px;
+
+    margin: 16px;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 20px 45px
+        rgba(15, 23, 42, 0.14);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MODAL CONTENT
+========================================= */
+
+.update-priority-modal {
+    padding: 0 !important;
+
+    color: #334155;
+
+    font-family: inherit;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.update-priority-modal__header {
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.update-priority-modal__header-left {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+
+.update-priority-modal__icon {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+.update-priority-modal__icon svg {
+    width: 20px;
+
+    height: 20px;
+}
+
+
+.update-priority-modal__header-left h2 {
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.update-priority-modal__header-left p {
+    margin: 3px 0 0;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.update-priority-modal__close {
+    width: 32px !important;
+
+    height: 32px !important;
+
+    flex-shrink: 0;
+
+    color: #64748b !important;
+
+    border-radius: 6px !important;
+}
+
+
+.update-priority-modal__close:hover {
+    background: #f8fafc !important;
+
+    color: #334155 !important;
+}
+
+
+.update-priority-modal__close svg {
+    width: 18px;
+
+    height: 18px;
+}
+
+
+/* =========================================
+   PATIENT / TEST INFO
+========================================= */
+
+.update-priority-modal__info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 14px 18px 0;
+
+    padding: 11px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #f8fafc;
+
+    box-sizing: border-box;
+}
+
+
+.update-priority-modal__info-icon {
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+.update-priority-modal__info-icon svg {
+    width: 18px;
+
+    height: 18px;
+}
+
+
+.update-priority-modal__info-content {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.update-priority-modal__info-content strong {
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.update-priority-modal__info-content span {
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   CURRENT PRIORITY
+========================================= */
+
+.update-priority-modal__current {
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    flex-shrink: 0;
+}
+
+
+.update-priority-modal__current > span {
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.update-priority-modal__body {
+    padding: 16px 18px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.update-priority-modal__label {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+
+    margin-bottom: 10px;
+}
+
+
+.update-priority-modal__label > span {
+    color: #334155;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.update-priority-modal__label > small {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   OPTIONS
+========================================= */
+
+.update-priority-modal__options {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* =========================================
+   OPTION
+========================================= */
+
+.update-priority-modal__option {
+    position: relative;
+
+    min-height: 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 8px 11px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.18s ease,
+        background-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.update-priority-modal__option:hover {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   HIDDEN RADIO
+========================================= */
+
+.update-priority-modal__option input {
+    position: absolute;
+
+    width: 1px;
+
+    height: 1px;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   CUSTOM RADIO
+========================================= */
+
+.update-priority-modal__radio {
+    width: 17px;
+
+    height: 17px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border: 1.5px solid #cbd5e1;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.update-priority-modal__radio::after {
+    content: "";
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: transparent;
+
+    transform: scale(0);
+
+    transition:
+        transform 0.16s ease;
+}
+
+
+/* =========================================
+   SELECTED
+========================================= */
+
+.update-priority-modal__option--selected {
+    border-color: #93c5fd;
+
+    background: #eff6ff;
+
+    box-shadow:
+        0 0 0 1px
+        rgba(59, 130, 246, 0.05);
+}
+
+
+.update-priority-modal__option--selected
+.update-priority-modal__radio {
+    border-color: #2563eb;
+}
+
+
+.update-priority-modal__option--selected
+.update-priority-modal__radio::after {
+    background: #2563eb;
+
+    transform: scale(1);
+}
+
+
+/* =========================================
+   OPTION CONTENT
+========================================= */
+
+.update-priority-modal__option-content {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.update-priority-modal__option-content strong {
+    color: #334155;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.update-priority-modal__option-content small {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   PRIORITY VARIANTS
+========================================= */
+
+.update-priority-modal__option--urgent
+    .update-priority-modal__radio {
+    border-color: #fca5a5;
+}
+
+
+.update-priority-modal__option--urgent
+    .update-priority-modal__option-content strong {
+    color: #dc2626;
+}
+
+
+.update-priority-modal__option--high
+    .update-priority-modal__radio {
+    border-color: #fdba74;
+}
+
+
+.update-priority-modal__option--high
+    .update-priority-modal__option-content strong {
+    color: #ea580c;
+}
+
+
+.update-priority-modal__option--medium
+    .update-priority-modal__radio {
+    border-color: #fcd34d;
+}
+
+
+.update-priority-modal__option--medium
+    .update-priority-modal__option-content strong {
+    color: #ca8a04;
+}
+
+
+.update-priority-modal__option--normal
+    .update-priority-modal__option-content strong {
+    color: #2563eb;
+}
+
+
+.update-priority-modal__option--low
+    .update-priority-modal__option-content strong {
+    color: #64748b;
+}
+
+
+/* =========================================
+   SELECTED VARIANT
+========================================= */
+
+.update-priority-modal__option--selected
+    .update-priority-modal__option-content
+    strong {
+    color: #1e293b;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.update-priority-modal__footer {
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    padding: 10px 18px;
+
+    border-top: 1px solid #eef2f7;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.update-priority-modal__cancel {
+    min-width: 72px;
+
+    height: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 12px;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.update-priority-modal__cancel:hover {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   CONFIRM BUTTON
+========================================= */
+
+.update-priority-modal__confirm {
+    min-width: 125px;
+
+    height: 30px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 12px;
+
+    border: 1px solid #2563eb;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.update-priority-modal__confirm:hover:not(:disabled) {
+    border-color: #1d4ed8;
+
+    background: #1d4ed8;
+}
+
+
+.update-priority-modal__confirm svg {
+    width: 15px;
+
+    height: 15px;
+}
+
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.update-priority-modal__cancel:disabled,
+.update-priority-modal__confirm:disabled {
+    opacity: 0.55;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.update-priority-modal__cancel:focus-visible,
+.update-priority-modal__confirm:focus-visible {
+    outline: 2px solid #bfdbfe;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .update-priority-dialog
+        .MuiDialog-paper {
+
+        max-width: calc(100% - 20px);
+
+        margin: 10px;
+
+        border-radius: 8px;
+    }
+
+
+    .update-priority-modal__info {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+
+    .update-priority-modal__current {
+        width: 100%;
+
+        align-items: flex-start;
+
+        padding-top: 3px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+    .update-priority-modal__header {
+        padding: 12px;
+    }
+
+
+    .update-priority-modal__body {
+        padding: 14px 12px;
+    }
+
+
+    .update-priority-modal__info {
+        margin-left: 12px;
+
+        margin-right: 12px;
+    }
+
+
+    .update-priority-modal__footer {
+        padding: 10px 12px;
+    }
+
+
+    .update-priority-modal__header-left h2 {
+        font-size: 13px;
+    }
+
+
+    .update-priority-modal__header-left p {
+        font-size: 8px;
+    }
+
+
+    .update-priority-modal__option {
+        min-height: 48px;
+
+        padding: 8px;
+    }
+
+}

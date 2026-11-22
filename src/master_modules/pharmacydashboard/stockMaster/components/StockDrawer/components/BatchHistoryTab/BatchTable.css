@@ -1,0 +1,297 @@
+/* =====================================================
+   CARD
+===================================================== */
+
+.batch-table-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 4px 18px rgba(15,23,42,.05);
+
+}
+
+/* =====================================================
+   TABLE WRAPPER
+===================================================== */
+
+.batch-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:auto;
+
+    max-height:60vh;
+
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.batch-table{
+
+    width:100%;
+
+    min-width:1500px;
+
+    border-collapse:collapse;
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.batch-table thead{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:10;
+
+}
+
+.batch-table th{
+
+    padding:14px 16px;
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.batch-table td{
+
+    padding:14px 16px;
+
+    font-size:13px;
+
+    color:#334155;
+
+    border-bottom:1px solid #EEF2F7;
+
+    white-space:nowrap;
+
+    vertical-align:middle;
+
+}
+
+.batch-table-row{
+
+    transition:.25s;
+
+}
+
+.batch-table-row:hover{
+
+    background:#F8FBFF;
+
+}
+
+/* =====================================================
+   MEDICINE
+===================================================== */
+
+.batch-medicine{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.medicine-name{
+
+    font-weight:600;
+
+    color:#0F172A;
+
+}
+
+/* =====================================================
+   BATCH
+===================================================== */
+
+.batch-number{
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+/* =====================================================
+   INVOICE
+===================================================== */
+
+.invoice-number{
+
+    font-weight:600;
+
+    color:#7C3AED;
+
+}
+
+/* =====================================================
+   QTY
+===================================================== */
+
+.batch-col-purchase,
+
+.batch-col-available{
+
+    text-align:center;
+
+}
+
+.batch-col-available strong{
+
+    color:#16A34A;
+
+}
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.batch-col-mrp,
+
+.batch-col-rate{
+
+    font-weight:600;
+
+}
+
+/* =====================================================
+   COLUMN WIDTH
+===================================================== */
+
+.batch-col-no{
+
+    min-width:140px;
+
+}
+
+.batch-col-medicine{
+
+    min-width:260px;
+
+}
+
+.batch-col-supplier{
+
+    min-width:220px;
+
+}
+
+.batch-col-invoice{
+
+    min-width:170px;
+
+}
+
+.batch-col-mfg{
+
+    min-width:150px;
+
+}
+
+.batch-col-expiry{
+
+    min-width:150px;
+
+}
+
+.batch-col-purchase{
+
+    min-width:120px;
+
+}
+
+.batch-col-available{
+
+    min-width:120px;
+
+}
+
+.batch-col-mrp{
+
+    min-width:120px;
+
+}
+
+.batch-col-rate{
+
+    min-width:140px;
+
+}
+
+.batch-col-status{
+
+    min-width:180px;
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.batch-table-wrapper::-webkit-scrollbar{
+
+    width:10px;
+
+    height:10px;
+
+}
+
+.batch-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}
+
+.batch-table-wrapper::-webkit-scrollbar-track{
+
+    background:#F8FAFC;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .batch-table{
+
+        min-width:1350px;
+
+    }
+
+}

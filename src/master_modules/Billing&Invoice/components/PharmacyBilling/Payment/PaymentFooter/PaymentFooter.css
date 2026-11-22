@@ -1,0 +1,128 @@
+.payment-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.payment-footer__left,
+.payment-footer__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.payment-footer button {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.payment-footer button svg {
+  font-size: 18px;
+}
+
+.payment-footer__cancel {
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #64748b;
+}
+
+.payment-footer__cancel:hover {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  color: #334155;
+}
+
+.payment-footer__back {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+}
+
+.payment-footer__back:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+  color: #1e293b;
+}
+
+.payment-footer__continue {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.payment-footer__continue:hover:not(:disabled) {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  box-shadow:
+    0 4px 10px
+    rgba(37, 99, 235, 0.18);
+}
+
+.payment-footer__continue:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.payment-footer__continue:disabled {
+  border-color: #cbd5e1;
+  background: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+@media (max-width: 767px) {
+  .payment-footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 14px;
+  }
+
+  .payment-footer__left,
+  .payment-footer__right {
+    width: 100%;
+  }
+
+  .payment-footer__right {
+    justify-content: flex-end;
+  }
+
+  .payment-footer button {
+    min-height: 42px;
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-footer__left,
+  .payment-footer__right {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .payment-footer button {
+    width: 100%;
+  }
+}

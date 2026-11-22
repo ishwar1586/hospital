@@ -1,0 +1,266 @@
+/* =========================================
+   STATS SECTION
+========================================= */
+
+.category-stats {
+    width: 100%;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.category-stats__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.category-stat-card {
+    position: relative;
+
+    min-height: 96px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 14px;
+
+    padding: 17px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.category-stat-card:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.category-stat-card__content {
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    gap: 4px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.category-stat-card__title {
+    font-size: 10px;
+
+    line-height: 1.3;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.category-stat-card__value {
+    color: #111827;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    letter-spacing: -0.3px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.category-stat-card__description {
+    color: #4b5563;
+
+    font-size: 9px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.category-stat-card__icon {
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 8px;
+}
+
+.category-stat-card__icon svg {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   BLUE
+========================================= */
+
+.category-stat-card--blue {
+    border-color: #dbeafe;
+}
+
+.category-stat-card--blue
+.category-stat-card__title {
+    color: #2563eb;
+}
+
+.category-stat-card--blue
+.category-stat-card__icon {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   GREEN
+========================================= */
+
+.category-stat-card--green {
+    border-color: #d1fae5;
+}
+
+.category-stat-card--green
+.category-stat-card__title {
+    color: #059669;
+}
+
+.category-stat-card--green
+.category-stat-card__icon {
+    background: #ecfdf5;
+
+    color: #059669;
+}
+
+
+/* =========================================
+   RED
+========================================= */
+
+.category-stat-card--red {
+    border-color: #fee2e2;
+}
+
+.category-stat-card--red
+.category-stat-card__title {
+    color: #dc2626;
+}
+
+.category-stat-card--red
+.category-stat-card__icon {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   PURPLE
+========================================= */
+
+.category-stat-card--purple {
+    border-color: #e9d5ff;
+}
+
+.category-stat-card--purple
+.category-stat-card__title {
+    color: #7c3aed;
+}
+
+.category-stat-card--purple
+.category-stat-card__icon {
+    background: #faf5ff;
+
+    color: #7c3aed;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .category-stats__grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .category-stats__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .category-stats__grid {
+        grid-template-columns: 1fr;
+    }
+
+}

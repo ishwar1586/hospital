@@ -1,0 +1,183 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.search-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+}
+
+/* ===========================================================
+SEARCH BOX
+=========================================================== */
+
+.search-box{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    height:58px;
+
+    padding:0 18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    transition:.25s;
+
+}
+
+.search-box:focus-within{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.search-icon{
+
+    color:#64748B;
+
+    font-size:22px !important;
+
+    flex-shrink:0;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:15px;
+
+    background:transparent;
+
+    color:#0F172A;
+
+}
+
+.search-box input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+/* ===========================================================
+SHORTCUT
+=========================================================== */
+
+.search-shortcut{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:7px 12px;
+
+    border-radius:10px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.search-shortcut svg{
+
+    font-size:18px !important;
+
+}
+
+/* ===========================================================
+QUICK ADD
+=========================================================== */
+
+.quick-add-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-width:150px;
+
+    height:58px;
+
+    padding:0 22px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.quick-add-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:768px){
+
+    .search-header{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .quick-add-btn{
+
+        width:100%;
+
+    }
+
+}

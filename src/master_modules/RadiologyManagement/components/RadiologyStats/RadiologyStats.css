@@ -1,0 +1,151 @@
+/* src/master_modules/RadiologyManagement/components/Stats/RadiologyStats.css */
+
+.radiology-stats {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(
+    var(--radiology-stats-columns, 4),
+    minmax(0, 1fr)
+  );
+  gap: var(--radiology-stats-gap, 10px);
+  width: 100%;
+  min-width: 0;
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+.radiology-stats *,
+.radiology-stats *::before,
+.radiology-stats *::after {
+  box-sizing: border-box;
+}
+
+.radiology-stats__card {
+  min-width: 0;
+  padding: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e7edf5;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(20 33 61 / 3%);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.radiology-stats__card:hover {
+  border-color: #d6e1f0;
+  box-shadow: 0 5px 16px rgb(20 33 61 / 6%);
+  transform: translateY(-2px);
+}
+
+.radiology-stats__card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.radiology-stats__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border-radius: 9px;
+}
+
+.radiology-stats__card[data-color="blue"]
+.radiology-stats__icon {
+  color: #2563eb;
+  background: #eff6ff;
+}
+
+.radiology-stats__card[data-color="orange"]
+.radiology-stats__icon {
+  color: #d97706;
+  background: #fff7ed;
+}
+
+.radiology-stats__card[data-color="purple"]
+.radiology-stats__icon {
+  color: #7c3aed;
+  background: #f5f3ff;
+}
+
+.radiology-stats__card[data-color="green"]
+.radiology-stats__icon {
+  color: #059669;
+  background: #ecfdf5;
+}
+
+.radiology-stats__value {
+  margin: 0;
+  color: #14213d;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+
+.radiology-stats__label {
+  margin: 8px 0 0;
+  color: #34435c;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.radiology-stats__description {
+  margin: 5px 0 0;
+  color: #7a879c;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1400px) {
+  .radiology-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .radiology-stats {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .radiology-stats__card {
+    padding: 16px;
+  }
+
+  .radiology-stats__card-top {
+    margin-bottom: 12px;
+  }
+
+  .radiology-stats__icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .radiology-stats__value {
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radiology-stats__card {
+    transition: none;
+  }
+
+  .radiology-stats__card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,721 @@
+/* ==========================================================
+   Return Items Card
+========================================================== */
+
+.return-items-card{
+
+    margin-top:24px;
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.06);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.return-items-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 24px;
+
+    border-bottom:1px solid #edf2f7;
+
+    background:#fafbfd;
+
+}
+
+.return-items-header h2{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.return-items-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Toolbar
+========================================================== */
+
+.return-items-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:20px 24px;
+
+}
+
+/* ==========================================================
+   Search
+========================================================== */
+
+.medicine-search{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:46px;
+
+    padding:0 16px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:12px;
+
+    background:#ffffff;
+
+    transition:.25s;
+
+}
+
+.medicine-search:hover{
+
+    border-color:#2563eb;
+
+}
+
+.medicine-search:focus-within{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.medicine-search svg{
+
+    color:#6b7280;
+
+}
+
+.medicine-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Barcode Button
+========================================================== */
+
+.barcode-btn{
+
+    height:46px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.barcode-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.barcode-btn svg{
+
+    font-size:20px;
+
+}
+
+/* ==========================================================
+   Table Wrapper
+========================================================== */
+
+.return-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:auto;
+
+    max-height:520px;
+
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.return-items-table{
+
+    width:100%;
+
+    min-width:1050px;
+
+    border-collapse:collapse;
+
+}
+
+
+/* ==========================================================
+   Table Header
+========================================================== */
+
+.return-items-table thead{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:5;
+
+    background:#f8fafc;
+
+}
+
+.return-items-table th{
+
+    padding:16px;
+
+    text-align:start;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:#475569;
+
+    text-transform:uppercase;
+
+    letter-spacing:.4px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+   Table Body
+========================================================== */
+
+.return-items-table td{
+
+    padding:16px;
+
+    font-size:12px;
+
+    color:#334155;
+
+    border-bottom:1px solid #eef2f7;
+
+    vertical-align:middle;
+
+    white-space:nowrap;
+
+}
+
+.return-items-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.return-items-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* ==========================================================
+   Medicine Cell
+========================================================== */
+
+.medicine-name{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.medicine-name strong{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.medicine-name small{
+
+    font-size:12px;
+
+    color:#6b7280;
+
+}
+
+/* ==========================================================
+   Batch
+========================================================== */
+
+.batch-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:4px 10px;
+
+    border-radius:20px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Expiry
+========================================================== */
+
+.expiry-date{
+
+    font-weight:600;
+
+    color:#dc2626;
+
+}
+
+/* ==========================================================
+   Quantity
+========================================================== */
+
+.qty-cell{
+
+    text-align:center;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   Amount
+========================================================== */
+
+.amount-cell{
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+.refund-cell{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#16a34a;
+
+}
+
+/* ==========================================================
+   Delete Button
+========================================================== */
+
+.delete-row-btn{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.delete-row-btn:hover{
+
+    background:#dc2626;
+
+    color:#ffffff;
+
+}
+
+.delete-row-btn svg{
+
+    font-size:20px;
+
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.no-return-items{
+
+    padding:70px 20px !important;
+
+    text-align:center;
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+.return-table-wrapper::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+.return-table-wrapper::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+.return-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.return-table-wrapper::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}
+
+
+/* ==========================================================
+   Card Animation
+========================================================== */
+
+.return-items-card{
+
+    animation:fadeIn .35s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   Zebra Rows
+========================================================== */
+
+.return-items-table tbody tr:nth-child(even){
+
+    background:#fcfcfd;
+
+}
+
+.return-items-table tbody tr:nth-child(even):hover{
+
+    background:#f8fbff;
+
+}
+
+/* ==========================================================
+   Row Selected
+========================================================== */
+
+.return-items-table tbody tr.selected{
+
+    background:#eff6ff;
+
+    border-left:4px solid #2563eb;
+
+}
+
+/* ==========================================================
+   Sticky Toolbar
+========================================================== */
+
+.return-items-toolbar{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:4;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+/* ==========================================================
+   Loading
+========================================================== */
+
+.return-loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:260px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#64748b;
+
+}
+
+/* ==========================================================
+   Empty Illustration
+========================================================== */
+
+.return-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+    gap:12px;
+
+}
+
+.return-empty svg{
+
+    font-size:60px;
+
+    color:#cbd5e1;
+
+}
+
+.return-empty h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#334155;
+
+}
+
+.return-empty p{
+
+    margin:0;
+
+    color:#64748b;
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Print
+========================================================== */
+
+@media print{
+
+    .barcode-btn,
+
+    .delete-row-btn{
+
+        display:none !important;
+
+    }
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1200px){
+
+    .return-items-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .barcode-btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .return-items-card{
+
+        border-radius:14px;
+
+    }
+
+    .return-items-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:10px;
+
+    }
+
+    .return-items-header h2{
+
+        font-size:20px;
+
+    }
+
+    .return-items-toolbar{
+
+        padding:16px;
+
+    }
+
+    .medicine-search{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .return-items-table{
+
+        min-width:1150px;
+
+    }
+
+}

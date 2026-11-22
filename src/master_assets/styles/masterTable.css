@@ -1,0 +1,143 @@
+.master-table-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.master-table th {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  padding-bottom: 12px;
+  /* position: fixed; */
+}
+
+.master-table td {
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.table-link {
+  color: #2563eb;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.disease-tag {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid;
+}
+
+.disease-tag.fever {
+  color: #dc2626;
+  border-color: #dc2626;
+}
+
+.disease-tag.cholera {
+  color: #16a34a;
+  border-color: #16a34a;
+}
+
+.disease-tag.jaundice {
+  color: #7c3aed;
+  border-color: #7c3aed;
+}
+
+.disease-tag.typhoid {
+  color: #2563eb;
+  border-color: #2563eb;
+}
+
+.disease-tag.malaria {
+  color: #f97316;
+  border-color: #f97316;
+}
+
+.table-actions {
+  display: flex;
+  gap: 10px;
+  height: 55px;
+  width: 55px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.master-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.master-table thead th {
+  background: #f9fafb;
+  padding: 12px 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+.master-table tbody tr {
+  background: #ffffff;
+}
+
+.master-table tbody tr:hover {
+  background: #f3f4f6;
+}
+
+.master-table tbody td {
+  padding: 14px 8px;
+  font-size: 14px;
+  color: #111827;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table-actions span {
+  cursor: pointer;
+}
+
+.table-actions span:hover {
+  transform: scale(1.1);
+}
+
+
+.table-topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-topbar input {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.table-topbar button {
+  padding: 6px 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.pagination button {
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}

@@ -1,0 +1,169 @@
+
+/* =========================================
+   ADD DEPARTMENT FOOTER
+========================================= */
+
+.add-department-footer {
+  width: 100%;
+  min-width: 0;
+  padding: 18px 22px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid #e8edf3;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(16, 24, 40, 0.035);
+}
+
+/* =========================================
+   BUTTON GROUPS
+========================================= */
+
+.add-department-footer__left,
+.add-department-footer__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-department-footer__right {
+  justify-content: flex-end;
+}
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.add-department-footer__button {
+  min-height: 40px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-department-footer__button-icon {
+  font-size: 17px !important;
+}
+
+/* =========================================
+   CANCEL BUTTON
+========================================= */
+
+.add-department-footer__button--cancel {
+  color: #667085;
+  background: #ffffff;
+  border-color: #dce3ec;
+}
+
+.add-department-footer__button--cancel:hover {
+  color: #344054;
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* =========================================
+   RESET BUTTON
+========================================= */
+
+.add-department-footer__button--reset {
+  color: #3478c9;
+  background: #ffffff;
+  border-color: #b9d3f2;
+}
+
+.add-department-footer__button--reset:hover {
+  background: #f2f7ff;
+  border-color: #3478c9;
+}
+
+/* =========================================
+   SAVE BUTTON
+========================================= */
+
+.add-department-footer__button--save {
+  color: #ffffff;
+  background: #3478c9;
+  border-color: #3478c9;
+  min-width: 155px;
+}
+
+.add-department-footer__button--save:hover {
+  background: #2868ad;
+  border-color: #2868ad;
+  box-shadow: 0 3px 8px rgba(52, 120, 201, 0.18);
+}
+
+/* =========================================
+   DISABLED STATE
+========================================= */
+
+.add-department-footer__button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.add-department-footer__button:focus-visible {
+  outline: 3px solid rgba(52, 120, 201, 0.18);
+  outline-offset: 2px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+  .add-department-footer {
+    padding: 15px;
+    align-items: stretch;
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .add-department-footer__left,
+  .add-department-footer__right {
+    width: 100%;
+  }
+
+  .add-department-footer__left {
+    justify-content: flex-start;
+  }
+
+  .add-department-footer__right {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+  }
+
+  .add-department-footer__button {
+    min-width: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .add-department-footer__right {
+    grid-template-columns: 1fr;
+  }
+
+  .add-department-footer__left,
+  .add-department-footer__left .add-department-footer__button {
+    width: 100%;
+  }
+}

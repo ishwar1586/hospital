@@ -1,0 +1,496 @@
+
+.ipd-invoice {
+  min-height: 100vh;
+  padding: 16px;
+  color: #172b4d;
+  background: #edf1f5;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.ipd-invoice *,
+.ipd-invoice *::before,
+.ipd-invoice *::after {
+  box-sizing: border-box;
+}
+
+.ipd-invoice__toolbar {
+  max-width: 1120px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ipd-invoice__toolbar-title,
+.ipd-invoice__toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ipd-invoice__toolbar-title > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ipd-invoice__toolbar-title strong {
+  font-size: 20px;
+  color: #102b55;
+}
+
+.ipd-invoice__toolbar-title span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.ipd-invoice__toolbar-actions button,
+.ipd-invoice__icon-button {
+  min-height: 36px;
+  padding: 7px 12px;
+  border: 1px solid #d6dfeb;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #fff;
+  color: #243b5b;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ipd-invoice__icon-button {
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+  padding: 0;
+}
+
+.ipd-invoice__toolbar-actions button:hover,
+.ipd-invoice__icon-button:hover {
+  background: #f1f6ff;
+  border-color: #9bbdfb;
+}
+
+.ipd-invoice__toolbar-actions .ipd-invoice__primary-action {
+  color: #fff;
+  background: #2459e0;
+  border-color: #2459e0;
+}
+
+.ipd-invoice__paper {
+  width: 100%;
+  max-width: 850px;
+  min-height: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #d6deea;
+  box-shadow: 0 8px 28px rgb(20 42 75 / 10%);
+}
+
+.ipd-invoice__hospital-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(200px, 0.8fr);
+  gap: 22px;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #285ee8;
+}
+
+.ipd-invoice__hospital {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.ipd-invoice__hospital img,
+.ipd-invoice__logo {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.ipd-invoice__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #173e91;
+  border-radius: 8px;
+}
+
+.ipd-invoice__logo svg {
+  font-size: 28px;
+}
+
+.ipd-invoice__hospital h1 {
+  margin: 0 0 3px;
+  color: #153e86;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.ipd-invoice__hospital p {
+  margin: 0 0 4px;
+  font-size: 11px;
+  color: #425777;
+}
+
+.ipd-invoice__hospital span {
+  display: block;
+  margin-top: 3px;
+  color: #526783;
+  font-size: 10px;
+  overflow-wrap: anywhere;
+}
+
+.ipd-invoice__title {
+  text-align: right;
+}
+
+.ipd-invoice__title h2 {
+  margin: 0;
+  color: #173e86;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.ipd-invoice__title p {
+  margin: 4px 0 0;
+  color: #667b98;
+  font-size: 11px;
+}
+
+.ipd-invoice__meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 0;
+  border-bottom: 1px solid #d2ddeb;
+}
+
+.ipd-invoice__meta > div {
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 9px 7px;
+  border-right: 1px solid #d2ddeb;
+}
+
+.ipd-invoice__meta > div:last-child {
+  border-right: 0;
+}
+
+.ipd-invoice__meta span,
+.ipd-invoice__details-grid span {
+  color: #536985;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.ipd-invoice__meta strong,
+.ipd-invoice__details-grid strong {
+  min-width: 0;
+  color: #142b4d;
+  font-size: 10px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.ipd-invoice__status--success {
+  color: #14804a !important;
+}
+
+.ipd-invoice__status--partial {
+  color: #b77912 !important;
+}
+
+.ipd-invoice__status--pending {
+  color: #b54737 !important;
+}
+
+.ipd-invoice__details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #d2ddeb;
+  border-left: 1px solid #d2ddeb;
+}
+
+.ipd-invoice__details-grid > div {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(78px, 0.36fr) minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  padding: 7px 8px;
+  border-right: 1px solid #d2ddeb;
+  border-bottom: 1px solid #d2ddeb;
+}
+
+.ipd-invoice__charges {
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.ipd-invoice__charges table,
+.ipd-invoice__payments table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.ipd-invoice__charges th,
+.ipd-invoice__charges td,
+.ipd-invoice__payments th,
+.ipd-invoice__payments td {
+  padding: 7px 8px;
+  text-align: left;
+  border: 1px solid #d2ddeb;
+  vertical-align: top;
+}
+
+.ipd-invoice__charges th,
+.ipd-invoice__payments th {
+  color: #243e64;
+  background: #edf3fb;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ipd-invoice__charges td {
+  color: #243b5a;
+}
+
+.ipd-invoice__charges td strong {
+  font-weight: 600;
+}
+
+.ipd-invoice__amount {
+  text-align: right !important;
+  white-space: nowrap;
+}
+
+.ipd-invoice__empty {
+  padding: 18px !important;
+  text-align: center !important;
+  color: #74849a !important;
+}
+
+.ipd-invoice__bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
+  align-items: start;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.ipd-invoice__payments h3 {
+  margin: 0 0 8px;
+  color: #24446e;
+  font-size: 12px;
+}
+
+.ipd-invoice__muted {
+  color: #78869a;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.ipd-invoice__totals {
+  border: 1px solid #cbd7e8;
+}
+
+.ipd-invoice__totals > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 9px;
+  border-bottom: 1px solid #dce4ef;
+  font-size: 10px;
+}
+
+.ipd-invoice__totals > div:last-child {
+  border-bottom: 0;
+}
+
+.ipd-invoice__totals span {
+  color: #526783;
+}
+
+.ipd-invoice__totals strong {
+  color: #1c3455;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.ipd-invoice__totals .ipd-invoice__total-row {
+  background: #edf3fb;
+  font-weight: 700;
+}
+
+.ipd-invoice__totals .ipd-invoice__balance-row {
+  background: #f2f6fc;
+  font-weight: 700;
+}
+
+.ipd-invoice__balance-row strong {
+  color: #173e86;
+}
+
+.ipd-invoice__footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+  padding-top: 4px;
+}
+
+.ipd-invoice__footer > div:first-child {
+  max-width: 70%;
+}
+
+.ipd-invoice__footer strong {
+  color: #24446e;
+  font-size: 10px;
+}
+
+.ipd-invoice__footer p {
+  margin: 5px 0 0;
+  color: #71829b;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.ipd-invoice__signature {
+  width: 150px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.ipd-invoice__signature span {
+  display: block;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #73839a;
+}
+
+@media (max-width: 720px) {
+  .ipd-invoice {
+    padding: 10px;
+  }
+
+  .ipd-invoice__toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ipd-invoice__toolbar-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .ipd-invoice__paper {
+    padding: 18px;
+  }
+
+  .ipd-invoice__hospital-header {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-invoice__title {
+    text-align: left;
+  }
+
+  .ipd-invoice__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-invoice__meta > div {
+    border-right: 0;
+    border-bottom: 1px solid #d2ddeb;
+  }
+
+  .ipd-invoice__details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-invoice__bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-invoice__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ipd-invoice__footer > div:first-child {
+    max-width: 100%;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 10mm;
+}
+
+@media print {
+  body {
+    margin: 0 !important;
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .ipd-invoice {
+    min-height: auto;
+    padding: 0;
+    background: #fff;
+  }
+
+  .ipd-invoice__toolbar {
+    display: none !important;
+  }
+
+  .ipd-invoice__paper {
+    width: 100%;
+    max-width: none;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .ipd-invoice__hospital-header,
+  .ipd-invoice__meta,
+  .ipd-invoice__details-grid,
+  .ipd-invoice__charges,
+  .ipd-invoice__bottom,
+  .ipd-invoice__footer {
+    break-inside: avoid;
+  }
+
+  .ipd-invoice__charges,
+  .ipd-invoice__payments {
+    overflow: visible;
+  }
+
+  .ipd-invoice__charges table,
+  .ipd-invoice__payments table {
+    font-size: 9px;
+  }
+
+  .ipd-invoice__charges th,
+  .ipd-invoice__charges td,
+  .ipd-invoice__payments th,
+  .ipd-invoice__payments td {
+    padding: 5px;
+  }
+}

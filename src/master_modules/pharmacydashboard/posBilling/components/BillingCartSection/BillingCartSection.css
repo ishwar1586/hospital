@@ -1,0 +1,172 @@
+/* ===========================================================
+   ROOT
+=========================================================== */
+
+.billing-cart-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    width:100%;
+
+    min-height:100%;
+
+    padding:24px;
+
+    background:#F8FAFC;
+
+    border-radius:20px;
+
+}
+
+/* ===========================================================
+   CONTENT
+=========================================================== */
+
+.billing-cart-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+/* ===========================================================
+   EMPTY CART
+=========================================================== */
+
+.billing-cart-empty{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:420px;
+
+}
+
+/* ===========================================================
+   TABLE AREA
+=========================================================== */
+
+.billing-cart-table{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+/* ===========================================================
+   SUMMARY AREA
+=========================================================== */
+
+.billing-cart-summary{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+.billing-cart-footer{
+
+    margin-top:auto;
+
+}
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .billing-cart-section{
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .billing-cart-section{
+
+        padding:16px;
+
+        gap:16px;
+
+        border-radius:16px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .billing-cart-section{
+
+        padding:12px;
+
+        gap:14px;
+
+        border-radius:12px;
+
+    }
+
+}
+
+
+/* .billing-cart-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 340px;
+
+    gap:20px;
+
+    align-items:start;
+
+} */
+
+/* .billing-cart-summary{
+
+    position:sticky;
+
+    top:20px;
+
+} */
+
+@media(max-width:1200px){
+
+    .billing-cart-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .billing-cart-summary{
+
+        position:static;
+
+    }
+
+}

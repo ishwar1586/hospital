@@ -1,0 +1,142 @@
+/* =========================================
+   TABS CONTAINER
+========================================= */
+
+.category-tabs {
+    width: 100%;
+
+    margin-bottom: 0;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.category-tabs__list {
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 0 14px;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.category-tab {
+    position: relative;
+
+    height: 44px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 3px;
+
+    padding: 0 2px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #111827;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.category-tab__count {
+    color: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ACTIVE TAB
+========================================= */
+
+.category-tab--active {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   ACTIVE UNDERLINE
+========================================= */
+
+.category-tab--active::after {
+    content: "";
+
+    position: absolute;
+
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    height: 2px;
+
+    border-radius: 2px 2px 0 0;
+
+    background: #2563eb;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.category-tab:not(.category-tab--active):hover {
+    color: #2563eb;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .category-tabs__list {
+        gap: 20px;
+
+        padding: 0 8px;
+
+        overflow-x: auto;
+    }
+
+    .category-tab {
+        flex-shrink: 0;
+    }
+
+}

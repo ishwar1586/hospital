@@ -1,0 +1,233 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.manual-billing-card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+    padding:28px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.06);
+
+    transition:.25s;
+
+}
+
+.manual-billing-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.10);
+
+}
+
+/* ===========================================================
+LEFT
+=========================================================== */
+
+.manual-billing-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex:1;
+
+}
+
+/* ===========================================================
+ICON
+=========================================================== */
+
+.manual-billing-icon{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    flex-shrink:0;
+
+}
+
+.manual-billing-icon svg{
+
+    font-size:38px;
+
+}
+
+/* ===========================================================
+CONTENT
+=========================================================== */
+
+.manual-billing-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.manual-billing-content h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.manual-billing-content p{
+
+    margin:0;
+
+    max-width:560px;
+
+    line-height:1.7;
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+/* ===========================================================
+BUTTON
+=========================================================== */
+
+.manual-billing-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    min-width:220px;
+
+    height:52px;
+
+    padding:0 24px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    flex-shrink:0;
+
+}
+
+.manual-billing-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 12px 28px rgba(37,99,235,.30);
+
+}
+
+.manual-billing-btn svg{
+
+    font-size:20px;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:900px){
+
+    .manual-billing-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .manual-billing-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .manual-billing-left{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .manual-billing-icon{
+
+        width:64px;
+
+        height:64px;
+
+    }
+
+    .manual-billing-icon svg{
+
+        font-size:32px;
+
+    }
+
+    .manual-billing-content h3{
+
+        font-size:20px;
+
+    }
+
+}

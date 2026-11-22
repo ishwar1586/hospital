@@ -1,0 +1,59 @@
+.status-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+.status-chip.success{
+
+    background:#DCFCE7;
+
+    color:#166534;
+
+}
+
+.status-chip.warning{
+
+    background:#FEF3C7;
+
+    color:#92400E;
+
+}
+
+.status-chip.danger{
+
+    background:#FEE2E2;
+
+    color:#B91C1C;
+
+}
+
+.status-chip.expired{
+
+    background:#FCE7F3;
+
+    color:#BE185D;
+
+}
+
+.status-chip.default{
+
+    background:#E2E8F0;
+
+    color:#475569;
+
+}

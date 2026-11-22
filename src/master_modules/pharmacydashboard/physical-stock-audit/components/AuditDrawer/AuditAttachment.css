@@ -1,0 +1,151 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-attachment-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.attachment-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+/* ==========================================================
+   Item
+========================================================== */
+
+.attachment-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:14px;
+
+    transition:.25s;
+
+}
+
+.attachment-item:hover{
+
+    background:#f8fafc;
+
+}
+
+.attachment-left{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:flex-start;
+
+}
+
+.attachment-icon{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:12px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+
+.attachment-left h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.attachment-left p{
+
+    margin:6px 0 4px;
+
+    font-size:13px;
+
+    color:#64748b;
+
+}
+
+.attachment-left span{
+
+    font-size:12px;
+
+    color:#94a3b8;
+
+}
+
+.attachment-download-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.attachment-download-btn:hover{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}

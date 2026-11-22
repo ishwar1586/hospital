@@ -1,0 +1,126 @@
+
+// src/master_modules/StaffManagement/mock/staffDesignations.mock.js
+
+export const staffDesignationsMock = [
+  {
+    id: "senior-consultant",
+    label: "Senior Consultant",
+    value: "Senior Consultant",
+    staffCategory: "Doctors",
+    isActive: true,
+  },
+  {
+    id: "consultant",
+    label: "Consultant",
+    value: "Consultant",
+    staffCategory: "Doctors",
+    isActive: true,
+  },
+  {
+    id: "junior-doctor",
+    label: "Junior Doctor",
+    value: "Junior Doctor",
+    staffCategory: "Doctors",
+    isActive: true,
+  },
+  {
+    id: "medical-officer",
+    label: "Medical Officer",
+    value: "Medical Officer",
+    staffCategory: "Doctors",
+    isActive: true,
+  },
+  {
+    id: "staff-nurse",
+    label: "Staff Nurse",
+    value: "Staff Nurse",
+    staffCategory: "Nurses",
+    isActive: true,
+  },
+  {
+    id: "nursing-supervisor",
+    label: "Nursing Supervisor",
+    value: "Nursing Supervisor",
+    staffCategory: "Nurses",
+    isActive: true,
+  },
+  {
+    id: "head-nurse",
+    label: "Head Nurse",
+    value: "Head Nurse",
+    staffCategory: "Nurses",
+    isActive: true,
+  },
+  {
+    id: "lab-technician",
+    label: "Lab Technician",
+    value: "Lab Technician",
+    staffCategory: "Support Staff",
+    isActive: true,
+  },
+  {
+    id: "radiology-technician",
+    label: "Radiology Technician",
+    value: "Radiology Technician",
+    staffCategory: "Support Staff",
+    isActive: true,
+  },
+  {
+    id: "pharmacist",
+    label: "Pharmacist",
+    value: "Pharmacist",
+    staffCategory: "Support Staff",
+    isActive: true,
+  },
+  {
+    id: "receptionist",
+    label: "Receptionist",
+    value: "Receptionist",
+    staffCategory: "Administrative",
+    isActive: true,
+  },
+  {
+    id: "accountant",
+    label: "Accountant",
+    value: "Accountant",
+    staffCategory: "Administrative",
+    isActive: true,
+  },
+  {
+    id: "hr-manager",
+    label: "HR Manager",
+    value: "HR Manager",
+    staffCategory: "Administrative",
+    isActive: true,
+  },
+  {
+    id: "hospital-administrator",
+    label: "Hospital Administrator",
+    value: "Hospital Administrator",
+    staffCategory: "Administrative",
+    isActive: true,
+  },
+  {
+    id: "ward-boy",
+    label: "Ward Boy",
+    value: "Ward Boy",
+    staffCategory: "Support Staff",
+    isActive: true,
+  },
+  {
+    id: "housekeeping-staff",
+    label: "Housekeeping Staff",
+    value: "Housekeeping Staff",
+    staffCategory: "Support Staff",
+    isActive: true,
+  },
+  {
+    id: "security-guard",
+    label: "Security Guard",
+    value: "Security Guard",
+    staffCategory: "Support Staff",
+    isActive: true,
+  },
+];
+
+export default staffDesignationsMock;

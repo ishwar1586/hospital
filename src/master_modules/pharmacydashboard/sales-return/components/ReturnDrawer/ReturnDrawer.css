@@ -1,0 +1,187 @@
+.return-drawer-paper{
+    width: 900px !important;
+    max-width: 100%;
+    background: #f5f7fb !important;
+}
+
+.return-drawer{
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.return-drawer-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 24px;
+    background:#ffffff;
+    border-bottom:1px solid #e5e7eb;
+    position:sticky;
+    top:0;
+    z-index:20;
+}
+
+.return-drawer-header h2{
+    margin:0;
+    font-size:22px;
+    font-weight:700;
+    color:#1f2937;
+}
+
+.return-drawer-header p{
+    margin-top:6px;
+    color:#6b7280;
+    font-size:14px;
+}
+
+.return-drawer-body{
+    flex:1;
+    overflow-y:auto;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.card-title{
+    font-size:18px;
+    font-weight:600;
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.invoice-card,
+.medicine-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:24px;
+    
+    border:1px solid #e5e7eb;
+    box-shadow:0 3px 12px rgba(0,0,0,.05);
+}
+.medicine-card{
+    max-height: 300px !important;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+
+.invoice-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(250px,1fr));
+    gap:20px;
+}
+
+.invoice-grid div{
+    display:flex;
+    flex-direction:column;
+}
+
+.invoice-grid label{
+    font-size:13px;
+    color:#6b7280;
+    margin-bottom:6px;
+    font-weight:600;
+}
+
+.invoice-grid span{
+    color:#111827;
+    font-size:15px;
+    font-weight:500;
+}
+
+.medicine-table-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
+.medicine-table-wrapper table{
+    width:100%;
+    min-width:700px;
+    border-collapse:collapse;
+}
+
+.medicine-table-wrapper thead{
+    background:#f8fafc;
+}
+
+.medicine-table-wrapper th{
+    padding:14px;
+    text-align:left;
+    font-size:14px;
+    color:#374151;
+    font-weight:600;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.medicine-table-wrapper td{
+    padding:14px;
+    border-bottom:1px solid #edf2f7;
+    font-size:14px;
+    color:#374151;
+}
+
+.medicine-table-wrapper tbody tr:hover{
+    background:#f9fbff;
+    transition:.2s;
+}
+
+.return-drawer-body::-webkit-scrollbar{
+    width:8px;
+}
+
+.return-drawer-body::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+.return-drawer-body::-webkit-scrollbar-track{
+    background:#f3f4f6;
+}
+
+.medicine-table-wrapper::-webkit-scrollbar{
+    height:8px;
+}
+
+.medicine-table-wrapper::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+@media(max-width:992px){
+
+    .return-drawer-paper{
+        width:100% !important;
+    }
+
+    .invoice-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .return-drawer-header{
+        padding:16px;
+    }
+
+    .return-drawer-body{
+        padding:16px;
+    }
+
+    .invoice-card,
+    .medicine-card{
+        padding:18px;
+    }
+
+    .card-title{
+        font-size:16px;
+    }
+
+    .return-drawer-header h2{
+        font-size:20px;
+    }
+
+}

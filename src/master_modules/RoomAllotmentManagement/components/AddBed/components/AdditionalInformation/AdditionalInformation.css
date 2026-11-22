@@ -1,0 +1,211 @@
+
+.add-bed__additional-information {
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #dce5f5;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+.add-bed__additional-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  align-items: end;
+  column-gap: 36px;
+  row-gap: 12px;
+  padding: 10px 9px 0;
+}
+
+.add-bed__additional-grid .add-bed__field {
+  min-width: 0;
+}
+
+.add-bed__oxygen-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  min-height: 34px;
+  white-space: nowrap;
+}
+
+.add-bed__oxygen-label {
+  color: #172554;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-bed__toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 29px;
+  height: 17px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.add-bed__toggle input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.add-bed__toggle-track {
+  display: flex;
+  align-items: center;
+  width: 29px;
+  height: 17px;
+  padding: 2px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background: #cbd5e1;
+  transition: background 0.2s ease;
+}
+
+.add-bed__toggle-thumb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease;
+}
+
+.add-bed__toggle input:checked + .add-bed__toggle-track {
+  background: #075bea;
+}
+
+.add-bed__toggle input:checked + .add-bed__toggle-track .add-bed__toggle-thumb {
+  transform: translateX(12px);
+}
+
+.add-bed__toggle input:focus-visible + .add-bed__toggle-track {
+  outline: 2px solid #3978ed;
+  outline-offset: 2px;
+}
+
+.add-bed__oxygen-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #d5e0fa;
+  border-radius: 5px;
+  background: #f2f6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.add-bed__facilities {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 34px;
+  row-gap: 12px;
+  padding: 12px 9px 1px;
+}
+
+.add-bed__facility-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 17px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.add-bed__facility-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.add-bed__facility-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border: 1px solid #aebbd1;
+  border-radius: 4px;
+  background: #ffffff;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.add-bed__facility-option input:checked + .add-bed__facility-checkbox {
+  border-color: #075bea;
+  background: #075bea;
+}
+
+.add-bed__facility-option input:checked + .add-bed__facility-checkbox::after {
+  content: "";
+  width: 4px;
+  height: 8px;
+  margin-top: -2px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.add-bed__facility-option input:focus-visible + .add-bed__facility-checkbox {
+  outline: 2px solid #3978ed;
+  outline-offset: 2px;
+}
+
+.add-bed__facility-label {
+  color: #172554;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .add-bed__additional-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+  }
+
+  .add-bed__oxygen-field {
+    justify-content: flex-start;
+  }
+
+  .add-bed__facilities {
+    column-gap: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-bed__additional-information {
+    padding: 9px;
+  }
+
+  .add-bed__additional-grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 10px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+
+  .add-bed__oxygen-field {
+    justify-content: flex-start;
+    min-height: 30px;
+  }
+
+  .add-bed__facilities {
+    column-gap: 18px;
+    row-gap: 11px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+}

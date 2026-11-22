@@ -1,0 +1,95 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.pos-layout{
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:auto;
+
+    background:#F1F5F9;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+HEADER
+=========================================================== */
+
+.pos-layout-header{
+
+    flex-shrink:0;
+
+    background:#FFFFFF;
+
+    border-bottom:1px solid #E2E8F0;
+
+    z-index:100;
+
+}
+
+/* ===========================================================
+CONTENT
+=========================================================== */
+
+.pos-layout-content{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    min-height:0;
+
+}
+
+/* ===========================================================
+SCROLLBAR
+=========================================================== */
+
+.pos-layout-content::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.pos-layout-content::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}
+
+.pos-layout-content::-webkit-scrollbar-track{
+
+    background:#F8FAFC;
+
+}
+
+/* ===========================================================
+FOOTER
+=========================================================== */
+
+.pos-layout-footer{
+
+    flex-shrink:0;
+
+    background:#FFFFFF;
+
+    border-top:1px solid #E2E8F0;
+
+}

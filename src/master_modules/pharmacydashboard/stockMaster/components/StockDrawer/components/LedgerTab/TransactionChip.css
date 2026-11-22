@@ -1,0 +1,185 @@
+/* =====================================================
+   ROOT
+===================================================== */
+
+.transaction-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+    border:1px solid transparent;
+
+    transition:.25s;
+
+}
+
+.transaction-chip svg{
+
+    font-size:16px;
+
+}
+
+/* =====================================================
+   PURCHASE
+===================================================== */
+
+.transaction-chip.purchase{
+
+    background:#DCFCE7;
+
+    color:#166534;
+
+    border-color:#BBF7D0;
+
+}
+
+/* =====================================================
+   SALE
+===================================================== */
+
+.transaction-chip.sale{
+
+    background:#FEE2E2;
+
+    color:#B91C1C;
+
+    border-color:#FECACA;
+
+}
+
+/* =====================================================
+   SALE RETURN
+===================================================== */
+
+.transaction-chip.sale-return{
+
+    background:#DBEAFE;
+
+    color:#1D4ED8;
+
+    border-color:#BFDBFE;
+
+}
+
+/* =====================================================
+   PURCHASE RETURN
+===================================================== */
+
+.transaction-chip.purchase-return{
+
+    background:#EDE9FE;
+
+    color:#6D28D9;
+
+    border-color:#DDD6FE;
+
+}
+
+/* =====================================================
+   TRANSFER IN
+===================================================== */
+
+.transaction-chip.transfer-in{
+
+    background:#ECFDF5;
+
+    color:#047857;
+
+    border-color:#A7F3D0;
+
+}
+
+/* =====================================================
+   TRANSFER OUT
+===================================================== */
+
+.transaction-chip.transfer-out{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+    border-color:#FCD34D;
+
+}
+
+/* =====================================================
+   ADJUSTMENT
+===================================================== */
+
+.transaction-chip.adjustment{
+
+    background:#F3E8FF;
+
+    color:#7E22CE;
+
+    border-color:#E9D5FF;
+
+}
+
+/* =====================================================
+   EXPIRED
+===================================================== */
+
+.transaction-chip.expired{
+
+    background:#FCE7F3;
+
+    color:#BE185D;
+
+    border-color:#FBCFE8;
+
+}
+
+/* =====================================================
+   DAMAGE
+===================================================== */
+
+.transaction-chip.damage{
+
+    background:#FFF7ED;
+
+    color:#C2410C;
+
+    border-color:#FED7AA;
+
+}
+
+/* =====================================================
+   DEFAULT
+===================================================== */
+
+.transaction-chip.default{
+
+    background:#F1F5F9;
+
+    color:#475569;
+
+    border-color:#CBD5E1;
+
+}
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+.transaction-chip:hover{
+
+    transform:translateY(-1px);
+
+    box-shadow:0 2px 8px rgba(15,23,42,.08);
+
+}

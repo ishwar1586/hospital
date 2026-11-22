@@ -1,0 +1,94 @@
+/* =========================================
+   PRIORITY CHIP
+========================================= */
+
+.result-verification-priority-chip {
+    min-height: 20px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 6px;
+
+    box-sizing: border-box;
+
+    border: 1px solid transparent;
+
+    border-radius: 999px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.result-verification-priority-chip svg {
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.result-verification-priority-chip__label {
+    display: inline-flex;
+
+    align-items: center;
+}
+
+
+/* =========================================
+   NORMAL
+========================================= */
+
+.result-verification-priority-chip--normal {
+    border-color: #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   HIGH
+========================================= */
+
+.result-verification-priority-chip--high {
+    border-color: #fed7aa;
+
+    background: #fff7ed;
+
+    color: #c2410c;
+}
+
+
+/* =========================================
+   CRITICAL
+========================================= */
+
+.result-verification-priority-chip--critical {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #b91c1c;
+}

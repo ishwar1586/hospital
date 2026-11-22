@@ -1,0 +1,82 @@
+.appointment-table {
+    position: relative;
+
+    width: 100%;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+
+    overflow: visible;
+}
+
+
+.appointment-table__body {
+    position: relative;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    overflow: visible;
+}
+
+
+.appointment-table__empty {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    min-height: 180px;
+
+    padding: 30px 20px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+
+.appointment-table__empty-title {
+    color: #344054;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+.appointment-table__empty-message {
+    margin-top: 5px;
+
+    color: #98a2b3;
+
+    font-size: 10px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+@media (max-width: 800px) {
+
+    .appointment-table {
+        overflow: visible;
+    }
+
+
+    .appointment-table__body {
+        min-width: 900px;
+
+        overflow: visible;
+    }
+
+}

@@ -1,0 +1,165 @@
+/* =========================================
+   RESULT ENTRY PRIORITY CHIP
+========================================= */
+
+.result-entry-priority-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    padding: 0 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 999px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.result-entry-priority-chip svg {
+
+    width: 12px;
+
+    height: 12px;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================
+   URGENT
+========================================= */
+
+.result-entry-priority-chip--urgent {
+
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+}
+
+
+/* =========================================
+   HIGH
+========================================= */
+
+.result-entry-priority-chip--high {
+
+    border-color: #fed7aa;
+
+    background: #fff7ed;
+
+    color: #ea580c;
+
+}
+
+
+/* =========================================
+   MEDIUM
+========================================= */
+
+.result-entry-priority-chip--medium {
+
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #ca8a04;
+
+}
+
+
+/* =========================================
+   NORMAL
+========================================= */
+
+.result-entry-priority-chip--normal {
+
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+}
+
+
+/* =========================================
+   LOW
+========================================= */
+
+.result-entry-priority-chip--low {
+
+    border-color: #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #94a3b8;
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.result-entry-priority-chip:hover {
+
+    filter: brightness(0.98);
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .result-entry-priority-chip {
+
+        min-height: 21px;
+
+        padding: 0 6px;
+
+        font-size: 7px;
+
+    }
+
+
+    .result-entry-priority-chip svg {
+
+        width: 11px;
+
+        height: 11px;
+
+    }
+
+}

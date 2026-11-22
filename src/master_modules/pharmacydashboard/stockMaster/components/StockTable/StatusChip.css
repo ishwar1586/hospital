@@ -1,0 +1,89 @@
+.status-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+/* =========================== */
+
+.status-chip svg{
+
+    font-size:16px !important;
+
+}
+
+/* =========================== */
+
+.status-in-stock{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+/* =========================== */
+
+.status-low-stock{
+
+    background:#FEF3C7;
+
+    color:#B45309;
+
+}
+
+/* =========================== */
+
+.status-out-stock{
+
+    background:#FEE2E2;
+
+    color:#B91C1C;
+
+}
+
+/* =========================== */
+
+.status-near-expiry{
+
+    background:#EDE9FE;
+
+    color:#7C3AED;
+
+}
+
+/* =========================== */
+
+.status-expired{
+
+    background:#FCE7F3;
+
+    color:#BE185D;
+
+}
+
+/* =========================== */
+
+.status-default{
+
+    background:#E5E7EB;
+
+    color:#475569;
+
+}

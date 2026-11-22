@@ -1,0 +1,227 @@
+/* ============================================================
+   DISCHARGE PATIENT DETAILS
+   ============================================================ */
+
+.ipd-discharge-patient-details {
+  width: 100%;
+  padding: 24px 20px 0;
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-discharge-patient-details__header {
+  margin-bottom: 22px;
+}
+
+.ipd-discharge-patient-details__title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #111827;
+}
+
+.ipd-discharge-patient-details__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #64748b;
+}
+
+
+/* ============================================================
+   INFORMATION GRID
+   ============================================================ */
+
+.ipd-discharge-patient-details__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  border: 1px solid #dfe4ea;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   INFORMATION ITEM
+   ============================================================ */
+
+.ipd-discharge-patient-details__item {
+  min-width: 0;
+  min-height: 68px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 13px 16px;
+
+  box-sizing: border-box;
+
+  border-right: 1px solid #dfe4ea;
+  border-bottom: 1px solid #dfe4ea;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   REMOVE RIGHT BORDER
+   ============================================================ */
+
+.ipd-discharge-patient-details__item:nth-child(4n) {
+  border-right: none;
+}
+
+
+/* ============================================================
+   REMOVE BOTTOM BORDER
+   FOR LAST INFORMATION ROW
+   ============================================================ */
+
+.ipd-discharge-patient-details__item:nth-child(n + 9) {
+  border-bottom: none;
+}
+
+
+/* ============================================================
+   ADMISSION DATE
+   ============================================================ */
+
+.ipd-discharge-patient-details__item--admission {
+  grid-column: span 1;
+
+  border-right: 1px solid #dfe4ea;
+  border-bottom: none;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-discharge-patient-details__label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 400;
+
+  color: #64748b;
+}
+
+
+/* ============================================================
+   VALUE
+   ============================================================ */
+
+.ipd-discharge-patient-details__value {
+  display: block;
+
+  min-width: 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+
+  color: #0f172a;
+}
+
+
+/* ============================================================
+   EMPTY VALUE
+   ============================================================ */
+
+.ipd-discharge-patient-details__value:empty::after {
+  content: "—";
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .ipd-discharge-patient-details {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .ipd-discharge-patient-details__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .ipd-discharge-patient-details__item:nth-child(4n) {
+    border-right: 1px solid #dfe4ea;
+  }
+
+  .ipd-discharge-patient-details__item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .ipd-discharge-patient-details__item:nth-child(n + 9) {
+    border-bottom: 1px solid #dfe4ea;
+  }
+
+  .ipd-discharge-patient-details__item:last-child {
+    border-bottom: none;
+  }
+
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .ipd-discharge-patient-details {
+    padding: 20px 14px 0;
+  }
+
+  .ipd-discharge-patient-details__header {
+    margin-bottom: 16px;
+  }
+
+  .ipd-discharge-patient-details__title {
+    font-size: 16px;
+  }
+
+  .ipd-discharge-patient-details__description {
+    font-size: 12px;
+  }
+
+  .ipd-discharge-patient-details__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-discharge-patient-details__item,
+  .ipd-discharge-patient-details__item:nth-child(2n),
+  .ipd-discharge-patient-details__item:nth-child(4n) {
+    border-right: none;
+    border-bottom: 1px solid #dfe4ea;
+  }
+
+  .ipd-discharge-patient-details__item:last-child {
+    border-bottom: none;
+  }
+
+}

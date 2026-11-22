@@ -1,0 +1,344 @@
+/* =========================================================
+   IPD TABLE ROW
+   ========================================================= */
+
+.ipd-table-row {
+  height: 49px;
+
+  background: #ffffff;
+
+  transition: background-color 0.12s ease;
+}
+
+.ipd-table-row:hover {
+  background: #fafcff;
+}
+
+/* =========================================================
+   CELL
+   ========================================================= */
+
+.ipd-table-row__cell {
+  height: 49px;
+
+  padding: 5px 10px;
+
+  border-bottom: 1px solid #edf1f7;
+
+  color: #173578;
+
+  font-size: 10px;
+  font-weight: 400;
+
+  line-height: 15px;
+
+  vertical-align: middle;
+
+  box-sizing: border-box;
+}
+
+.ipd-table-row:last-child .ipd-table-row__cell {
+  border-bottom: 0;
+}
+
+.ipd-table-row__cell:first-child {
+  padding-left: 12px;
+}
+
+.ipd-table-row__cell:last-child {
+  padding-right: 12px;
+}
+
+/* =========================================================
+   IPD NUMBER
+   ========================================================= */
+
+.ipd-table-row__cell--ipdNumber {
+  color: #153b8f;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   AGE / GENDER
+   ========================================================= */
+
+.ipd-table-row__age-gender {
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+
+  color: #263f7a;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.ipd-table-row__cell--actions {
+  text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .ipd-table-row__cell {
+    padding: 5px 8px;
+
+    font-size: 9px;
+  }
+
+  .ipd-table-row__cell:first-child {
+    padding-left: 10px;
+  }
+}
+
+
+
+/* statusbadge======================= */
+
+
+/* =========================================================
+   STATUS BADGE
+   ========================================================= */
+
+.ipd-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 69px;
+  min-height: 26px;
+
+  padding: 0 10px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+/* Success */
+
+.ipd-status-badge--success {
+  background: #dff5e9;
+  color: #008a4c;
+}
+
+/* Danger */
+
+.ipd-status-badge--danger {
+  background: #ffe0e3;
+  color: #e11d35;
+}
+
+/* Warning */
+
+.ipd-status-badge--warning {
+  background: #fff0cf;
+  color: #c77700;
+}
+
+/* Info */
+
+.ipd-status-badge--info {
+  background: #dcecff;
+  color: #0759d7;
+}
+
+/* Neutral */
+
+.ipd-status-badge--neutral {
+  background: #eef1f5;
+  color: #596579;
+}
+
+/* Primary */
+
+.ipd-status-badge--primary {
+  background: #e7efff;
+  color: #155eef;
+}
+
+
+
+/* =========================================================
+   PATIENT DETAILS CELL
+   ========================================================= */
+
+.ipd-patient-cell {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  min-width: 0;
+}
+
+.ipd-patient-cell__avatar {
+  flex: 0 0 34px;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9e7ff;
+
+  color: #3154c7;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+}
+
+.ipd-patient-cell__content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 2px;
+}
+
+.ipd-patient-cell__name {
+  display: block;
+
+  color: #173578;
+
+  font-size: 12px !important;
+  font-weight: 600;
+
+  line-height: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ipd-patient-cell__uhid {
+  display: block;
+
+  color: #294582;
+
+  font-size: 9px !important;
+  font-weight: 400;
+
+  line-height: 13px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ipd-patient-cell__empty {
+  color: #94a3b8;
+}
+
+/* =========================================================
+   DOCTOR CELL
+   ========================================================= */
+
+.ipd-doctor-cell {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+}
+
+.ipd-doctor-cell__name {
+  display: block;
+
+  color: #173578;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 15px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ipd-doctor-cell__empty {
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   WARD / ROOM / BED
+   ========================================================= */
+
+.ipd-ward-cell {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 2px;
+
+  min-width: 0;
+}
+
+.ipd-ward-cell__ward {
+  display: block;
+
+  color: #173578 !important;
+
+  font-size: 12px !important;
+  font-weight: 600;
+
+  line-height: 14px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ipd-ward-cell__location {
+  display: block;
+
+  color: #294582 !important;
+
+  font-size: 9px !important;
+  font-weight: 400;
+
+  line-height: 13px;
+
+  white-space: nowrap;
+}
+
+.ipd-ward-cell__empty {
+  color: #94a3b8;
+}

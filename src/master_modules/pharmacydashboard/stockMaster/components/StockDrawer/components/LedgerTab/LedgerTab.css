@@ -1,0 +1,229 @@
+/* =====================================================
+   ROOT
+===================================================== */
+
+.ledger-tab{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.ledger-toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    padding:18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:14px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.ledger-search{
+
+    flex:1;
+
+    min-width:320px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:44px;
+
+    padding:0 14px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    background:#FFFFFF;
+
+}
+
+.ledger-search svg{
+
+    color:#64748B;
+
+    font-size:20px;
+
+}
+
+.ledger-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+}
+
+.ledger-search:focus-within{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+/* =====================================================
+   FILTER
+===================================================== */
+
+.ledger-filter{
+
+    width:230px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:44px;
+
+    padding:0 14px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    background:#FFFFFF;
+
+}
+
+.ledger-filter svg{
+
+    color:#64748B;
+
+}
+
+.ledger-filter select{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+}
+
+/* =====================================================
+   RESET BUTTON
+===================================================== */
+
+.ledger-reset-btn{
+
+    height:44px;
+
+    padding:0 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#EEF2FF;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.ledger-reset-btn:hover{
+
+    background:#DBEAFE;
+
+}
+
+.ledger-reset-btn svg{
+
+    font-size:20px;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .ledger-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .ledger-search{
+
+        min-width:100%;
+
+    }
+
+    .ledger-filter{
+
+        width:100%;
+
+    }
+
+    .ledger-reset-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}

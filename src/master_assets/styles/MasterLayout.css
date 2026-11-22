@@ -1,0 +1,58 @@
+/* ROOT */
+.master-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%  !important;
+}
+
+/* SIDEBAR */
+.master-sidebar {
+  width: 240px;
+  min-width: 240px;
+  transition: width 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+
+  /* 🔥 SHADOW FIX */
+  box-shadow: 6px 0 10px rgba(0, 0, 0, 0.30);
+}
+
+/* COLLAPSED */
+.master-sidebar.collapsed {
+  width: 70px;
+  min-width: 70px;
+  box-shadow: 6px 0 20px rgba(0, 0, 0, 0.25);
+}
+
+/* MAIN */
+.master-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+   min-width:0;
+  transition: all 0.35s ease-in-out;
+}
+
+/* HEADER */
+.master-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background: #4c5a8a;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  z-index: 5;
+}
+/* CONTENT */
+.master-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  /* overflow-x:hidden !important; */
+  overflow-x: auto;
+  min-width: 0 !important;
+  background: #c2cbd3;
+}

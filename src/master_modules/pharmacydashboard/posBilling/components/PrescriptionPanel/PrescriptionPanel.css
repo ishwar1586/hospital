@@ -1,0 +1,212 @@
+/* ======================================================= */
+
+/* .prescription-panel{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+} */
+
+
+.prescription-panel{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    /* border-radius:18px; */
+
+    overflow:hidden;
+
+    min-width:0;
+
+}
+
+/* ======================================================= */
+
+.prescription-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 26px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.prescription-header h2{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#0F172A;
+
+}
+
+.prescription-header p{
+
+    margin-top:6px;
+
+    color:#64748B;
+
+}
+
+.add-all-btn{
+
+    height:42px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.add-all-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ======================================================= */
+
+.prescription-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+    padding:22px;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.prescription-summary div{
+
+    background:#F8FAFC;
+
+    /* border-radius:12px; */
+
+    padding:18px;
+
+}
+
+.prescription-summary span{
+
+    display:block;
+
+    color:#64748B;
+
+    font-size:12px;
+
+}
+
+.prescription-summary strong{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#0F172A;
+
+}
+
+/* ======================================================= */
+
+.prescription-empty{
+
+    padding:100px 40px;
+
+    text-align:center;
+
+}
+
+.prescription-empty h2{
+
+    margin:0;
+
+    color:#0F172A;
+
+}
+
+.prescription-empty p{
+
+    margin-top:16px;
+
+    color:#64748B;
+
+    max-width:520px;
+
+    margin-inline:auto;
+
+    line-height:1.7;
+
+}
+
+/* ======================================================= */
+
+@media(max-width:992px){
+
+    .prescription-summary{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .prescription-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+    .add-all-btn{
+
+        width:100%;
+
+    }
+
+    .prescription-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

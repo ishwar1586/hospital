@@ -1,0 +1,125 @@
+/* src/master_modules/RadiologyManagement/components/RadiologyTabs/RadiologyTabs.css */
+
+.radiology-tabs {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  background: #ffffff;
+  border: 1px solid #e7edf5;
+  border-radius: 9px;
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+.radiology-tabs *,
+.radiology-tabs *::before,
+.radiology-tabs *::after {
+  box-sizing: border-box;
+}
+
+.radiology-tabs__list {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  width: 100%;
+  min-width: 0;
+  padding: 0 12px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #d5deeb transparent;
+}
+
+.radiology-tabs__tab {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 0 14px;
+  color: #71809a;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease;
+}
+
+.radiology-tabs__tab:hover {
+  color: #245fca;
+  background: #f7f9fd;
+}
+
+.radiology-tabs__tab--active {
+  color: #2162d5;
+  border-bottom-color: #3478f6;
+  font-weight: 650;
+}
+
+.radiology-tabs__tab--active:hover {
+  color: #1d56b8;
+  background: #f5f8ff;
+}
+
+.radiology-tabs__tab:focus-visible {
+  z-index: 1;
+  outline: 2px solid #80b1ff;
+  outline-offset: -3px;
+  border-radius: 4px;
+}
+
+.radiology-tabs__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 21px;
+  min-height: 20px;
+  padding: 2px 6px;
+  color: #64748b;
+  background: #f0f3f8;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.radiology-tabs__count--active {
+  color: #2162d5;
+  background: #eaf2ff;
+}
+
+@media (max-width: 600px) {
+  .radiology-tabs__list {
+    gap: 0;
+    padding: 0 6px;
+  }
+
+  .radiology-tabs__tab {
+    min-height: 44px;
+    padding: 0 11px;
+    font-size: 11px;
+  }
+
+  .radiology-tabs__count {
+    min-width: 19px;
+    min-height: 18px;
+    padding: 2px 5px;
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radiology-tabs__tab {
+    transition: none;
+  }
+}

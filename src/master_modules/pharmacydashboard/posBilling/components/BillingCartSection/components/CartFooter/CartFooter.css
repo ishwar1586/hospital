@@ -1,0 +1,145 @@
+/* ==========================================================
+   Cart Footer
+========================================================== */
+
+.cart-footer{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+    /* margin-top:20px; */
+
+    padding:20px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    box-shadow:0 4px 16px rgba(15,23,42,.04);
+
+}
+
+/* ==========================================================
+   Common Button
+========================================================== */
+
+.cart-footer-btn{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.cart-footer-btn svg{
+
+    font-size:20px;
+
+}
+
+/* ==========================================================
+   Clear Cart Button
+========================================================== */
+
+.clear-cart-btn{
+
+    background:#FFFFFF;
+
+    color:#DC2626;
+
+    border:1px solid #FECACA;
+
+}
+
+.clear-cart-btn:hover:not(:disabled){
+
+    background:#FEF2F2;
+
+    border-color:#FCA5A5;
+
+}
+
+/* ==========================================================
+   Proceed Payment Button
+========================================================== */
+
+.proceed-payment-btn{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.proceed-payment-btn:hover:not(:disabled){
+
+    background:#1D4ED8;
+
+    transform:translateY(-1px);
+
+    box-shadow:0 8px 18px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================================
+   Disabled
+========================================================== */
+
+.cart-footer-btn:disabled{
+
+    opacity:.55;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .cart-footer{
+
+        flex-direction:column;
+
+    }
+
+    .cart-footer-btn{
+
+        width:100%;
+
+    }
+
+}

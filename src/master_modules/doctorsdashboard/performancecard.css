@@ -1,0 +1,207 @@
+ /* .bars {
+  display: flex;
+  gap: 8px;
+  height: 120px;
+  align-items: flex-end;
+  margin: 20px 0;
+}
+ .card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+} 
+.bar {
+  width: 16px;
+  background: #22c55e;
+  border-radius: 200px;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.metrics p {
+  font-size: 12px;
+  color: #6b7280;
+} */
+
+/* .metrics h4 {
+  color: #22c55e;
+} 
+
+.performance-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  height: 100%;
+} */
+
+/* HEADER */
+/* .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-header p {
+  font-size: 12px;
+  color: #6b7280;
+} */
+
+/* CHART */
+/* .chart-wrapper {
+  margin-top: 8px;
+} */
+
+/* METRICS */
+/* .performance-metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.performance-metrics p {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.performance-metrics h4 {
+  color: #22c55e;
+} */
+
+/* TOOLTIP */
+/* .performance-tooltip {
+  background: #f3f4f6;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip-day {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tooltip-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tooltip-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+ */
+
+
+ /* ======================================================
+   PERFORMANCE CARD
+====================================================== */
+
+.performance-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ================= HEADER ================= */
+
+.performance-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.performance-card .card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.performance-card .card-header p {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.performance-card .icon {
+  font-size: 16px;
+  color: #22c55e;
+}
+
+/* ================= CHART ================= */
+
+.performance-card .chart-wrapper {
+  margin-top: 12px;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ================= METRICS ================= */
+
+.performance-metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.performance-metrics > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.performance-metrics p {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.performance-metrics h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #22c55e;
+  margin: 0;
+}
+
+/* ======================================================
+   CUSTOM TOOLTIP (HOVER POPUP)
+====================================================== */
+
+.performance-tooltip {
+  background: #f3f4f6;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #111827;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  min-width: 120px;
+}
+
+.tooltip-day {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tooltip-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tooltip-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+}

@@ -1,0 +1,234 @@
+/* =====================================================
+   ROOT
+===================================================== */
+
+.activity-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    position:relative;
+
+}
+
+/* =====================================================
+   LEFT TIMELINE
+===================================================== */
+
+.activity-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+/* =====================================================
+   VERTICAL LINE
+===================================================== */
+
+.activity-line{
+
+    width:2px;
+
+    flex:1;
+
+    min-height:70px;
+
+    margin-top:8px;
+
+    background:#CBD5E1;
+
+}
+
+/* =====================================================
+   CONTENT CARD
+===================================================== */
+
+.activity-content{
+
+    flex:1;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    padding:18px 20px;
+
+    transition:.25s;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+.activity-content:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 24px rgba(15,23,42,.08);
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.activity-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+}
+
+.activity-header h4{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.activity-description{
+
+    margin:0;
+
+    margin-bottom:18px;
+
+    line-height:1.6;
+
+    font-size:14px;
+
+    color:#64748B;
+
+}
+
+/* =====================================================
+   META
+===================================================== */
+
+.activity-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.activity-meta-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    font-size:13px;
+
+    color:#475569;
+
+}
+
+.activity-meta-item svg{
+
+    font-size:17px;
+
+    color:#94A3B8;
+
+}
+
+
+/* ============================================= */
+
+.activity-expand-btn{
+
+    width:34px;
+
+    height:34px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#F1F5F9;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.activity-expand-btn:hover{
+
+    background:#E2E8F0;
+
+}
+
+.activity-expand-btn svg{
+
+    transition:.25s;
+
+}
+
+.activity-expand-btn svg.rotate{
+
+    transform:rotate(180deg);
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .activity-item{
+
+        gap:14px;
+
+    }
+
+    .activity-content{
+
+        padding:16px;
+
+    }
+
+    .activity-meta{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+}

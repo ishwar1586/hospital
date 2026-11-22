@@ -1,0 +1,279 @@
+.doctor-contact-tab {
+    width: 100%;
+    min-width: 0;
+
+    padding: 12px 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.doctor-contact-tab__header {
+    margin-bottom: 10px;
+}
+
+
+.doctor-contact-tab__title {
+    margin: 0;
+
+    color: #172b4d;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.doctor-contact-tab__subtitle {
+    margin: 3px 0 0;
+
+    color: #8a94a6;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   CONTACT CARD
+========================================= */
+
+.doctor-contact-tab__card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #edf0f4;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CONTACT ITEM
+========================================= */
+
+.doctor-contact-tab__item {
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 9px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #f0f2f5;
+}
+
+
+.doctor-contact-tab__item:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.doctor-contact-tab__icon {
+    width: 25px;
+    height: 25px;
+
+    flex: 0 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    background: #f0f5ff;
+
+    color: #356ae6;
+}
+
+
+.doctor-contact-tab__icon svg {
+    width: 13px;
+    height: 13px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.doctor-contact-tab__item-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.doctor-contact-tab__item-label {
+    color: #8a94a6;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    line-height: 1.3;
+}
+
+
+.doctor-contact-tab__item-value {
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1.45;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   LINK
+========================================= */
+
+.doctor-contact-tab__link {
+    min-width: 0;
+
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+.doctor-contact-tab__link:hover
+.doctor-contact-tab__item-value {
+    color: #356ae6;
+}
+
+
+/* =========================================
+   PROFESSIONAL CARD
+========================================= */
+
+.doctor-contact-tab__professional-card {
+    width: 100%;
+
+    margin-top: 10px;
+
+    border: 1px solid #edf0f4;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+}
+
+
+.doctor-contact-tab__professional-header {
+    padding: 8px 9px;
+
+    border-bottom: 1px solid #f0f2f5;
+
+    color: #344054;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.doctor-contact-tab__registration {
+    min-height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 8px 9px;
+
+    box-sizing: border-box;
+}
+
+
+.doctor-contact-tab__registration-label {
+    color: #8a94a6;
+
+    font-size: 6px;
+    font-weight: 500;
+}
+
+
+.doctor-contact-tab__registration-value {
+    color: #344054;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    text-align: right;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================
+   EMPTY / STATE
+========================================= */
+
+.doctor-contact-tab__state {
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    color: #8a94a6;
+
+    font-size: 8px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 500px) {
+
+    .doctor-contact-tab {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .doctor-contact-tab__registration {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+
+    .doctor-contact-tab__registration-value {
+        text-align: left;
+    }
+
+}

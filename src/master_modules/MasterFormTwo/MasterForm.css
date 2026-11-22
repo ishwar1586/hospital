@@ -1,0 +1,153 @@
+.reusable-form-container {
+  width: 100%;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 40px;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.reusable-form-title {
+  font-size: 28px !important;
+
+  font-weight: 700 !important;
+
+  margin-bottom: 32px !important;
+
+  color: #0f172a;
+}
+
+/* GRID */
+
+.reusable-form-grid {
+  display: grid;
+
+  gap: 24px;
+
+  margin-bottom: 28px;
+}
+
+.row-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.row-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.row-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* FIELD */
+
+.reusable-field-wrapper {
+  width: 100%;
+}
+
+.reusable-form-input {
+  width: 100%;
+}
+
+.reusable-form-input .MuiOutlinedInput-root {
+  border-radius: 14px;
+
+  background-color: #f8fafc;
+}
+
+.reusable-form-input .MuiOutlinedInput-input {
+  padding: 18px 14px;
+
+  font-size: 15px;
+}
+
+.reusable-form-input .MuiSelect-select {
+  padding: 18px 14px !important;
+
+  display: flex;
+
+  align-items: center;
+}
+
+/* LABEL */
+
+.reusable-form-input .MuiInputLabel-root {
+  color: #64748b;
+
+  font-size: 15px;
+
+  background: white;
+
+  padding: 0 6px;
+}
+
+.reusable-form-input .MuiInputLabel-shrink {
+  transform: translate(14px, -9px)
+    scale(0.75) !important;
+
+  background: white;
+
+  padding: 0 6px;
+
+  border-radius: 6px;
+}
+
+/* BORDER */
+
+.reusable-form-input
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #cbd5e1;
+}
+
+.reusable-form-input:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #94a3b8;
+}
+
+.reusable-form-input
+  .Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #1f61ac !important;
+
+  border-width: 2px;
+}
+
+/* BUTTONS */
+
+.reusable-form-button-group {
+  display: flex;
+
+  gap: 16px;
+
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+
+  .row-4,
+  .row-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+
+  .row-4,
+  .row-3,
+  .row-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reusable-form-container {
+    padding: 24px;
+  }
+}

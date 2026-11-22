@@ -1,0 +1,75 @@
+/* =========================================================
+   BILLING MANAGEMENT
+   ========================================================= */
+
+.billing-management {
+  width: 100%;
+  min-height: 100%;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  color: #172554;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.billing-management__container {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 4px 18px 24px;
+}
+
+
+/* =========================================================
+   GLOBAL BOX SIZING
+   ========================================================= */
+
+.billing-management *,
+.billing-management *::before,
+.billing-management *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+  .billing-management__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .billing-management__container {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .billing-management__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

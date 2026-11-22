@@ -1,0 +1,189 @@
+/* ====================================================== */
+
+.barcode-preview{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    /* overflow:hidden; */
+
+}
+
+/* ====================================================== */
+
+.barcode-preview-header{
+
+    padding:18px 22px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.barcode-preview-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ====================================================== */
+
+.barcode-preview-body{
+
+    padding:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* ====================================================== */
+
+.barcode-label{
+
+    width:340px;
+
+    background:#FFFFFF;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:14px;
+
+    padding:22px;
+
+}
+
+/* ====================================================== */
+
+.barcode-top{
+
+    text-align:center;
+
+}
+
+.barcode-top h4{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#0F172A;
+
+}
+
+.barcode-top span{
+
+    display:block;
+
+    margin-top:6px;
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+/* ====================================================== */
+
+.barcode-image{
+
+    margin:28px 0 16px;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#F8FAFC;
+
+    border-radius:12px;
+
+}
+
+.barcode-image svg{
+
+    font-size:72px;
+
+    color:#2563EB;
+
+}
+
+/* ====================================================== */
+
+.barcode-number{
+
+    text-align:center;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#0F172A;
+
+}
+
+/* ====================================================== */
+
+.barcode-info{
+
+    margin-top:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.barcode-info div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.barcode-info svg{
+
+    color:#2563EB;
+
+    font-size:18px;
+
+}
+
+.barcode-info span{
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+.barcode-info strong{
+
+    color:#0F172A;
+
+    margin-left:auto;
+
+    font-size:14px;
+
+}

@@ -1,0 +1,389 @@
+.patient-information {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.patient-information__header {
+  min-height: 64px;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  border-bottom: 1px solid #e2e8f0;
+  box-sizing: border-box;
+}
+
+.patient-information__header-left {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.patient-information__header-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 34px;
+
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.patient-information__header-icon svg {
+  font-size: 19px;
+}
+
+.patient-information__header-text {
+  min-width: 0;
+}
+
+.patient-information__title {
+  margin: 0;
+
+  color: #0f172a;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.patient-information__subtitle {
+  margin: 2px 0 0;
+
+  color: #64748b;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   HISTORY BUTTON
+   ========================================================= */
+
+.patient-information__history-button {
+  min-height: 34px;
+  padding: 0 11px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border: 1px solid #dbeafe;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: #2563eb;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.patient-information__history-button svg {
+  font-size: 17px;
+}
+
+.patient-information__history-button:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.patient-information__history-button:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.patient-information__card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BASIC INFORMATION
+   ========================================================= */
+
+.patient-information__basic {
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: minmax(240px, 1.1fr) minmax(0, 2fr);
+  gap: 28px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   IDENTITY
+   ========================================================= */
+
+.patient-information__identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.patient-information__avatar {
+  width: 58px;
+  height: 58px;
+
+  flex: 0 0 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+
+  color: #2563eb;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.patient-information__identity-content {
+  min-width: 0;
+}
+
+.patient-information__patient-name {
+  margin: 0;
+
+  color: #0f172a;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.patient-information__patient-type {
+  display: inline-flex;
+  margin-top: 4px;
+
+  color: #15803d;
+  background: #f0fdf4;
+
+  padding: 3px 7px;
+
+  border-radius: 5px;
+
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 600;
+}
+
+.patient-information__uhid {
+  margin-top: 6px;
+
+  color: #64748b;
+
+  font-size: 11px;
+  line-height: 17px;
+}
+
+.patient-information__uhid strong {
+  color: #334155;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   BASIC DETAILS
+   ========================================================= */
+
+.patient-information__details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+
+  align-items: center;
+}
+
+.patient-information__detail {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.patient-information__detail-label {
+  color: #94a3b8;
+
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+.patient-information__detail-value {
+  color: #334155;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+
+  word-break: break-word;
+}
+
+.patient-information__detail-value--with-icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.patient-information__detail-value--with-icon svg {
+  flex: 0 0 auto;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.patient-information__detail--address {
+  min-width: 0;
+}
+
+
+/* =========================================================
+   CLINICAL INFORMATION
+   ========================================================= */
+
+.patient-information__clinical {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+
+  border-top: 1px solid #f1f5f9;
+
+  background: #fafbfc;
+}
+
+.patient-information__clinical-item {
+  min-width: 0;
+
+  padding: 14px 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  border-right: 1px solid #e2e8f0;
+  box-sizing: border-box;
+}
+
+.patient-information__clinical-item:last-child {
+  border-right: 0;
+}
+
+.patient-information__detail-value--allergy {
+  color: #dc2626;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .patient-information__basic {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .patient-information__clinical {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .patient-information__clinical-item:nth-child(3) {
+    border-right: 0;
+  }
+
+  .patient-information__clinical-item:nth-child(n + 4) {
+    border-top: 1px solid #e2e8f0;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .patient-information__header {
+    padding: 0 14px;
+  }
+
+  .patient-information__history-button span {
+    display: none;
+  }
+
+  .patient-information__history-button {
+    width: 34px;
+    padding: 0;
+  }
+
+  .patient-information__basic {
+    padding: 16px;
+  }
+
+  .patient-information__details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .patient-information__clinical {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .patient-information__clinical-item {
+    border-right: 1px solid #e2e8f0;
+  }
+
+  .patient-information__clinical-item:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .patient-information__clinical-item:nth-child(n + 3) {
+    border-top: 1px solid #e2e8f0;
+  }
+}

@@ -1,0 +1,88 @@
+.purchase-status-tabs{
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+    overflow-x:auto;
+
+    scrollbar-width:none;
+}
+
+.purchase-status-tabs::-webkit-scrollbar{
+    display:none;
+}
+
+.purchase-tab{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    height:42px;
+
+    padding:0 16px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:999px;
+
+    background:#ffffff;
+
+    cursor:pointer;
+
+    white-space:nowrap;
+
+    transition:.2s ease;
+}
+
+.purchase-tab:hover{
+    border-color:#2563eb;
+}
+
+.purchase-tab.active{
+    background:#2563eb;
+
+    border-color:#2563eb;
+}
+
+.purchase-tab.active .tab-label,
+.purchase-tab.active .tab-count{
+    color:#ffffff;
+}
+
+.tab-label{
+    font-size:14px;
+    font-weight:600;
+
+    color:#334155;
+}
+
+.tab-count{
+    min-width:24px;
+
+    height:24px;
+
+    padding:0 8px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:999px;
+
+    background:#f1f5f9;
+
+    color:#475569;
+
+    font-size:12px;
+    font-weight:700;
+}
+
+.purchase-tab.active .tab-count{
+    background:rgba(255,255,255,.2);
+}

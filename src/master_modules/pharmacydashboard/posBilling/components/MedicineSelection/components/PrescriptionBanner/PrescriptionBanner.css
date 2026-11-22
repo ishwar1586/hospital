@@ -1,0 +1,247 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.prescription-banner{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+    margin-bottom:24px;
+
+}
+
+/* ===========================================================
+CARD
+=========================================================== */
+
+.banner-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    padding:20px;
+
+    transition:all .25s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.banner-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:4px;
+
+    height:100%;
+
+    background:#2563EB;
+
+}
+
+.banner-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 24px rgba(15,23,42,.08);
+
+    border-color:#CBD5E1;
+
+}
+
+/* ===========================================================
+ICON
+=========================================================== */
+
+.banner-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.banner-icon svg{
+
+    font-size:28px;
+
+}
+
+/* ===========================================================
+ICON COLORS
+=========================================================== */
+
+.banner-icon.doctor{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+.banner-icon.prescription{
+
+    background:#F3E8FF;
+
+    color:#9333EA;
+
+}
+
+.banner-icon.medicine{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+
+}
+
+.banner-icon.success{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+.banner-icon.time{
+
+    background:#E0F2FE;
+
+    color:#0284C7;
+
+}
+
+/* ===========================================================
+TEXT
+=========================================================== */
+
+.banner-label{
+
+    display:block;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#64748B;
+
+    margin-bottom:6px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.4px;
+
+}
+
+.banner-card h4{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    line-height:1.3;
+
+}
+
+.banner-card p{
+
+    margin-top:6px;
+
+    margin-bottom:0;
+
+    font-size:13px;
+
+    color:#64748B;
+
+    line-height:1.5;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .prescription-banner{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .prescription-banner{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .banner-card{
+
+        padding:18px;
+
+    }
+
+    .banner-icon{
+
+        width:52px;
+
+        height:52px;
+
+    }
+
+    .banner-icon svg{
+
+        font-size:24px;
+
+    }
+
+    .banner-card h4{
+
+        font-size:16px;
+
+    }
+
+}

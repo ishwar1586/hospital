@@ -1,0 +1,111 @@
+/* =====================================================
+   ROOT
+===================================================== */
+
+.activity-timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    padding:4px;
+
+}
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.activity-empty{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:280px;
+
+    background:#FFFFFF;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:16px;
+
+    color:#64748B;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+/* =====================================================
+   SCROLL AREA
+===================================================== */
+
+.activity-timeline{
+
+    max-height:68vh;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    padding-right:8px;
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.activity-timeline::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.activity-timeline::-webkit-scrollbar-track{
+
+    background:#F8FAFC;
+
+    border-radius:999px;
+
+}
+
+.activity-timeline::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}
+
+.activity-timeline::-webkit-scrollbar-thumb:hover{
+
+    background:#94A3B8;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+    .activity-timeline{
+
+        gap:18px;
+
+        max-height:none;
+
+        overflow:visible;
+
+        padding-right:0;
+
+    }
+
+}

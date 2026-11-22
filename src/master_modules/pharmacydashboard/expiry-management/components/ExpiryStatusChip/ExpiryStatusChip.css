@@ -1,0 +1,113 @@
+/* ==========================================================
+   Status Chip
+========================================================== */
+
+.expiry-status-chip{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:110px;
+
+    height:34px;
+
+    padding:0 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    border:1px solid transparent;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+   Expired
+========================================================== */
+
+.expiry-status-chip.expired{
+
+    background:#fef2f2;
+
+    color:#dc2626;
+
+    border-color:#fecaca;
+
+}
+
+/* ==========================================================
+   0-30 Days
+========================================================== */
+
+.expiry-status-chip.danger{
+
+    background:#fff7ed;
+
+    color:#ea580c;
+
+    border-color:#fdba74;
+
+}
+
+/* ==========================================================
+   31-60 Days
+========================================================== */
+
+.expiry-status-chip.warning{
+
+    background:#fefce8;
+
+    color:#ca8a04;
+
+    border-color:#fde68a;
+
+}
+
+/* ==========================================================
+   61-90 Days
+========================================================== */
+
+.expiry-status-chip.info{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    border-color:#bfdbfe;
+
+}
+
+/* ==========================================================
+   Safe
+========================================================== */
+
+.expiry-status-chip.safe{
+
+    background:#f0fdf4;
+
+    color:#16a34a;
+
+    border-color:#bbf7d0;
+
+}
+
+/* ==========================================================
+   Default
+========================================================== */
+
+.expiry-status-chip.default{
+
+    background:#f8fafc;
+
+    color:#64748b;
+
+    border-color:#e2e8f0;
+
+}

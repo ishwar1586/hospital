@@ -1,0 +1,628 @@
+/* =========================================
+   RESULT ENTRY TABLE CARD
+========================================= */
+
+.result-entry-table-card {
+    width: 100%;
+
+    min-width: 0;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 1px 2px
+        rgba(15, 23, 42, 0.03);
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLE CARD HEADER
+========================================= */
+
+.result-entry-table-card__header {
+    min-height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 9px 13px;
+
+    border-bottom: 1px solid #eef2f7;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.result-entry-table-card__title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #1e293b;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.result-entry-table-card__count {
+    min-width: 20px;
+
+    height: 18px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 5px;
+
+    border-radius: 999px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+
+.result-entry-table-card__subtitle {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.3;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.result-entry-table-wrapper {
+    width: 100%;
+
+    min-width: 0;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.result-entry-table {
+    width: 100%;
+
+    min-width: 1180px;
+
+    border-collapse: separate;
+
+    border-spacing: 0;
+
+    table-layout: fixed;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.result-entry-table thead {
+    background: #f8fafc;
+}
+
+
+.result-entry-table thead tr {
+    height: 38px;
+}
+
+
+.result-entry-table__header-cell {
+    padding: 0 10px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.25px;
+
+    white-space: nowrap;
+
+    box-sizing: border-box;
+}
+
+
+.result-entry-table__header-cell--left {
+    text-align: left;
+}
+
+
+.result-entry-table__header-cell--center {
+    text-align: center;
+}
+
+
+.result-entry-table__header-cell--right {
+    text-align: right;
+}
+
+
+/* =========================================
+   HEADER CONTENT
+========================================= */
+
+.result-entry-table__header-content {
+    min-width: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: inherit;
+
+    gap: 4px;
+}
+
+
+.result-entry-table__header-content svg {
+    width: 13px;
+
+    height: 13px;
+
+    flex-shrink: 0;
+
+    color: #94a3b8;
+}
+
+
+/* =========================================
+   TABLE BODY
+========================================= */
+
+.result-entry-table tbody tr {
+    height: 58px;
+}
+
+
+/* =========================================
+   TABLE ROW
+========================================= */
+
+.result-entry-table-row {
+    background: #ffffff;
+
+    transition:
+        background-color 0.16s ease;
+}
+
+
+.result-entry-table-row:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   TABLE CELL
+========================================= */
+
+.result-entry-table-row__cell {
+    padding: 8px 10px;
+
+    border-bottom: 1px solid #eef2f7;
+
+    color: #334155;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    vertical-align: middle;
+
+    box-sizing: border-box;
+}
+
+
+.result-entry-table-row__cell--left {
+    text-align: left;
+}
+
+
+.result-entry-table-row__cell--center {
+    text-align: center;
+}
+
+
+.result-entry-table-row__cell--right {
+    text-align: right;
+}
+
+
+/* =========================================
+   DEFAULT TEXT
+========================================= */
+
+.result-entry-table-row__text {
+    display: inline-block;
+
+    max-width: 100%;
+
+    overflow: hidden;
+
+    color: #475569;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ACCESSION
+========================================= */
+
+.result-entry-table-row__text--accessionNo {
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   PATIENT
+========================================= */
+
+.result-entry-table-row__patient {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.result-entry-table-row__patient-name {
+    overflow: hidden;
+
+    color: #1e293b;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.result-entry-table-row__patient-meta {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+.result-entry-table-row__patient-meta span:first-child {
+    color: #64748b;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   TEST
+========================================= */
+
+.result-entry-table-row__test {
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.result-entry-table-row__test-name {
+    overflow: hidden;
+
+    color: #334155;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.result-entry-table-row__test-code {
+    color: #94a3b8;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   DATE / TIME
+========================================= */
+
+.result-entry-table-row__datetime {
+    display: inline-block;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TAT
+========================================= */
+
+.result-entry-table-row__tat {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 50px;
+
+    min-height: 21px;
+
+    padding: 0 6px;
+
+    border-radius: 5px;
+
+    background: #f1f5f9;
+
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+.result-entry-table-row__tat--normal {
+    background: #f1f5f9;
+
+    color: #64748b;
+}
+
+
+.result-entry-table-row__tat--warning {
+    background: #fffbeb;
+
+    color: #d97706;
+}
+
+
+.result-entry-table-row__tat--critical {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   ACTION BUTTON
+========================================= */
+
+.result-entry-action-menu__button {
+    width: 28px !important;
+
+    height: 28px !important;
+
+    padding: 0 !important;
+
+    color: #64748b !important;
+}
+
+
+.result-entry-action-menu__button:hover {
+    background: #f1f5f9 !important;
+
+    color: #1e293b !important;
+}
+
+
+.result-entry-action-menu__button svg {
+    width: 17px;
+
+    height: 17px;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.result-entry-table__empty {
+    height: 180px;
+
+    padding: 20px;
+
+    border-bottom: none !important;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+
+.result-entry-table__empty-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.result-entry-table__empty-title {
+    color: #475569;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+.result-entry-table__empty-message {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   LAST ROW
+========================================= */
+
+.result-entry-table tbody tr:last-child
+.result-entry-table-row__cell {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .result-entry-table-card__header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+
+    .result-entry-table-card__subtitle {
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .result-entry-table-card__header {
+        padding: 9px 10px;
+    }
+
+
+    .result-entry-table {
+        min-width: 1120px;
+    }
+
+}

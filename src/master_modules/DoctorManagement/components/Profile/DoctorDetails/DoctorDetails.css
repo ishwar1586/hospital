@@ -1,0 +1,172 @@
+.doctor-details {
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid #e7ebf0;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.doctor-details__content {
+    flex: 1 1 auto;
+
+    min-width: 0;
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TAB CONTENT
+========================================= */
+
+.doctor-details__tab-content {
+    width: 100%;
+
+    min-width: 0;
+
+    flex: 1 1 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.doctor-details__error {
+    margin: 7px 12px 0;
+
+    padding: 7px 8px;
+
+    border: 1px solid #f3caca;
+    border-radius: 4px;
+
+    background: #fff7f7;
+
+    color: #c24141;
+
+    font-size: 7px;
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   EMPTY / LOADING STATE
+========================================= */
+
+.doctor-details__state {
+    width: 100%;
+    min-height: 180px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    color: #8a94a6;
+
+    font-size: 8px;
+    font-weight: 500;
+
+    line-height: 1.4;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.doctor-details__content::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.doctor-details__content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.doctor-details__content::-webkit-scrollbar-thumb {
+    background: #d8dee7;
+
+    border-radius: 10px;
+}
+
+
+.doctor-details__content::-webkit-scrollbar-thumb:hover {
+    background: #c5ccd7;
+}
+
+
+/* Firefox */
+
+.doctor-details__content {
+    scrollbar-width: thin;
+
+    scrollbar-color:
+        #d8dee7
+        transparent;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1150px) {
+
+    .doctor-details {
+        height: auto;
+
+        max-height: 700px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .doctor-details {
+        border-radius: 5px;
+    }
+
+
+    .doctor-details__content {
+        overflow-y: visible;
+    }
+
+}

@@ -1,0 +1,223 @@
+const testCategoryMasterMockData = [
+    {
+        id: 1,
+        categoryCode: "HEM-001",
+        categoryName: "Hematology",
+        department: "Pathology",
+        totalTests: 48,
+        totalProfiles: 12,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 2,
+        categoryCode: "BIO-001",
+        categoryName: "Biochemistry",
+        department: "Pathology",
+        totalTests: 86,
+        totalProfiles: 18,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 3,
+        categoryCode: "MIC-001",
+        categoryName: "Microbiology",
+        department: "Microbiology",
+        totalTests: 64,
+        totalProfiles: 14,
+        autoAuthorization: false,
+        status: "Active",
+    },
+
+    {
+        id: 4,
+        categoryCode: "IMM-001",
+        categoryName: "Immunology",
+        department: "Pathology",
+        totalTests: 42,
+        totalProfiles: 9,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 5,
+        categoryCode: "HIS-001",
+        categoryName: "Histopathology",
+        department: "Histopathology",
+        totalTests: 37,
+        totalProfiles: 8,
+        autoAuthorization: false,
+        status: "Active",
+    },
+
+    {
+        id: 6,
+        categoryCode: "CYT-001",
+        categoryName: "Cytology",
+        department: "Histopathology",
+        totalTests: 29,
+        totalProfiles: 6,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 7,
+        categoryCode: "SER-001",
+        categoryName: "Serology",
+        department: "Pathology",
+        totalTests: 53,
+        totalProfiles: 11,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 8,
+        categoryCode: "MOL-001",
+        categoryName: "Molecular Diagnostics",
+        department: "Pathology",
+        totalTests: 31,
+        totalProfiles: 7,
+        autoAuthorization: false,
+        status: "Active",
+    },
+
+    {
+        id: 9,
+        categoryCode: "PAR-001",
+        categoryName: "Parasitology",
+        department: "Microbiology",
+        totalTests: 22,
+        totalProfiles: 5,
+        autoAuthorization: false,
+        status: "Active",
+    },
+
+    {
+        id: 10,
+        categoryCode: "URI-001",
+        categoryName: "Urinalysis",
+        department: "Pathology",
+        totalTests: 19,
+        totalProfiles: 4,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 11,
+        categoryCode: "COA-001",
+        categoryName: "Coagulation",
+        department: "Pathology",
+        totalTests: 27,
+        totalProfiles: 6,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 12,
+        categoryCode: "END-001",
+        categoryName: "Endocrinology",
+        department: "Pathology",
+        totalTests: 45,
+        totalProfiles: 10,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 13,
+        categoryCode: "TOX-001",
+        categoryName: "Toxicology",
+        department: "Pathology",
+        totalTests: 18,
+        totalProfiles: 3,
+        autoAuthorization: false,
+        status: "Inactive",
+    },
+
+    {
+        id: 14,
+        categoryCode: "GEN-001",
+        categoryName: "Genetics",
+        department: "Pathology",
+        totalTests: 24,
+        totalProfiles: 5,
+        autoAuthorization: false,
+        status: "Inactive",
+    },
+
+    {
+        id: 15,
+        categoryCode: "ALL-001",
+        categoryName: "Allergy Testing",
+        department: "Pathology",
+        totalTests: 16,
+        totalProfiles: 3,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 16,
+        categoryCode: "CAR-001",
+        categoryName: "Cardiac Markers",
+        department: "Pathology",
+        totalTests: 21,
+        totalProfiles: 4,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 17,
+        categoryCode: "REN-001",
+        categoryName: "Renal Function",
+        department: "Pathology",
+        totalTests: 14,
+        totalProfiles: 3,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 18,
+        categoryCode: "LIV-001",
+        categoryName: "Liver Function",
+        department: "Pathology",
+        totalTests: 17,
+        totalProfiles: 4,
+        autoAuthorization: true,
+        status: "Active",
+    },
+
+    {
+        id: 19,
+        categoryCode: "ELE-001",
+        categoryName: "Electrolytes",
+        department: "Pathology",
+        totalTests: 13,
+        totalProfiles: 3,
+        autoAuthorization: true,
+        status: "Inactive",
+    },
+
+    {
+        id: 20,
+        categoryCode: "INF-001",
+        categoryName: "Infectious Disease",
+        department: "Microbiology",
+        totalTests: 39,
+        totalProfiles: 8,
+        autoAuthorization: false,
+        status: "Active",
+    },
+];
+
+export default testCategoryMasterMockData;

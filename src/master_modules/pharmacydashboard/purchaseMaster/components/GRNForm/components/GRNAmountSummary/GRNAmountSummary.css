@@ -1,0 +1,79 @@
+.grn-amount-summary{
+
+    background:#fff;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:16px;
+
+    padding:24px;
+
+}
+
+.grn-amount-summary h3{
+
+    margin:0 0 20px;
+
+    color:#0f172a;
+
+    font-size:18px;
+
+}
+
+.summary-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:1px dashed #e2e8f0;
+
+}
+
+.summary-row span{
+
+    color:#64748b;
+
+}
+
+.summary-row strong{
+
+    color:#0f172a;
+
+}
+
+.summary-total{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+    padding-top:20px;
+
+    border-top:2px solid #2563eb;
+
+}
+
+.summary-total span{
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+.summary-total h2{
+
+    margin:0;
+
+    color:#2563eb;
+
+}

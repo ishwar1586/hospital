@@ -1,0 +1,113 @@
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.pharmacy-dashboard-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 100%;
+}
+
+/* =====================================================
+   TOP STATS
+===================================================== */
+
+.pharmacy-top-stats {
+  width: 100%;
+}
+
+/* =====================================================
+   FUTURE LAYOUT (READY FOR SCALING)
+===================================================== */
+
+/* LEFT + RIGHT GRID (future use) */
+.pharmacy-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* LEFT SIDE */
+.pharmacy-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* RIGHT SIDE */
+.pharmacy-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================================================
+   BOTTOM SECTION (LIST CARDS)
+===================================================== */
+
+.pharmacy-bottom {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 24px;
+}
+
+/* =====================================================
+   TABLE SECTION
+===================================================== */
+
+.pharmacy-table {
+  width: 100%;
+  height: 450px;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+  .pharmacy-main {
+    grid-template-columns: 1fr;
+  }
+
+  .pharmacy-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .pharmacy-dashboard-grid {
+    gap: 16px;
+  }
+}
+
+
+/* =====================================================
+   ANALYTICS GRID (IMPORTANT)
+===================================================== */
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+
+/* ================= BOTTOM GRID ================= */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+/* CARD WRAPPER */
+.bottom-card {
+  display: flex;
+  height: 100%;
+}
+
+.bottom-card > * {
+  flex: 1;
+  height: 100%;
+}

@@ -1,0 +1,203 @@
+/* ============================================================
+   TRANSFER PATIENT STEPPER
+   ============================================================ */
+
+.ipd-transfer-patient-stepper {
+  width: 100%;
+
+  padding: 20px 28px;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ============================================================
+   STEPPER LIST
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__list {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* ============================================================
+   STEPPER ITEM
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+/* ============================================================
+   CIRCLE
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__circle {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #d1d5db;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__title {
+  color: #6b7280;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.2s ease,
+    font-weight 0.2s ease;
+}
+
+
+/* ============================================================
+   ACTIVE STEP
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__item--active
+  .ipd-transfer-patient-stepper__circle {
+  border-color: #2563eb;
+
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+
+.ipd-transfer-patient-stepper__item--active
+  .ipd-transfer-patient-stepper__title {
+  color: #1d4ed8;
+
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   COMPLETED STEP
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__item--completed
+  .ipd-transfer-patient-stepper__circle {
+  border-color: #2563eb;
+
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+
+.ipd-transfer-patient-stepper__item--completed
+  .ipd-transfer-patient-stepper__title {
+  color: #374151;
+
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   CONNECTING LINE
+   ============================================================ */
+
+.ipd-transfer-patient-stepper__line {
+  flex: 1;
+
+  min-width: 40px;
+
+  height: 1px;
+
+  margin: 0 14px;
+
+  background: #d1d5db;
+
+  transition:
+    background-color 0.2s ease;
+}
+
+
+.ipd-transfer-patient-stepper__line--completed {
+  background: #2563eb;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  .ipd-transfer-patient-stepper {
+    padding: 16px 20px;
+  }
+
+  .ipd-transfer-patient-stepper__title {
+    display: none;
+  }
+
+  .ipd-transfer-patient-stepper__line {
+    min-width: 24px;
+
+    margin: 0 8px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .ipd-transfer-patient-stepper {
+    padding: 14px 16px;
+
+    overflow-x: auto;
+  }
+
+  .ipd-transfer-patient-stepper__list {
+    min-width: max-content;
+  }
+
+  .ipd-transfer-patient-stepper__circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ipd-transfer-patient-stepper__line {
+    min-width: 20px;
+
+    margin: 0 6px;
+  }
+}

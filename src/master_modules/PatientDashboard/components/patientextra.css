@@ -1,0 +1,337 @@
+/* GRID */
+.extra-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ================= APPOINTMENT ================= */
+
+.appoint-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  height: 500px !important;
+}
+
+/* TABS */
+/* .appoint-tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.appoint-tabs span {
+  font-size: 14px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+.appoint-tabs .active {
+  color: #2563eb;
+  border-bottom: 2px solid #2563eb;
+  scale: 1.09;
+} */
+
+/* 
+
+/* ===== TABS ===== */
+.appoint-tabs {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 70px;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+.appoint-tabs span {
+  font-size: 14px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+/* FULL GREY LINE */
+.appoint-tabs::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #e5e7eb;
+}
+
+/* BLUE BAR */
+.appoint-tabs::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 50%;
+  background: #2563eb;
+  transition: 0.3s ease;
+}
+
+/* LEFT ACTIVE */
+.appoint-tabs.left-active::after {
+  left: 0;
+}
+
+/* RIGHT ACTIVE */
+.appoint-tabs.right-active::after {
+  left: 50%;
+}
+
+/* LIST */
+.appoint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 430px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/* ROW */
+.appoint-row {
+  display: grid;
+  /* grid-template-columns: 50px 1.5fr 120px 1.2fr 1.5fr 40px; */
+  grid-template-columns: 50px 150px 100px 130px 140px 40px !important;
+  align-items: center;
+
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+/* AVATAR */
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* TEXT */
+.info .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.info .role {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.date {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.time {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.treatment span,
+.contact span {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.treatment div,
+.contact div {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ICONS */
+.cancel {
+  color: #ef4444;
+  /* font-size: 20px; */
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  border: #ef4444 1px solid;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(239, 68, 68, 0.7) !important;
+}
+
+.done {
+  color: #22c55e;
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+  /* border: #22c55e 1px solid; */
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(34, 197, 94, 0.7) !important;
+}
+
+/* ================= REPORT ================= */
+
+.reports-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  height: 500px !important;
+  
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.view {
+  color: #3b82f6;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 430px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* ROW */
+.report-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 1px dashed #d1d5db;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.file-icon {
+  /* font-size: 2px !important; */
+  height: 15px;
+  width: 15px;
+  color: #ef4444;
+}
+
+.left span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 10px;
+}
+
+.actions svg {
+  font-size: 16px !important;
+  /* color: #6b7280; */
+  cursor: pointer;
+}
+
+.actions svg:hover {
+  color: #111827;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .extra-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+.cell-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* top line */
+.top {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* bottom line */
+.bottom {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* label */
+.label {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* value */
+.value {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.appoint-row {
+  min-height: 70px;
+}
+
+
+
+
+/* 🔥 TODAY TABLE LAYOUT */
+.appoint-list.today .appoint-row {
+  display: grid !important;
+  grid-template-columns:
+    50px 160px 120px 140px 160px 120px 140px 80px !important;
+    
+}
+
+.today-appoint{
+  height: 400px !important;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+
+}
+
+/* STATUS */
+.status {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status.confirm {
+  color: #16a34a;
+}
+
+.status.cancelled {
+  color: #dc2626;
+}
+
+/* TITLE */
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}

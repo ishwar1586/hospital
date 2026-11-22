@@ -1,0 +1,119 @@
+.sales-return-page{
+
+    padding:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+}
+
+.sales-return-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.sales-return-header h1{
+
+    margin:0;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+.sales-return-header p{
+
+    margin-top:6px;
+
+    color:#6b7280;
+
+}
+
+.search-invoice-btn{
+
+    height:46px;
+
+    padding:0 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.search-invoice-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.sales-return-top-section{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:24px;
+
+}
+
+@media(max-width:992px){
+
+    .sales-return-top-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sales-return-page{
+
+        padding:16px;
+
+    }
+
+    .sales-return-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:16px;
+
+    }
+
+    .search-invoice-btn{
+
+        width:100%;
+
+    }
+
+}

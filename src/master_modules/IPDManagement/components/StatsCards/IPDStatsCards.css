@@ -1,0 +1,374 @@
+/* ============================================================
+   IPD STATS CARDS
+   ============================================================ */
+
+.ipd-stats-cards {
+  width: 100%;
+
+  padding: 10px 0 14px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   STATS GRID
+   ============================================================ */
+
+.ipd-stats-cards__grid {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  gap: 10px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================================================
+   STAT CARD
+   ============================================================ */
+
+.ipd-stats-card {
+  min-width: 0;
+
+  min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 8px;
+
+  box-shadow:
+    0 1px 2px rgba(15, 23, 42, 0.03);
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+
+/* ============================================================
+   CARD HOVER
+   ============================================================ */
+
+.ipd-stats-card:hover {
+  border-color: #dbe3ef;
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.06);
+
+  transform: translateY(-1px);
+}
+
+
+/* ============================================================
+   CARD TOP
+   ============================================================ */
+
+.ipd-stats-card__top {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+/* ============================================================
+   HEADING
+   ============================================================ */
+
+.ipd-stats-card__heading {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-stats-card__label {
+  display: block;
+
+  overflow: hidden;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 10px;
+
+  font-weight: 500;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   ICON
+   ============================================================ */
+
+.ipd-stats-card__icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+}
+
+
+/* ============================================================
+   PRIMARY ICON
+   ============================================================ */
+
+.ipd-stats-card__icon--primary {
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+
+/* ============================================================
+   SUCCESS ICON
+   ============================================================ */
+
+.ipd-stats-card__icon--success {
+  background: #ecfdf3;
+
+  color: #16a34a;
+}
+
+
+/* ============================================================
+   WARNING ICON
+   ============================================================ */
+
+.ipd-stats-card__icon--warning {
+  background: #fffbeb;
+
+  color: #d97706;
+}
+
+
+/* ============================================================
+   DANGER ICON
+   ============================================================ */
+
+.ipd-stats-card__icon--danger {
+  background: #fef2f2;
+
+  color: #dc2626;
+}
+
+
+/* ============================================================
+   VALUE ROW
+   ============================================================ */
+
+.ipd-stats-card__value-row {
+  display: flex;
+  align-items: baseline;
+
+  /* margin-top: 10px; */
+}
+
+
+/* ============================================================
+   MAIN VALUE
+   ============================================================ */
+
+.ipd-stats-card__value {
+  color: #111827;
+
+  font-size: 27px;
+  line-height: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: -0.025em;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.ipd-stats-card__footer {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+
+/* ============================================================
+   TREND
+   ============================================================ */
+
+.ipd-stats-card__trend {
+  font-size: 11px;
+  line-height: 16px;
+
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   POSITIVE TREND
+   ============================================================ */
+
+.ipd-stats-card__trend--positive {
+  color: #16a34a;
+}
+
+
+/* ============================================================
+   NEGATIVE TREND
+   ============================================================ */
+
+.ipd-stats-card__trend--negative {
+  color: #dc2626;
+}
+
+
+/* ============================================================
+   NEUTRAL TREND
+   ============================================================ */
+
+.ipd-stats-card__trend--neutral {
+  color: #64748b;
+}
+
+
+/* ============================================================
+   TREND SUFFIX
+   ============================================================ */
+
+.ipd-stats-card__suffix {
+  color: #94a3b8;
+
+  font-size: 11px;
+  line-height: 16px;
+
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   SECONDARY VALUE
+   ============================================================ */
+
+.ipd-stats-card__secondary {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #475569;
+
+  font-size: 11px;
+  line-height: 16px;
+
+  font-weight: 500;
+}
+
+
+/* ============================================================
+   SECONDARY SUFFIX
+   ============================================================ */
+
+.ipd-stats-card__secondary-suffix {
+  color: #94a3b8;
+
+  font-weight: 400;
+}
+
+
+/* ============================================================
+   RESPONSIVE - LARGE TABLET
+   ============================================================ */
+
+@media (max-width: 1200px) {
+  .ipd-stats-cards__grid {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* ============================================================
+   RESPONSIVE - TABLET
+   ============================================================ */
+
+@media (max-width: 800px) {
+  .ipd-stats-cards {
+    padding: 16px 16px 0;
+  }
+
+  .ipd-stats-cards__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+}
+
+
+/* ============================================================
+   RESPONSIVE - MOBILE
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .ipd-stats-cards {
+    padding: 14px 12px 0;
+  }
+
+  .ipd-stats-cards__grid {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .ipd-stats-card {
+    min-height: 120px;
+
+    padding: 14px;
+  }
+
+  .ipd-stats-card__value {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

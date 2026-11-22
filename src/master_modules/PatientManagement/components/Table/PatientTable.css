@@ -1,0 +1,451 @@
+/* =========================================
+   Patient Table Wrapper
+========================================= */
+
+.patient-table-wrapper {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Table Scroll Container
+========================================= */
+
+.patient-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+}
+
+
+/* =========================================
+   Main Table
+========================================= */
+
+.patient-table {
+  width: 100%;
+  min-width: 1250px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  table-layout: auto;
+}
+
+
+/* =========================================
+   Table Header
+========================================= */
+
+.patient-table thead {
+  background: #f8f9fc;
+}
+
+.patient-table th {
+  height: 46px;
+
+  padding: 0 16px;
+
+  border-bottom: 1px solid #e6e9ef;
+
+  text-align: left;
+  vertical-align: middle;
+
+  white-space: nowrap;
+
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.15px;
+}
+
+
+/* =========================================
+   Table Body
+========================================= */
+
+.patient-table tbody {
+  background: #ffffff;
+}
+
+.patient-table td {
+  height: 64px;
+
+  padding: 10px 16px;
+
+  border-bottom: 1px solid #eef0f4;
+
+  text-align: left;
+  vertical-align: middle;
+
+  white-space: nowrap;
+
+  color: #344054;
+
+  font-size: 12px;
+}
+
+.patient-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.patient-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.patient-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+
+/* =========================================
+   Patient Information
+========================================= */
+
+.patient-table-patient {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* Patient Avatar */
+
+.patient-table-avatar {
+  width: 34px;
+  height: 34px;
+
+  flex: 0 0 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef4ff;
+  color: #155eef;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+/* Patient Name + ID */
+
+.patient-table-patient-info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.patient-table-patient-name {
+  max-width: 160px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: #17245c;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.patient-table-patient-id {
+  color: #98a2b3;
+
+  font-size: 10px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   UHID
+========================================= */
+
+.patient-table-uhid {
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   Normal Table Text
+========================================= */
+
+.patient-table-normal {
+  color: #475467;
+
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* =========================================
+   Blood Group
+========================================= */
+
+.patient-blood-group {
+  min-width: 32px;
+  height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 7px;
+
+  border-radius: 5px;
+
+  background: #fff1f0;
+  color: #d92d20;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   Patient Type Chip
+========================================= */
+
+.patient-type-chip {
+  min-width: 44px;
+  min-height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 9px;
+
+  border-radius: 12px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1;
+}
+
+
+/* OPD */
+
+.patient-type-chip--opd {
+  background: #eef4ff;
+  color: #155eef;
+}
+
+
+/* IPD */
+
+.patient-type-chip--ipd {
+  background: #ecfdf3;
+  color: #15803d;
+}
+
+
+/* Emergency */
+
+.patient-type-chip--emergency {
+  background: #fff4ed;
+  color: #c2410c;
+}
+
+
+/* =========================================
+   Patient Status Chip
+========================================= */
+
+.patient-status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.patient-status-chip__dot {
+  width: 6px;
+  height: 6px;
+
+  flex: 0 0 6px;
+
+  border-radius: 50%;
+}
+
+
+/* Active */
+
+.patient-status-chip--active {
+  color: #16803c;
+}
+
+.patient-status-chip--active .patient-status-chip__dot {
+  background: #16a34a;
+}
+
+
+/* Inactive */
+
+.patient-status-chip--inactive {
+  color: #667085;
+}
+
+.patient-status-chip--inactive .patient-status-chip__dot {
+  background: #98a2b3;
+}
+
+
+/* Critical */
+
+.patient-status-chip--critical {
+  color: #d92d20;
+}
+
+.patient-status-chip--critical .patient-status-chip__dot {
+  background: #ef4444;
+}
+
+
+/* =========================================
+   Table Actions
+========================================= */
+
+.patient-table-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+/* View Button */
+
+.patient-table-view-button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 5px;
+
+  background: transparent;
+  color: #667085;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.patient-table-view-button:hover {
+  background: #eef4ff;
+  color: #155eef;
+}
+
+.patient-table-view-button .MuiSvgIcon-root {
+  font-size: 17px;
+}
+
+
+/* =========================================
+   Three Dot Action Button
+========================================= */
+
+.patient-action-menu-button {
+  color: #667085 !important;
+}
+
+.patient-action-menu-button:hover {
+  background: #f2f4f7 !important;
+}
+
+
+/* =========================================
+   Empty State
+========================================= */
+
+.patient-table-empty {
+  height: 120px !important;
+
+  text-align: center !important;
+  vertical-align: middle !important;
+
+  color: #98a2b3 !important;
+
+  font-size: 13px !important;
+}
+
+
+/* =========================================
+   Table Scrollbar
+========================================= */
+
+.patient-table-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.patient-table-scroll::-webkit-scrollbar-track {
+  background: #f8f9fc;
+}
+
+.patient-table-scroll::-webkit-scrollbar-thumb {
+  background: #d4d9e2;
+  border-radius: 10px;
+}
+
+.patient-table-scroll::-webkit-scrollbar-thumb:hover {
+  background: #b8c0ce;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1200px) {
+  .patient-table {
+    min-width: 1200px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .patient-table th,
+  .patient-table td {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .patient-table-avatar {
+    width: 32px;
+    height: 32px;
+
+    flex-basis: 32px;
+  }
+
+  .patient-table-patient-name {
+    max-width: 140px;
+  }
+}

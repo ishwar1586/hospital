@@ -1,0 +1,200 @@
+/* =========================================================
+   PATIENT INFO TAB
+   ========================================================= */
+
+.patient-info-tab {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.patient-info-tab__section {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.patient-info-tab__section
+    + .patient-info-tab__section {
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.patient-info-tab__section-header {
+    margin-bottom: 16px;
+}
+
+.patient-info-tab__section-header h3 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #111827;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+   ========================================================= */
+
+.patient-info-tab__grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    column-gap: 28px;
+    row-gap: 18px;
+}
+
+
+/* =========================================================
+   INFORMATION ITEM
+   ========================================================= */
+
+.patient-info-tab__item {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.patient-info-tab__label {
+    display: block;
+
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   VALUE
+   ========================================================= */
+
+.patient-info-tab__value {
+    display: block;
+
+    min-width: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+
+    color: #111827;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.patient-info-tab__status {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 24px;
+    padding: 3px 9px;
+
+    box-sizing: border-box;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS VARIANTS
+   ========================================================= */
+
+.patient-info-tab__status--scheduled {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.patient-info-tab__status--confirmed {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.patient-info-tab__status--checked-in {
+    background: #f0fdf4;
+    color: #16a34a;
+}
+
+.patient-info-tab__status--completed {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.patient-info-tab__status--cancelled {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.patient-info-tab__status--no-show {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+.patient-info-tab__status--pending {
+    background: #fffbeb;
+    color: #d97706;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.patient-info-tab--empty {
+    min-height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #6b7280;
+}
+
+.patient-info-tab--empty p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .patient-info-tab__grid {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+}

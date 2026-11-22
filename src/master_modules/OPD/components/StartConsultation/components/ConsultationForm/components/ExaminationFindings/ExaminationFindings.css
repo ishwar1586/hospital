@@ -1,0 +1,124 @@
+
+.examination-findings {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.examination-findings__header,
+.examination-findings__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.examination-findings__title {
+  margin: 0;
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.examination-findings__description {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.examination-findings__section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  min-width: 0;
+}
+
+.examination-findings__section-heading {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.examination-findings__section-title {
+  margin: 0;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.examination-findings__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+}
+
+.examination-findings__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.examination-findings__label {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.examination-findings__select,
+.examination-findings__textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 11px 13px;
+  border: 1px solid #dbe2ea;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #334155;
+  font-family: inherit;
+  font-size: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.examination-findings__select {
+  min-height: 42px;
+  cursor: pointer;
+}
+
+.examination-findings__textarea {
+  min-height: 95px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.examination-findings__select:focus,
+.examination-findings__textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.examination-findings__select:disabled,
+.examination-findings__textarea:disabled {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+.examination-findings__error {
+  color: #e11d48;
+  font-size: 11px;
+}
+
+@media (max-width: 640px) {
+  .examination-findings__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

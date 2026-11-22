@@ -1,0 +1,377 @@
+/* ==========================================================
+   Filter Card
+========================================================== */
+
+.audit-filters-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:14px;
+
+    /* margin-bottom:24px; */
+
+    box-shadow:0 6px 20px rgba(15,23,42,.05);
+
+}
+
+/* ==========================================================
+   Grid
+========================================================== */
+
+.audit-filters-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr 1fr;
+
+    gap:18px;
+
+    align-items:end;
+
+}
+
+/* ==========================================================
+   Form Group
+========================================================== */
+
+.audit-form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.audit-form-group label{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#475569;
+
+}
+
+/* ==========================================================
+   Search Box
+========================================================== */
+
+.audit-search-box{
+
+    position:relative;
+
+}
+
+.audit-search-box input{
+
+    width:100%;
+
+    height:46px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 42px;
+
+    font-size:12px;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.audit-search-box input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.08);
+
+}
+
+.search-icon{
+
+    position:absolute;
+
+    left:14px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#64748b;
+
+    font-size:16px !important;
+
+}
+
+.clear-search-btn{
+
+    position:absolute;
+
+    right:10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:26px;
+
+    height:26px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#f1f5f9;
+
+    color:#64748b;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.clear-search-btn:hover{
+
+    background:#e2e8f0;
+
+}
+
+
+/* ==========================================================
+   Select
+========================================================== */
+
+.audit-form-group select{
+
+    width:100%;
+
+    height:46px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 14px;
+
+    background:#ffffff;
+
+    font-size:12px;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.audit-form-group select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.08);
+
+}
+
+/* ==========================================================
+   Date
+========================================================== */
+
+.audit-date-box{
+
+    position:relative;
+
+}
+
+.audit-date-box input{
+
+    width:100%;
+
+    height:46px;
+
+    border:1px solid #dbe2ea;
+
+    border-radius:10px;
+
+    padding:0 42px 0 14px;
+
+    outline:none;
+
+    font-size:14px;
+
+    transition:.25s;
+
+}
+
+.audit-date-box input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.08);
+
+}
+
+.calendar-icon{
+
+    position:absolute;
+
+    right:14px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#64748b;
+
+    pointer-events:none;
+
+    font-size:18px !important;
+
+}
+
+
+/* ==========================================================
+   Footer
+========================================================== */
+
+.audit-filter-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    margin-top:12px;
+
+}
+
+.audit-filter-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    min-width:150px;
+
+    height:34px;
+
+    border-radius:10px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.audit-filter-btn.primary{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    border:none;
+
+}
+
+.audit-filter-btn.primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.audit-filter-btn.secondary{
+
+    background:#ffffff;
+
+    border:1px solid #dbe2ea;
+
+    color:#334155;
+
+}
+
+.audit-filter-btn.secondary:hover{
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1200px){
+
+    .audit-filters-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .audit-filters-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .audit-filter-footer{
+
+        justify-content:stretch;
+
+    }
+
+    .audit-filter-btn{
+
+        flex:1;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .audit-filters-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .audit-filter-footer{
+
+        flex-direction:column;
+
+    }
+
+    .audit-filter-btn{
+
+        width:100%;
+
+    }
+
+}

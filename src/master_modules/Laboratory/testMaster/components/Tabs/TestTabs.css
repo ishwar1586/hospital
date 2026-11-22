@@ -1,0 +1,170 @@
+/* =========================================
+   TABS CONTAINER
+========================================= */
+
+.test-tabs {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TAB LIST
+========================================= */
+
+.test-tabs__list {
+    display: flex;
+    align-items: stretch;
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+.test-tabs__list::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================
+   TAB
+========================================= */
+
+.test-tabs__item {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    min-height: 48px;
+
+    padding: 0 18px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* =========================================
+   TAB HOVER
+========================================= */
+
+.test-tabs__item:hover {
+    color: #2563eb;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   ACTIVE TAB
+========================================= */
+
+.test-tabs__item--active {
+    color: #2563eb;
+
+    background: #ffffff;
+}
+
+
+/*
+   Bottom active indicator
+*/
+
+.test-tabs__item--active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+
+    bottom: 0;
+
+    height: 2px;
+
+    background: #2563eb;
+
+    border-radius: 2px 2px 0 0;
+}
+
+
+/* =========================================
+   COUNT
+========================================= */
+
+.test-tabs__count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 22px;
+    height: 20px;
+
+    padding: 0 6px;
+
+    border-radius: 10px;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* Active count */
+
+.test-tabs__item--active .test-tabs__count {
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .test-tabs__item {
+        min-height: 44px;
+
+        padding: 0 14px;
+
+        font-size: 11px;
+    }
+
+}

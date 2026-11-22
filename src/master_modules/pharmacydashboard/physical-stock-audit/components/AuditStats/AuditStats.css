@@ -1,0 +1,252 @@
+/* ==========================================================
+   Stats Grid
+========================================================== */
+
+.audit-stats{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+    margin:10px 0;
+
+}
+
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#ffffff !important;
+
+    border-radius:18px;
+
+    padding:10px;
+
+    border:1px solid #e5e7eb;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.audit-stat-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 14px 30px rgba(15,23,42,.10);
+
+}
+
+.audit-stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:5px;
+
+    height:100%;
+
+}
+
+
+.audit-stat-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+}
+
+.audit-stat-icon{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.audit-stat-icon svg{
+
+    font-size:16px;
+
+}
+
+.audit-trend{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    padding:6px 10px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+.audit-stat-card h2{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.audit-stat-card h4{
+
+    margin:6px 0 6px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    color:#334155;
+
+}
+
+.audit-stat-card p{
+
+    margin:0;
+
+    font-size:12px;
+
+    color:#64748b;
+
+}
+
+.blue::before{
+
+    background:#2563eb;
+
+}
+
+.blue .audit-stat-icon{
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+}
+
+.orange::before{
+
+    background:#f59e0b;
+
+}
+
+.orange .audit-stat-icon{
+
+    background:#fef3c7;
+
+    color:#d97706;
+
+}
+
+.green::before{
+
+    background:#16a34a;
+
+}
+
+.green .audit-stat-icon{
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+}
+
+.red::before{
+
+    background:#ef4444;
+
+}
+
+.red .audit-stat-icon{
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+}
+
+.purple::before{
+
+    background:#7c3aed;
+
+}
+
+.purple .audit-stat-icon{
+
+    background:#ede9fe;
+
+    color:#7c3aed;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1200px){
+
+    .audit-stats{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .audit-stats{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .audit-stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

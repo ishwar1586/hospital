@@ -1,0 +1,107 @@
+/* =========================================================
+   PHARMACY PAYMENT
+   ========================================================= */
+
+.pharmacy-payment {
+  width: 100%;
+  min-height: 100%;
+  background: #f6f8fb;
+  box-sizing: border-box;
+}
+
+.pharmacy-payment *,
+.pharmacy-payment *::before,
+.pharmacy-payment *::after {
+  box-sizing: border-box;
+}
+
+.pharmacy-payment__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* =========================================================
+   STEPPER
+   ========================================================= */
+
+.pharmacy-payment__stepper {
+  width: 100%;
+  margin: 0 0 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px 20px;
+}
+
+/* =========================================================
+   TOP GRID
+   ========================================================= */
+
+.pharmacy-payment__top-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* =========================================================
+   COMMON SECTION
+   ========================================================= */
+
+.pharmacy-payment__section {
+  width: 100%;
+  margin-top: 18px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.pharmacy-payment__footer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1199px) {
+  .pharmacy-payment__container {
+    padding: 20px;
+  }
+
+  .pharmacy-payment__top-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  .pharmacy-payment__container {
+    padding: 12px;
+  }
+
+  .pharmacy-payment__stepper {
+    padding: 12px;
+    border-radius: 10px;
+    overflow-x: auto;
+  }
+
+  .pharmacy-payment__top-grid {
+    gap: 12px;
+  }
+
+  .pharmacy-payment__section {
+    margin-top: 12px;
+  }
+
+  .pharmacy-payment__footer {
+    margin-top: 14px;
+  }
+}

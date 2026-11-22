@@ -1,0 +1,175 @@
+const ipdBillingConfig = {
+  page: {
+    title: "IPD Patient Selection",
+    subtitle: "Select an admitted patient to generate an IPD bill",
+    showCloseButton: true,
+    closeButton: {
+      label: "Close",
+      ariaLabel: "Close IPD patient selection",
+    },
+  },
+
+  search: {
+    enabled: true,
+    placeholder: "Search by IPD No., UHID, patient name or mobile...",
+    defaultValue: "",
+    searchOnEnter: true,
+    searchableFields: [
+      "ipdNo",
+      "uhid",
+      "patientName",
+      "mobile",
+      "doctor",
+      "department",
+      "ward",
+      "room",
+      "bed",
+    ],
+    button: {
+      enabled: true,
+      label: "Search",
+      showIcon: true,
+    },
+  },
+
+  filters: {
+    enabled: true,
+    ward: {
+      enabled: true,
+      label: "Ward",
+      placeholder: "All Wards",
+    },
+    status: {
+      enabled: true,
+      label: "Status",
+      placeholder: "All Status",
+      options: [
+        { value: "all", label: "All Status" },
+        { value: "admitted", label: "Admitted" },
+        { value: "discharged", label: "Discharged" },
+        { value: "cancelled", label: "Cancelled" },
+      ],
+    },
+  },
+
+  table: {
+    loadingMessage: "Loading IPD patients...",
+    emptyMessage: "No IPD patients found.",
+    action: {
+      id: "select-ipd-patient",
+      label: "Select",
+      variant: "outlined",
+      color: "primary",
+      showIcon: false,
+      ariaLabel: "Select IPD patient",
+    },
+
+    columns: [
+      {
+        id: "serialNumber",
+        field: "serialNumber",
+        label: "#",
+        type: "number",
+        width: 60,
+        visible: true,
+        sortable: false,
+      },
+      {
+        id: "ipdNo",
+        field: "ipdNo",
+        label: "IPD NO.",
+        type: "text",
+        width: 145,
+        visible: true,
+        sortable: true,
+      },
+      {
+        id: "uhid",
+        field: "uhid",
+        label: "UHID",
+        type: "text",
+        width: 135,
+        visible: true,
+        sortable: true,
+      },
+      {
+        id: "patientName",
+        field: "patientName",
+        label: "PATIENT NAME",
+        type: "text",
+        width: 180,
+        visible: true,
+        sortable: true,
+      },
+      {
+        id: "ageGender",
+        field: "ageGender",
+        label: "AGE / GENDER",
+        type: "text",
+        width: 115,
+        visible: true,
+        sortable: false,
+      },
+      {
+        id: "wardRoomBed",
+        field: "wardRoomBed",
+        label: "WARD / ROOM / BED",
+        type: "text",
+        width: 190,
+        visible: true,
+        sortable: false,
+      },
+      {
+        id: "doctor",
+        field: "doctor",
+        label: "TREATING DOCTOR",
+        type: "text",
+        width: 180,
+        visible: true,
+        sortable: true,
+      },
+      {
+        id: "admissionDate",
+        field: "admissionDate",
+        label: "ADMITTED ON",
+        type: "text",
+        width: 130,
+        visible: true,
+        sortable: true,
+      },
+      {
+        id: "status",
+        field: "status",
+        label: "STATUS",
+        type: "status",
+        width: 110,
+        visible: true,
+        sortable: true,
+      },
+      {
+        id: "action",
+        field: "action",
+        label: "ACTION",
+        type: "action",
+        width: 110,
+        visible: true,
+        sortable: false,
+      },
+    ],
+  },
+
+  pagination: {
+    enabled: true,
+    defaultPage: 1,
+    defaultRowsPerPage: 5,
+    rowsPerPageOptions: [5, 10, 25, 50],
+  },
+
+  footer: {
+    backLabel: "Back",
+    continueLabel: "Continue",
+    cancelLabel: "Cancel",
+  },
+};
+
+export default ipdBillingConfig;

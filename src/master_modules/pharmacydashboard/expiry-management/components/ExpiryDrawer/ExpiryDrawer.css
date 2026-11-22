@@ -1,0 +1,670 @@
+/* ==========================================================
+   Drawer Container
+========================================================== */
+
+.expiry-drawer{
+
+    width:580px;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#f4f7fb;
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.expiry-drawer-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    padding:24px;
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+
+    color:#ffffff;
+
+    box-shadow:0 4px 20px rgba(37,99,235,.25);
+
+}
+
+.expiry-drawer-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.drawer-subtitle{
+
+    margin-top:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+.drawer-subtitle span{
+
+    font-size:14px;
+
+    color:rgba(255,255,255,.9);
+
+}
+
+.drawer-subtitle strong{
+
+    margin-left:6px;
+
+    font-weight:700;
+
+}
+
+.expiry-drawer-header .MuiIconButton-root{
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.12);
+
+    transition:.25s;
+
+}
+
+.expiry-drawer-header .MuiIconButton-root:hover{
+
+    background:rgba(255,255,255,.22);
+
+}
+
+/* ==========================================================
+   Drawer Body
+========================================================== */
+
+.expiry-drawer-body{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:22px;
+
+}
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+.expiry-drawer-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.expiry-drawer-body::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.expiry-drawer-body::-webkit-scrollbar-track{
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   Summary Cards
+========================================================== */
+
+.drawer-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:16px;
+
+    margin-bottom:22px;
+
+}
+
+.summary-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    color:#ffffff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    min-height:120px;
+
+    box-shadow:0 10px 24px rgba(15,23,42,.10);
+
+    transition:.3s;
+
+}
+
+.summary-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.summary-card svg{
+
+    font-size:30px;
+
+    opacity:.95;
+
+}
+
+.summary-card small{
+
+    font-size:13px;
+
+    opacity:.95;
+
+}
+
+.summary-card h3{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.summary-card span{
+
+    font-size:13px;
+
+    opacity:.95;
+
+}
+
+/* ==========================================================
+   Card Colors
+========================================================== */
+
+.summary-card.blue{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+
+}
+
+.summary-card.green{
+
+    background:linear-gradient(135deg,#16a34a,#15803d);
+    color:white;
+
+}
+
+.summary-card.red{
+
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+
+}
+
+/* ==========================================================
+   Drawer Section
+========================================================== */
+
+.drawer-section{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 6px 18px rgba(15,23,42,.05);
+
+    transition:.25s;
+
+}
+
+.drawer-section:hover{
+
+    box-shadow:0 10px 28px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   Section Heading
+========================================================== */
+
+.drawer-section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:22px;
+
+}
+
+.title-line{
+
+    width:5px;
+
+    height:24px;
+
+    border-radius:50px;
+
+    background:#2563eb;
+
+}
+
+.drawer-section-title h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+/* ==========================================================
+   Grid
+========================================================== */
+
+.drawer-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+/* ==========================================================
+   Drawer Item
+========================================================== */
+
+.drawer-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    transition:.25s;
+
+}
+
+.drawer-item:hover{
+
+    background:#ffffff;
+
+    border-color:#bfdbfe;
+
+}
+
+/* ==========================================================
+   Label
+========================================================== */
+
+.drawer-item label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#64748b;
+
+    text-transform:uppercase;
+
+    letter-spacing:.4px;
+
+}
+
+/* ==========================================================
+   Value
+========================================================== */
+
+.drawer-item span{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    line-height:1.5;
+
+    word-break:break-word;
+
+}
+
+/* ==========================================================
+   Status Text
+========================================================== */
+
+.text-primary{
+
+    color:#2563eb !important;
+
+}
+
+.text-success{
+
+    color:#16a34a !important;
+
+}
+
+.text-danger{
+
+    color:#dc2626 !important;
+
+}
+
+/* ==========================================================
+   Status Chip Alignment
+========================================================== */
+
+.drawer-item .expiry-status-chip{
+
+    width:max-content;
+
+    margin-top:4px;
+
+}
+
+
+/* ==========================================================
+   Quick Actions
+========================================================== */
+
+.drawer-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.drawer-action-btn{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    text-align:left;
+
+    background:#ffffff;
+
+    border:1px solid #e2e8f0;
+
+    transition:all .25s ease;
+
+}
+
+.drawer-action-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 14px 30px rgba(15,23,42,.08);
+
+}
+
+.drawer-action-btn svg{
+
+    font-size:28px;
+
+    flex-shrink:0;
+
+}
+
+.drawer-action-btn div{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.drawer-action-btn strong{
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.drawer-action-btn small{
+
+    font-size:12px;
+
+    color:#64748b;
+
+}
+
+/* ==========================================================
+   Report
+========================================================== */
+
+.drawer-action-btn.report{
+
+    border-left:5px solid #2563eb;
+
+}
+
+.drawer-action-btn.report svg{
+
+    color:#2563eb;
+
+}
+
+.drawer-action-btn.report:hover{
+
+    background:#eff6ff;
+
+}
+
+/* ==========================================================
+   Print
+========================================================== */
+
+.drawer-action-btn.print{
+
+    border-left:5px solid #16a34a;
+
+}
+
+.drawer-action-btn.print svg{
+
+    color:#16a34a;
+
+}
+
+.drawer-action-btn.print:hover{
+
+    background:#f0fdf4;
+
+}
+
+/* ==========================================================
+   Supplier
+========================================================== */
+
+.drawer-action-btn.supplier{
+
+    border-left:5px solid #f59e0b;
+
+}
+
+.drawer-action-btn.supplier svg{
+
+    color:#f59e0b;
+
+}
+
+.drawer-action-btn.supplier:hover{
+
+    background:#fff7ed;
+
+}
+
+/* ==========================================================
+   Dispose
+========================================================== */
+
+.drawer-action-btn.dispose{
+
+    border-left:5px solid #dc2626;
+
+}
+
+.drawer-action-btn.dispose svg{
+
+    color:#dc2626;
+
+}
+
+.drawer-action-btn.dispose:hover{
+
+    background:#fef2f2;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:992px){
+
+    .expiry-drawer{
+
+        width:100vw;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .drawer-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .drawer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .drawer-section{
+
+        padding:18px;
+
+    }
+
+    .expiry-drawer-header{
+
+        padding:18px;
+
+    }
+
+    .drawer-action-btn{
+
+        padding:16px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .expiry-drawer-body{
+
+        padding:14px;
+
+    }
+
+    .summary-card{
+
+        min-height:100px;
+
+        padding:16px;
+
+    }
+
+    .summary-card h3{
+
+        font-size:20px;
+
+    }
+
+}

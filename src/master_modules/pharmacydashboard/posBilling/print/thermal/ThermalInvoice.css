@@ -1,0 +1,191 @@
+/* ==============================
+   THERMAL INVOICE CONTAINER
+============================== */
+
+.thermal-invoice {
+
+    width: 80mm;
+
+    max-width: 80mm;
+
+    min-width: 80mm;
+
+    margin: 0 auto;
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+}
+
+/* ==============================
+   GLOBAL RESET
+============================== */
+
+.thermal-invoice * {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    color: #000;
+
+}
+
+.thermal-invoice table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+.thermal-invoice img {
+
+    max-width: 100%;
+
+}
+
+.thermal-invoice p {
+
+    margin: 2px 0;
+
+}
+
+.thermal-invoice h1,
+.thermal-invoice h2,
+.thermal-invoice h3,
+.thermal-invoice h4,
+.thermal-invoice h5 {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-weight: 700;
+
+}
+
+/* ==============================
+   COMMON DIVIDER
+============================== */
+
+.thermal-divider {
+
+    border-top: 1px dashed #000;
+
+    margin: 8px 0;
+
+}
+
+/* ==============================
+   SECTION GAP
+============================== */
+
+.thermal-header,
+.thermal-customer,
+.thermal-medicine,
+.thermal-summary,
+.thermal-footer {
+
+    margin-bottom: 10px;
+
+}
+
+/* ==============================
+   PAGE BREAK CONTROL
+============================== */
+
+.thermal-header,
+.thermal-customer,
+.thermal-medicine-item,
+.thermal-summary,
+.thermal-footer {
+
+    page-break-inside: avoid;
+
+    break-inside: avoid;
+
+}
+
+/* ==============================
+   PRINT SETTINGS
+============================== */
+
+@page {
+
+    size: 80mm auto;
+
+    margin: 0;
+
+}
+
+@media print {
+
+    html,
+    body {
+
+        width: 80mm;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        background: #fff;
+
+        -webkit-print-color-adjust: exact;
+
+        print-color-adjust: exact;
+
+    }
+
+    body * {
+
+        visibility: hidden;
+
+    }
+
+    .thermal-invoice,
+    .thermal-invoice * {
+
+        visibility: visible;
+
+    }
+
+    .thermal-invoice {
+
+        position: absolute;
+
+        left: 0;
+
+        top: 0;
+
+        width: 80mm;
+
+        max-width: 80mm;
+
+        min-width: 80mm;
+
+        margin: 0;
+
+        padding: 6px;
+
+        box-shadow: none;
+
+        border: none;
+
+    }
+
+}

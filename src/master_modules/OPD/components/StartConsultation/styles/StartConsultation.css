@@ -1,0 +1,306 @@
+
+/* =========================================================
+   START CONSULTATION - PAGE LAYOUT
+   ========================================================= */
+
+.start-consultation {
+  --consultation-primary: #2563eb;
+  --consultation-primary-hover: #1d4ed8;
+  --consultation-text: #172b4d;
+  --consultation-muted: #64748b;
+  --consultation-border: #e2e8f0;
+  --consultation-surface: #ffffff;
+  --consultation-background: #f5f8fc;
+  --consultation-danger: #dc2626;
+
+  box-sizing: border-box;
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  margin: 0;
+  padding: 24px;
+
+  background: var(--consultation-background);
+  color: var(--consultation-text);
+  font-family: inherit;
+
+  overflow: visible;
+  overflow-wrap: anywhere;
+}
+
+.start-consultation,
+.start-consultation *,
+.start-consultation *::before,
+.start-consultation *::after {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   MAIN CONTENT CONTAINER
+   ========================================================= */
+
+.start-consultation__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+
+  width: 100%;
+  max-width: 1600px;
+  min-width: 0;
+
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.start-consultation__container > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* =========================================================
+   CONSULTATION WORKSPACE
+   ========================================================= */
+
+.start-consultation__workspace {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  margin: 0;
+  padding: 0;
+
+  background: var(--consultation-surface);
+  border: 1px solid var(--consultation-border);
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 3%);
+
+  overflow: visible;
+}
+
+/* =========================================================
+   ACTIVE TAB PANEL
+   ========================================================= */
+
+.start-consultation__panel {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  margin: 0;
+  padding: 24px;
+
+  background: var(--consultation-surface);
+  overflow: visible;
+}
+
+.start-consultation__panel-heading {
+  width: 100%;
+  min-width: 0;
+  margin: 0 0 24px;
+}
+
+.start-consultation__panel-title {
+  margin: 0;
+  color: var(--consultation-text);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.start-consultation__panel-description {
+  margin: 7px 0 0;
+  color: var(--consultation-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   EMPTY STATE AND PLACEHOLDER
+   ========================================================= */
+
+.start-consultation__empty-state,
+.start-consultation__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 170px;
+
+  padding: 28px 20px;
+
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.start-consultation__empty-state p,
+.start-consultation__placeholder p {
+  margin: 0;
+  color: var(--consultation-text);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.start-consultation__empty-state span,
+.start-consultation__placeholder span {
+  margin-top: 8px;
+  color: var(--consultation-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   CONSULTATION FORM - NATURAL CONTENT HEIGHT
+   ========================================================= */
+
+.start-consultation .consultation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  height: auto;
+  min-height: 0;
+  max-height: none;
+
+  margin: 0;
+  overflow: visible;
+}
+
+.start-consultation .consultation-form > * {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Keep the form footer at the end of the content */
+.start-consultation .consultation-form__actions {
+  position: static;
+  inset: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.start-consultation button:focus-visible,
+.start-consultation input:focus-visible,
+.start-consultation select:focus-visible,
+.start-consultation textarea:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.start-consultation input,
+.start-consultation select,
+.start-consultation textarea {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* =========================================================
+   RESPONSIVE LAYOUT
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .start-consultation {
+    padding: 20px;
+  }
+
+  .start-consultation__container {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-consultation {
+    padding: 16px;
+  }
+
+  .start-consultation__container {
+    gap: 14px;
+  }
+
+  .start-consultation__panel {
+    padding: 18px 14px;
+  }
+
+  .start-consultation__panel-heading {
+    margin-bottom: 18px;
+  }
+
+  .start-consultation__panel-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  .start-consultation {
+    padding: 12px;
+  }
+
+  .start-consultation__workspace {
+    border-radius: 10px;
+  }
+
+  .start-consultation__container {
+    gap: 12px;
+  }
+
+  .start-consultation__panel {
+    padding: 14px 10px;
+  }
+
+  .start-consultation__panel-title {
+    font-size: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .start-consultation *,
+  .start-consultation *::before,
+  .start-consultation *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+

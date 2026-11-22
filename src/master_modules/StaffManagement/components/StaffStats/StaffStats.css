@@ -1,0 +1,297 @@
+
+/* ==========================================
+   STAFF MANAGEMENT - STATISTICS
+   File: StaffStats.css
+========================================== */
+
+.staff-stats {
+  width: 100%;
+  min-width: 0;
+  font-family: inherit;
+}
+
+/* Horizontal stats grid */
+
+.staff-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Individual stat card */
+
+.staff-stats__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 9px;
+
+  min-width: 0;
+  min-height: 100px;
+  padding: 12px;
+
+  background: #ffffff;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.025);
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+.staff-stats__card:hover,
+.staff-stats__card:focus-within {
+  border-color: #cbd5e1;
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.06);
+}
+
+/* Top row: icon + title + number */
+
+.staff-stats__card-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Icon box */
+
+.staff-stats__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 11px;
+}
+
+.staff-stats__icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* Card text */
+
+.staff-stats__card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.staff-stats .staff-stats__card-title {
+  margin: 0 0 6px;
+
+  color: #243b67;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  overflow-wrap: anywhere;
+}
+
+.staff-stats .staff-stats__card-value {
+  margin: 0;
+
+  color: #111c35;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.6px;
+
+  font-variant-numeric: tabular-nums;
+}
+
+.staff-stats__value-skeleton {
+  margin-top: -2px;
+}
+
+/* Monthly trend */
+
+.staff-stats__trend {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  min-width: 0;
+  padding-left: 10px;
+
+  color: #16a34a;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.35;
+
+  white-space: nowrap;
+}
+
+.staff-stats__trend-icon {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
+}
+
+.staff-stats__trend-value {
+  flex: 0 0 auto;
+  font-weight: 600;
+}
+
+.staff-stats__trend-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.staff-stats__trend--down {
+  color: #dc2626;
+}
+
+/* ==========================================
+   COLOR VARIANTS
+========================================== */
+
+/* Blue - Total Staff */
+
+.staff-stats__card--blue,
+.staff-stats__card--primary {
+  background: #f2f9ff;
+}
+
+.staff-stats__card--blue .staff-stats__icon,
+.staff-stats__card--primary .staff-stats__icon {
+  color: #1671f9;
+  background: #dcecff;
+}
+
+/* Green - Doctors */
+
+.staff-stats__card--green {
+  background: #effcf5;
+}
+
+.staff-stats__card--green .staff-stats__icon {
+  color: #0ca65b;
+  background: #d8f8e5;
+}
+
+/* Purple - Nurses */
+
+.staff-stats__card--purple {
+  background: #f8f2ff;
+}
+
+.staff-stats__card--purple .staff-stats__icon {
+  color: #8b36f5;
+  background: #edddff;
+}
+
+/* Orange - Administrative */
+
+.staff-stats__card--orange {
+  background: #fff8ec;
+}
+
+.staff-stats__card--orange .staff-stats__icon {
+  color: #f59e0b;
+  background: #ffedcc;
+}
+
+/* Red - Support Staff */
+
+.staff-stats__card--red {
+  background: #fff2f2;
+}
+
+.staff-stats__card--red .staff-stats__icon {
+  color: #ef4444;
+  background: #ffe0e0;
+}
+
+/* ==========================================
+   HOVER / ACTIVE STATES
+========================================== */
+
+.staff-stats__card--clickable {
+  cursor: pointer;
+}
+
+.staff-stats__card--clickable:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.06);
+}
+
+.staff-stats__card--clickable:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.25);
+  outline-offset: 2px;
+}
+
+/* .staff-stats__card--active {
+  border-color: #8bbcff;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.12);
+} */
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+  .staff-stats__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-stats__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .staff-stats__card {
+    min-height: 104px;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff-stats__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .staff-stats__card {
+    min-height: 100px;
+    padding: 12px;
+  }
+
+  .staff-stats__icon {
+    flex-basis: 48px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .staff-stats__icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .staff-stats__trend {
+    padding-left: 60px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .staff-stats__card {
+    transition: none;
+  }
+
+  .staff-stats__card--clickable:hover {
+    transform: none;
+  }
+}

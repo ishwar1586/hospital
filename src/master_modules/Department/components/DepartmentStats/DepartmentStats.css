@@ -1,0 +1,122 @@
+/* =========================================
+   DEPARTMENT STATS
+========================================= */
+
+.department-stats {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.department-stats__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.department-stats__card {
+  min-width: 0;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #dce6f4;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.department-stats__icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.department-stats__icon svg {
+  font-size: 25px;
+}
+
+/* Blue */
+.department-stats__card--blue .department-stats__icon {
+  background: #e8f2ff;
+  color: #1673e8;
+}
+
+/* Green */
+.department-stats__card--green .department-stats__icon {
+  background: #e0f8ec;
+  color: #0ba66a;
+}
+
+/* Red */
+.department-stats__card--red .department-stats__icon {
+  background: #ffeaec;
+  color: #f04452;
+}
+
+/* Purple */
+.department-stats__card--purple .department-stats__icon {
+  background: #f0e9ff;
+  color: #8546e8;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.department-stats__content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.department-stats__label {
+  margin: 0;
+  color: #536789;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.department-stats__value {
+  margin: 0;
+  color: #172554;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+  .department-stats__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .department-stats__grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .department-stats__card {
+    min-height: 68px;
+  }
+}

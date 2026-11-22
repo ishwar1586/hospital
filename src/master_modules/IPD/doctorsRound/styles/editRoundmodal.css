@@ -1,0 +1,68 @@
+.edit-round-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.edit-round-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.edit-patient-info {
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  margin-bottom: 20px;
+}
+
+.edit-patient-info h3 {
+  margin: 0;
+  color: #1e3a8a;
+}
+
+.edit-patient-info p {
+  margin-top: 6px;
+  color: #475569;
+}
+
+.edit-round-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.edit-round-textarea {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.edit-round-footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 16px 24px !important;
+}
+
+@media (max-width: 768px) {
+
+  .edit-round-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

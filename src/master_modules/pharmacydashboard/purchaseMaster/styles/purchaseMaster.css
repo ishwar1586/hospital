@@ -1,0 +1,9 @@
+.purchase-master{
+    display:flex;
+    flex-direction:column;
+     background: #ffff;
+     padding: 10px;
+    gap:10px;
+    max-width: 100% !important;
+    /* overflow-x:hidden    !important; */
+}

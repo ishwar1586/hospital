@@ -1,0 +1,101 @@
+.handover-header {
+  display: flex !important;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.handover-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.handover-title svg {
+  color: #2563eb;
+}
+
+.handover-patient-card {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 20px;
+
+  margin-bottom: 24px;
+}
+
+.handover-patient-card > div {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+
+  padding: 14px;
+}
+
+.handover-patient-card label {
+  display: block;
+
+  font-size: 12px;
+
+  color: #64748b;
+
+  margin-bottom: 6px;
+}
+
+.handover-patient-card span {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.handover-form {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+}
+
+.handover-section {
+  margin-top: 20px;
+}
+
+.handover-footer {
+  border-top: 1px solid #e5e7eb;
+
+  padding: 16px 24px !important;
+}
+
+.handover-footer button {
+  min-width: 150px;
+}
+
+@media (max-width: 768px) {
+
+  .handover-patient-card {
+    grid-template-columns: 1fr;
+  }
+
+  .handover-form {
+    grid-template-columns: 1fr;
+  }
+
+}

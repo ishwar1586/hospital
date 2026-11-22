@@ -1,0 +1,84 @@
+.prescription-header {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.prescription-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.prescription-patient-card {
+  background: #eff6ff;
+
+  border: 1px solid #bfdbfe;
+
+  border-radius: 12px;
+
+  padding: 16px;
+
+  margin-bottom: 20px;
+}
+
+.prescription-patient-card h3 {
+  margin: 0;
+}
+
+.prescription-patient-card p {
+  margin-top: 6px;
+}
+
+.prescription-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.instruction-box {
+  margin-top: 20px;
+}
+
+.add-btn-wrapper {
+  margin-top: 20px;
+}
+
+.medicine-table-wrapper {
+  margin-top: 24px;
+
+  overflow-x: auto;
+}
+
+.medicine-table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.medicine-table th,
+.medicine-table td {
+  padding: 12px;
+
+  border: 1px solid #e5e7eb;
+
+  text-align: left;
+}
+
+.medicine-table th {
+  background: #f8fafc;
+}
+
+@media (max-width: 768px) {
+
+  .prescription-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,56 @@
+.round-modal-header {
+  display: flex !important;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.round-modal-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 18px;
+
+  font-weight: 700;
+}
+
+.round-form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 10px;
+}
+
+.round-textarea-section {
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.round-modal-footer {
+  padding: 16px 24px !important;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (max-width: 768px) {
+
+  .round-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,273 @@
+/* ============================================================
+   TRANSFER INFORMATION
+   ============================================================ */
+
+.ipd-transfer-information {
+  width: 100%;
+
+  padding: 24px 28px;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-transfer-information__header {
+  margin-bottom: 22px;
+}
+
+
+.ipd-transfer-information__title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+.ipd-transfer-information__subtitle {
+  margin: 5px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.ipd-transfer-information__form {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px 20px;
+}
+
+
+/* ============================================================
+   FIELD
+   ============================================================ */
+
+.ipd-transfer-information__field {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+.ipd-transfer-information__field--full {
+  grid-column: 1 / -1;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.ipd-transfer-information__label {
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+.ipd-transfer-information__required {
+  margin-left: 3px;
+
+  color: #dc2626;
+}
+
+
+/* ============================================================
+   INPUT
+   ============================================================ */
+
+.ipd-transfer-information__input {
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.ipd-transfer-information__input:hover {
+  border-color: #9ca3af;
+}
+
+
+.ipd-transfer-information__input:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ============================================================
+   SELECT
+   ============================================================ */
+
+.ipd-transfer-information__select {
+  width: 100%;
+
+  min-height: 42px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.ipd-transfer-information__select:hover {
+  border-color: #9ca3af;
+}
+
+
+.ipd-transfer-information__select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ============================================================
+   TEXTAREA
+   ============================================================ */
+
+.ipd-transfer-information__textarea {
+  width: 100%;
+
+  min-height: 100px;
+
+  padding: 11px 12px;
+
+  resize: vertical;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.ipd-transfer-information__textarea::placeholder {
+  color: #9ca3af;
+}
+
+
+.ipd-transfer-information__textarea:hover {
+  border-color: #9ca3af;
+}
+
+
+.ipd-transfer-information__textarea:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  .ipd-transfer-information {
+    padding: 20px;
+  }
+
+  .ipd-transfer-information__form {
+    grid-template-columns: 1fr;
+  }
+
+  .ipd-transfer-information__field--full {
+    grid-column: auto;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .ipd-transfer-information {
+    padding: 16px;
+  }
+
+  .ipd-transfer-information__input,
+  .ipd-transfer-information__select {
+    min-height: 40px;
+  }
+
+}

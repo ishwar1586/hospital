@@ -1,0 +1,7 @@
+.category-master{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background: #ffff;
+    padding: 20px;
+}

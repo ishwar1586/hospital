@@ -1,0 +1,128 @@
+/* MAIN SIDEBAR */
+.sidebar {
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  font-size: 12px;
+  background: var(--bg-sidebar);
+}
+
+/* HIDE SCROLLBAR */
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+.sidebar {
+  scrollbar-width: none;
+}
+
+/* BRAND */
+.sidebar-brand {
+  height: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(191, 83, 83);
+  font-size: 22px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  letter-spacing: 0.5px;
+}
+
+/* LINKS */
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* ACTIVE */
+.sidebar-link.active {
+  background: #4c5a8a;
+  color: #fff;
+}
+
+/* ACTIVE PARENT */
+.active-parent {
+  background: rgba(255,255,255,0.1);
+}
+
+/* HOVER */
+.sidebar-link:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* ICON + TEXT */
+.sidebar-item-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.sidebar-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* TEXT SMOOTH HIDE */
+.sidebar-item-content span {
+  transition: opacity 0.2s ease;
+}
+
+/* COLLAPSED MODE */
+.sidebar.collapsed .sidebar-item-content {
+  justify-content: center;
+}
+
+.sidebar.collapsed .sidebar-item-content span {
+  opacity: 0;
+  transition: opacity 0.15s ease 0.1s ;
+}
+
+/* GROUP */
+.sidebar-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CHILDREN ANIMATION */
+.sidebar-children {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  padding-left: 15px;
+}
+
+.sidebar-children.open {
+  max-height: 500px;
+}
+
+/* CHILD */
+.sidebar-link.child {
+  font-size: 12px;
+  padding: 8px 14px;
+}
+
+/* ARROW */
+.arrow {
+  transition: transform 0.3s ease;
+  
+
+   /* transition: transform translate(-50%, -50%); */
+}
+
+.arrow.open {
+  transform: rotate(90deg);
+}

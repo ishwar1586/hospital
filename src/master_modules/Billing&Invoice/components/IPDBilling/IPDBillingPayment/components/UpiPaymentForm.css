@@ -1,0 +1,242 @@
+
+/* =========================================================
+   IPD BILLING — UPI PAYMENT FORM
+   File: UpiPaymentForm.css
+========================================================= */
+
+.ipd-upi-payment {
+  width: 100%;
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e4eaf2;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.ipd-upi-payment *,
+.ipd-upi-payment *::before,
+.ipd-upi-payment *::after {
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.ipd-upi-payment__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.ipd-upi-payment__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  color: #1768d1;
+  background: #edf5ff;
+  border-radius: 12px;
+}
+
+.ipd-upi-payment__heading {
+  min-width: 0;
+}
+
+.ipd-upi-payment__title {
+  margin: 0;
+  color: #172b4d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ipd-upi-payment__description {
+  margin: 4px 0 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Form */
+
+.ipd-upi-payment__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ipd-upi-payment__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ipd-upi-payment__label {
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ipd-upi-payment__required {
+  margin-left: 3px;
+  color: #dc3545;
+}
+
+.ipd-upi-payment__input,
+.ipd-upi-payment__textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  color: #172b4d;
+  background: #ffffff;
+  border: 1px solid #d6deea;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ipd-upi-payment__input {
+  min-height: 46px;
+}
+
+.ipd-upi-payment__textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.ipd-upi-payment__input::placeholder,
+.ipd-upi-payment__textarea::placeholder {
+  color: #a0aaba;
+}
+
+.ipd-upi-payment__input:hover,
+.ipd-upi-payment__textarea:hover {
+  border-color: #aabbd1;
+}
+
+.ipd-upi-payment__input:focus,
+.ipd-upi-payment__textarea:focus {
+  border-color: #2878dc;
+  box-shadow: 0 0 0 3px rgba(40, 120, 220, 0.12);
+}
+
+.ipd-upi-payment__input:disabled,
+.ipd-upi-payment__textarea:disabled {
+  color: #8491a5;
+  background: #f3f6fa;
+  cursor: not-allowed;
+}
+
+/* Helper text */
+
+.ipd-upi-payment__hint {
+  margin: 0;
+  color: #8491a5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Verification notice */
+
+.ipd-upi-payment__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 14px;
+  color: #775817;
+  background: #fff9e8;
+  border: 1px solid #f2e1a9;
+  border-radius: 9px;
+}
+
+.ipd-upi-payment__notice-icon {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ipd-upi-payment__notice-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Validation */
+
+.ipd-upi-payment__error {
+  margin: 0;
+  color: #c62828;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ipd-upi-payment__input--error,
+.ipd-upi-payment__textarea--error {
+  border-color: #dc3545;
+}
+
+.ipd-upi-payment__input--error:focus,
+.ipd-upi-payment__textarea--error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .ipd-upi-payment {
+    padding: 18px;
+  }
+
+  .ipd-upi-payment__header {
+    margin-bottom: 18px;
+  }
+
+  .ipd-upi-payment__form {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ipd-upi-payment {
+    padding: 14px;
+    border-radius: 11px;
+  }
+
+  .ipd-upi-payment__header {
+    gap: 10px;
+  }
+
+  .ipd-upi-payment__icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .ipd-upi-payment__title {
+    font-size: 15px;
+  }
+
+  .ipd-upi-payment__description {
+    font-size: 12px;
+  }
+
+  .ipd-upi-payment__input {
+    min-height: 44px;
+  }
+
+  .ipd-upi-payment__textarea {
+    min-height: 90px;
+  }
+}

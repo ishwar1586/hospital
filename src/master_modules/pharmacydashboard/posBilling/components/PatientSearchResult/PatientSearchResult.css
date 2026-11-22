@@ -1,0 +1,135 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.patient-search-result{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+HEADER
+=========================================================== */
+
+.patient-search-result-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 24px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.patient-search-result-header h3{
+
+    margin:0;
+
+    font-size:18px;
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
+
+.patient-search-result-header p{
+
+    margin-top:6px;
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+.patient-search-result-header span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:120px;
+
+    height:38px;
+
+    padding:0 16px;
+
+    border-radius:999px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+EMPTY
+=========================================================== */
+
+.patient-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+.patient-empty svg{
+
+    font-size:64px;
+
+    color:#CBD5E1;
+
+    margin-bottom:18px;
+
+}
+
+.patient-empty h4{
+
+    margin:0;
+
+    font-size:22px;
+
+    color:#0F172A;
+
+}
+
+.patient-empty p{
+
+    margin-top:12px;
+
+    max-width:420px;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+}

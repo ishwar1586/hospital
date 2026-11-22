@@ -1,0 +1,219 @@
+
+/* ImagingStudySection.css */
+
+/* Section wrapper */
+.new-radiology-order__section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e1e8f2;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgb(25 45 75 / 3%);
+}
+
+.new-radiology-order__section *,
+.new-radiology-order__section *::before,
+.new-radiology-order__section *::after {
+  box-sizing: border-box;
+}
+
+/* Heading */
+.new-radiology-order__section-heading {
+  min-width: 0;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9eef5;
+}
+
+.new-radiology-order__section-heading h2 {
+  margin: 0;
+  color: #192b47;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.new-radiology-order__section-heading p {
+  margin: 5px 0 0;
+  color: #77859b;
+  font-size: 11px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* Form grid */
+.new-radiology-order__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.new-radiology-order__grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.new-radiology-order__field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.new-radiology-order__field--full {
+  grid-column: 1 / -1;
+}
+
+/* Labels */
+.new-radiology-order__field label {
+  display: block;
+  margin: 0;
+  color: #34445e;
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.new-radiology-order__required {
+  margin-left: 4px;
+  color: #dc3d4b;
+}
+
+/* Inputs and dropdowns */
+.new-radiology-order__field input,
+.new-radiology-order__field select,
+.new-radiology-order__field textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 42px;
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #d8e2ef;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #253650;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  outline: none;
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease,
+    background-color 150ms ease;
+}
+
+.new-radiology-order__field input::placeholder,
+.new-radiology-order__field textarea::placeholder {
+  color: #9aa6b8;
+  opacity: 1;
+}
+
+.new-radiology-order__field select {
+  padding-right: 30px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+
+.new-radiology-order__field input:hover:not(:disabled),
+.new-radiology-order__field select:hover:not(:disabled),
+.new-radiology-order__field textarea:hover:not(:disabled) {
+  border-color: #b9c9df;
+}
+
+.new-radiology-order__field input:focus,
+.new-radiology-order__field select:focus,
+.new-radiology-order__field textarea:focus {
+  border-color: #3979f6;
+  box-shadow: 0 0 0 3px rgb(57 121 246 / 10%);
+}
+
+.new-radiology-order__field input:disabled,
+.new-radiology-order__field select:disabled,
+.new-radiology-order__field textarea:disabled {
+  background: #f3f6fa;
+  color: #8491a4;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* Invalid fields */
+.new-radiology-order__field input[aria-invalid="true"],
+.new-radiology-order__field select[aria-invalid="true"],
+.new-radiology-order__field textarea[aria-invalid="true"] {
+  border-color: #dc3d4b;
+}
+
+.new-radiology-order__error {
+  display: block;
+  color: #c83240;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .new-radiology-order__section {
+    padding: 18px;
+  }
+
+  .new-radiology-order__grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .new-radiology-order__field--full {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+  .new-radiology-order__section {
+    padding: 14px;
+    border-radius: 8px;
+  }
+
+  .new-radiology-order__section-heading {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+  }
+
+  .new-radiology-order__grid,
+  .new-radiology-order__grid--two {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .new-radiology-order__field--full {
+    grid-column: auto;
+  }
+
+  .new-radiology-order__field input,
+  .new-radiology-order__field select,
+  .new-radiology-order__field textarea {
+    min-height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .new-radiology-order__field input,
+  .new-radiology-order__field select,
+  .new-radiology-order__field textarea {
+    transition: none;
+  }
+}

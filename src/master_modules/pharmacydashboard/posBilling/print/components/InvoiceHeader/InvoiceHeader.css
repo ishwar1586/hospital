@@ -1,0 +1,119 @@
+.thermal-header{
+
+    width:100%;
+
+    padding-bottom:8px;
+
+    color:#000;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.thermal-hospital-name{
+
+    margin:0;
+
+    padding:0;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    text-transform:uppercase;
+
+}
+
+.thermal-center{
+
+    margin:2px 0;
+
+    padding:0;
+
+    text-align:center;
+
+    font-size:11px;
+
+    line-height:1.4;
+
+    word-break:break-word;
+
+}
+
+.thermal-title{
+
+    margin:6px 0;
+
+    padding:0;
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.thermal-divider{
+
+    width:100%;
+
+    margin:6px 0;
+
+    border-top:1px dashed #000;
+
+}
+
+.thermal-header-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.thermal-header-table td{
+
+    padding:2px 0;
+
+    font-size:11px;
+
+    vertical-align:top;
+
+}
+
+.thermal-header-table td:nth-child(1){
+
+    width:55px;
+
+    font-weight:600;
+
+}
+
+.thermal-header-table td:nth-child(2){
+
+    width:8px;
+
+    text-align:center;
+
+}
+
+.thermal-header-table td:nth-child(3){
+
+    word-break:break-word;
+
+}
+
+@media print{
+
+    .thermal-header{
+
+        page-break-inside:avoid;
+
+    }
+
+}

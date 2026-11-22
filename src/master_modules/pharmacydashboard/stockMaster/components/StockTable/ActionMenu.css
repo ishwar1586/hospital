@@ -1,0 +1,57 @@
+.stock-action-btn{
+
+    width:36px;
+
+    height:36px;
+
+    border-radius:8px !important;
+
+    transition:.25s;
+
+}
+
+.stock-action-btn:hover{
+
+    background:#EFF6FF !important;
+
+}
+
+/* ============================== */
+
+.stock-action-menu{
+
+    min-width:130px;
+
+    border-radius:14px !important;
+
+    box-shadow:
+
+        0 12px 28px rgba(15,23,42,.14) !important;
+
+    border:1px solid #E5E7EB;
+
+}
+
+/* ============================== */
+
+.stock-action-menu .MuiMenuItem-root{
+
+    font-size:14px;
+
+    padding:12px 18px;
+
+    transition:.2s;
+
+}
+
+.stock-action-menu .MuiMenuItem-root:hover{
+
+    background:#F8FAFC;
+
+}
+
+.stock-action-menu .MuiListItemIcon-root{
+
+    min-width:36px;
+
+}

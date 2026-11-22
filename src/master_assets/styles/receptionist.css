@@ -1,0 +1,96 @@
+/* 🔝 STATS */
+.reception-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.reception-stat-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+.reception-stat-card .label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.reception-stat-card h3 {
+  margin-top: 8px;
+  font-size: 22px;
+}
+
+/* ⚡ QUICK ACTIONS */
+.reception-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.action-btn {
+  padding: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: #1e40af;
+}
+
+.receptionist-section {
+  background: transparent;
+}
+
+⏳ WAITING QUEUE
+.waiting-queue h3 {
+  margin-bottom: 12px;
+}
+
+.queue-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.queue-row {
+  display: grid;
+  grid-template-columns: 60px 1fr 80px;
+  align-items: center;
+}
+
+.token {
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.queue-info p {
+  font-weight: 600;
+}
+
+.queue-info span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.time {
+  font-size: 13px;
+  color: #374151;
+}
+.waitingqueue{
+    margin-top: 24px;
+    margin-left: 10px;
+    background: #ffffff;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+

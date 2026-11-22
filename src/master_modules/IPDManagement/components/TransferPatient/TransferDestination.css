@@ -1,0 +1,211 @@
+/* ============================================================
+   TRANSFER DESTINATION
+   ============================================================ */
+
+.ipd-transfer-destination {
+  width: 100%;
+  padding: 24px 28px;
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.ipd-transfer-destination__header {
+  margin-bottom: 20px;
+}
+
+
+.ipd-transfer-destination__title {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+.ipd-transfer-destination__subtitle {
+  margin: 5px 0 0;
+
+  color: #6b7280;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   OPTIONS
+   ============================================================ */
+
+.ipd-transfer-destination__options {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+
+  width: 100%;
+}
+
+
+/* ============================================================
+   OPTION
+   ============================================================ */
+
+.ipd-transfer-destination__option {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  padding: 18px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.ipd-transfer-destination__option:hover {
+  border-color: #bfdbfe;
+
+  background: #f8fbff;
+}
+
+
+.ipd-transfer-destination__option--selected {
+  border-color: #2563eb;
+
+  background: #eff6ff;
+
+  box-shadow:
+    0 0 0 1px rgba(37, 99, 235, 0.08);
+}
+
+
+/* ============================================================
+   RADIO
+   ============================================================ */
+
+.ipd-transfer-destination__radio {
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  margin-top: 1px;
+
+  border: 1.5px solid #9ca3af;
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+.ipd-transfer-destination__radio--selected {
+  border-color: #2563eb;
+
+  background: #2563eb;
+}
+
+
+.ipd-transfer-destination__radio-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.ipd-transfer-destination__content {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.ipd-transfer-destination__label {
+  color: #111827;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+.ipd-transfer-destination__description {
+  color: #6b7280;
+
+  font-size: 12px;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  .ipd-transfer-destination {
+    padding: 20px;
+  }
+
+  .ipd-transfer-destination__options {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .ipd-transfer-destination {
+    padding: 16px;
+  }
+
+  .ipd-transfer-destination__option {
+    padding: 15px;
+  }
+
+}

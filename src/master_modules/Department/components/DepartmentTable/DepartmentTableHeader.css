@@ -1,0 +1,51 @@
+.department-table-header {
+  background: #f8fafc;
+}
+
+.department-table-header__cell {
+  height: 48px;
+  padding: 0 15px;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  white-space: nowrap;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.department-table-header__cell--services,
+.department-table-header__cell--actions {
+  text-align: center;
+}
+
+.department-table-header__sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+.department-table-header__sort:hover {
+  color: #2563eb;
+}
+
+.department-table-header__sort-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #94a3b8;
+}
+
+.department-table-header__sort-icon svg {
+  font-size: 15px;
+}

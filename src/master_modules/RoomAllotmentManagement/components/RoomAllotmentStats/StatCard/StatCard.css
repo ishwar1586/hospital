@@ -1,0 +1,185 @@
+
+/* ==========================================
+   ROOM ALLOTMENT STAT CARD
+========================================== */
+
+.room-allotment-stat-card {
+  width: 100%;
+  min-width: 0;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 11px;
+  box-sizing: border-box;
+
+  background: #ffffff;
+  border: 1px solid #e1e9f5;
+  border-radius: 8px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.room-allotment-stat-card:hover {
+  border-color: #c9d9f4;
+  box-shadow: 0 3px 10px rgba(30, 64, 175, 0.06);
+}
+
+/* ==========================================
+   ICON WRAPPER
+========================================== */
+
+.room-allotment-stat-card__icon-wrapper {
+  width: 41px;
+  height: 41px;
+  min-width: 41px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+}
+
+.room-allotment-stat-card__icon {
+  width: 23px;
+  height: 23px;
+}
+
+/* ==========================================
+   CARD CONTENT
+========================================== */
+
+.room-allotment-stat-card__content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.room-allotment-stat-card__title {
+  color: #34415f;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.room-allotment-stat-card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.room-allotment-stat-card__value {
+  margin: 0;
+  color: #111b50;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================
+   PERCENTAGE
+========================================== */
+
+.room-allotment-stat-card__percentage {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4px 7px;
+  border-radius: 5px;
+
+  font-size: 9px;
+  font-weight: 600;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================
+   BLUE THEME
+========================================== */
+
+.room-allotment-stat-card--blue
+.room-allotment-stat-card__icon-wrapper {
+  background: #eaf3ff;
+  color: #2780ed;
+}
+
+/* ==========================================
+   GREEN THEME
+========================================== */
+
+.room-allotment-stat-card--green
+.room-allotment-stat-card__icon-wrapper {
+  background: #e7f9ef;
+  color: #16a45b;
+}
+
+.room-allotment-stat-card--green
+.room-allotment-stat-card__percentage {
+  background: #d9f8e7;
+  color: #138b4b;
+}
+
+/* ==========================================
+   BLUE PERCENTAGE
+========================================== */
+
+.room-allotment-stat-card--blue
+.room-allotment-stat-card__percentage {
+  background: #e6f1ff;
+  color: #2475e6;
+}
+
+/* ==========================================
+   PURPLE THEME
+========================================== */
+
+.room-allotment-stat-card--purple
+.room-allotment-stat-card__icon-wrapper {
+  background: #f1eaff;
+  color: #8545e8;
+}
+
+/* ==========================================
+   ORANGE THEME
+========================================== */
+
+.room-allotment-stat-card--orange
+.room-allotment-stat-card__icon-wrapper {
+  background: #fff0e5;
+  color: #f07827;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media screen and (max-width: 480px) {
+  .room-allotment-stat-card {
+    min-height: 65px;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .room-allotment-stat-card__icon-wrapper {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+  }
+
+  .room-allotment-stat-card__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .room-allotment-stat-card__value {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,149 @@
+/* =========================================
+   Medical Summary
+========================================= */
+
+.patient-medical-summary {
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   Header
+========================================= */
+
+.patient-medical-summary-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 18px;
+
+  border-bottom: 1px solid #eef0f4;
+}
+
+
+.patient-medical-summary-title {
+  margin: 0;
+
+  color: #172554;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+.patient-medical-summary-subtitle {
+  margin: 4px 0 0;
+
+  color: #7b8497;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   Body
+========================================= */
+
+.patient-medical-summary-body {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* =========================================
+   Information Item
+========================================= */
+
+.patient-medical-summary-item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  min-height: 70px;
+
+  padding: 14px 18px;
+
+  border-right: 1px solid #eef0f4;
+  border-bottom: 1px solid #eef0f4;
+}
+
+
+/* Remove right border from right column */
+
+.patient-medical-summary-item:nth-child(even) {
+  border-right: none;
+}
+
+
+/* Remove bottom border from last row */
+
+.patient-medical-summary-item:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+
+/* =========================================
+   Label
+========================================= */
+
+.patient-medical-summary-label {
+  color: #98a2b3;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   Value
+========================================= */
+
+.patient-medical-summary-value {
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 600px) {
+
+  .patient-medical-summary-body {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-medical-summary-item {
+    padding: 13px 16px;
+
+    border-right: none;
+    border-bottom: 1px solid #eef0f4;
+  }
+
+  .patient-medical-summary-item:last-child {
+    border-bottom: none;
+  }
+
+  .patient-medical-summary-item:nth-last-child(-n + 2) {
+    border-bottom: 1px solid #eef0f4;
+  }
+}

@@ -1,0 +1,89 @@
+/* =========================================
+   SAMPLE PROCESSING PAGE
+========================================= */
+
+.sample-processing-page {
+   display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 14px;
+    padding: 20px;
+}
+
+
+/* =========================================
+   GLOBAL BOX SIZING
+========================================= */
+
+.sample-processing-page *,
+.sample-processing-page *::before,
+.sample-processing-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   HEADER SPACING
+========================================= */
+
+.sample-processing-page
+.sample-processing-header {
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   FUTURE SECTION SPACING
+========================================= */
+
+.sample-processing-page
+> .processing-stats-cards {
+    margin-bottom: 12px;
+}
+
+
+.sample-processing-page
+> .processing-filters {
+    margin-bottom: 0;
+}
+
+
+.sample-processing-page
+> .processing-tabs {
+    margin-top: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .sample-processing-page {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .sample-processing-page {
+        overflow-x: hidden;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .sample-processing-page {
+        width: 100%;
+
+        padding: 0;
+    }
+
+}

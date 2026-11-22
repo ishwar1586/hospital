@@ -1,0 +1,297 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.prescription-medicine{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    padding:22px 24px;
+
+    border-bottom:1px solid #E2E8F0;
+
+    transition:.25s;
+
+}
+
+.prescription-medicine:last-child{
+
+    border-bottom:none;
+
+}
+
+.prescription-medicine:hover{
+
+    background:#F8FAFC;
+
+}
+
+/* ===========================================================
+LEFT
+=========================================================== */
+
+.medicine-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    min-width:260px;
+
+}
+
+.medicine-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:#EFF6FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.medicine-icon svg{
+
+    color:#2563EB;
+
+    font-size:26px;
+
+}
+
+.medicine-info h4{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.medicine-info p{
+
+    margin-top:6px;
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+/* ===========================================================
+CENTER
+=========================================================== */
+
+.medicine-details{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex:1;
+
+}
+
+.detail-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.detail-item svg{
+
+    color:#2563EB;
+
+}
+
+.price-label{
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:#EFF6FF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#2563EB;
+
+    font-weight:700;
+
+}
+
+.detail-item span{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+.detail-item strong{
+
+    display:block;
+
+    margin-top:4px;
+
+    font-size:14px;
+
+    color:#0F172A;
+
+}
+
+/* ===========================================================
+RIGHT
+=========================================================== */
+
+.medicine-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.add-medicine-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    height:42px;
+
+    min-width:130px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.add-medicine-btn:hover:not(:disabled){
+
+    background:#1D4ED8;
+
+}
+
+.add-medicine-btn:disabled{
+
+    background:#CBD5E1;
+
+    cursor:not-allowed;
+
+    color:#64748B;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .prescription-medicine{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .medicine-details{
+
+        width:100%;
+
+        justify-content:space-between;
+
+        flex-wrap:wrap;
+
+        gap:20px;
+
+    }
+
+    .medicine-actions{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .medicine-details{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .medicine-actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .add-medicine-btn{
+
+        width:100%;
+
+    }
+
+}

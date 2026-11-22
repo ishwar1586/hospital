@@ -1,0 +1,111 @@
+const billingListMock = [
+  {
+    id: "BILL-1001",
+    billNo: "BL-2026-1001",
+    patient: {
+      name: "Rahul Kumar",
+      uhid: "UHID-10245",
+      age: 34,
+      gender: "Male",
+    },
+    department: "OPD",
+    billDate: "05 Oct 2026",
+    patientType: "OPD Patient",
+    totalAmount: 2500,
+    paidAmount: 2500,
+    remainingAmount: 0,
+    paymentStatus: "Paid",
+  },
+
+  {
+    id: "BILL-1002",
+    billNo: "BL-2026-1002",
+    patient: {
+      name: "Priya Singh",
+      uhid: "UHID-10246",
+      age: 28,
+      gender: "Female",
+    },
+    department: "IPD",
+    billDate: "05 Oct 2026",
+    patientType: "IPD Patient",
+    totalAmount: 18500,
+    paidAmount: 10000,
+    remainingAmount: 8500,
+    paymentStatus: "Partial",
+  },
+
+  {
+    id: "BILL-1003",
+    billNo: "BL-2026-1003",
+    patient: {
+      name: "Amit Verma",
+      uhid: "UHID-10247",
+      age: 41,
+      gender: "Male",
+    },
+    department: "Pharmacy",
+    billDate: "04 Oct 2026",
+    patientType: "OPD Patient",
+    totalAmount: 3250,
+    paidAmount: 0,
+    remainingAmount: 3250,
+    paymentStatus: "Pending",
+  },
+
+  {
+    id: "BILL-1004",
+    billNo: "BL-2026-1004",
+    patient: {
+      name: "Neha Gupta",
+      uhid: "UHID-10248",
+      age: 31,
+      gender: "Female",
+    },
+    department: "Laboratory",
+    billDate: "04 Oct 2026",
+    patientType: "OPD Patient",
+    totalAmount: 4800,
+    paidAmount: 4800,
+    remainingAmount: 0,
+    paymentStatus: "Paid",
+  },
+
+  {
+    id: "BILL-1005",
+    billNo: "BL-2026-1005",
+    patient: {
+      name: "Sanjay Yadav",
+      uhid: "UHID-10249",
+      age: 52,
+      gender: "Male",
+    },
+    department: "Radiology",
+    billDate: "03 Oct 2026",
+    patientType: "IPD Patient",
+    totalAmount: 7200,
+    paidAmount: 4000,
+    remainingAmount: 3200,
+    paymentStatus: "Partial",
+  },
+
+  {
+    id: "BILL-1006",
+    billNo: "BL-2026-1006",
+    patient: {
+      name: "Pooja Mishra",
+      uhid: "UHID-10250",
+      age: 26,
+      gender: "Female",
+    },
+    department: "OPD",
+    billDate: "03 Oct 2026",
+    patientType: "OPD Patient",
+    totalAmount: 1800,
+    paidAmount: 0,
+    remainingAmount: 1800,
+    paymentStatus: "Pending",
+  },
+];
+
+export default billingListMock;

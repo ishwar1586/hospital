@@ -1,0 +1,163 @@
+// =========================================
+// Appointment Mock Data
+// =========================================
+
+export const appointmentMockData = [
+    {
+        id: "APT001",
+        appointmentId: "APT-100001",
+        date: "01 Sep 2026",
+        time: "09:00 AM",
+        patientName: "Rahul Sharma",
+        patientId: "PAT001",
+        doctorName: "Dr. Ankit Verma",
+        department: "Cardiology",
+        appointmentType: "Consultation",
+        status: "Scheduled",
+    },
+
+    {
+        id: "APT002",
+        appointmentId: "APT-100002",
+        date: "01 Sep 2026",
+        time: "09:30 AM",
+        patientName: "Priya Singh",
+        patientId: "PAT002",
+        doctorName: "Dr. Neha Kapoor",
+        department: "Gynecology",
+        appointmentType: "Follow-up",
+        status: "Confirmed",
+    },
+
+    {
+        id: "APT003",
+        appointmentId: "APT-100003",
+        date: "01 Sep 2026",
+        time: "10:00 AM",
+        patientName: "Amit Verma",
+        patientId: "PAT003",
+        doctorName: "Dr. Rajiv Mehta",
+        department: "Neurology",
+        appointmentType: "Consultation",
+        status: "Checked In",
+    },
+
+    {
+        id: "APT004",
+        appointmentId: "APT-100004",
+        date: "01 Sep 2026",
+        time: "10:30 AM",
+        patientName: "Neha Gupta",
+        patientId: "PAT004",
+        doctorName: "Dr. Ankit Verma",
+        department: "General Medicine",
+        appointmentType: "Consultation",
+        status: "Scheduled",
+    },
+
+    {
+        id: "APT005",
+        appointmentId: "APT-100005",
+        date: "01 Sep 2026",
+        time: "11:00 AM",
+        patientName: "Suresh Yadav",
+        patientId: "PAT005",
+        doctorName: "Dr. Vikram Singh",
+        department: "Orthopedics",
+        appointmentType: "Follow-up",
+        status: "Completed",
+    },
+
+    {
+        id: "APT006",
+        appointmentId: "APT-100006",
+        date: "01 Sep 2026",
+        time: "11:30 AM",
+        patientName: "Anjali Mishra",
+        patientId: "PAT006",
+        doctorName: "Dr. Rajiv Mehta",
+        department: "Emergency",
+        appointmentType: "Emergency",
+        status: "Confirmed",
+    },
+
+    {
+        id: "APT007",
+        appointmentId: "APT-100007",
+        date: "01 Sep 2026",
+        time: "12:00 PM",
+        patientName: "Vikas Singh",
+        patientId: "PAT007",
+        doctorName: "Dr. Ankit Verma",
+        department: "Cardiology",
+        appointmentType: "Consultation",
+        status: "Scheduled",
+    },
+
+    {
+        id: "APT008",
+        appointmentId: "APT-100008",
+        date: "01 Sep 2026",
+        time: "12:30 PM",
+        patientName: "Pooja Agarwal",
+        patientId: "PAT008",
+        doctorName: "Dr. Neha Kapoor",
+        department: "General Medicine",
+        appointmentType: "Follow-up",
+        status: "No Show",
+    },
+
+    {
+        id: "APT009",
+        appointmentId: "APT-100009",
+        date: "01 Sep 2026",
+        time: "01:00 PM",
+        patientName: "Rajesh Kumar",
+        patientId: "PAT009",
+        doctorName: "Dr. Rajiv Mehta",
+        department: "Neurology",
+        appointmentType: "Consultation",
+        status: "Cancelled",
+    },
+
+    {
+        id: "APT010",
+        appointmentId: "APT-100010",
+        date: "01 Sep 2026",
+        time: "02:00 PM",
+        patientName: "Kavita Singh",
+        patientId: "PAT010",
+        doctorName: "Dr. Pooja Sharma",
+        department: "Pediatrics",
+        appointmentType: "Consultation",
+        status: "Scheduled",
+    },
+
+    {
+        id: "APT011",
+        appointmentId: "APT-100011",
+        date: "01 Sep 2026",
+        time: "02:30 PM",
+        patientName: "Manoj Tiwari",
+        patientId: "PAT011",
+        doctorName: "Dr. Vikram Singh",
+        department: "Orthopedics",
+        appointmentType: "Follow-up",
+        status: "Confirmed",
+    },
+
+    {
+        id: "APT012",
+        appointmentId: "APT-100012",
+        date: "01 Sep 2026",
+        time: "03:00 PM",
+        patientName: "Riya Patel",
+        patientId: "PAT012",
+        doctorName: "Dr. Pooja Sharma",
+        department: "Emergency",
+        appointmentType: "Emergency",
+        status: "Completed",
+    },
+];
+
+export default appointmentMockData;

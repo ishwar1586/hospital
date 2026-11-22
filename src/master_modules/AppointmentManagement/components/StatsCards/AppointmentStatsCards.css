@@ -1,0 +1,279 @@
+/* =========================================================
+   APPOINTMENT STATS CARDS
+   ========================================================= */
+
+.appointment-stats-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+}
+
+
+/* =========================================================
+   SINGLE STAT CARD
+   ========================================================= */
+
+.appointment-stats-card {
+    position: relative;
+
+    min-width: 0;
+    min-height: 108px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e9f2;
+    border-radius: 8px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.appointment-stats-card:hover {
+    border-color: #d7deeb;
+
+    box-shadow:
+        0 4px 14px rgba(15, 23, 42, 0.06);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.appointment-stats-card__icon {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 6px;
+
+    border-radius: 50%;
+}
+
+
+.appointment-stats-card__icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.appointment-stats-card__content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.appointment-stats-card__title {
+    margin-bottom: 3px;
+
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 600;
+
+    color: #18285d;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.appointment-stats-card__value {
+    margin-bottom: 2px;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+
+    color: #101d50;
+}
+
+
+.appointment-stats-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    min-width: 0;
+
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 500;
+
+    white-space: nowrap;
+}
+
+
+.appointment-stats-card__subtitle {
+    color: #26366b;
+    
+}
+
+
+.appointment-stats-card__meta-separator {
+    color: #7c879f;
+}
+
+
+.appointment-stats-card__secondary {
+    color: #26366b;
+}
+
+
+/* =========================================================
+   PRIMARY
+   ========================================================= */
+
+.appointment-stats-card--primary {
+    border-color: #dce6fa;
+    background: #ffffff;
+}
+
+
+.appointment-stats-card--primary
+.appointment-stats-card__icon {
+    color: #1557e8;
+    background: #eaf1ff;
+}
+
+
+/* =========================================================
+   SUCCESS
+   ========================================================= */
+
+.appointment-stats-card--success {
+    border-color: #d9efed;
+    background: #ffffff;
+}
+
+
+.appointment-stats-card--success
+.appointment-stats-card__icon {
+    color: #0c9b99;
+    background: #e2f7f5;
+}
+
+
+/* =========================================================
+   PURPLE
+   ========================================================= */
+
+.appointment-stats-card--purple {
+    border-color: #ebe1f7;
+    background: #ffffff;
+}
+
+
+.appointment-stats-card--purple
+.appointment-stats-card__icon {
+    color: #8b4fd1;
+    background: #f2e9fc;
+}
+
+
+/* =========================================================
+   DANGER
+   ========================================================= */
+
+.appointment-stats-card--danger {
+    border-color: #f5dfe2;
+    background: #ffffff;
+}
+
+
+.appointment-stats-card--danger
+.appointment-stats-card__icon {
+    color: #e03145;
+    background: #fde9ec;
+}
+
+
+.appointment-stats-card--danger
+.appointment-stats-card__subtitle {
+    color: #e03145;
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+.appointment-stats-card--warning {
+    border-color: #f4e7d5;
+    background: #ffffff;
+}
+
+
+.appointment-stats-card--warning
+.appointment-stats-card__icon {
+    color: #f28b18;
+    background: #fff1df;
+}
+
+
+.appointment-stats-card--warning
+.appointment-stats-card__subtitle {
+    color: #e98213;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .appointment-stats-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .appointment-stats-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .appointment-stats-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .appointment-stats-card {
+        min-height: 96px;
+    }
+
+}

@@ -1,0 +1,117 @@
+/* ==========================================================
+   Card
+========================================================== */
+
+.audit-summary-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    box-shadow:0 8px 20px rgba(15,23,42,.05);
+
+}
+
+.audit-summary-card h3{
+
+    margin:0 0 20px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+/* ==========================================================
+   Grid
+========================================================== */
+
+.audit-summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:16px;
+
+}
+
+.audit-summary-box{
+
+    background:#f8fafc;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:14px;
+
+    padding:18px;
+
+}
+
+.audit-summary-box span{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:12px;
+
+    color:#64748b;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+}
+
+.audit-summary-box strong{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+}
+
+.audit-summary-box strong.danger{
+
+    color:#dc2626;
+
+}
+
+.audit-summary-box strong.success{
+
+    color:#16a34a;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-summary-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .audit-summary-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

@@ -1,0 +1,327 @@
+/* =========================================
+   VERIFICATION ACTIONS
+========================================= */
+
+.verification-actions {
+    width: 100%;
+
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 8px 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================
+   LEFT
+========================================= */
+
+.verification-actions__left {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.verification-actions__status-label {
+    color: #94a3b8;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+.verification-actions__status {
+    min-height: 21px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0 8px;
+
+    border-radius: 999px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.verification-actions__status--pending {
+    color: #c2410c;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+}
+
+
+.verification-actions__status--underreview {
+    color: #2563eb;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+}
+
+
+.verification-actions__status--verified {
+    color: #047857;
+
+    background: #ecfdf5;
+
+    border: 1px solid #a7f3d0;
+}
+
+
+.verification-actions__status--rejected {
+    color: #dc2626;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+}
+
+
+/* =========================================
+   RIGHT
+========================================= */
+
+.verification-actions__right {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.verification-actions__button {
+    min-height: 31px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease,
+        box-shadow 0.15s ease,
+        opacity 0.15s ease;
+}
+
+
+.verification-actions__button svg {
+    width: 13px;
+
+    height: 13px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   SECONDARY
+========================================= */
+
+.verification-actions__button--secondary {
+    color: #475569;
+
+    background: #ffffff;
+
+    border: 1px solid #dbe3ec;
+}
+
+
+.verification-actions__button--secondary:hover:not(:disabled) {
+    color: #2563eb;
+
+    background: #f8fbff;
+
+    border-color: #bfdbfe;
+}
+
+
+/* =========================================
+   REJECT
+========================================= */
+
+.verification-actions__button--reject {
+    color: #dc2626;
+
+    background: #ffffff;
+
+    border: 1px solid #fecaca;
+}
+
+
+.verification-actions__button--reject:hover:not(:disabled) {
+    color: #b91c1c;
+
+    background: #fef2f2;
+
+    border-color: #fca5a5;
+}
+
+
+/* =========================================
+   VERIFY
+========================================= */
+
+.verification-actions__button--verify {
+    color: #ffffff;
+
+    background: #059669;
+
+    border: 1px solid #059669;
+}
+
+
+.verification-actions__button--verify:hover:not(:disabled) {
+    background: #047857;
+
+    border-color: #047857;
+
+    box-shadow:
+        0 2px 5px
+        rgba(5, 150, 105, 0.16);
+}
+
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.verification-actions__button:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   PROCESSING
+========================================= */
+
+.verification-actions__button:disabled svg {
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 760px) {
+
+    .verification-actions {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 9px;
+    }
+
+
+    .verification-actions__left {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+
+    .verification-actions__right {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .verification-actions__right {
+        display: grid;
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+        width: 100%;
+    }
+
+
+    .verification-actions__button {
+        width: 100%;
+    }
+
+}

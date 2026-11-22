@@ -1,0 +1,247 @@
+/* =========================================================
+   Pharmacy Billing Stepper
+   ========================================================= */
+
+.pharmacy-billing-stepper {
+  width: 100%;
+  min-height: 58px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-sizing: border-box;
+}
+
+.pharmacy-billing-stepper__track {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================================
+   Step
+   ========================================================= */
+
+.pharmacy-billing-stepper__step {
+  position: relative;
+  min-width: 120px;
+  height: 58px;
+  padding: 0 10px;
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #64748b;
+  font-family: inherit;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.pharmacy-billing-stepper__step:disabled {
+  opacity: 1;
+}
+
+
+/* =========================================================
+   Number
+   ========================================================= */
+
+.pharmacy-billing-stepper__number {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border: 1px solid #cbd5e1;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  background: #ffffff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  box-sizing: border-box;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+/* =========================================================
+   Label
+   ========================================================= */
+
+.pharmacy-billing-stepper__label {
+  position: relative;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   Active Step
+   ========================================================= */
+
+.pharmacy-billing-stepper__step--active {
+  color: #2563eb;
+}
+
+.pharmacy-billing-stepper__step--active
+  .pharmacy-billing-stepper__number {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.pharmacy-billing-stepper__step--active
+  .pharmacy-billing-stepper__label {
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+.pharmacy-billing-stepper__step--active
+  .pharmacy-billing-stepper__label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px 2px 0 0;
+  background: #2563eb;
+}
+
+
+/* =========================================================
+   Completed Step
+   ========================================================= */
+
+.pharmacy-billing-stepper__step--completed
+  .pharmacy-billing-stepper__number {
+  border-color: #2563eb;
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.pharmacy-billing-stepper__step--completed
+  .pharmacy-billing-stepper__label {
+  color: #334155;
+}
+
+
+/* =========================================================
+   Connector
+   ========================================================= */
+
+.pharmacy-billing-stepper__connector {
+  flex: 1;
+  min-width: 28px;
+  max-width: 70px;
+  height: 1px;
+  background: #e2e8f0;
+  box-sizing: border-box;
+}
+
+.pharmacy-billing-stepper__connector--completed {
+  background: #2563eb;
+}
+
+
+/* =========================================================
+   Clickable
+   ========================================================= */
+
+.pharmacy-billing-stepper__step--clickable {
+  cursor: pointer;
+}
+
+.pharmacy-billing-stepper__step--clickable:hover
+  .pharmacy-billing-stepper__number {
+  border-color: #2563eb;
+}
+
+.pharmacy-billing-stepper__step--clickable:focus-visible {
+  outline: none;
+}
+
+.pharmacy-billing-stepper__step--clickable:focus-visible
+  .pharmacy-billing-stepper__number {
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================================================
+   Tablet
+   ========================================================= */
+
+@media (max-width: 899px) {
+  .pharmacy-billing-stepper {
+    padding: 0 16px;
+  }
+
+  .pharmacy-billing-stepper__step {
+    min-width: 105px;
+  }
+
+  .pharmacy-billing-stepper__connector {
+    min-width: 18px;
+  }
+}
+
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .pharmacy-billing-stepper {
+    min-height: 54px;
+    padding: 0 10px;
+    overflow-x: auto;
+  }
+
+  .pharmacy-billing-stepper__track {
+    width: max-content;
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .pharmacy-billing-stepper__step {
+    min-width: 92px;
+    height: 54px;
+    gap: 6px;
+    padding: 0 6px;
+  }
+
+  .pharmacy-billing-stepper__label {
+    height: 54px;
+    font-size: 11px;
+  }
+
+  .pharmacy-billing-stepper__number {
+    width: 24px;
+    height: 24px;
+    flex-basis: 24px;
+    font-size: 11px;
+  }
+
+  .pharmacy-billing-stepper__connector {
+    min-width: 12px;
+  }
+}

@@ -1,0 +1,294 @@
+
+/* =========================================================
+   IPD PATIENT BANNER
+   File: IPDPatientBanner.css
+   Namespace: ipd-patient-banner
+========================================================= */
+
+.ipd-patient-banner,
+.ipd-patient-banner * {
+  box-sizing: border-box;
+}
+
+.ipd-patient-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+  padding: 22px 24px;
+  margin: 0 0 24px;
+  background: linear-gradient(115deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid #e1e9f4;
+  border-radius: 16px;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.035);
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+/* =========================================================
+   PATIENT IDENTITY
+========================================================= */
+
+.ipd-patient-banner .ipd-patient-banner__identity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* =========================================================
+   PATIENT AVATAR
+========================================================= */
+
+.ipd-patient-banner .ipd-patient-banner__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 66px;
+  height: 66px;
+  color: #2458b8;
+  background: linear-gradient(145deg, #e8f1ff 0%, #d6e6ff 100%);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 1px #d8e5fa;
+  font-size: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   PATIENT INFORMATION
+========================================================= */
+
+.ipd-patient-banner .ipd-patient-banner__information {
+  flex: 1;
+  min-width: 0;
+}
+
+.ipd-patient-banner .ipd-patient-banner__name {
+  margin: 0 0 13px;
+  color: #17253b;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.35px;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   PATIENT DETAILS
+========================================================= */
+
+.ipd-patient-banner .ipd-patient-banner__details {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  min-width: 0;
+}
+
+.ipd-patient-banner .ipd-patient-banner__detail {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.ipd-patient-banner .ipd-patient-banner__detail-label {
+  color: #7a879a;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.ipd-patient-banner .ipd-patient-banner__detail-value {
+  color: #34445b;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================================
+   STEP CHIP
+========================================================= */
+
+.ipd-patient-banner .ipd-patient-banner__step-chip {
+  display: inline-flex;
+  flex-shrink: 0;
+  height: 34px;
+  color: #2458b8;
+  background: #eaf2ff;
+  border: 1px solid #cfe0ff;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.ipd-patient-banner
+  .ipd-patient-banner__step-chip
+  .MuiChip-label {
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   LARGE TABLETS / SMALL DESKTOPS
+========================================================= */
+
+@media (max-width: 1024px) {
+  .ipd-patient-banner {
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__identity {
+    gap: 15px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__avatar {
+    width: 58px;
+    height: 58px;
+    font-size: 24px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__details {
+    gap: 8px 16px;
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+  .ipd-patient-banner {
+    align-items: flex-start;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__identity {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__name {
+    margin-bottom: 11px;
+    font-size: 18px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__details {
+    gap: 8px 14px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__step-chip {
+    height: 31px;
+    font-size: 11px;
+  }
+
+  .ipd-patient-banner
+    .ipd-patient-banner__step-chip
+    .MuiChip-label {
+    padding: 0 9px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+  .ipd-patient-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 16px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__identity {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__avatar {
+    width: 48px;
+    height: 48px;
+    border-width: 2px;
+    font-size: 21px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__name {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px 12px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__detail {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__detail-label {
+    font-size: 11px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__detail-value {
+    font-size: 12px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__step-chip {
+    align-self: flex-start;
+    height: 30px;
+  }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+  .ipd-patient-banner {
+    padding: 12px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__identity {
+    gap: 10px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__avatar {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .ipd-patient-banner .ipd-patient-banner__details {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .ipd-patient-banner,
+  .ipd-patient-banner * {
+    scroll-behavior: auto;
+  }
+}

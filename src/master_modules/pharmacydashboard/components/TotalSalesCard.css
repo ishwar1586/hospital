@@ -1,0 +1,96 @@
+.sales-card {
+  background: linear-gradient(135deg, #064e3b, #065f46);
+  color: #ecfdf5;
+  padding: 22px;
+  border-radius: 18px;
+}
+
+/* HEADER */
+.sales-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.sales-title {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.sales-link {
+  font-size: 13px;
+  color: #6ee7b7;
+  cursor: pointer;
+}
+
+/* TOTAL */
+.sales-total {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.sales-sub {
+  font-size: 13px;
+  color: #a7f3d0;
+  margin-bottom: 14px;
+}
+
+/* WEEKLY */
+.sales-weekly {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.sales-weekly p {
+  font-size: 12px;
+  color: #a7f3d0;
+}
+
+.sales-weekly h2 {
+  font-size: 22px;
+}
+
+.sales-growth {
+  color: #34d399;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
+}
+
+.sales-growth small {
+  display: block;
+  font-size: 11px;
+  color: #a7f3d0;
+}
+
+/* CHART */
+.sales-chart {
+  margin-top: 14px;
+}
+
+/* TOOLTIP */
+.sales-tooltip {
+  background: #1f2937;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.tooltip-date {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.tooltip-value {
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.tooltip-value span {
+  font-weight: 400;
+  opacity: 0.7;
+}

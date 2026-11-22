@@ -1,0 +1,227 @@
+/* =====================================================
+   ROOT
+===================================================== */
+
+.batch-history-tab{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.batch-toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    padding:18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:14px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.batch-search{
+
+    flex:1;
+
+    min-width:320px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:44px;
+
+    padding:0 14px;
+
+    background:#FFFFFF;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+}
+
+.batch-search svg{
+
+    color:#64748B;
+
+    font-size:20px;
+
+}
+
+.batch-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+}
+
+.batch-search:focus-within{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+/* =====================================================
+   FILTER
+===================================================== */
+
+.batch-filter{
+
+    width:220px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    height:44px;
+
+    padding:0 14px;
+
+    background:#FFFFFF;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+}
+
+.batch-filter svg{
+
+    color:#64748B;
+
+}
+
+.batch-filter select{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+}
+
+/* =====================================================
+   RESET BUTTON
+===================================================== */
+
+.batch-reset-btn{
+
+    height:44px;
+
+    padding:0 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#EEF2FF;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.batch-reset-btn:hover{
+
+    background:#DBEAFE;
+
+}
+
+.batch-reset-btn svg{
+
+    font-size:20px;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .batch-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .batch-search{
+
+        min-width:100%;
+
+    }
+
+    .batch-filter{
+
+        width:100%;
+
+    }
+
+    .batch-reset-btn{
+
+        width:100%;
+
+    }
+
+}

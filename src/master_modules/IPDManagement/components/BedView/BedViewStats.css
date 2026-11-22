@@ -1,0 +1,314 @@
+/* ============================================================
+   BED VIEW STATS
+   ============================================================ */
+
+.bed-view-stats {
+  width: 100%;
+  margin-top: 18px;
+}
+
+
+/* ============================================================
+   GRID
+   ============================================================ */
+
+.bed-view-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 5px;
+  width: 100%;
+}
+
+
+/* ============================================================
+   CARD
+   ============================================================ */
+
+.bed-view-stats__card {
+  min-width: 0;
+  min-height: 88px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe5f0;
+
+  border-radius: 5px;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.bed-view-stats__card:hover {
+  border-color: #cbd8e6;
+
+  box-shadow:
+    0 4px 14px rgba(15, 23, 42, 0.06);
+
+  transform: translateY(-1px);
+}
+
+
+/* ============================================================
+   ICON
+   ============================================================ */
+
+.bed-view-stats__icon {
+  width: 20px;
+  height: 20px;
+
+  min-width: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+}
+
+
+.bed-view-stats__icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* TOTAL */
+
+.bed-view-stats__icon--total {
+  color: #2563eb;
+  background: #dbeafe;
+}
+
+
+/* OCCUPIED */
+
+.bed-view-stats__icon--occupied {
+  color: #e11d48;
+  background: #ffe4e6;
+}
+
+
+/* AVAILABLE */
+
+.bed-view-stats__icon--available {
+  color: #059669;
+  background: #d1fae5;
+}
+
+
+/* RESERVED */
+
+.bed-view-stats__icon--reserved {
+  color: #f59e0b;
+  background: #fef3c7;
+}
+
+
+/* MAINTENANCE */
+
+.bed-view-stats__icon--maintenance {
+  color: #7c3aed;
+  background: #ede9fe;
+}
+
+
+/* BLOCKED */
+
+.bed-view-stats__icon--blocked {
+  color: #64748b;
+  background: #e2e8f0;
+}
+
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.bed-view-stats__content {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 2px;
+}
+
+
+/* ============================================================
+   LABEL
+   ============================================================ */
+
+.bed-view-stats__label {
+  display: block;
+
+  font-size: 12px;
+
+  line-height: 17px;
+
+  font-weight: 500;
+
+  color: #0f172a;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+/* ============================================================
+   VALUE
+   ============================================================ */
+
+.bed-view-stats__value {
+  display: block;
+
+  margin: 0;
+
+  font-size: 24px;
+
+  line-height: 28px;
+
+  font-weight: 700;
+
+  color: #07145c;
+}
+
+
+/* ============================================================
+   DESCRIPTION
+   ============================================================ */
+
+.bed-view-stats__description {
+  display: block;
+
+  margin-top: 1px;
+
+  font-size: 11px;
+
+  line-height: 15px;
+
+  font-weight: 400;
+
+  color: #334155;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+/* ============================================================
+   PROGRESS
+   ============================================================ */
+
+.bed-view-stats__progress {
+  width: 100%;
+
+  height: 5px;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: #dbe3ee;
+}
+
+
+.bed-view-stats__progress-bar {
+  height: 100%;
+
+  border-radius: inherit;
+
+  transition: width 0.3s ease;
+}
+
+
+/* OCCUPIED PROGRESS */
+
+.bed-view-stats__progress-bar--occupied {
+  background: #10b981;
+}
+
+
+/* AVAILABLE PROGRESS */
+
+.bed-view-stats__progress-bar--available {
+  background: #10b981;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1400px) {
+
+  .bed-view-stats__grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .bed-view-stats__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .bed-view-stats__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bed-view-stats__card {
+    min-height: 82px;
+
+    padding: 12px 14px;
+
+    gap: 14px;
+  }
+
+  .bed-view-stats__icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+
+  .bed-view-stats__icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bed-view-stats__value {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+}

@@ -1,0 +1,128 @@
+
+.vitals-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.vitals-form__header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vitals-form__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.vitals-form__title {
+  margin: 0;
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.vitals-form__description {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.vitals-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  width: 100%;
+  min-width: 0;
+}
+
+.vitals-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.vitals-form__label {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vitals-form__input-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #dbe2ea;
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vitals-form__input-wrapper:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.vitals-form__input {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  padding: 0 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.vitals-form__input::placeholder {
+  color: #94a3b8;
+}
+
+.vitals-form__input--readonly {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+.vitals-form__input-wrapper:has(.vitals-form__input:disabled) {
+  background: #f8fafc;
+}
+
+.vitals-form__unit {
+  flex-shrink: 0;
+  padding: 0 12px;
+  color: #64748b;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.vitals-form__input--error {
+  color: #e11d48;
+}
+
+.vitals-form__field:has(.vitals-form__input--error)
+  .vitals-form__input-wrapper {
+  border-color: #e11d48;
+}
+
+.vitals-form__error {
+  color: #e11d48;
+  font-size: 11px;
+}
+
+@media (max-width: 640px) {
+  .vitals-form__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

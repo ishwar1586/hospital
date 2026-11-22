@@ -1,0 +1,149 @@
+/* ==========================================================
+   Bottom Actions
+========================================================== */
+
+.audit-bottom-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    margin-top:10px;
+
+    padding-top:22px;
+
+    border-top:1px solid #e5e7eb;
+
+}
+
+/* ==========================================================
+   Button
+========================================================== */
+
+.audit-action-btn{
+
+    flex:1;
+
+    min-width:170px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+/* ==========================================================
+   Print
+========================================================== */
+
+.audit-action-btn.print{
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+}
+
+.audit-action-btn.print:hover{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   PDF
+========================================================== */
+
+.audit-action-btn.pdf{
+
+    background:#fef2f2;
+
+    color:#dc2626;
+
+}
+
+.audit-action-btn.pdf:hover{
+
+    background:#dc2626;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   Excel
+========================================================== */
+
+.audit-action-btn.excel{
+
+    background:#ecfdf5;
+
+    color:#15803d;
+
+}
+
+.audit-action-btn.excel:hover{
+
+    background:#15803d;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   Close
+========================================================== */
+
+.audit-action-btn.close{
+
+    background:#f8fafc;
+
+    color:#334155;
+
+    border:1px solid #dbe2ea;
+
+}
+
+.audit-action-btn.close:hover{
+
+    background:#334155;
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:768px){
+
+    .audit-action-btn{
+
+        min-width:100%;
+
+    }
+
+}

@@ -1,0 +1,139 @@
+.ward-overview-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  /* height: 100%; */
+}
+
+.ward-overview-header {
+  margin-bottom: 20px;
+}
+
+.ward-overview-header h3 {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.ward-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+   height: 67vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  gap: 16px;
+  padding: 10px;
+}
+
+.ward-item {
+  border: 1px solid #e5e7eb;
+
+  border-radius: 14px;
+
+  padding: 16px;
+
+  transition: 0.3s ease;
+}
+
+.ward-item:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0,0,0,0.08);
+}
+
+.ward-top {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+}
+
+.ward-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ward-icon svg {
+  font-size: 24px;
+}
+
+.ward-top h4 {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.ward-top span {
+  font-size: 12px;
+
+  color: #64748b;
+}
+
+.ward-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 10px;
+}
+
+.ward-stats div {
+  text-align: center;
+
+  padding: 10px;
+
+  border-radius: 10px;
+}
+
+.ward-stats label {
+  display: block;
+
+  font-size: 11px;
+
+  margin-bottom: 4px;
+}
+
+.ward-stats strong {
+  font-size: 18px;
+}
+
+.available {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.occupied {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.reserved {
+  background: #fef3c7;
+  color: #d97706;
+}

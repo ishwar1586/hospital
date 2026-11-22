@@ -1,0 +1,111 @@
+/* ============================================================
+   TRANSFER PATIENT MODAL
+   ============================================================ */
+
+.ipd-transfer-patient-modal {
+  z-index: 1300;
+}
+
+
+/* ============================================================
+   MODAL PAPER
+   ============================================================ */
+
+.ipd-transfer-patient-modal__paper {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 24px;
+
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.16);
+}
+
+
+/* ============================================================
+   MODAL CONTENT
+   ============================================================ */
+
+.ipd-transfer-patient-modal__content {
+  padding: 0 !important;
+
+  background: #ffffff;
+}
+
+
+/* ============================================================
+   STEP CONTENT
+   ============================================================ */
+
+.ipd-transfer-patient-modal__step-content {
+  width: 100%;
+}
+
+
+/* ============================================================
+   ERROR
+   ============================================================ */
+
+.ipd-transfer-patient-modal__error {
+  margin: 16px 24px 0;
+  padding: 12px 14px;
+
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+
+  background: #fef2f2;
+  color: #b91c1c;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1200px) {
+
+  .ipd-transfer-patient-modal__paper {
+    max-width: calc(100% - 32px);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .ipd-transfer-patient-modal__paper {
+    max-width: calc(100% - 20px);
+
+    margin: 10px;
+
+    border-radius: 10px;
+  }
+
+  .ipd-transfer-patient-modal__error {
+    margin: 12px 16px 0;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .ipd-transfer-patient-modal__paper {
+    max-width: calc(100% - 12px);
+
+    margin: 6px;
+
+    border-radius: 8px;
+  }
+
+}

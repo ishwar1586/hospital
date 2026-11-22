@@ -1,0 +1,79 @@
+/* =========================================
+   DEPARTMENT MANAGEMENT PAGE
+========================================= */
+
+.department-management {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* =========================================
+   HEADER SECTION
+========================================= */
+
+.department-management__header {
+  width: 100%;
+  padding: 0 15px;
+  background: #f5f9ff;
+  border-bottom: 1px solid #e5edf8;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   STATS SECTION
+========================================= */
+
+.department-management__stats {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background: #f8fbff;
+}
+
+/* =========================================
+   FILTERS SECTION
+========================================= */
+
+.department-management__filters {
+  width: 100%;
+  padding: 0 15px 10px;
+  box-sizing: border-box;
+  background: #f8fbff;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  .department-management__header {
+    padding: 12px 14px;
+  }
+
+  .department-management__stats {
+    padding: 10px 14px;
+  }
+
+  .department-management__filters {
+    padding: 0 14px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .department-management__header {
+    padding: 10px 12px;
+  }
+
+  .department-management__stats {
+    padding: 10px 12px;
+  }
+
+  .department-management__filters {
+    padding: 0 12px 10px;
+  }
+}

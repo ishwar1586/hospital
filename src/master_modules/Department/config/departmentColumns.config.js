@@ -1,0 +1,51 @@
+export const departmentColumnsConfig = [
+  {
+    id: "departmentName",
+    label: "Department Name",
+    field: "departmentName",
+    sortable: true,
+    minWidth: "190px",
+  },
+  {
+    id: "code",
+    label: "Code",
+    field: "code",
+    sortable: true,
+    minWidth: "100px",
+  },
+  {
+    id: "type",
+    label: "Type",
+    field: "type",
+    sortable: true,
+    minWidth: "120px",
+  },
+  {
+    id: "headDoctor",
+    label: "Head Doctor",
+    field: "headDoctor",
+    sortable: true,
+    minWidth: "160px",
+  },
+  {
+    id: "services",
+    label: "Services",
+    field: "services",
+    sortable: true,
+    minWidth: "90px",
+  },
+  {
+    id: "status",
+    label: "Status",
+    field: "status",
+    sortable: true,
+    minWidth: "100px",
+  },
+  {
+    id: "actions",
+    label: "Actions",
+    field: "actions",
+    sortable: false,
+    minWidth: "90px",
+  },
+];

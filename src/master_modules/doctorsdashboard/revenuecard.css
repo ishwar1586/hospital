@@ -1,0 +1,124 @@
+/* .line-chart {
+  height: 100px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.walkin {
+  top: 30%;
+  background: #22c55e;
+}
+
+.followup {
+  top: 50%;
+  background: #3b82f6;
+}
+
+.online {
+  top: 70%;
+  background: #a855f7;
+}
+
+.purple {
+  background: #a855f7;
+} */
+
+.revenue-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  height: 100%;
+}
+
+/* HEADER */
+.revenue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.revenue-header h3 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.revenue-header h2 {
+  margin-top: 6px;
+  font-size: 26px;
+  color: #3b82f6;
+}
+
+.revenue-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* CHART */
+.revenue-chart {
+  margin-top: 10px;
+}
+
+/* LEGEND */
+.revenue-legend {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.revenue-legend .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.dot.green {
+  background: #22c55e;
+}
+
+.dot.blue {
+  background: #3b82f6;
+}
+
+.dot.purple {
+  background: #a855f7;
+}
+
+/* TOOLTIP */
+.revenue-tooltip {
+  background: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+

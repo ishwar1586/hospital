@@ -1,0 +1,111 @@
+.additional-information {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.additional-information__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 20px;
+    width: 100%;
+}
+
+.additional-information__field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.additional-information__field--full {
+    grid-column: 1 / -1;
+}
+
+.additional-information__label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #344054;
+}
+
+.additional-information__select,
+.additional-information__textarea {
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #101828;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 20px;
+    box-sizing: border-box;
+    outline: none;
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.additional-information__select {
+    height: 40px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.additional-information__textarea {
+    min-height: 82px;
+    padding: 10px 12px;
+    resize: vertical;
+}
+
+.additional-information__textarea::placeholder {
+    color: #98a2b3;
+}
+
+.additional-information__select:focus,
+.additional-information__textarea:focus {
+    border-color: #84adff;
+    box-shadow: 0 0 0 3px rgba(47, 102, 255, 0.08);
+}
+
+.additional-information__reminder-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    min-height: 40px;
+}
+
+.additional-information__radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #344054;
+    cursor: pointer;
+}
+
+.additional-information__radio-label input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .additional-information__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .additional-information__field--full {
+        grid-column: auto;
+    }
+
+    .additional-information__reminder-group {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

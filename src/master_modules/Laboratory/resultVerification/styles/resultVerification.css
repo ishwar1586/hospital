@@ -1,0 +1,82 @@
+/* =========================================
+   RESULT VERIFICATION PAGE
+========================================= */
+
+.result-verification-page {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    gap: 14px;
+    padding: 20px;
+}
+
+
+/* =========================================
+   PAGE CONTENT
+========================================= */
+
+.result-verification-page__content {
+    width: 100%;
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 10px 12px 12px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   WORKSPACE
+========================================= */
+
+.result-verification-page__workspace {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .result-verification-page__content {
+        padding: 10px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .result-verification-page__content {
+        gap: 8px;
+
+        padding: 8px;
+    }
+
+
+    .result-verification-page__workspace {
+        gap: 8px;
+    }
+
+}

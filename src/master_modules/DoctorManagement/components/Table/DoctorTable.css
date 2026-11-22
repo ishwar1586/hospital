@@ -1,0 +1,162 @@
+/* =========================================================
+   DOCTOR TABLE
+   Namespace: doctor-table
+========================================================= */
+
+.doctor-table {
+    width: 100%;
+    min-width: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eaf0;
+    border-radius: 10px;
+
+    /*
+     * IMPORTANT:
+     * Table content viewport se bada ho sakta hai.
+     * Isliye horizontal scrolling yahin handle hogi.
+     */
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    box-sizing: border-box;
+
+    /*
+     * Smooth horizontal scrolling on touch devices
+     */
+    -webkit-overflow-scrolling: touch;
+}
+
+/* =========================================================
+   TABLE INNER
+========================================================= */
+
+.doctor-table__inner {
+    /*
+     * 1080px se chhota nahi hoga.
+     * Agar screen/container chhota hai to parent
+     * doctor-table horizontal scroll karega.
+     */
+    width: 100%;
+    min-width: 1080px;
+
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   TABLE BODY
+========================================================= */
+
+.doctor-table__body {
+    width: 100%;
+    background: #ffffff;
+}
+
+/* =========================================================
+   LOADING / EMPTY / ERROR STATES
+========================================================= */
+
+.doctor-table__loading,
+.doctor-table__empty,
+.doctor-table__state {
+    min-width: 100%;
+
+    min-height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.doctor-table__loading {
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.doctor-table__state {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.doctor-table__state--error {
+    color: #b91c1c;
+
+    background: #fffafa;
+}
+
+.doctor-table__empty-title {
+    margin-bottom: 6px;
+
+    color: #172554;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.doctor-table__empty-text {
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* =========================================================
+   CUSTOM SCROLLBAR
+========================================================= */
+
+.doctor-table::-webkit-scrollbar {
+    height: 8px;
+}
+
+.doctor-table::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+.doctor-table::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+
+    border-radius: 999px;
+}
+
+.doctor-table::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* =========================================================
+   FIREFOX
+========================================================= */
+
+.doctor-table {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f8fafc;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1400px) {
+    .doctor-table {
+        /*
+         * Explicitly keep horizontal scrolling enabled
+         * on smaller screens.
+         */
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .doctor-table__inner {
+        min-width: 1180px;
+    }
+}

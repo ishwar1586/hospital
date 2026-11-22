@@ -1,0 +1,323 @@
+
+/* =========================================================
+   IPD BILLING — BANK TRANSFER FORM
+   File: BankTransferForm.css
+========================================================= */
+
+.ipd-bank-transfer {
+  width: 100%;
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e4eaf2;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+
+.ipd-bank-transfer *,
+.ipd-bank-transfer *::before,
+.ipd-bank-transfer *::after {
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.ipd-bank-transfer__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.ipd-bank-transfer__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  color: #1768d1;
+  background: #edf5ff;
+  border-radius: 12px;
+}
+
+.ipd-bank-transfer__heading {
+  min-width: 0;
+}
+
+.ipd-bank-transfer__title {
+  margin: 0;
+  color: #172b4d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ipd-bank-transfer__description {
+  margin: 4px 0 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Form layout */
+
+.ipd-bank-transfer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ipd-bank-transfer__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.ipd-bank-transfer__label {
+  color: #344563;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ipd-bank-transfer__required {
+  margin-left: 3px;
+  color: #dc3545;
+}
+
+/* Transfer mode cards */
+
+.ipd-bank-transfer__modes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ipd-bank-transfer__mode {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 58px;
+  padding: 12px 14px;
+  color: #44546f;
+  background: #ffffff;
+  border: 1px solid #d6deea;
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ipd-bank-transfer__mode:hover {
+  border-color: #8db8ee;
+  background: #f8fbff;
+}
+
+.ipd-bank-transfer__mode--selected {
+  color: #1768d1;
+  background: #f0f6ff;
+  border-color: #2878dc;
+  box-shadow: 0 0 0 2px rgba(40, 120, 220, 0.08);
+}
+
+.ipd-bank-transfer__mode input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+  accent-color: #2878dc;
+}
+
+.ipd-bank-transfer__mode-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.ipd-bank-transfer__mode-title {
+  color: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.ipd-bank-transfer__mode-description {
+  color: #8491a5;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* Input fields */
+
+.ipd-bank-transfer__input,
+.ipd-bank-transfer__select,
+.ipd-bank-transfer__textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  padding: 11px 14px;
+  color: #172b4d;
+  background: #ffffff;
+  border: 1px solid #d6deea;
+  border-radius: 9px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ipd-bank-transfer__select {
+  cursor: pointer;
+}
+
+.ipd-bank-transfer__textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.ipd-bank-transfer__input::placeholder,
+.ipd-bank-transfer__textarea::placeholder {
+  color: #a0aaba;
+}
+
+.ipd-bank-transfer__input:hover,
+.ipd-bank-transfer__select:hover,
+.ipd-bank-transfer__textarea:hover {
+  border-color: #aabbd1;
+}
+
+.ipd-bank-transfer__input:focus,
+.ipd-bank-transfer__select:focus,
+.ipd-bank-transfer__textarea:focus {
+  border-color: #2878dc;
+  box-shadow: 0 0 0 3px rgba(40, 120, 220, 0.12);
+}
+
+.ipd-bank-transfer__input:disabled,
+.ipd-bank-transfer__select:disabled,
+.ipd-bank-transfer__textarea:disabled {
+  color: #8491a5;
+  background: #f3f6fa;
+  cursor: not-allowed;
+}
+
+/* Helper text */
+
+.ipd-bank-transfer__hint {
+  margin: 0;
+  color: #8491a5;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* Verification notice */
+
+.ipd-bank-transfer__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 13px 14px;
+  color: #775817;
+  background: #fff9e8;
+  border: 1px solid #f2e1a9;
+  border-radius: 9px;
+}
+
+.ipd-bank-transfer__notice-icon {
+  display: flex;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.ipd-bank-transfer__notice-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* Validation */
+
+.ipd-bank-transfer__error {
+  margin: 0;
+  color: #c62828;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.ipd-bank-transfer__input--error,
+.ipd-bank-transfer__select--error,
+.ipd-bank-transfer__textarea--error {
+  border-color: #dc3545;
+}
+
+.ipd-bank-transfer__input--error:focus,
+.ipd-bank-transfer__select--error:focus,
+.ipd-bank-transfer__textarea--error:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .ipd-bank-transfer {
+    padding: 18px;
+  }
+
+  .ipd-bank-transfer__header {
+    margin-bottom: 18px;
+  }
+
+  .ipd-bank-transfer__form {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ipd-bank-transfer {
+    padding: 14px;
+    border-radius: 11px;
+  }
+
+  .ipd-bank-transfer__header {
+    gap: 10px;
+  }
+
+  .ipd-bank-transfer__icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+  }
+
+  .ipd-bank-transfer__title {
+    font-size: 15px;
+  }
+
+  .ipd-bank-transfer__description {
+    font-size: 12px;
+  }
+
+  .ipd-bank-transfer__modes {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .ipd-bank-transfer__input,
+  .ipd-bank-transfer__select {
+    min-height: 44px;
+  }
+
+  .ipd-bank-transfer__textarea {
+    min-height: 90px;
+  }
+}

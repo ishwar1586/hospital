@@ -1,0 +1,435 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.medicine-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    padding:22px 26px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    box-shadow:0 4px 18px rgba(15,23,42,.05);
+
+    margin-bottom:24px;
+
+}
+
+/* ===========================================================
+SEARCH SECTION
+=========================================================== */
+
+.toolbar-search-section{
+
+    flex:1;
+
+}
+
+.toolbar-search{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    height:56px;
+
+    padding:0 18px;
+
+    background:#F8FAFC;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:14px;
+
+    transition:.25s;
+
+}
+
+.toolbar-search:hover{
+
+    border-color:#93C5FD;
+
+}
+
+.toolbar-search:focus-within{
+
+    border-color:#2563EB;
+
+    background:#FFFFFF;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.toolbar-search-icon{
+
+    color:#64748B;
+
+    font-size:24px !important;
+
+    flex-shrink:0;
+
+}
+
+.toolbar-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    color:#0F172A;
+
+    font-weight:500;
+
+}
+
+.toolbar-search input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+/* ===========================================================
+SHORTCUT
+=========================================================== */
+
+.toolbar-shortcut{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    padding:6px 10px;
+
+    border-radius:10px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    flex-shrink:0;
+
+}
+
+.toolbar-shortcut svg{
+
+    font-size:16px !important;
+
+}
+
+/* ===========================================================
+ACTIONS
+=========================================================== */
+
+.toolbar-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ===========================================================
+BUTTON
+=========================================================== */
+
+.toolbar-primary-btn,
+
+.toolbar-secondary-btn,
+
+.toolbar-cart-btn{
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* ===========================================================
+PRIMARY
+=========================================================== */
+
+.toolbar-primary-btn{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.toolbar-primary-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================================================
+SECONDARY
+=========================================================== */
+
+.toolbar-secondary-btn{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+}
+
+.toolbar-secondary-btn:hover{
+
+    background:#DBEAFE;
+
+}
+
+/* ===========================================================
+CART
+=========================================================== */
+
+.toolbar-cart-btn{
+
+    background:#0F172A;
+
+    color:#FFFFFF;
+
+    position:relative;
+
+}
+
+.toolbar-cart-btn:hover{
+
+    background:#1E293B;
+
+}
+
+.toolbar-cart-badge{
+
+    min-width:24px;
+
+    height:24px;
+
+    border-radius:999px;
+
+    background:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#FFFFFF;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================================
+SWITCH
+=========================================================== */
+
+.toolbar-switch{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.toolbar-switch input{
+
+    display:none;
+
+}
+
+.toolbar-slider{
+
+    position:relative;
+
+    width:50px;
+
+    height:28px;
+
+    border-radius:999px;
+
+    background:#CBD5E1;
+
+    transition:.25s;
+
+}
+
+.toolbar-slider::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:3px;
+
+    left:3px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    transition:.25s;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+
+}
+
+.toolbar-switch input:checked + .toolbar-slider{
+
+    background:#2563EB;
+
+}
+
+.toolbar-switch input:checked + .toolbar-slider::before{
+
+    transform:translateX(22px);
+
+}
+
+.toolbar-switch-text{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:1200px){
+
+    .medicine-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .toolbar-actions{
+
+        justify-content:space-between;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .toolbar-actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .toolbar-primary-btn,
+
+    .toolbar-secondary-btn,
+
+    .toolbar-cart-btn{
+
+        width:100%;
+
+    }
+
+    .toolbar-switch{
+
+        justify-content:space-between;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .medicine-toolbar{
+
+        padding:18px;
+
+    }
+
+    .toolbar-search{
+
+        height:50px;
+
+    }
+
+    .toolbar-shortcut{
+
+        display:none;
+
+    }
+
+}

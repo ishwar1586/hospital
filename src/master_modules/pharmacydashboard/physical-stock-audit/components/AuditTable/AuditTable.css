@@ -1,0 +1,159 @@
+/* ==========================================================
+   Table Card
+========================================================== */
+
+.audit-table-card{
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 6px 20px rgba(15,23,42,.05);
+
+}
+
+/* ==========================================================
+   Wrapper
+========================================================== */
+
+.audit-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+    scrollbar-width:thin;
+
+}
+
+/* ==========================================================
+   Table
+========================================================== */
+
+.audit-table{
+
+    width:100%;
+
+    min-width:1450px;
+
+    border-collapse:collapse;
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.audit-table thead{
+
+    background:#f8fafc;
+
+}
+
+.audit-table th{
+
+    padding:16px;
+
+    text-align:left;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:#475569;
+
+    border-bottom:1px solid #e5e7eb;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================================
+   Body
+========================================================== */
+
+.audit-table td{
+
+    padding:16px;
+
+    font-size:14px;
+
+    color:#0f172a;
+
+    border-bottom:1px solid #eef2f7;
+
+    vertical-align:middle;
+
+}
+
+.audit-table tbody tr{
+
+    transition:.2s;
+
+}
+
+.audit-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* ==========================================================
+   Empty State
+========================================================== */
+
+.audit-empty{
+
+    text-align:center;
+
+    padding:60px 20px !important;
+
+    color:#94a3b8;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   Scrollbar
+========================================================== */
+
+.audit-table-wrapper::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.audit-table-wrapper::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+
+}
+
+.audit-table-wrapper::-webkit-scrollbar-track{
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:992px){
+
+    .audit-table{
+
+        min-width:1250px;
+
+    }
+
+}

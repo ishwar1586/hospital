@@ -1,0 +1,75 @@
+const billingColumnsConfig = [
+  {
+    id: "billNo",
+    label: "Bill No.",
+    key: "billNo",
+    width: "110px",
+    sortable: true,
+  },
+  {
+    id: "patient",
+    label: "Patient",
+    key: "patient",
+    width: "220px",
+    sortable: true,
+  },
+  {
+    id: "department",
+    label: "Department",
+    key: "department",
+    width: "130px",
+    sortable: true,
+  },
+  {
+    id: "billDate",
+    label: "Bill Date",
+    key: "billDate",
+    width: "120px",
+    sortable: true,
+  },
+  {
+    id: "patientType",
+    label: "Patient Type",
+    key: "patientType",
+    width: "120px",
+    sortable: true,
+  },
+  {
+    id: "totalAmount",
+    label: "Total Amount",
+    key: "totalAmount",
+    width: "130px",
+    sortable: true,
+  },
+  {
+    id: "paidAmount",
+    label: "Paid",
+    key: "paidAmount",
+    width: "120px",
+    sortable: true,
+  },
+  {
+    id: "remainingAmount",
+    label: "Remaining",
+    key: "remainingAmount",
+    width: "120px",
+    sortable: true,
+  },
+  {
+    id: "paymentStatus",
+    label: "Payment Status",
+    key: "paymentStatus",
+    width: "130px",
+    sortable: true,
+  },
+  {
+    id: "actions",
+    label: "Actions",
+    key: "actions",
+    width: "80px",
+    align: "center",
+    sortable: false,
+  },
+];
+
+export default billingColumnsConfig;

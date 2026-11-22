@@ -1,0 +1,97 @@
+/* ===================================================== */
+
+.transfer-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 24px;
+
+    background:#FFFFFF;
+
+    border-top:1px solid #E2E8F0;
+
+    flex-shrink:0;
+
+}
+
+/* ===================================================== */
+
+.transfer-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    min-width:180px;
+
+    height:46px;
+
+    padding:0 22px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+/* ===================================================== */
+
+.transfer-btn.primary{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.transfer-btn.primary:hover:not(:disabled){
+
+    background:#1D4ED8;
+
+}
+
+/* ===================================================== */
+
+.transfer-btn.secondary{
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    border:1px solid #CBD5E1;
+
+}
+
+.transfer-btn.secondary:hover{
+
+    background:#F1F5F9;
+
+}
+
+/* ===================================================== */
+
+.transfer-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}

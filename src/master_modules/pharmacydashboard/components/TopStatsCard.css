@@ -1,0 +1,109 @@
+/* .top-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.top-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+
+.card-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card-value {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.card-change {
+  font-size: 12px;
+}
+
+.card-change.up {
+  color: #16a34a;
+}
+
+.card-change.down {
+  color: #dc2626;
+}
+
+
+.mini-graph {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.mini-graph span {
+  width: 4px;
+  border-radius: 4px;
+} */
+
+
+/* GRID */
+.top-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.top-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+}
+
+/* TEXT */
+.card-label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card-value {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+
+.card-change {
+  font-size: 12px;
+}
+
+.card-change.up {
+  color: #16a34a;
+}
+
+.card-change.down {
+  color: #dc2626;
+}
+
+/* GRAPH */
+.mini-chart {
+  width: 100px;
+  height: 50px;
+}
+
+/* TOOLTIP */
+.chart-tooltip {
+  background: #111827;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}

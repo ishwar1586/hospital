@@ -1,0 +1,259 @@
+/* ======================================================= */
+
+.patient-search{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+/* ======================================================= */
+
+.patient-search-header{
+
+    padding:18px 22px;
+
+    border-bottom:1px solid #E2E8F0;
+
+    background:#F8FAFC;
+
+}
+
+.patient-search-header h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.patient-search-header p{
+
+    margin-top:5px;
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+/* ======================================================= */
+
+.patient-search-body{
+
+    display:flex;
+
+    gap:16px;
+
+    align-items:center;
+
+    padding:22px;
+
+}
+
+/* ======================================================= */
+
+.patient-search-box{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    height:52px;
+
+    padding:0 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+}
+
+.patient-search-box:focus-within{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.10);
+
+}
+
+.patient-search-box svg{
+
+    color:#64748B;
+
+}
+
+.patient-search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:14px;
+
+    background:transparent;
+
+}
+
+/* ======================================================= */
+
+.barcode-btn{
+
+    height:52px;
+
+    padding:0 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.barcode-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ======================================================= */
+
+.walkin{
+
+    padding:24px;
+
+}
+
+.walkin-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.walkin-content svg{
+
+    font-size:40px;
+
+    color:#2563EB;
+
+}
+
+.walkin-content h3{
+
+    margin:0;
+
+    color:#0F172A;
+
+}
+
+.walkin-content p{
+
+    margin-top:6px;
+
+    color:#64748B;
+
+}
+
+
+/* ========================================= */
+
+.search-icon{
+
+    color:#64748B;
+
+    font-size:22px;
+
+}
+
+/* ========================================= */
+
+.clear-search-btn{
+
+    width:36px;
+
+    height:36px;
+
+    border:none;
+
+    background:transparent;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    color:#64748B;
+
+    border-radius:8px;
+
+    transition:.25s;
+
+}
+
+.clear-search-btn:hover{
+
+    background:#F1F5F9;
+
+    color:#DC2626;
+
+}
+
+
+/* ======================================================= */
+
+@media(max-width:768px){
+
+    .patient-search-body{
+
+        flex-direction:column;
+
+    }
+
+    .barcode-btn{
+
+        width:100%;
+
+    }
+
+}

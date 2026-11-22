@@ -1,0 +1,183 @@
+/* =========================================
+   REPORT STATUS CHIP
+========================================= */
+
+.report-status-chip {
+    min-height: 22px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    padding:
+        0 7px;
+
+    border: 1px solid transparent;
+
+    border-radius: 999px;
+
+    box-sizing: border-box;
+
+    font-size: 7px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.report-status-chip__icon {
+    width: 13px !important;
+    height: 13px !important;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.report-status-chip__label {
+    display: inline-block;
+
+    line-height: 1;
+}
+
+
+/* =========================================
+   READY
+========================================= */
+
+.report-status-chip--ready {
+    border-color: #bfdbfe;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   GENERATING
+========================================= */
+
+.report-status-chip--generating {
+    border-color: #fde68a;
+
+    background: #fffbeb;
+
+    color: #d97706;
+}
+
+
+.report-status-chip--generating
+.report-status-chip__icon {
+    animation:
+        report-status-chip-spin
+        1.4s linear infinite;
+}
+
+
+/* =========================================
+   GENERATED
+========================================= */
+
+.report-status-chip--generated {
+    border-color: #bbf7d0;
+
+    background: #f0fdf4;
+
+    color: #16a34a;
+}
+
+
+/* =========================================
+   PRINTED
+========================================= */
+
+.report-status-chip--printed {
+    border-color: #fed7aa;
+
+    background: #fff7ed;
+
+    color: #ea580c;
+}
+
+
+/* =========================================
+   EMAILED
+========================================= */
+
+.report-status-chip--emailed {
+    border-color: #e9d5ff;
+
+    background: #faf5ff;
+
+    color: #9333ea;
+}
+
+
+/* =========================================
+   DOWNLOADED
+========================================= */
+
+.report-status-chip--downloaded {
+    border-color: #a5f3fc;
+
+    background: #ecfeff;
+
+    color: #0891b2;
+}
+
+
+/* =========================================
+   FAILED
+========================================= */
+
+.report-status-chip--failed {
+    border-color: #fecaca;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   UNKNOWN
+========================================= */
+
+.report-status-chip--unknown {
+    border-color: #e2e8f0;
+
+    background: #f8fafc;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   GENERATING ANIMATION
+========================================= */
+
+@keyframes report-status-chip-spin {
+
+    from {
+        transform:
+            rotate(0deg);
+    }
+
+    to {
+        transform:
+            rotate(360deg);
+    }
+
+}

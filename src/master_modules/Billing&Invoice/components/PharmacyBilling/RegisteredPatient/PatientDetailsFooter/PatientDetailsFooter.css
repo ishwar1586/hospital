@@ -1,0 +1,253 @@
+/* =========================================================
+   PATIENT DETAILS FOOTER
+========================================================= */
+
+.patient-details-footer {
+  width: 100%;
+  min-height: 72px;
+  padding: 14px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT / RIGHT SECTIONS
+========================================================= */
+
+.patient-details-footer__left,
+.patient-details-footer__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-details-footer__right {
+  margin-left: auto;
+}
+
+
+/* =========================================================
+   COMMON BUTTON RESET
+========================================================= */
+
+.patient-details-footer__cancel,
+.patient-details-footer__back,
+.patient-details-footer__continue {
+  min-height: 40px;
+  padding: 0 15px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.patient-details-footer__cancel:active,
+.patient-details-footer__back:active,
+.patient-details-footer__continue:active {
+  transform: translateY(1px);
+}
+
+.patient-details-footer__cancel:focus-visible,
+.patient-details-footer__back:focus-visible,
+.patient-details-footer__continue:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+========================================================= */
+
+.patient-details-footer__cancel {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+}
+
+.patient-details-footer__cancel:hover {
+  border-color: #d1d5db;
+  background: #f9fafb;
+  color: #374151;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+========================================================= */
+
+.patient-details-footer__back {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+
+.patient-details-footer__back:hover {
+  border-color: #9ca3af;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.patient-details-footer__back svg {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   CONTINUE TO MEDICINES
+========================================================= */
+
+.patient-details-footer__continue {
+  min-width: 190px;
+
+  border: 1px solid #16a34a;
+  background: #16a34a;
+  color: #ffffff;
+
+  box-shadow:
+    0 2px 5px rgba(22, 163, 74, 0.14);
+}
+
+.patient-details-footer__continue:hover {
+  border-color: #15803d;
+  background: #15803d;
+
+  box-shadow:
+    0 4px 10px rgba(22, 163, 74, 0.18);
+}
+
+.patient-details-footer__continue svg {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   DISABLED STATE
+========================================================= */
+
+.patient-details-footer__cancel:disabled,
+.patient-details-footer__back:disabled,
+.patient-details-footer__continue:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .patient-details-footer {
+    padding: 12px 16px;
+  }
+
+  .patient-details-footer__continue {
+    min-width: 175px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .patient-details-footer {
+    min-height: auto;
+    padding: 12px;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .patient-details-footer__left,
+  .patient-details-footer__right {
+    width: 100%;
+  }
+
+  .patient-details-footer__left {
+    order: 2;
+  }
+
+  .patient-details-footer__right {
+    order: 1;
+    margin-left: 0;
+  }
+
+  .patient-details-footer__cancel,
+  .patient-details-footer__back,
+  .patient-details-footer__continue {
+    min-height: 42px;
+  }
+
+  .patient-details-footer__cancel {
+    width: 100%;
+  }
+
+  .patient-details-footer__right
+    .patient-details-footer__back {
+    flex: 1;
+  }
+
+  .patient-details-footer__continue {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .patient-details-footer {
+    padding: 10px;
+  }
+
+  .patient-details-footer__cancel,
+  .patient-details-footer__back,
+  .patient-details-footer__continue {
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .patient-details-footer__back svg,
+  .patient-details-footer__continue svg {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,190 @@
+/* =========================================================
+   BILLING DEPARTMENT TABS
+   ========================================================= */
+
+.billing-department-tabs {
+  width: 100%;
+
+  margin-top: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABS WRAPPER
+   ========================================================= */
+
+.billing-department-tabs__wrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 0 0 1px;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SCROLLABLE BEHAVIOUR
+   ========================================================= */
+
+.billing-department-tabs--scrollable
+.billing-department-tabs__wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scrollbar-width: none;
+}
+
+.billing-department-tabs--scrollable
+.billing-department-tabs__wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   TAB
+   ========================================================= */
+
+.billing-department-tabs__tab {
+  height: 32px;
+
+  flex: 0 0 auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 15px;
+
+  border: 1px solid #dce4ef;
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  line-height: 1;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.12s ease;
+}
+
+.billing-department-tabs__tab:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   INACTIVE TAB
+   ========================================================= */
+
+.billing-department-tabs__tab--inactive {
+  color: #172554;
+
+  background: #ffffff;
+
+  border-color: #dce4ef;
+}
+
+.billing-department-tabs__tab--inactive:hover {
+  color: #155eef;
+
+  background: #f7faff;
+
+  border-color: #bfcfea;
+}
+
+
+/* =========================================================
+   ACTIVE TAB
+   ========================================================= */
+
+.billing-department-tabs__tab--active {
+  color: #ffffff;
+
+  background: #155eef;
+
+  border-color: #155eef;
+
+  box-shadow:
+    0 2px 5px rgba(21, 94, 239, 0.16);
+}
+
+.billing-department-tabs__tab--active:hover {
+  background: #0f4dcc;
+
+  border-color: #0f4dcc;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.billing-department-tabs__tab:focus-visible {
+  outline: none;
+
+  box-shadow:
+    0 0 0 2px rgba(21, 94, 239, 0.15);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .billing-department-tabs {
+    margin-top: 10px;
+  }
+
+  .billing-department-tabs__wrapper {
+    gap: 6px;
+  }
+
+  .billing-department-tabs__tab {
+    height: 32px;
+
+    padding: 0 13px;
+
+    font-size: 11px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .billing-department-tabs {
+    margin-top: 9px;
+  }
+
+  .billing-department-tabs__tab {
+    height: 31px;
+
+    padding: 0 12px;
+
+    font-size: 10px;
+  }
+}

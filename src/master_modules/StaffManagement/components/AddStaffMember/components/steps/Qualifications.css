@@ -1,0 +1,66 @@
+
+.staff-qualification-step {
+  width: 100%;
+  min-width: 0;
+}
+
+.staff-qualification-heading {
+  margin-bottom: 24px;
+}
+
+.staff-qualification-heading h2 {
+  margin: 0;
+  color: #172b4d;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.staff-qualification-heading p {
+  margin: 7px 0 0;
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.staff-qualification-section {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.staff-qualification-section h3 {
+  margin: 0 0 22px;
+  color: #334155;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.staff-qualification-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 20px;
+}
+
+.staff-qualification-field {
+  min-width: 0;
+}
+
+.staff-qualification-full {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 640px) {
+  .staff-qualification-section {
+    padding: 16px;
+  }
+
+  .staff-qualification-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+  }
+
+  .staff-qualification-full {
+    grid-column: auto;
+  }
+}

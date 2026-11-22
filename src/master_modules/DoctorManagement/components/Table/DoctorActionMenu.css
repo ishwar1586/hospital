@@ -1,0 +1,92 @@
+/* =========================================================
+   DOCTOR ACTION MENU
+   Namespace: doctor-action-menu
+========================================================= */
+
+.doctor-action-menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================================
+   TRIGGER
+========================================================= */
+
+.doctor-action-menu__trigger {
+    width: 30px !important;
+    height: 30px !important;
+
+    padding: 0 !important;
+
+    color: #64748b !important;
+
+    border-radius: 6px !important;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.doctor-action-menu__trigger:hover {
+    background: #f1f5f9 !important;
+    color: #172554 !important;
+}
+
+/* =========================================================
+   MENU PAPER
+========================================================= */
+
+.doctor-action-menu__paper {
+    min-width: 190px;
+
+    padding: 5px 0;
+
+    border: 1px solid #e5eaf0;
+
+    border-radius: 8px !important;
+
+    box-shadow:
+        0 8px 24px rgba(15, 23, 42, 0.12) !important;
+}
+
+/* =========================================================
+   MENU ITEM
+========================================================= */
+
+.doctor-action-menu__item {
+    min-height: 38px !important;
+
+    padding: 7px 12px !important;
+
+    color: #334155 !important;
+
+    font-size: 12px !important;
+}
+
+.doctor-action-menu__item:hover {
+    background: #f8fafc !important;
+}
+
+.doctor-action-menu__item--destructive {
+    color: #dc2626 !important;
+}
+
+.doctor-action-menu__item--destructive:hover {
+    background: #fef2f2 !important;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.doctor-action-menu__icon {
+    min-width: 30px !important;
+
+    color: #64748b !important;
+}
+
+.doctor-action-menu__item--destructive
+    .doctor-action-menu__icon {
+    color: #dc2626 !important;
+}

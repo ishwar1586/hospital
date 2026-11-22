@@ -1,0 +1,316 @@
+/* =========================================================
+   APPOINTMENT DETAILS HEADER
+   ========================================================= */
+
+.appointment-details-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 12px 14px;
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   HEADER TOP
+   ========================================================= */
+
+.appointment-details-header__top {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   TITLE WRAPPER
+   ========================================================= */
+
+.appointment-details-header__title-wrapper {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.appointment-details-header__title {
+    margin: 0;
+    padding: 0;
+
+    color: #111827;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.appointment-details-header__status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 18px;
+    padding: 2px 8px;
+
+    border: 1px solid transparent;
+    border-radius: 999px;
+
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 14px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   STATUS - SCHEDULED
+   ========================================================= */
+
+.appointment-details-header__status--scheduled {
+    color: #2563eb;
+    background: #eff6ff;
+    border-color: #dbeafe;
+}
+
+
+/* =========================================================
+   STATUS - CONFIRMED
+   ========================================================= */
+
+.appointment-details-header__status--confirmed {
+    color: #059669;
+    background: #ecfdf5;
+    border-color: #d1fae5;
+}
+
+
+/* =========================================================
+   STATUS - CHECKED IN
+   ========================================================= */
+
+.appointment-details-header__status--checked-in {
+    color: #ea580c;
+    background: #fff7ed;
+    border-color: #fed7aa;
+}
+
+
+/* =========================================================
+   STATUS - COMPLETED
+   ========================================================= */
+
+.appointment-details-header__status--completed {
+    color: #374151;
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+}
+
+
+/* =========================================================
+   STATUS - CANCELLED
+   ========================================================= */
+
+.appointment-details-header__status--cancelled {
+    color: #dc2626;
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+
+/* =========================================================
+   STATUS - NO SHOW
+   ========================================================= */
+
+.appointment-details-header__status--no-show {
+    color: #6b21a8;
+    background: #faf5ff;
+    border-color: #e9d5ff;
+}
+
+
+/* =========================================================
+   STATUS - PENDING
+   ========================================================= */
+
+.appointment-details-header__status--pending {
+    color: #d97706;
+    background: #fffbeb;
+    border-color: #fde68a;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+   ========================================================= */
+
+.appointment-details-header__close {
+    flex-shrink: 0;
+
+    width: 30px;
+    height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 6px;
+
+    background: transparent;
+    color: #1f2937;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+.appointment-details-header__close svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+.appointment-details-header__close:hover {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+
+.appointment-details-header__close:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   APPOINTMENT ID WRAPPER
+   ========================================================= */
+
+.appointment-details-header__appointment-id-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 8px;
+
+    min-height: 26px;
+}
+
+
+/* =========================================================
+   APPOINTMENT ID
+   ========================================================= */
+
+.appointment-details-header__appointment-id {
+    color: #111827;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+
+    letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   COPY BUTTON
+   ========================================================= */
+
+.appointment-details-header__copy {
+    width: 24px;
+    height: 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: transparent;
+    color: #64748b;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+.appointment-details-header__copy svg {
+    width: 14px;
+    height: 14px;
+}
+
+
+.appointment-details-header__copy:hover {
+    background: #f1f5f9;
+    color: #1d4ed8;
+}
+
+
+.appointment-details-header__copy:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+
+/* =========================================================
+   COPIED TEXT
+   ========================================================= */
+
+.appointment-details-header__copied {
+    margin-left: 6px;
+
+    color: #059669;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .appointment-details-header {
+        padding: 10px;
+    }
+
+    .appointment-details-header__title {
+        font-size: 13px;
+    }
+
+    .appointment-details-header__appointment-id {
+        font-size: 12px;
+    }
+
+}

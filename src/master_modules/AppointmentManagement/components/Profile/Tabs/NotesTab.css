@@ -1,0 +1,382 @@
+/* =========================================================
+   APPOINTMENT NOTES TAB
+   ========================================================= */
+
+.appointment-notes-tab {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.appointment-notes-tab__section {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.appointment-notes-tab__section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    margin-bottom: 16px;
+}
+
+
+.appointment-notes-tab__section-header h3 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+.appointment-notes-tab__section-header p {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+
+/* =========================================================
+   EDITOR
+   ========================================================= */
+
+.appointment-notes-tab__editor {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.appointment-notes-tab__label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #374151;
+
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+
+/* =========================================================
+   TEXTAREA
+   ========================================================= */
+
+.appointment-notes-tab__textarea {
+    display: block;
+
+    width: 100%;
+    min-height: 120px;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    resize: vertical;
+
+    border: 1px solid #d9dee8;
+    border-radius: 6px;
+
+    background: #ffffff;
+    color: #111827;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+
+    outline: none;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.appointment-notes-tab__textarea::placeholder {
+    color: #98a2b3;
+}
+
+
+.appointment-notes-tab__textarea:hover {
+    border-color: #c5cad5;
+}
+
+
+.appointment-notes-tab__textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px rgba(
+            37,
+            99,
+            235,
+            0.08
+        );
+}
+
+
+/* =========================================================
+   EDITOR FOOTER
+   ========================================================= */
+
+.appointment-notes-tab__editor-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   CHARACTER COUNT
+   ========================================================= */
+
+.appointment-notes-tab__character-count {
+    color: #98a2b3;
+
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   EDITOR ACTIONS
+   ========================================================= */
+
+.appointment-notes-tab__editor-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   CLEAR BUTTON
+   ========================================================= */
+
+.appointment-notes-tab__clear-button,
+.appointment-notes-tab__save-button {
+    height: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 11px;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+.appointment-notes-tab__clear-button {
+    border: 1px solid #d9dee8;
+
+    background: #ffffff;
+    color: #344054;
+}
+
+
+.appointment-notes-tab__clear-button:hover:not(:disabled) {
+    background: #f8fafc;
+    border-color: #c5cad5;
+}
+
+
+.appointment-notes-tab__clear-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SAVE BUTTON
+   ========================================================= */
+
+.appointment-notes-tab__save-button {
+    border: 1px solid #2563eb;
+
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+.appointment-notes-tab__save-button:hover:not(:disabled) {
+    border-color: #1d4ed8;
+    background: #1d4ed8;
+}
+
+
+.appointment-notes-tab__save-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+.appointment-notes-tab__clear-button:focus-visible,
+.appointment-notes-tab__save-button:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+
+/* =========================================================
+   REFERENCE
+   ========================================================= */
+
+.appointment-notes-tab__reference {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   REFERENCE ITEM
+   ========================================================= */
+
+.appointment-notes-tab__reference-item {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding: 11px 12px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================================
+   REFERENCE LABEL
+   ========================================================= */
+
+.appointment-notes-tab__reference-label {
+    color: #94a3b8;
+
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 14px;
+}
+
+
+/* =========================================================
+   REFERENCE VALUE
+   ========================================================= */
+
+.appointment-notes-tab__reference-value {
+    min-width: 0;
+
+    color: #334155;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 15px;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+   ========================================================= */
+
+.appointment-notes-tab--empty {
+    min-height: 160px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.appointment-notes-tab--empty p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .appointment-notes-tab__editor-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .appointment-notes-tab__editor-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .appointment-notes-tab__reference {
+        grid-template-columns: 1fr;
+    }
+
+}

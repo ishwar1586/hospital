@@ -1,0 +1,227 @@
+/* =====================================================
+   ROOT
+===================================================== */
+
+.activity-tab{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.activity-toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+
+    padding:18px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:14px;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.activity-search{
+
+    flex:1;
+
+    min-width:320px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:0 14px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    background:#FFFFFF;
+
+    transition:.25s;
+
+}
+
+.activity-search:focus-within{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+.activity-search svg{
+
+    color:#64748B;
+
+}
+
+.activity-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+}
+
+/* =====================================================
+   FILTER
+===================================================== */
+
+.activity-filter{
+
+    width:240px;
+
+    height:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:0 14px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    background:#FFFFFF;
+
+}
+
+.activity-filter svg{
+
+    color:#64748B;
+
+}
+
+.activity-filter select{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+/* =====================================================
+   RESET BUTTON
+===================================================== */
+
+.activity-reset-btn{
+
+    height:44px;
+
+    padding:0 18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#EEF2FF;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.activity-reset-btn:hover{
+
+    background:#DBEAFE;
+
+}
+
+.activity-reset-btn svg{
+
+    font-size:20px;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .activity-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .activity-search{
+
+        min-width:100%;
+
+    }
+
+    .activity-filter{
+
+        width:100%;
+
+    }
+
+    .activity-reset-btn{
+
+        width:100%;
+
+    }
+
+}

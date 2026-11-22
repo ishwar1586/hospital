@@ -1,0 +1,348 @@
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.test-table-card {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.test-table-card__header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 16px;
+
+    padding: 16px 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.test-table-card__title {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+.test-table-card__subtitle {
+    margin: 4px 0 0;
+
+    color: #6b7280;
+
+    font-size: 11px;
+}
+
+.test-table-card__count {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 5px 10px;
+
+    border-radius: 6px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.test-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+    scrollbar-width: thin !important;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.test-table {
+    width: 100%;
+
+    min-width: 1150px;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.test-table thead th {
+    padding: 12px 14px;
+
+    background: #f8fafc;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    color: #4b5563;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.test-table tbody td {
+    padding: 13px 14px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    color: #4b5563;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+}
+
+.test-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.test-table tbody tr {
+    transition: background-color 0.15s ease;
+}
+
+.test-table tbody tr:hover {
+    background: #fafcff;
+}
+
+
+/* =========================================
+   TEST CODE
+========================================= */
+
+.test-code {
+    color: #2563eb;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   TEST NAME
+========================================= */
+
+.test-name-cell {
+    max-width: 210px;
+
+    overflow: hidden;
+}
+
+.test-name {
+    display: block;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    color: #111827;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   CATEGORY CHIP
+========================================= */
+
+.test-category-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 4px 8px;
+
+    border-radius: 5px;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS CHIP
+========================================= */
+
+.test-status-chip {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding: 4px 8px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.test-status-chip__dot {
+    width: 5px;
+
+    height: 5px;
+
+    border-radius: 50%;
+
+    background: currentColor;
+}
+
+
+/* Active */
+
+.test-status-chip--active {
+    background: #ecfdf5;
+
+    color: #059669;
+}
+
+
+/* Inactive */
+
+.test-status-chip--inactive {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.test-price {
+    color: #111827;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   PROFILE COUNT
+========================================= */
+
+.profile-count {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 24px;
+
+    height: 24px;
+
+    padding: 0 6px;
+
+    border-radius: 6px;
+
+    background: #f5f3ff;
+
+    color: #7c3aed;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ACTION
+========================================= */
+
+.test-table__action-cell {
+    width: 50px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.test-table__empty {
+    height: 180px;
+
+    color: #9ca3af !important;
+
+    text-align: center !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .test-table-card__header {
+        padding: 14px;
+    }
+
+}

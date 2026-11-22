@@ -1,0 +1,391 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.medicine-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:16px 20px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:14px;
+
+    transition:all .25s ease;
+
+}
+
+.medicine-row:hover{
+
+    border-color:#2563EB;
+
+    box-shadow:0 8px 24px rgba(37,99,235,.08);
+
+}
+
+/* ===========================================================
+LEFT
+=========================================================== */
+
+.medicine-row-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex:1;
+
+    min-width:0;
+
+}
+
+/* ===========================================================
+MEDICINE INFO
+=========================================================== */
+
+.medicine-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    min-width:0;
+
+}
+
+.medicine-info h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    line-height:1.2;
+
+}
+
+.medicine-subtitle{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:0;
+
+    font-size:13px;
+
+    color:#64748B;
+
+}
+
+.medicine-subtitle span{
+
+    color:#CBD5E1;
+
+}
+
+/* ===========================================================
+META
+=========================================================== */
+
+.medicine-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+.medicine-meta>span{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.medicine-meta>span:nth-child(even){
+
+    color:#CBD5E1;
+
+}
+
+
+/* ===========================================================
+RIGHT
+=========================================================== */
+
+.medicine-row-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:24px;
+
+    flex-shrink:0;
+
+}
+
+/* ===========================================================
+PRICE
+=========================================================== */
+
+.medicine-price{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    min-width:90px;
+
+}
+
+.medicine-price h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    line-height:1.2;
+
+}
+
+.medicine-price small{
+
+    margin-top:4px;
+
+    font-size:12px;
+
+    color:#94A3B8;
+
+}
+
+/* ===========================================================
+STOCK BADGE
+=========================================================== */
+
+.medicine-meta .stock-badge{
+
+    margin-left:8px;
+
+    transform:scale(.85);
+
+}
+
+/* ===========================================================
+ADD BUTTON
+=========================================================== */
+
+.medicine-row-right .add-medicine-btn{
+
+    width:96px;
+
+    height:38px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    box-shadow:none;
+
+}
+
+.medicine-row-right .add-medicine-btn svg{
+
+    font-size:18px;
+
+}
+
+.medicine-row-right .add-medicine-btn:hover{
+
+    transform:none;
+
+}
+
+/* ===========================================================
+RESPONSIVE
+=========================================================== */
+
+@media(max-width:992px){
+
+    .medicine-row{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .medicine-row-right{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .medicine-row{
+
+        padding:16px;
+
+    }
+
+    .medicine-row-left{
+
+        align-items:flex-start;
+
+    }
+
+    .medicine-row-right{
+
+        width:100%;
+
+        flex-wrap:wrap;
+
+        gap:14px;
+
+    }
+
+    .medicine-price{
+
+        align-items:flex-start;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .medicine-row-left{
+
+        flex-direction:column;
+
+    }
+
+    .medicine-meta{
+
+        gap:6px;
+
+    }
+
+    .medicine-row-right{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .medicine-row-right .add-medicine-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ===========================================================
+ADDED MEDICINE
+=========================================================== */
+
+.medicine-row.added{
+
+    border-left:5px solid #16A34A;
+
+    background:#F0FDF4;
+
+}
+
+.medicine-row.added:hover{
+
+    border-color:#16A34A;
+
+    box-shadow:0 8px 24px rgba(22,163,74,.12);
+
+}
+
+/* ===========================================================
+META
+=========================================================== */
+
+.medicine-meta{
+
+    display:flex;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+}
+
+.medicine-meta strong{
+
+    font-weight:600;
+
+    color:#0F172A;
+
+}
+
+.medicine-meta .dot{
+
+    color:#CBD5E1;
+
+}
+
+/* ===========================================================
+FOOTER
+=========================================================== */
+
+.medicine-footer-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:8px;
+
+}

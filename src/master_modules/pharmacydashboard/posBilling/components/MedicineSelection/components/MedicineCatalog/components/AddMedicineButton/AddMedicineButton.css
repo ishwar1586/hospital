@@ -1,0 +1,79 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.add-medicine-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    min-width:100px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.add-medicine-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* ===========================================================
+ICON
+=========================================================== */
+
+.add-medicine-btn svg{
+
+    font-size:18px;
+
+}
+
+/* ===========================================================
+ADDED
+=========================================================== */
+
+.add-medicine-btn.added{
+
+    background:#16A34A;
+
+}
+
+.add-medicine-btn.added:hover{
+
+    background:#15803D;
+
+}
+
+/* ===========================================================
+DISABLED
+=========================================================== */
+
+.add-medicine-btn:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.9;
+
+}

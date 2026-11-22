@@ -1,0 +1,105 @@
+
+.present-illness {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+.present-illness__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.present-illness__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.present-illness__title {
+  margin: 0;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.present-illness__description {
+  margin: 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.present-illness__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.present-illness__label {
+  color: #334155;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.present-illness__textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 130px;
+  padding: 12px 14px;
+  border: 1px solid #dbe2ea;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #1e293b;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.6;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.present-illness__textarea::placeholder {
+  color: #94a3b8;
+}
+
+.present-illness__textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.present-illness__textarea:disabled {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+.present-illness__textarea--error {
+  border-color: #e11d48;
+}
+
+.present-illness__footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.present-illness__hint {
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.present-illness__error {
+  color: #e11d48;
+  font-size: 11px;
+}

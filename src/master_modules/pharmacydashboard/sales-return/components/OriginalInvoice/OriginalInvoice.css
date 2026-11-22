@@ -1,0 +1,387 @@
+/* ==========================================================
+   Original Invoice Card
+========================================================== */
+
+.original-invoice-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    padding: 24px;
+
+    box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+
+    transition: .3s;
+
+}
+
+.original-invoice-card:hover {
+
+    box-shadow: 0 16px 36px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   Header
+========================================================== */
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding-bottom:18px;
+
+    margin-bottom:22px;
+
+    border-bottom:1px solid #eef2f7;
+
+}
+
+.card-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.card-title svg{
+
+    color:#2563eb;
+
+    font-size:24px;
+
+}
+
+.card-title h3{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#111827;
+
+}
+
+/* ==========================================================
+   Button
+========================================================== */
+
+.view-invoice-btn{
+
+    height:44px;
+
+    padding:0 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.view-invoice-btn svg{
+
+    font-size:18px;
+
+}
+
+.view-invoice-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.view-invoice-btn:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================================================
+   Details
+========================================================== */
+
+.invoice-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.invoice-row{
+
+    display:grid;
+
+    grid-template-columns:24px 120px 1fr;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:6px 0;
+
+    border-bottom:1px dashed #edf2f7;
+
+}
+
+.invoice-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.invoice-row svg{
+
+    color:#2563eb;
+
+    font-size:16px;
+
+}
+
+.invoice-row label{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    color:#6b7280;
+
+}
+
+.invoice-row span{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#111827;
+
+    text-align:right;
+
+}
+
+/* ==========================================================
+   Amount Section
+========================================================== */
+
+.amount-summary{
+
+    margin-top:16px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+
+}
+
+/* ==========================================================
+   Amount Card
+========================================================== */
+
+.amount-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:100px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    transition:.3s;
+
+    box-shadow:0 10px 22px rgba(0,0,0,.08);
+
+}
+
+.amount-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-70px;
+
+    right:-70px;
+
+}
+
+.amount-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.amount-card svg{
+
+    font-size:16px;
+
+    margin-bottom:8px;
+
+}
+
+.amount-card small{
+
+    font-size:12px;
+
+    letter-spacing:.1px;
+
+    opacity:.9;
+
+}
+
+.amount-card h2{
+
+    margin:1px 0 0;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   Card Colors
+========================================================== */
+
+.total{
+
+    background:linear-gradient(135deg,#2563eb,#1d4ed8) !important;
+
+}
+
+.paid{
+
+    background:linear-gradient(135deg,#16a34a,#15803d) !important;
+
+}
+
+.due{
+
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+
+}
+
+/* ==========================================================
+   Responsive
+========================================================== */
+
+@media(max-width:1200px){
+
+    .invoice-row{
+
+        grid-template-columns:22px 110px 1fr;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .amount-summary{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .original-invoice-card{
+
+        padding:18px;
+
+    }
+
+    .card-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:16px;
+
+    }
+
+    .view-invoice-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .invoice-row{
+
+        grid-template-columns:22px 100px 1fr;
+
+        gap:10px;
+
+    }
+
+    .invoice-row label{
+
+        font-size:13px;
+
+    }
+
+    .invoice-row span{
+
+        font-size:14px;
+
+    }
+
+}

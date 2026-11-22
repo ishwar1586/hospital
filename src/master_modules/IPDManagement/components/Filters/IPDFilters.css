@@ -1,0 +1,393 @@
+/* =========================================================
+   IPD FILTERS
+   ========================================================= */
+
+.ipd-filters {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #edf1f7;
+  border-bottom: 1px solid #edf1f7;
+  box-sizing: border-box;
+  /* margin-top: 5px; */
+  padding: 0 12px;
+}
+
+.ipd-filters__row {
+  width: 100%;
+  min-height: 72px;
+
+  display: flex;
+  align-items: flex-end;
+
+  gap: 10px;
+
+  padding: 10px 0 14px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   COMMON FILTER
+   ========================================================= */
+
+.ipd-filter {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.ipd-filter__label {
+  display: block;
+
+  height: 14px;
+
+  margin: 0;
+
+  color: #193b87;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 14px;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.ipd-filter--search {
+  width: 270px;
+  min-width: 270px;
+  max-width: 270px;
+
+  flex: 0 0 270px;
+
+  align-self: flex-end;
+}
+
+.ipd-filter__search-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.ipd-filter__search-input {
+  width: 270px;
+  height: 35px;
+
+  padding: 0 32px 0 10px;
+
+  border: 1px solid #d7e0ef;
+  border-radius: 5px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #193b87;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 400;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.ipd-filter__search-input::placeholder {
+  color: #284b91;
+  opacity: 1;
+}
+
+.ipd-filter__search-input:focus {
+  border-color: #9db6e8;
+
+  box-shadow:
+    0 0 0 2px rgba(37, 99, 235, 0.06);
+}
+
+.ipd-filter__search-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 8px;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  color: #052d80;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   SELECT WIDTH
+   ========================================================= */
+
+.ipd-filter:not(.ipd-filter--search):not(.ipd-filter--date):not(
+    .ipd-filter--clear
+  ) {
+  width: 125px;
+  min-width: 125px;
+
+  flex: 0 0 125px;
+}
+
+/* =========================================================
+   SELECT
+   ========================================================= */
+
+.ipd-filter__select-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.ipd-filter__select {
+  width: 100%;
+  height: 35px;
+
+  padding: 0 27px 0 10px;
+
+  border: 1px solid #d7e0ef;
+  border-radius: 5px;
+
+  outline: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background: #ffffff;
+
+  color: #132f70;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+}
+
+.ipd-filter__select:focus {
+  border-color: #9db6e8;
+
+  box-shadow:
+    0 0 0 2px rgba(37, 99, 235, 0.06);
+}
+
+.ipd-filter__select:disabled {
+  background: #f8fafc;
+
+  color: #94a3b8;
+
+  cursor: not-allowed;
+}
+
+.ipd-filter__select-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 7px;
+
+  width: 16px !important;
+  height: 16px !important;
+
+  color: #052d80;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+.ipd-filter--date {
+  width: 108px;
+  min-width: 108px;
+
+  flex: 0 0 108px;
+}
+
+.ipd-filter__date-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 35px;
+}
+
+.ipd-filter__date-input {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+  height: 35px;
+
+  padding: 0 8px 0 31px;
+
+  border: 1px solid #d7e0ef;
+  border-radius: 5px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #193b87;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+}
+
+.ipd-filter__date-input:focus {
+  border-color: #9db6e8;
+
+  box-shadow:
+    0 0 0 2px rgba(37, 99, 235, 0.06);
+}
+
+/*
+   Native calendar button ko visible/clickable rakha gaya hai.
+*/
+.ipd-filter__date-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+
+  right: 7px;
+
+  width: 15px;
+  height: 15px;
+
+  opacity: 0;
+
+  cursor: pointer;
+}
+
+.ipd-filter__calendar-icon {
+  position: absolute;
+
+  z-index: 4;
+
+  top: 50%;
+  left: 9px;
+
+  width: 15px !important;
+  height: 15px !important;
+
+  color: #052d80;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+.ipd-filter__date-placeholder {
+  position: absolute;
+
+  z-index: 1;
+
+  top: 50%;
+  left: 31px;
+
+  color: #193b87;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 35px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CLEAR
+   ========================================================= */
+
+.ipd-filter--clear {
+  width: 51px;
+  min-width: 51px;
+
+  flex: 0 0 51px;
+}
+
+.ipd-filter__clear-button {
+  width: 51px;
+  height: 35px;
+
+  padding: 0;
+
+  border: 1px solid #d7e0ef;
+  border-radius: 5px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #155eef;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.ipd-filter__clear-button:hover {
+  background: #f5f8ff;
+
+  border-color: #b8c9e8;
+}
+
+.ipd-filter__clear-button:focus-visible {
+  border-color: #155eef;
+
+  box-shadow:
+    0 0 0 2px rgba(21, 94, 239, 0.08);
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .ipd-filters {
+    overflow-x: auto;
+  }
+
+  .ipd-filters__row {
+    width: max-content;
+    min-width: 100%;
+  }
+}

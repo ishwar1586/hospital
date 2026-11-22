@@ -1,0 +1,427 @@
+/* =========================================
+   Patient Search
+========================================= */
+
+.patient-search {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   Mode Actions
+========================================= */
+
+.patient-search__mode-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   Mode Button
+========================================= */
+
+.patient-search__mode-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 28px;
+
+    padding: 0 14px;
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+/* =========================================
+   Active Mode Button
+========================================= */
+
+.patient-search__mode-button--active {
+    border: 1px solid #1d4ed8;
+
+    background: #1d4ed8;
+
+    color: #ffffff;
+}
+
+
+.patient-search__mode-button--active:hover {
+    border-color: #1e40af;
+
+    background: #1e40af;
+}
+
+
+/* =========================================
+   Secondary Mode Button
+========================================= */
+
+.patient-search__mode-button--secondary {
+    border: 1px solid #d0d5dd;
+
+    background: #ffffff;
+
+    color: #172554;
+}
+
+
+.patient-search__mode-button--secondary:hover {
+    border-color: #98a2b3;
+
+    background: #f8fafc;
+}
+
+
+/* =========================================
+   Search Controls
+========================================= */
+
+.patient-search__controls {
+    display: grid;
+
+    grid-template-columns:
+        125px
+        minmax(220px, 1fr)
+        72px;
+
+    align-items: end;
+
+    gap: 10px;
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   Search Field
+========================================= */
+
+.patient-search__field {
+    min-width: 0;
+}
+
+
+/* =========================================
+   Label
+========================================= */
+
+.patient-search__label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #344054;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   Select Wrapper
+========================================= */
+
+.patient-search__select-wrapper {
+    position: relative;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   Select
+========================================= */
+
+.patient-search__select {
+    appearance: none;
+
+    width: 100%;
+    height: 28px;
+
+    padding: 0 26px 0 8px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #172554;
+
+    font-family: inherit;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.patient-search__select:focus {
+    border-color: #1d4ed8;
+
+    box-shadow:
+        0 0 0 2px rgba(29, 78, 216, 0.08);
+}
+
+
+/* =========================================
+   Select Icon
+========================================= */
+
+.patient-search__select-icon {
+    position: absolute;
+
+    top: 50%;
+    right: 5px;
+
+    width: 15px;
+    height: 15px;
+
+    transform: translateY(-50%);
+
+    color: #475467;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   Search Input Wrapper
+========================================= */
+
+.patient-search__input-wrapper {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+/* =========================================
+   Search Input
+========================================= */
+
+.patient-search__input {
+    width: 100%;
+    height: 28px;
+
+    padding:
+        0
+        34px
+        0
+        9px;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 5px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #172554;
+
+    font-family: inherit;
+
+    font-size: 9px;
+    font-weight: 400;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+
+.patient-search__input::placeholder {
+    color: #98a2b3;
+
+    opacity: 1;
+}
+
+
+.patient-search__input:focus {
+    border-color: #1d4ed8;
+
+    box-shadow:
+        0 0 0 2px rgba(29, 78, 216, 0.08);
+}
+
+
+/* =========================================
+   Input Search Button
+========================================= */
+
+.patient-search__input-search-button {
+    position: absolute;
+
+    top: 50%;
+    right: 1px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 26px;
+
+    padding: 0;
+
+    transform: translateY(-50%);
+
+    border: none;
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: #344054;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.18s ease,
+        color 0.18s ease;
+}
+
+
+.patient-search__input-search-button:hover {
+    background: #f2f4f7;
+
+    color: #1d4ed8;
+}
+
+
+/* =========================================
+   Main Search Button
+========================================= */
+
+.patient-search__search-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    width: 72px;
+    height: 28px;
+
+    padding: 0;
+
+    border: 1px solid #1d4ed8;
+    border-radius: 5px;
+
+    background: #1d4ed8;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 9px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background-color 0.18s ease,
+        border-color 0.18s ease;
+}
+
+
+.patient-search__search-button:hover {
+    border-color: #1e40af;
+
+    background: #1e40af;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 700px) {
+
+    .patient-search__controls {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+
+
+    .patient-search__field {
+        grid-column: span 1;
+    }
+
+
+    .patient-search__input-wrapper {
+        grid-column: span 1;
+    }
+
+
+    .patient-search__search-button {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .patient-search__mode-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .patient-search__mode-button {
+        width: 100%;
+    }
+
+
+    .patient-search__controls {
+        grid-template-columns: 1fr;
+    }
+
+
+    .patient-search__field,
+    .patient-search__input-wrapper,
+    .patient-search__search-button {
+        grid-column: auto;
+    }
+
+}

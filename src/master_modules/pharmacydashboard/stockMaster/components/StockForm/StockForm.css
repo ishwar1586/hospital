@@ -1,0 +1,536 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.stock-form-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    padding:24px;
+
+    background:#F8FAFC;
+
+    min-height:100%;
+
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.stock-form-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:24px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    box-shadow:0 2px 10px rgba(15,23,42,.05);
+
+}
+
+.stock-form-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.stock-form-header p{
+
+    margin-top:8px;
+
+    color:#64748B;
+
+    font-size:14px;
+
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.stock-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.stock-form-section{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:0 2px 8px rgba(15,23,42,.04);
+
+}
+
+.stock-form-section:hover{
+
+    box-shadow:0 10px 25px rgba(15,23,42,.08);
+
+    transition:.25s;
+
+}
+
+.stock-form-section-header{
+
+    padding:18px 24px;
+
+    background:#F8FAFC;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.stock-form-section-header h3{
+
+    margin:0;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.stock-form-section-body{
+
+    padding:24px;
+
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(0,1fr));
+
+    gap:22px;
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.stock-form-footer{
+
+    /* position:sticky; */
+
+    bottom:0;
+
+    z-index:20;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:18px 24px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    box-shadow:0 -6px 20px rgba(15,23,42,.08);
+
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn{
+
+    height:44px;
+
+    padding:0 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+/* ========================================= */
+
+.back-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    margin-bottom:16px;
+
+    padding:0;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.back-btn:hover{
+
+    color:#1D4ED8;
+
+}
+
+.back-btn svg{
+
+    font-size:20px;
+
+}
+
+
+/* Secondary */
+
+.btn-secondary{
+
+    background:#F1F5F9;
+
+    color:#334155;
+
+}
+
+.btn-secondary:hover{
+
+    background:#E2E8F0;
+
+}
+
+/* Outline */
+
+.btn-outline{
+
+    background:#FFFFFF;
+
+    border:1px solid #CBD5E1;
+
+    color:#475569;
+
+}
+
+.btn-outline:hover{
+
+    background:#F8FAFC;
+
+}
+
+/* Primary */
+
+.btn-primary{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.btn-primary:hover{
+
+    background:#1D4ED8;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .stock-form-page{
+
+        padding:16px;
+
+    }
+
+    .stock-form-header{
+
+        padding:18px;
+
+    }
+
+    .stock-form-section-body{
+
+        padding:18px;
+
+    }
+
+    .stock-form-footer{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.required{
+
+    color:#DC2626;
+
+    margin-left:4px;
+
+}
+
+.form-group input,
+
+.form-group select{
+
+    width:100%;
+
+    height:46px;
+
+    padding:0 14px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:10px;
+
+    background:#FFFFFF;
+
+    font-size:14px;
+
+    transition:.25s;
+
+    outline:none;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.12);
+
+}
+
+.field-error{
+
+    font-size:12px;
+
+    color:#DC2626;
+
+}
+
+
+
+/* =============================================== */
+
+.document-upload-box{
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:14px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:#F8FAFC;
+
+}
+
+.document-upload-box svg{
+
+    font-size:50px;
+
+    color:#2563EB;
+
+}
+
+.document-upload-box h4{
+
+    margin:15px 0 6px;
+
+}
+
+.document-upload-box p{
+
+    color:#64748B;
+
+    margin-bottom:20px;
+
+}
+
+.uploaded-documents{
+
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.uploaded-document{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 18px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:12px;
+
+}
+
+.uploaded-document-info{
+
+    display:flex;
+
+    gap:14px;
+
+    align-items:center;
+
+}
+
+.uploaded-document-info svg{
+
+    color:#2563EB;
+
+}
+
+.uploaded-document-info h5{
+
+    margin:0;
+
+    font-size:14px;
+
+}
+
+.uploaded-document-info span{
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+.document-delete-btn{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#DC2626;
+
+}

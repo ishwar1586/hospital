@@ -1,0 +1,14 @@
+.revenue-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.green {
+  color: #16a34a;
+  font-weight: 600;
+}
+/* .chart-container {
+  width: 100%;
+  height: 250px;
+} */

@@ -1,0 +1,112 @@
+.new-appointment-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 68px;
+    padding: 14px 24px;
+    border-top: 1px solid #e4e7ec;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.new-appointment-actions__left,
+.new-appointment-actions__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-appointment-actions__cancel-button,
+.new-appointment-actions__back-button,
+.new-appointment-actions__next-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    height: 38px;
+    padding: 0 14px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+.new-appointment-actions__cancel-button {
+    border: 1px solid #d0d5dd;
+    background: #ffffff;
+    color: #344054;
+}
+
+.new-appointment-actions__cancel-button:hover {
+    background: #f9fafb;
+    border-color: #b8bec8;
+}
+
+.new-appointment-actions__back-button {
+    border: 1px solid #d0d5dd;
+    background: #ffffff;
+    color: #344054;
+}
+
+.new-appointment-actions__back-button:hover {
+    background: #f9fafb;
+    border-color: #b8bec8;
+}
+
+.new-appointment-actions__next-button {
+    min-width: 190px;
+    border: 1px solid #2563eb;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.new-appointment-actions__next-button:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.new-appointment-actions__cancel-icon {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.new-appointment-actions__back-icon,
+.new-appointment-actions__next-icon {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@media (max-width: 600px) {
+    .new-appointment-actions {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px 16px;
+    }
+
+    .new-appointment-actions__left,
+    .new-appointment-actions__right {
+        width: 100%;
+    }
+
+    .new-appointment-actions__left {
+        justify-content: flex-start;
+    }
+
+    .new-appointment-actions__right {
+        justify-content: flex-end;
+    }
+
+    .new-appointment-actions__next-button {
+        flex: 1;
+    }
+}

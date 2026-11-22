@@ -1,0 +1,100 @@
+/* .emergency-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+} */
+
+.card-header.danger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fee2e2;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.badge {
+  background: #ef4444;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* .emergency-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+} */
+
+.emergency-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.tag.critical {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.tag.warning {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.view-link {
+  color: #2563eb;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* .emergency-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* HEADER FIXED */
+/* .emergency-card .card-header {
+  flex-shrink: 0;
+} */
+
+/* LIST SCROLL */
+/* .emergency-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 6px;
+  min-height: 0;
+  outline: 2px solid blue;
+} */
+
+
+.emergency-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.emergency-list {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+

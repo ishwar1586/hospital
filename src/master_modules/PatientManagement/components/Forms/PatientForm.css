@@ -1,0 +1,517 @@
+/* =========================================
+   Patient Form Page
+========================================= */
+
+.patient-form-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 22px 24px 30px;
+  background: #f8fafc;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Page Header
+========================================= */
+
+.patient-form-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.patient-form-page-heading h1 {
+  margin: 0;
+  color: #172554;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.patient-form-page-heading p {
+  margin: 5px 0 0;
+  color: #667085;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   Back Button
+========================================= */
+
+.patient-form-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 36px;
+  padding: 0 14px;
+
+  border: 1px solid #d9dee8;
+  border-radius: 6px;
+
+  background: #ffffff;
+  color: #344054;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.patient-form-back-button:hover {
+  background: #f8fafc;
+  border-color: #c5cad5;
+}
+
+
+/* =========================================
+   Registration Form
+========================================= */
+
+.patient-registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+/* =========================================
+   Form Section
+========================================= */
+
+.patient-form-section {
+  background: #ffffff;
+  border: 1px solid #e4e7ec;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   Section Header
+========================================= */
+
+.patient-form-section-header {
+  padding: 9px 14px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.patient-form-section-header h2 {
+  margin: 0;
+
+  color: #172554;
+
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+
+/* =========================================
+   Grid
+========================================= */
+
+.patient-form-grid {
+  display: grid;
+  gap: 12px;
+  padding: 13px 14px;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   Four Column Grid
+========================================= */
+
+.patient-form-grid-4 {
+  grid-template-columns:
+    0.75fr
+    1.5fr
+    1.5fr
+    1.5fr;
+}
+
+
+/* =========================================
+   Five Column Grid
+========================================= */
+
+.patient-form-grid-5 {
+  grid-template-columns:
+    1.1fr
+    0.8fr
+    1.1fr
+    1.1fr
+    1.1fr;
+}
+
+
+/* =========================================
+   Field
+========================================= */
+
+.patient-form-field {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================
+   Field Label
+========================================= */
+
+.patient-form-field label {
+  display: flex;
+  align-items: center;
+
+  height: 12px;
+  min-height: 12px;
+
+  margin: 0;
+  padding: 0;
+
+  color: #344054;
+
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.patient-form-field label span {
+  margin-left: 2px;
+  color: #d92d20;
+}
+
+
+/* =========================================
+   Inputs / Selects
+========================================= */
+
+.patient-form-field input,
+.patient-form-field select {
+  display: block;
+
+  width: 100%;
+  height: 32px;
+  min-height: 32px;
+
+  margin: 0;
+  padding: 0 9px;
+
+  border: 1px solid #d9dee8;
+  border-radius: 5px;
+
+  background: #ffffff;
+  color: #344054;
+
+  font-family: inherit;
+  font-size: 10px;
+  line-height: normal;
+
+  outline: none;
+  box-sizing: border-box;
+
+  transition: 0.2s ease;
+}
+
+.patient-form-field input::placeholder {
+  color: #98a2b3;
+}
+
+.patient-form-field input:focus,
+.patient-form-field select:focus {
+  border-color: #4b67d1;
+  box-shadow: 0 0 0 2px rgba(75, 103, 209, 0.08);
+}
+
+
+/* =========================================
+   Input With Suffix
+========================================= */
+
+.patient-form-input-with-suffix {
+  position: relative;
+
+  width: 100%;
+  height: 32px;
+  min-height: 32px;
+}
+
+.patient-form-input-with-suffix input {
+  width: 100%;
+  height: 32px;
+
+  padding-right: 40px;
+}
+
+.patient-form-input-with-suffix span {
+  position: absolute;
+
+  top: 0;
+  right: 9px;
+
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+
+  color: #667085;
+  font-size: 9px;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   Footer
+========================================= */
+
+.patient-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 14px 2px;
+}
+
+
+/* =========================================
+   Footer Checkbox
+========================================= */
+
+.patient-form-checkbox {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #667085;
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+.patient-form-checkbox input {
+  width: 13px;
+  height: 13px;
+
+  margin: 0;
+
+  accent-color: #2563eb;
+}
+
+
+/* =========================================
+   Footer Actions
+========================================= */
+
+.patient-form-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.patient-form-actions button {
+  height: 34px;
+
+  padding: 0 14px;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+/* =========================================
+   Cancel Button
+========================================= */
+
+.patient-form-cancel-button {
+  border: 1px solid #d9dee8;
+
+  background: #ffffff;
+  color: #344054;
+}
+
+.patient-form-cancel-button:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================================
+   Draft Button
+========================================= */
+
+.patient-form-draft-button {
+  border: 1px solid #d9dee8;
+
+  background: #ffffff;
+  color: #344054;
+}
+
+.patient-form-draft-button:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================================
+   Save Button
+========================================= */
+
+.patient-form-save-button {
+  border: 1px solid #2563eb;
+
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.patient-form-save-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================================
+   Responsive
+========================================= */
+
+@media (max-width: 1100px) {
+  .patient-form-grid-4 {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .patient-form-grid-5 {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+@media (max-width: 700px) {
+  .patient-form-page {
+    padding: 16px;
+  }
+
+  .patient-form-page-header {
+    flex-direction: column;
+  }
+
+  .patient-form-grid-4,
+  .patient-form-grid-5 {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-form-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .patient-form-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================================
+   Contact Notification
+========================================= */
+
+.patient-form-contact-notification {
+  padding: 0 14px 13px;
+}
+
+.patient-form-contact-notification
+.patient-form-checkbox {
+  font-size: 10px;
+}
+
+
+/* =========================================
+   Textarea
+========================================= */
+
+.patient-form-textarea-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.patient-form-field textarea {
+  width: 100%;
+  min-height: 58px;
+  padding: 8px 9px 20px;
+  border: 1px solid #d9dee8;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #344054;
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 1.4;
+  outline: none;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+
+.patient-form-field textarea::placeholder {
+  color: #98a2b3;
+}
+
+.patient-form-field textarea:focus {
+  border-color: #4b67d1;
+  box-shadow: 0 0 0 2px rgba(75, 103, 209, 0.08);
+}
+
+.patient-form-character-count {
+  position: absolute;
+  right: 9px;
+  bottom: 6px;
+  color: #98a2b3;
+  font-size: 8px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+
+/* =========================================
+   Refresh Button
+========================================= */
+
+.patient-form-refresh-button {
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid #d9dee8;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #344054;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.patient-form-refresh-button:hover {
+  background: #f8fafc;
+  border-color: #c5cad5;
+}

@@ -1,0 +1,397 @@
+/* =========================================
+   REPORT GENERATION FILTERS
+========================================= */
+
+.report-generation-filters {
+    width: 100%;
+
+    min-width: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 10px 12px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FILTER CONTENT
+========================================= */
+
+.report-generation-filters__content {
+    min-width: 0;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.report-generation-filters__search {
+    width: 220px;
+
+    height: 32px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================
+   SEARCH ICON
+========================================= */
+
+.report-generation-filters__search-icon {
+    position: absolute;
+
+    left: 9px;
+
+    width: 15px !important;
+    height: 15px !important;
+
+    color: #94a3b8;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   SEARCH INPUT
+========================================= */
+
+.report-generation-filters__search-input {
+    width: 100%;
+    height: 100%;
+
+    padding:
+        0 10px 0 30px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #334155;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.report-generation-filters__search-input::placeholder {
+    color: #94a3b8;
+}
+
+
+.report-generation-filters__search-input:focus {
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(
+            37,
+            99,
+            235,
+            0.08
+        );
+}
+
+
+/* =========================================
+   FIELD
+========================================= */
+
+.report-generation-filters__field {
+    min-width: 125px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.report-generation-filters__label {
+    color: #64748b;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.report-generation-filters__select {
+    width: 100%;
+
+    height: 32px;
+
+    padding:
+        0 25px 0 9px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.report-generation-filters__select:focus {
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(
+            37,
+            99,
+            235,
+            0.08
+        );
+}
+
+
+/* =========================================
+   DATE
+========================================= */
+
+.report-generation-filters__date {
+    width: 100%;
+
+    height: 32px;
+
+    padding:
+        0 8px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 8px;
+
+    font-weight: 500;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.report-generation-filters__date:focus {
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(
+            37,
+            99,
+            235,
+            0.08
+        );
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+.report-generation-filters__reset {
+    height: 32px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    flex-shrink: 0;
+
+    padding:
+        0 9px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #64748b;
+
+    font-family: inherit;
+
+    font-size: 7.5px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.15s ease,
+        border-color 0.15s ease,
+        color 0.15s ease;
+}
+
+
+.report-generation-filters__reset:hover {
+    border-color: #cbd5e1;
+
+    background: #f8fafc;
+
+    color: #334155;
+}
+
+
+.report-generation-filters__reset svg {
+    width: 15px;
+    height: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .report-generation-filters {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    .report-generation-filters__content {
+        width: 100%;
+    }
+
+
+    .report-generation-filters__reset {
+        align-self: flex-start;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .report-generation-filters__content {
+        display: grid;
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+    }
+
+
+    .report-generation-filters__search {
+        width: 100%;
+
+        grid-column:
+            1 / -1;
+    }
+
+
+    .report-generation-filters__field {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .report-generation-filters__content {
+        grid-template-columns:
+            1fr;
+    }
+
+}

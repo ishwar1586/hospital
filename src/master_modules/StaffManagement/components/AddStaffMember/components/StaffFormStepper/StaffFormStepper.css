@@ -1,0 +1,122 @@
+
+.staff-form-stepper {
+  width: 100%;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+.staff-form-stepper__track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-width: max-content;
+}
+
+.staff-form-stepper__item {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.staff-form-stepper__step {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 6px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #344054;
+  font: inherit;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.staff-form-stepper__step:disabled {
+  opacity: 1;
+}
+
+.staff-form-stepper__step:not(:disabled) {
+  cursor: pointer;
+}
+
+.staff-form-stepper__step:focus-visible {
+  outline: 2px solid #3155c6;
+  outline-offset: 2px;
+}
+
+.staff-form-stepper__indicator {
+  display: inline-flex;
+  flex: 0 0 20px;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #454b56;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.staff-form-stepper__label {
+  color: #344054;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.staff-form-stepper__item--active .staff-form-stepper__step {
+  background: #e8e8eb;
+}
+
+.staff-form-stepper__item--active .staff-form-stepper__indicator {
+  background: #4054c5;
+}
+
+.staff-form-stepper__item--active .staff-form-stepper__label {
+  color: #172033;
+  font-weight: 600;
+}
+
+.staff-form-stepper__item--completed .staff-form-stepper__indicator {
+  background: #42b653;
+}
+
+.staff-form-stepper__item--completed .staff-form-stepper__label {
+  color: #344054;
+}
+
+.staff-form-stepper__connector {
+  flex: 1 1 30px;
+  min-width: 22px;
+  height: 1px;
+  margin: 0 3px;
+  background: #9298a3;
+}
+
+.staff-form-stepper__connector--completed {
+  background: #42b653;
+}
+
+@media (max-width: 768px) {
+  .staff-form-stepper {
+    overflow-x: auto;
+    padding: 14px 12px;
+    scrollbar-width: thin;
+  }
+
+  .staff-form-stepper__track {
+    width: max-content;
+  }
+
+  .staff-form-stepper__label {
+    font-size: 10px;
+  }
+
+  .staff-form-stepper__connector {
+    min-width: 16px;
+  }
+}

@@ -1,0 +1,409 @@
+.walk-in-customer-details {
+  width: 100%;
+  min-height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+  background: #f7f8fa;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.walk-in-customer-details__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.walk-in-customer-details__header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.walk-in-customer-details__page-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #eaf2ff;
+  color: #2563eb;
+}
+
+.walk-in-customer-details__page-icon svg {
+  font-size: 24px;
+}
+
+.walk-in-customer-details__heading {
+  min-width: 0;
+}
+
+.walk-in-customer-details__title {
+  margin: 0;
+  color: #172033;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.walk-in-customer-details__subtitle {
+  margin: 4px 0 0;
+  color: #7b8494;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ================================
+   CUSTOMER TYPE
+================================ */
+
+.walk-in-customer-details__customer-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid #dbe5f2;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.walk-in-customer-details__customer-type svg {
+  font-size: 18px;
+  color: #2563eb;
+}
+
+/* ================================
+   CARD
+================================ */
+
+.walk-in-customer-details__card {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #e5e9f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.walk-in-customer-details__card-header {
+  padding: 20px 22px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.walk-in-customer-details__card-title {
+  margin: 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.walk-in-customer-details__card-subtitle {
+  margin: 5px 0 0;
+  color: #8a93a2;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+/* ================================
+   FORM
+================================ */
+
+.walk-in-customer-details__form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 24px 22px;
+}
+
+.walk-in-customer-details__field {
+  min-width: 0;
+}
+
+.walk-in-customer-details__field--full {
+  grid-column: 1 / -1;
+}
+
+.walk-in-customer-details__label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.walk-in-customer-details__required {
+  margin-left: 3px;
+  color: #dc2626;
+}
+
+/* ================================
+   INPUT
+================================ */
+
+.walk-in-customer-details__input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.walk-in-customer-details__input-icon {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b95a5;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.walk-in-customer-details__input-icon svg {
+  font-size: 19px;
+}
+
+.walk-in-customer-details__input-wrapper textarea
+{
+  min-height: 100px;
+  resize: vertical;
+  padding-top: 13px;
+}
+
+.walk-in-customer-details__input-wrapper input,
+.walk-in-customer-details__input-wrapper select,
+.walk-in-customer-details__input-wrapper textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #dfe4eb;
+  border-radius: 9px;
+  outline: none;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: inherit;
+  font-size: 13px;
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.walk-in-customer-details__input-wrapper input,
+.walk-in-customer-details__input-wrapper select {
+  height: 44px;
+  padding: 0 13px 0 42px;
+}
+
+.walk-in-customer-details__input-wrapper textarea {
+  padding-left: 42px;
+}
+
+.walk-in-customer-details__input-wrapper input::placeholder,
+.walk-in-customer-details__input-wrapper textarea::placeholder {
+  color: #a2a9b5;
+}
+
+.walk-in-customer-details__input-wrapper select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+.walk-in-customer-details__input-wrapper input:hover,
+.walk-in-customer-details__input-wrapper select:hover,
+.walk-in-customer-details__input-wrapper textarea:hover {
+  border-color: #c7ced9;
+}
+
+.walk-in-customer-details__input-wrapper input:focus,
+.walk-in-customer-details__input-wrapper select:focus,
+.walk-in-customer-details__input-wrapper textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.09);
+}
+
+/* ================================
+   ERROR
+================================ */
+
+.walk-in-customer-details__input-wrapper--error
+  input,
+.walk-in-customer-details__input-wrapper--error
+  select,
+.walk-in-customer-details__input-wrapper--error
+  textarea {
+  border-color: #dc2626;
+}
+
+.walk-in-customer-details__input-wrapper--error
+  input:focus,
+.walk-in-customer-details__input-wrapper--error
+  select:focus,
+.walk-in-customer-details__input-wrapper--error
+  textarea:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.08);
+}
+
+.walk-in-customer-details__error {
+  display: block;
+  margin-top: 6px;
+  color: #dc2626;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.walk-in-customer-details__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.walk-in-customer-details__footer-left {
+  min-width: 0;
+}
+
+.walk-in-customer-details__footer-hint {
+  color: #7b8494;
+  font-size: 12px;
+}
+
+.walk-in-customer-details__footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.walk-in-customer-details__button {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.walk-in-customer-details__button svg {
+  font-size: 18px;
+}
+
+.walk-in-customer-details__button:active {
+  transform: translateY(1px);
+}
+
+.walk-in-customer-details__button--secondary {
+  border-color: #d9dee7;
+  background: #ffffff;
+  color: #475569;
+}
+
+.walk-in-customer-details__button--secondary:hover {
+  border-color: #c6ceda;
+  background: #f8fafc;
+}
+
+.walk-in-customer-details__button--primary {
+  border-color: #2563eb;
+  background: #2563eb;
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(37, 99, 235, 0.18);
+}
+
+.walk-in-customer-details__button--primary:hover {
+  border-color: #1d4ed8;
+  background: #1d4ed8;
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.22);
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1199px) {
+  .walk-in-customer-details {
+    padding: 20px;
+  }
+
+  .walk-in-customer-details__form {
+    gap: 18px;
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+  .walk-in-customer-details {
+    padding: 14px;
+  }
+
+  .walk-in-customer-details__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .walk-in-customer-details__customer-type {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .walk-in-customer-details__form {
+    grid-template-columns: 1fr;
+    padding: 18px 16px;
+  }
+
+  .walk-in-customer-details__field--full {
+    grid-column: auto;
+  }
+
+  .walk-in-customer-details__footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .walk-in-customer-details__footer-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .walk-in-customer-details__button {
+    width: 100%;
+  }
+}

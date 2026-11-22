@@ -1,0 +1,240 @@
+.discharge-header {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 24px !important;
+
+  border-bottom: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.discharge-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.discharge-title svg {
+  color: #dc2626;
+  font-size: 28px !important;
+}
+
+/* Body */
+
+.MuiDialogContent-root {
+  background: #f8fafc;
+  padding: 24px !important;
+}
+
+/* Patient Card */
+
+.patient-card {
+  background: linear-gradient(
+    135deg,
+    #dc2626,
+    #b91c1c
+  );
+
+  color: #ffffff;
+
+  padding: 20px;
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+}
+
+.patient-card h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.patient-tags {
+  display: flex;
+  gap: 10px;
+
+  margin-top: 12px;
+}
+
+.patient-tags span {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.15
+  );
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Sections */
+
+.section-card {
+  background: #ffffff;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.section-card h3 {
+  margin: 0 0 18px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* Info Cards */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  );
+
+  gap: 16px;
+}
+
+.info-card {
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  padding: 16px;
+}
+
+.info-card label {
+  display: block;
+
+  font-size: 12px;
+  color: #64748b;
+
+  margin-bottom: 6px;
+}
+
+.info-card h4 {
+  margin: 0;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* Form Grid */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+/* Summary */
+
+.summary-grid {
+  display: grid;
+    grid-template-columns:
+        repeat(1, 1fr);
+       
+  gap: 10px;
+}
+
+.summary-grid .MuiTextField-root {
+  width: 100%;
+}
+
+/* TextFields */
+
+.MuiOutlinedInput-root {
+  border-radius: 12px !important;
+  background: #ffffff;
+}
+
+.MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #dc2626;
+}
+
+.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: #dc2626 !important;
+}
+
+/* Footer */
+
+.discharge-footer {
+  padding: 18px 24px !important;
+
+  border-top: 1px solid #e5e7eb;
+
+  background: #ffffff;
+}
+
+.discharge-footer button {
+  min-width: 140px;
+  height: 42px;
+
+  text-transform: none !important;
+
+  border-radius: 10px !important;
+
+  font-weight: 600 !important;
+}
+
+/* Scroll */
+
+.MuiDialogContent-root::-webkit-scrollbar {
+  width: 8px;
+}
+
+.MuiDialogContent-root::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .patient-tags {
+    flex-wrap: wrap;
+  }
+
+  .discharge-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .discharge-footer button {
+    width: 100%;
+  }
+}

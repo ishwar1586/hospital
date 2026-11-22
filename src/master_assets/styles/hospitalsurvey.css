@@ -1,0 +1,45 @@
+.survey-card{
+  background:#fff;
+  border-radius:16px;
+  /* padding:16px; */
+  /* box-shadow:0 10px 25px rgba(0,0,0,.08); */
+}
+
+.survey-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.survey-header select{
+  border:none;
+  background:#fdfce7;
+  padding:6px 10px;
+  width:120px;
+  border-radius:8px;
+}
+
+.survey-legend{
+  display:flex;
+  gap:20px;
+  margin:12px 0;
+  font-size:12px;
+  color:#6b7280;
+}
+
+.dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  display:inline-block;
+  margin-right:6px;
+}
+.dot.blue{background:#3b82f6;}
+.dot.orange{background:#f97316;}
+
+.survey-chart{
+  width:100%;
+  /* height:260px; */
+  /* margin-top: 70px; */
+  /* margin-right: 70px !important; */
+}

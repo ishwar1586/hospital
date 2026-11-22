@@ -1,0 +1,408 @@
+/* ===========================================================
+ROOT
+=========================================================== */
+
+.workflow-container{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    /* margin-bottom:24px; */
+
+    box-shadow:
+        0 2px 10px rgba(15,23,42,.05);
+
+}
+
+/* ===========================================================
+HEADER
+=========================================================== */
+
+.workflow-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:24px;
+
+    margin-bottom:10px;
+
+}
+
+.workflow-header h2{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.workflow-header p{
+
+    margin-top:4px;
+
+    color:#64748B;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+PROGRESS
+=========================================================== */
+
+.workflow-progress{
+
+    text-align:right;
+
+}
+
+.workflow-progress span{
+
+    display:block;
+
+    font-size:12px;
+
+    color:#64748B;
+
+    margin-bottom:4px;
+
+}
+
+.workflow-progress strong{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#2563EB;
+
+}
+
+/* ===========================================================
+PROGRESS BAR
+=========================================================== */
+
+.workflow-progress-track{
+
+    position:relative;
+
+    width:100%;
+
+    height:6px;
+
+    background:#E2E8F0;
+
+    border-radius:999px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+
+}
+
+.workflow-progress-fill{
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:0;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #16A34A
+    );
+
+    transition:width .45s ease;
+
+}
+
+/* ===========================================================
+STEPPER
+=========================================================== */
+
+.workflow-stepper{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    justify-content:space-between;
+
+    position:relative;
+
+    gap:18px;
+
+}
+
+/* ===========================================================
+STEP
+=========================================================== */
+
+.workflow-step{
+
+    flex:1;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+    user-select:none;
+
+}
+
+/* .workflow-step:hover{
+
+    transform:translateY(-3px);
+
+} */
+
+/* ===========================================================
+CONNECTOR
+=========================================================== */
+
+.workflow-line{
+
+    position:absolute;
+
+    top:26px;
+
+    left:-50%;
+
+    width:100%;
+
+    height:4px;
+
+    background:#E2E8F0;
+
+    z-index:0;
+
+    transition:.35s;
+
+}
+
+.workflow-line.completed{
+
+    background:linear-gradient(
+        90deg,
+        #2563EB,
+        #16A34A
+    );
+
+}
+
+/* ===========================================================
+STEP CIRCLE
+=========================================================== */
+
+.workflow-circle{
+
+    position:relative;
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    border:2px solid #CBD5E1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s;
+
+    z-index:2;
+
+    overflow:hidden;
+
+}
+
+/* ===========================================================
+STEP NUMBER
+=========================================================== */
+
+.step-number{
+
+    position:absolute;
+
+    top:4px;
+
+    right:5px;
+
+    font-size:9px;
+
+    font-weight:700;
+
+    color:#94A3B8;
+
+}
+
+/* ===========================================================
+ICON
+=========================================================== */
+
+.workflow-circle svg{
+
+    font-size:24px;
+
+    color:#64748B;
+
+}
+
+/* ===========================================================
+ACTIVE
+=========================================================== */
+
+.workflow-step.active .workflow-circle{
+
+    background:#2563EB;
+
+    border-color:#2563EB;
+
+    animation:workflowPulse 1.8s infinite;
+
+}
+
+.workflow-step.active .workflow-circle svg{
+
+    color:#FFFFFF;
+
+}
+
+.workflow-step.active .step-number{
+
+    color:#DBEAFE;
+
+}
+
+/* ===========================================================
+COMPLETED
+=========================================================== */
+
+.workflow-step.completed .workflow-circle{
+
+    background:#16A34A;
+
+    border-color:#16A34A;
+
+}
+
+.workflow-step.completed .workflow-circle svg{
+
+    color:#FFFFFF;
+
+}
+
+.workflow-step.completed .step-number{
+
+    display:none;
+
+}
+
+/* ===========================================================
+LOCKED
+=========================================================== */
+
+.workflow-step.locked{
+
+    opacity:.55;
+
+}
+
+.workflow-step.locked .workflow-circle{
+
+    background:#F8FAFC;
+
+    border-color:#CBD5E1;
+
+}
+
+.workflow-step.locked:hover{
+
+    transform:none;
+
+    cursor:not-allowed;
+
+}
+
+/* ===========================================================
+TEXT
+=========================================================== */
+
+.workflow-content{
+
+    margin-top:14px;
+
+    text-align:center;
+
+}
+
+.workflow-content h4{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.workflow-content p{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:#64748B;
+
+}
+
+.workflow-step.active .workflow-content h4{
+
+    color:#2563EB;
+
+}
+
+.workflow-step.completed .workflow-content h4{
+
+    color:#16A34A;
+
+}

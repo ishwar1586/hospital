@@ -1,0 +1,102 @@
+.ipd-discharge-patient-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 24px 14px;
+  background: #ffffff;
+  border-bottom: 1px solid #e7ebf3;
+  box-sizing: border-box;
+}
+
+.ipd-discharge-patient-header__content {
+  min-width: 0;
+  flex: 1;
+}
+
+.ipd-discharge-patient-header__title {
+  margin: 0;
+  color: #14245c;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+}
+
+.ipd-discharge-patient-header__subtitle {
+  margin: 3px 0 0;
+  color: #233778;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.ipd-discharge-patient-header__close {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+
+  border: 0;
+  outline: none;
+  background: transparent;
+
+  color: #152b70;
+  cursor: pointer;
+
+  border-radius: 6px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.ipd-discharge-patient-header__close svg {
+  width: 23px;
+  height: 23px;
+}
+
+.ipd-discharge-patient-header__close:hover {
+  background: #f2f5fb;
+}
+
+.ipd-discharge-patient-header__close:focus-visible {
+  outline: 2px solid #2161ff;
+  outline-offset: 2px;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .ipd-discharge-patient-header {
+    padding: 16px 18px 13px;
+  }
+
+  .ipd-discharge-patient-header__title {
+    font-size: 19px;
+  }
+
+  .ipd-discharge-patient-header__subtitle {
+    font-size: 13px;
+  }
+
+  .ipd-discharge-patient-header__close {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .ipd-discharge-patient-header__close svg {
+    width: 21px;
+    height: 21px;
+  }
+}

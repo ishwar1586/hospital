@@ -1,0 +1,98 @@
+
+.opd-department-tabs {
+  width: 100%;
+  min-width: 0;
+  padding: 5px 10px;
+
+  background: #f7faff;
+  border-bottom: 1px solid #e2eaf8;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.opd-department-tabs__list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scrollbar-width:none;
+  scrollbar-color: #cbd8ef transparent;
+}
+
+.opd-department-tabs__tab {
+  display: inline-flex;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 29px;
+  padding: 6px 15px;
+
+  border: 1px solid transparent;
+  border-radius: 5px;
+
+  background: #eaf1fc;
+  color: #18215d;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    border-color 160ms ease;
+
+  box-sizing: border-box;
+}
+
+.opd-department-tabs__tab:hover:not(
+  .opd-department-tabs__tab--active
+) {
+  background: #dfeaff;
+  border-color: #d2e1ff;
+}
+
+.opd-department-tabs__tab--active {
+  background: #0860f7;
+  border-color: #0860f7;
+  color: #ffffff;
+}
+
+.opd-department-tabs__tab--active:hover {
+  background: #0755df;
+}
+
+.opd-department-tabs__tab:focus-visible {
+  outline: 2px solid #397bff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 650px) {
+  .opd-department-tabs {
+    padding: 7px 10px;
+  }
+
+  .opd-department-tabs__list {
+    gap: 6px;
+  }
+
+  .opd-department-tabs__tab {
+    padding: 7px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opd-department-tabs__tab {
+    transition: none;
+  }
+}

@@ -1,0 +1,73 @@
+.medicine-drawer{
+    /* width:520px;
+    height:100%; */
+    width:100%;
+    height:100%;
+    padding:10px;
+    background:#f8fafc;
+    overflow-y:auto;
+}
+
+.drawer-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    background:#64748b !important;
+}
+
+.drawer-header h2{
+    margin:0;
+    font-size:24px;
+    font-weight:700;
+}
+
+.drawer-header p{
+    margin-top:4px;
+    color:#ecf1f7 !important;
+}
+
+.medicine-status-chip{
+    display:inline-flex;
+    padding:8px 14px;
+    border-radius:999px;
+    background:#dcfce7;
+    color:#166534;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.drawer-card{
+    background:#ffffff;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:16px;
+    border:1px solid #e2e8f0;
+}
+
+.drawer-card h3{
+    margin-top:0;
+    margin-bottom:16px;
+    font-size:16px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    padding:10px 0;
+    border-bottom:1px solid #f1f5f9;
+}
+
+.info-row:last-child{
+    border-bottom:none;
+}
+
+.info-row span{
+    color:#64748b;
+    font-size:14px;
+}
+
+.info-row strong{
+    color:#0f172a;
+    font-size:14px;
+}

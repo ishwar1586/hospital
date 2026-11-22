@@ -1,0 +1,354 @@
+/* =========================================
+   DOCTOR STATS CARDS
+========================================= */
+
+.doctor-stats-cards {
+    width: 100%;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.doctor-stats-cards__grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.doctor-stat-card {
+    position: relative;
+
+    min-width: 0;
+    min-height: 100px;
+
+    padding: 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.doctor-stat-card:hover {
+    border-color: #d1d5db;
+
+    box-shadow:
+        0 5px 16px
+        rgba(15, 23, 42, 0.06);
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.doctor-stat-card__top {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 6px;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.doctor-stat-card__icon {
+    width: 20px;
+    height: 20px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+}
+
+
+.doctor-stat-card__icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* =========================================
+   BLUE
+========================================= */
+
+.doctor-stat-card--blue
+.doctor-stat-card__icon {
+
+    background: #eff6ff;
+
+    color: #2563eb;
+}
+
+
+/* =========================================
+   GREEN
+========================================= */
+
+.doctor-stat-card--green
+.doctor-stat-card__icon {
+
+    background: #ecfdf5;
+
+    color: #059669;
+}
+
+
+/* =========================================
+   ORANGE
+========================================= */
+
+.doctor-stat-card--orange
+.doctor-stat-card__icon {
+
+    background: #fffbeb;
+
+    color: #d97706;
+}
+
+
+/* =========================================
+   PURPLE
+========================================= */
+
+.doctor-stat-card--purple
+.doctor-stat-card__icon {
+
+    background: #f5f3ff;
+
+    color: #7c3aed;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+.doctor-stat-card__body {
+
+    margin-top: 6px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 2px;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.doctor-stat-card__label {
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    line-height: 10px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.doctor-stat-card__value {
+
+    margin-top: 2px;
+
+    color: #111827;
+
+    font-size: 18px !important;
+
+    line-height: 20px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.02em;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.doctor-stat-card__description {
+
+    margin-top: 2px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    line-height: 16px;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   TREND
+========================================= */
+
+.doctor-stat-card__trend {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 3px;
+
+    min-height: 23px;
+
+    padding:
+        3px
+        7px;
+
+    border-radius: 999px;
+
+    font-size: 10px;
+
+    line-height: 15px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   UP
+========================================= */
+
+.doctor-stat-card__trend--up {
+
+    background: #ecfdf5;
+
+    color: #047857;
+}
+
+
+/* =========================================
+   NEUTRAL
+========================================= */
+
+.doctor-stat-card__trend--neutral {
+
+    background: #f8fafc;
+
+    color: #64748b;
+}
+
+
+/* =========================================
+   DOWN
+========================================= */
+
+.doctor-stat-card__trend--down {
+
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .doctor-stats-cards__grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+    .doctor-stats-cards {
+
+        padding:
+            16px
+            16px
+            0;
+    }
+
+
+    .doctor-stats-cards__grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .doctor-stat-card {
+
+        min-height: 140px;
+
+        padding: 18px;
+    }
+
+
+    .doctor-stat-card__value {
+
+        font-size: 24px;
+
+        line-height: 31px;
+    }
+
+}

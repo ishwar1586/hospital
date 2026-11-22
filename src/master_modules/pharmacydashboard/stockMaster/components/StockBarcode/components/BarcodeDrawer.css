@@ -1,0 +1,59 @@
+.barcode-drawer-paper{
+
+    width:700px;
+
+    max-width:100vw;
+
+    height:100vh;
+
+    /* overflow:hidden; */
+
+}
+
+.barcode-drawer{
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#F8FAFC;
+
+}
+
+.barcode-body{
+
+    flex:1;
+
+    min-height:0;
+
+    overflow-y:auto;
+
+    /* overflow-x:hidden; */
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.barcode-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.barcode-body::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:999px;
+
+}
